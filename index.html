@@ -90,6 +90,28 @@ p{margin:0}
 @media (max-width:1100px){.nav nav{display:none}}
 .nav-acc{display:flex;align-items:center;gap:10px}
 @media (max-width:380px){.nav-acc{gap:6px}.nav-acc .btn-chico{padding:0 11px}}
+/* menú hamburguesa: debajo de 1100 px, donde se esconden los links */
+.nav-hamb{display:none;position:relative;width:40px;height:40px;flex:none;padding:0;border:1px solid var(--linea);border-radius:10px;background:#fff;cursor:pointer}
+.nav-hamb span{position:absolute;left:11px;right:11px;height:2px;border-radius:2px;background:var(--tinta);transition:transform .2s ease,opacity .2s ease}
+.nav-hamb span:nth-child(1){top:13px}
+.nav-hamb span:nth-child(2){top:19px}
+.nav-hamb span:nth-child(3){top:25px}
+.nav-hamb[aria-expanded="true"] span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.nav-hamb[aria-expanded="true"] span:nth-child(2){opacity:0}
+.nav-hamb[aria-expanded="true"] span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+.nav-hamb:focus-visible{outline:2px solid var(--vereda);outline-offset:2px}
+.menu-movil{position:absolute;left:0;right:0;top:100%;background:#fff;border-bottom:1px solid var(--linea);box-shadow:0 26px 40px -26px rgba(16,34,42,.4);animation:baja .2s ease-out;max-height:calc(100vh - 64px);max-height:calc(100dvh - 64px);overflow-y:auto}
+@keyframes baja{from{opacity:0;transform:translateY(-6px)}}
+.nav .menu-movil nav{display:flex;flex-direction:column;gap:0;padding:6px clamp(16px,3.3vw,64px) 0}
+.nav .menu-movil nav a{display:flex;align-items:center;justify-content:space-between;padding:15px 2px;border-bottom:1px solid var(--linea-2);color:var(--tinta);text-decoration:none;font-size:17px;font-weight:600}
+.nav .menu-movil nav a::after{content:"";width:8px;height:8px;margin-right:4px;border-right:2px solid var(--tinta-3);border-top:2px solid var(--tinta-3);transform:rotate(45deg)}
+.nav .menu-movil nav a:hover{color:var(--vereda)}
+.menu-movil-acc{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:16px clamp(16px,3.3vw,64px) 18px}
+.menu-velo{position:fixed;left:0;right:0;bottom:0;top:calc(64px + env(safe-area-inset-top,0px));z-index:39;background:rgba(16,34,42,.35)}
+@media (prefers-reduced-motion:reduce){.menu-movil{animation:none}.nav-hamb span{transition:none}}
+@media (max-width:1100px){.nav-hamb{display:block}.nav-der{gap:10px}}
+@media (max-width:760px){.nav-acc .btn-s{display:none}}
+@media (max-width:360px){.marca svg{width:90px}}
 
 /* hero */
 .hero .tel{zoom:.9}
@@ -980,9 +1002,24 @@ input[type=range]{width:100%;accent-color:var(--vereda);height:24px}
         <a class="btn btn-p btn-chico" href="#contacto" data-evento="cta_barra">Pedir una demo</a>
         <a class="btn btn-s btn-chico" href="https://app.libreta.dev/login" data-evento="login_barra">Login</a>
       </div>
+      <button type="button" class="nav-hamb" id="nav-hamb" aria-expanded="false" aria-controls="menu-movil" aria-label="Abrir el menú"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="menu-movil" id="menu-movil" hidden>
+    <nav aria-label="Secciones">
+      <a href="#como">Cómo funciona</a>
+      <a href="#tablero">Tablero</a>
+      <a href="#suma">Cuánto suma</a>
+      <a href="#precios">Precios</a>
+      <a href="#preguntas">Preguntas</a>
+    </nav>
+    <div class="menu-movil-acc">
+      <a class="btn btn-p" href="#contacto" data-evento="cta_menu">Pedir una demo</a>
+      <a class="btn btn-s" href="https://app.libreta.dev/login" data-evento="login_menu">Login</a>
     </div>
   </div>
 </header>
+<div class="menu-velo" id="menu-velo" hidden></div>
 
 <main>
 
@@ -3018,6 +3055,19 @@ input[type=range]{width:100%;accent-color:var(--vereda);height:24px}
     setTimeout(function(){ if (!demoEl.classList.contains('tocado')) invita.classList.add('vis'); }, 900);
     $('invita-x').addEventListener('click', function(e){ e.stopPropagation(); invita.classList.add('cerrada'); evento('invita_cerrar'); });
   }
+
+  /* ================= Menú hamburguesa (pantallas chicas) ================= */
+  var hamb = $('nav-hamb'), menuM = $('menu-movil'), menuVelo = $('menu-velo');
+  function menuMovil(abrir){
+    menuM.hidden = !abrir; menuVelo.hidden = !abrir;
+    hamb.setAttribute('aria-expanded', abrir ? 'true' : 'false');
+    hamb.setAttribute('aria-label', abrir ? 'Cerrar el menú' : 'Abrir el menú');
+  }
+  hamb.addEventListener('click', function(){ var abrir = menuM.hidden; menuMovil(abrir); if (abrir) evento('menu_abrir'); });
+  menuM.addEventListener('click', function(e){ if (e.target.closest('a')) menuMovil(false); });
+  menuVelo.addEventListener('click', function(){ menuMovil(false); });
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape' && !menuM.hidden){ menuMovil(false); hamb.focus(); } });
+  window.addEventListener('resize', function(){ if (window.innerWidth > 1100 && !menuM.hidden) menuMovil(false); });
 
   /* ================= Asistente de ventas ================= */
   // Responde con Claude desde el Sistema D&C (CONFIG.chat). Si el servicio no contesta, usa respuestas
