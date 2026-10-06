@@ -912,7 +912,7 @@ input[type=range]{width:100%;accent-color:var(--vereda);height:24px}
 .asv{position:fixed;right:20px;bottom:20px;z-index:60;display:flex;flex-direction:column;align-items:flex-end;gap:10px;font-family:var(--f)}
 .asv-btn{display:inline-flex;align-items:center;gap:9px;height:52px;padding:0 18px 0 14px;border:0;border-radius:999px;background:var(--vereda);color:#fff;font:700 15px var(--f);cursor:pointer;box-shadow:0 16px 34px -14px rgba(11,110,124,.85),0 2px 6px rgba(16,34,42,.18)}
 .asv-btn:hover{background:var(--vereda-600)}
-.asv-btn svg{width:22px;height:22px;flex:none}
+.asv-btn svg{width:30px;height:30px;flex:none;margin:0 -3px}
 .asv.abierto .asv-btn{display:none}
 .asv-bienv{position:relative;width:min(300px,calc(100vw - 40px));background:#fff;border:1px solid var(--linea);border-radius:16px 16px 4px 16px;box-shadow:var(--sombra-3);padding:14px 16px;font-size:14.5px;line-height:1.45;color:var(--tinta-2);animation:entra .35s ease}
 .asv-bienv b{color:var(--tinta)}
@@ -922,8 +922,8 @@ input[type=range]{width:100%;accent-color:var(--vereda);height:24px}
 .asv-bienv-x{position:absolute;top:6px;right:6px;width:26px;height:26px;border:0;border-radius:8px;background:none;color:var(--tinta-3);font-size:18px;line-height:1;cursor:pointer}
 .asv-panel{width:min(400px,calc(100vw - 40px));height:min(620px,calc(100vh - 110px));height:min(620px,calc(100dvh - 110px));background:#fff;border:1px solid var(--linea);border-radius:18px;box-shadow:var(--sombra-3);display:flex;flex-direction:column;overflow:hidden;animation:entra .25s ease}
 .asv-cab{flex:none;display:flex;align-items:center;gap:11px;padding:13px 12px 13px 16px;border-bottom:1px solid var(--linea);background:var(--papel)}
-.asv-av{flex:none;width:36px;height:36px;border-radius:11px;background:var(--vereda);display:grid;place-items:center}
-.asv-av svg{width:24px;height:24px}
+.asv-av{flex:none;width:38px;height:38px;display:block}
+.asv-av svg{width:100%;height:100%;display:block}
 .asv-cab div{flex:1;min-width:0}
 .asv-cab b{display:block;font-size:15px;color:var(--tinta)}
 .asv-cab small{display:block;font-size:12.5px;color:var(--tinta-3)}
@@ -951,7 +951,8 @@ input[type=range]{width:100%;accent-color:var(--vereda);height:24px}
 @media (max-width:760px){
   .asv{right:14px;bottom:14px}
   body.fijo-vis .asv{bottom:84px}
-  .asv-btn{width:54px;height:54px;padding:0;justify-content:center}
+  .asv-btn{width:56px;height:56px;padding:0;justify-content:center}
+  .asv-btn svg{width:36px;height:36px;margin:0}
   .asv-btn span{display:none}
   .asv.abierto{inset:0;right:0;bottom:0;z-index:90}
   body.fijo-vis .asv.abierto{bottom:0}
@@ -1193,8 +1194,8 @@ input[type=range]{width:100%;accent-color:var(--vereda);height:24px}
     <span class="fc-lbl">Funciona con</span>
     <div class="fc-marq">
       <ul class="fc-pista">
-        <li>Doria</li><li>Zureo</li><li>Odoo</li><li>SAP Business One</li><li>Memory</li><li>GNS</li><li>Excel o Google Sheets</li>
-        <li aria-hidden="true">Doria</li><li aria-hidden="true">Zureo</li><li aria-hidden="true">Odoo</li><li aria-hidden="true">SAP Business One</li><li aria-hidden="true">Memory</li><li aria-hidden="true">GNS</li><li aria-hidden="true">Excel o Google Sheets</li>
+        <li>Doria</li><li>Zureo</li><li>Odoo</li><li>SAP Business One</li><li>Memory</li><li>GNS</li>
+        <li aria-hidden="true">Doria</li><li aria-hidden="true">Zureo</li><li aria-hidden="true">Odoo</li><li aria-hidden="true">SAP Business One</li><li aria-hidden="true">Memory</li><li aria-hidden="true">GNS</li>
       </ul>
     </div>
   </div>
@@ -1231,7 +1232,7 @@ input[type=range]{width:100%;accent-color:var(--vereda);height:24px}
               <li><span>Clientes nuevos y cambios de dirección</span><b>07:30</b></li>
               <li><span>Stock por depósito</span><b>cada hora</b></li>
             </ul>
-            <p class="origen">Conectado a <b>Doria</b>. Si tu sistema no tiene conexión, alcanza con la planilla que ya exporta.</p>
+            <p class="origen">Conectado a <b>Doria</b>. Con otros sistemas, el conector se arma en la instalación.</p>
           </div>
         </div>
         <div data-vista="1" hidden>
@@ -1364,7 +1365,7 @@ input[type=range]{width:100%;accent-color:var(--vereda);height:24px}
       <div class="cabeza">
         <span class="etiqueta">Precios</span>
         <h2>Un precio por vendedor, todo incluido.</h2>
-        <p class="sub">App del vendedor, panel del supervisor y asistente en todos los planes. Los usuarios de supervisión no se cobran. Precios en dólares, más IVA.</p>
+        <p class="sub">App del vendedor, panel del supervisor, asistente y conexión con tu sistema en todos los planes. Los usuarios de supervisión no se cobran. Precios en dólares, más IVA.</p>
       </div>
       <div class="alternar" role="group" aria-label="Forma de pago">
         <button type="button" data-periodo="mes" aria-pressed="true">Mensual</button>
@@ -1376,7 +1377,7 @@ input[type=range]{width:100%;accent-color:var(--vereda);height:24px}
         <div><h3>Calle</h3><p class="vol">De 1 a 5 vendedores</p></div>
         <div class="precio"><b data-precio="69">USD 69</b><span>por vendedor / mes</span></div>
         <p class="precio-nota" data-anual="690"></p>
-        <ul><li>App del vendedor completa: ruta, oportunidades, pedidos, cartera, prospectos, lista de precios y presupuestos</li><li>Panel del supervisor</li><li>Clientes, ventas y precios desde planilla</li><li>Asistente en la app y en el panel</li></ul>
+        <ul><li>App del vendedor completa: ruta, oportunidades, pedidos, cartera, prospectos, lista de precios y presupuestos</li><li>Panel del supervisor</li><li>Conexión directa con tu sistema de gestión</li><li>Los pedidos entran solos al sistema</li><li>Asistente con IA en la app y en el panel</li></ul>
         <a class="btn btn-s btn-bloque" href="#contacto" data-vendedores="De 1 a 5" data-evento="cta_plan_calle">Pedir una demo</a>
       </div>
       <div class="plan rec">
@@ -1384,7 +1385,7 @@ input[type=range]{width:100%;accent-color:var(--vereda);height:24px}
         <div><h3>Equipo</h3><p class="vol">De 6 a 20 vendedores</p></div>
         <div class="precio"><b data-precio="59">USD 59</b><span>por vendedor / mes</span></div>
         <p class="precio-nota" data-anual="590"></p>
-        <ul><li>Todo lo de Calle</li><li>Conexión directa con tu sistema de gestión</li><li>Los pedidos entran solos al sistema</li><li>Rutas fijas, objetivos y comisiones por vendedor</li><li>Asistente con IA en la app y en el panel</li></ul>
+        <ul><li>Todo lo de Calle</li><li>Rutas fijas, objetivos y comisiones por vendedor</li></ul>
         <a class="btn btn-p btn-bloque" href="#contacto" data-vendedores="De 6 a 20" data-evento="cta_plan_equipo">Pedir una demo</a>
       </div>
       <div class="plan">
@@ -1408,9 +1409,9 @@ input[type=range]{width:100%;accent-color:var(--vereda);height:24px}
     <div class="cabeza"><span class="etiqueta">Preguntas</span><h2>Lo que nos preguntan antes de empezar.</h2><p class="sub">¿Te queda otra duda? <a href="#contacto">Agendá una demo</a> y la vemos en la llamada.</p></div>
     <div class="faq">
       <details><summary>¿Hay que cargar los clientes y los precios de nuevo?</summary><p>No. Libreta toma clientes, facturas, saldos y listas de precios de tu sistema de gestión y los actualiza solo. El vendedor no carga nada que ya exista.</p></details>
-      <details><summary>¿Con qué sistemas funciona?</summary><p>Hoy tiene conexión directa con Doria. Con Zureo, Odoo, SAP Business One y otros sistemas se arma el conector en la instalación. Si tu sistema no tiene conexión, alcanza con la planilla que ya exporta.</p></details>
+      <details><summary>¿Con qué sistemas funciona?</summary><p>Hoy tiene conexión directa con Doria. Con Zureo, Odoo, SAP Business One y otros sistemas se arma el conector en la instalación. Todos los planes incluyen la conexión con tu sistema.</p></details>
       <details><summary>¿Cómo sabe qué ofrecerle a cada cliente?</summary><p>Mira el historial de compras. Si un cliente compra algo cada dos semanas y ya pasaron tres, es una recompra. Si 8 de cada 10 clientes que llevan detergente también llevan lavandina y este no, es una venta cruzada. Si dejó de comprar, es para reactivar. Si tiene facturas vencidas, es para cobrar. Cada oportunidad dice por qué aparece y cuánto vale por mes.</p></details>
-      <details><summary>¿El pedido va directo a mi sistema?</summary><p>Sí. Con conexión directa entra como pedido, con los precios de la lista del cliente, y queda para que lo facturen. Si trabajás con planilla, el panel te lo deja listo para importar. En los dos casos el supervisor lo ve en el momento.</p></details>
+      <details><summary>¿El pedido va directo a mi sistema?</summary><p>Sí. Entra a tu sistema como pedido, con los precios de la lista del cliente, y queda para que lo facturen. El supervisor lo ve en el momento en el panel.</p></details>
       <details><summary>¿El asistente puede hacer algo sin que me entere?</summary><p>No. Antes de crear una tarea, mover una visita o cambiar una ruta, te muestra exactamente qué va a hacer y espera que confirmes. Para consultar datos no pide permiso.</p></details>
       <details><summary>¿Los vendedores tienen que bajar una app?</summary><p>Se abre desde el celular, en Android o en iPhone, y se guarda en la pantalla de inicio como cualquier app. No hace falta pasar por ninguna tienda.</p></details>
       <details><summary>¿Controla dónde está el vendedor todo el día?</summary><p>No. Se registra la llegada y la salida de cada visita, y solo durante la jornada, entre «Iniciar» y «Terminar». Tratamos los datos según la Ley 18.331 de protección de datos personales y te ayudamos a informar a tu equipo.</p></details>
@@ -1477,7 +1478,7 @@ input[type=range]{width:100%;accent-color:var(--vereda);height:24px}
       <p class="producto">Un producto de <a href="https://dearmascostantini.com" target="_blank" rel="noopener">Dearmas <span class="amp">&amp;</span> Costantini</a></p>
       <details class="privacidad">
         <summary>Privacidad y datos</summary>
-        <p>Dearmas &amp; Costantini es responsable de los datos que dejás en el formulario. Los usamos solo para contactarte sobre Libreta; no los vendemos ni los compartimos con terceros. Para agendar la reunión usamos Calendly. Podés pedir acceso, rectificación o eliminación de tus datos respondiendo el mail de confirmación de la reunión, según la Ley 18.331 de protección de datos personales. Doria, Zureo, Odoo, SAP Business One, Memory, GNS, Excel, Google Sheets y WhatsApp son marcas de sus respectivos dueños.</p>
+        <p>Dearmas &amp; Costantini es responsable de los datos que dejás en el formulario. Los usamos solo para contactarte sobre Libreta; no los vendemos ni los compartimos con terceros. Para agendar la reunión usamos Calendly. Podés pedir acceso, rectificación o eliminación de tus datos respondiendo el mail de confirmación de la reunión, según la Ley 18.331 de protección de datos personales. Doria, Zureo, Odoo, SAP Business One, Memory, GNS y WhatsApp son marcas de sus respectivos dueños.</p>
       </details>
       <span>Montevideo, Uruguay</span>
     </div>
@@ -1496,13 +1497,13 @@ input[type=range]{width:100%;accent-color:var(--vereda);height:24px}
     <div class="asv-bienv-acc"><button type="button" class="p" id="asv-bienv-ir">Preguntar</button><button type="button" id="asv-bienv-probar">Probar la app</button></div>
   </div>
   <section class="asv-panel" id="asv-panel" role="dialog" aria-label="Asistente de Libreta" hidden>
-    <div class="asv-cab"><span class="asv-av"><svg viewBox="0 0 128 128" aria-hidden="true"><g transform="translate(64 64) scale(.78) translate(-64 -64)"><g fill="none" stroke="#fff" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"><rect x="30" y="12" width="68" height="104" rx="14"/><path d="M78 4V124"/></g><circle cx="54" cy="38" r="10" fill="#FF6A3D"/></g></svg></span><div><b>Asistente de Libreta</b><small>Responde al momento y te ayuda a agendar la demo</small></div><button type="button" class="asv-x" id="asv-x" aria-label="Cerrar el chat">&times;</button></div>
+    <div class="asv-cab"><span class="asv-av"><svg viewBox="0 0 128 128" aria-hidden="true"><rect width="128" height="128" rx="28" fill="#0B6E7C"/><g transform="translate(64 64) scale(0.72) translate(-64 -64)"><g fill="none" stroke="#FFFFFF" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"><rect x="30" y="12" width="68" height="104" rx="14"/><path d="M78 4V124"/></g><circle cx="54" cy="38" r="10" fill="#FF6A3D"/></g></svg></span><div><b>Asistente de Libreta</b><small>Responde al momento y te ayuda a agendar la demo</small></div><button type="button" class="asv-x" id="asv-x" aria-label="Cerrar el chat">&times;</button></div>
     <div class="asv-msgs" id="asv-msgs" aria-live="polite"></div>
     <div class="asv-sug" id="asv-sug"></div>
     <form class="asv-in" id="asv-form"><input id="asv-txt" maxlength="600" autocomplete="off" placeholder="Escribí tu pregunta" aria-label="Tu pregunta"><button type="submit" id="asv-enviar" aria-label="Enviar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 3 10 14M21 3l-7 18-4-7-7-4z"/></svg></button></form>
     <p class="asv-pie">Respuestas automáticas. Las condiciones se confirman en la demo.</p>
   </section>
-  <button type="button" class="asv-btn" id="asv-btn" aria-controls="asv-panel" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-11.7 7.1L4 20l1.4-4.1A8 8 0 1 1 20 11.5z"/><path d="M8.5 11.5h.01M12 11.5h.01M15.5 11.5h.01"/></svg><span>¿Dudas? Preguntame</span></button>
+  <button type="button" class="asv-btn" id="asv-btn" aria-controls="asv-panel" aria-expanded="false"><svg viewBox="0 0 128 128" aria-hidden="true"><g fill="none" stroke="#FFFFFF" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"><rect x="30" y="12" width="68" height="104" rx="14"/><path d="M78 4V124"/></g><circle cx="54" cy="38" r="9" fill="#FF6A3D"/></svg><span>¿Dudas? Preguntame</span></button>
 </div>
 
 <div class="fijo-movil" id="fijo-movil"><a class="btn btn-p btn-bloque" href="#contacto" data-evento="cta_fijo_movil">Pedir una demo</a></div>
