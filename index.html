@@ -6,14 +6,14 @@
 <title>Libreta | Tu libreta ya sabe qué venderle a cada uno</title>
 <meta name="description" content="Libreta es la app de los vendedores de calle de distribuidoras, mayoristas y fábricas: ruta del día, qué ofrecerle a cada cliente, pedidos que entran solos a tu sistema y un panel para el supervisor.">
 <meta name="theme-color" content="#FFFFFF">
-<link rel="canonical" href="https://libreta.dev/">
+<link rel="canonical" href="https://www.libreta.dev/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Libreta">
 <meta property="og:locale" content="es_UY">
-<meta property="og:url" content="https://libreta.dev/">
+<meta property="og:url" content="https://www.libreta.dev/">
 <meta property="og:title" content="Libreta · Tu libreta ya sabe qué venderle a cada uno">
 <meta property="og:description" content="La app del vendedor de calle y el panel del supervisor, sobre tu sistema de siempre. Pedí una demo con los datos de tu empresa.">
-<meta property="og:image" content="https://libreta.dev/og-image.png">
+<meta property="og:image" content="https://www.libreta.dev/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
@@ -23,6 +23,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&family=DM+Sans:wght@200&display=swap">
+<link rel="stylesheet" href="https://assets.calendly.com/assets/external/widget.css">
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Libreta","applicationCategory":"BusinessApplication","operatingSystem":"Web, Android, iOS","description":"App para vendedores de calle y panel del supervisor: ruta del día, oportunidades de venta por cliente, carga de pedidos al sistema de gestión, cartera y cobranzas.","inLanguage":"es-UY","publisher":{"@type":"Organization","name":"Dearmas & Costantini","url":"https://dearmascostantini.com"}}</script>
 <style>
 :root{
@@ -54,17 +56,17 @@ button,input,textarea,select{font:inherit;color:inherit}
 .mono{font-family:var(--mono)}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
 
-.wrap{max-width:1160px;margin:0 auto;padding-inline:clamp(16px,4vw,40px)}
+.wrap{max-width:2368px;margin:0 auto;padding-inline:clamp(16px,3.3vw,64px)}
 h1,h2,h3,h4{margin:0;font-weight:600;letter-spacing:-.02em;text-wrap:balance}
-h1{font-size:clamp(2.2rem,4.4vw,3.55rem);line-height:1.05;letter-spacing:-.032em}
-h2{font-size:clamp(1.8rem,3.2vw,2.5rem);line-height:1.08;letter-spacing:-.028em}
+h1{font-size:clamp(2.2rem,3.3vw + .6rem,4.6rem);line-height:1.05;letter-spacing:-.032em}
+h2{font-size:clamp(1.8rem,2.2vw + .55rem,3.2rem);line-height:1.08;letter-spacing:-.028em}
 h3{font-size:1.1rem;line-height:1.35}
 p{margin:0}
-.sub{font-size:clamp(1.05rem,1.4vw,1.16rem);color:var(--tinta-2);max-width:36rem;line-height:1.55}
+.sub{font-size:clamp(1.05rem,.35vw + .9rem,1.3rem);color:var(--tinta-2);max-width:min(100%,36rem + 8vw);line-height:1.55}
 .acento{color:var(--vereda)}
 .seccion{padding-block:clamp(56px,7vw,88px)}
 .seccion.gris{background:var(--papel)}
-.cabeza{display:flex;flex-direction:column;gap:12px;max-width:44rem;margin-bottom:clamp(28px,4vw,40px)}
+.cabeza{display:flex;flex-direction:column;gap:12px;max-width:min(100%,44rem + 12vw);margin-bottom:clamp(28px,4vw,40px)}
 .etiqueta{font-size:14px;font-weight:600;color:var(--vereda)}
 
 /* botones */
@@ -85,7 +87,9 @@ p{margin:0}
 .nav nav{display:flex;gap:26px}
 .nav nav a{color:var(--tinta);text-decoration:none;font-size:15px;font-weight:700}
 .nav nav a:hover{color:var(--vereda)}
-@media (max-width:760px){.nav nav{display:none}}
+@media (max-width:1100px){.nav nav{display:none}}
+.nav-acc{display:flex;align-items:center;gap:10px}
+@media (max-width:380px){.nav-acc{gap:6px}.nav-acc .btn-chico{padding:0 11px}}
 
 /* hero */
 .hero .tel{zoom:.9}
@@ -224,9 +228,26 @@ p{margin:0}
 .ventana-barra i{flex:none;width:10px;height:10px;border-radius:50%;background:#D5DAE0}
 .ventana-barra span{margin-left:12px;font-family:var(--mono);font-size:11.5px;color:var(--tinta-3);background:#fff;border:1px solid var(--linea);border-radius:7px;padding:3px 12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
 .ventana-cuerpo{position:relative;overflow:hidden;height:600px;background:var(--papel)}
-.ventana-cuerpo iframe{position:absolute;left:0;top:0;border:0;width:1440px;height:940px;transform-origin:0 0;background:var(--papel)}
+.ventana-cuerpo iframe{position:absolute;left:0;top:0;border:0;width:1440px;height:860px;transform-origin:0 0;background:var(--papel)}
 @media (max-width:760px){.ventana-cuerpo iframe{position:static;width:100%;height:100%;transform:none}}
 .ventana-nota{margin-top:12px;font-size:13px;color:var(--tinta-3)}
+/* tablero: igual que en la landing de Rondín. Se dibuja en 1440 × 860 y escalarTablero lo achica para que entre entero */
+.ventana{margin-inline:auto}
+@media (min-width:901px) and (min-height:640px){
+  #panel{min-height:calc(100vh - 65px);min-height:calc(100svh - 65px);display:grid;align-content:center;padding-block:clamp(20px,3vh,36px)}
+  #panel > .wrap{width:100%}
+  #panel .cabeza{margin-bottom:16px}
+  #panel .ventana-nota{margin-top:8px}
+}
+@media (min-width:1200px){
+  #panel .wrap{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.7fr);column-gap:clamp(32px,4vw,72px);align-items:center}
+  #panel .tab-cab{grid-column:1;grid-row:1;margin:0;align-self:end}
+  #panel .ventana{grid-column:2;grid-row:1 / span 2;width:100%}
+  #panel .ventana-nota{grid-column:1;grid-row:2;align-self:start;margin-top:16px}
+}
+/* pantallas grandes: el contenido ocupa todo el ancho, así que el celular y la letra crecen con él */
+@media (min-width:1700px){.hero .tel{zoom:1}body{font-size:17.5px}}
+@media (min-width:2200px){.hero .tel{zoom:1.15}body{font-size:19px}}
 .pnl{display:grid;grid-template-columns:200px minmax(0,1fr);min-height:560px;background:var(--papel)}
 .pnl-lado{background:#fff;border-right:1px solid var(--linea);padding:16px 12px;display:flex;flex-direction:column;gap:4px}
 .pnl-lado .wm{padding:2px 8px 14px}
@@ -403,7 +424,15 @@ input[type=range]{width:100%;accent-color:var(--vereda);height:24px}
 .f input:user-invalid,.f select:user-invalid{border-color:#D92D20}
 .form .legal{font-size:12.5px;color:var(--tinta-3)}
 .gracias{display:flex;flex-direction:column;gap:12px}
-.gracias .copia{font-family:var(--mono);font-size:12.5px;background:var(--papel);border:1px solid var(--linea);border-radius:10px;padding:12px;white-space:pre-wrap}
+.f label .opc{font-weight:500;color:var(--tinta-3)}
+.tel-pais{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:8px}
+@media (max-width:420px){.tel-pais{grid-template-columns:minmax(0,1fr)}}
+.agenda{width:min(1040px,94vw);height:min(780px,92vh);max-width:none;max-height:none;padding:0;border:0;border-radius:18px;background:#fff;box-shadow:0 30px 80px -20px rgba(16,34,42,.55);overflow:hidden}
+.agenda::backdrop{background:rgba(16,34,42,.55)}
+.agenda-widget{width:100%;height:100%}
+.agenda-cerrar{position:absolute;top:10px;right:10px;z-index:2;width:38px;height:38px;border-radius:50%;border:1px solid var(--linea);background:#fff;color:var(--tinta);display:grid;place-items:center;cursor:pointer;box-shadow:var(--sombra-1)}
+.agenda-cerrar svg{width:18px;height:18px}
+@media (max-width:620px){.agenda{width:100vw;height:100dvh;max-height:100dvh;border-radius:0}}
 .gracias p{color:var(--tinta-2)}
 
 /* pie */
@@ -877,7 +906,10 @@ input[type=range]{width:100%;accent-color:var(--vereda);height:24px}
         <a href="#precios">Precios</a>
         <a href="#preguntas">Preguntas</a>
       </nav>
-      <a class="btn btn-p btn-chico" href="#contacto" data-evento="cta_barra">Pedir una demo</a>
+      <div class="nav-acc">
+        <a class="btn btn-p btn-chico" href="#contacto" data-evento="cta_barra">Pedir una demo</a>
+        <a class="btn btn-s btn-chico" href="https://app.libreta.dev/login" data-evento="login_barra">Login</a>
+      </div>
     </div>
   </div>
 </header>
@@ -1197,7 +1229,7 @@ input[type=range]{width:100%;accent-color:var(--vereda);height:24px}
       <h2>Toda la calle, en una pantalla.</h2>
       <p class="sub">Cinco pantallas: el día en la calle (quién salió, cómo van las rutas, qué pedidos entraron y qué espera tu respuesta), cada vendedor contra su objetivo, lo que suma Libreta en venta extra, los clientes que dejaron de comprar o deben, y la bandeja de pedidos para pasar a tu sistema. Probalo: cargá un pedido o avisá un desvío en el celular de arriba y mirá cómo llega. Si aprobás el desvío acá, a María le llega el aviso.</p>
     </div>
-    <div class="ventana">
+    <div class="ventana" id="ventana">
       <div class="ventana-barra" aria-hidden="true"><i></i><i></i><i></i><span>app.libreta.dev · Distribuidora Central</span></div>
       <div class="ventana-cuerpo" id="ventana-cuerpo">
         <iframe id="tablero-demo" src="tablero.html" title="Tablero del supervisor de Libreta, con datos de ejemplo" loading="lazy"></iframe>
@@ -1307,7 +1339,7 @@ input[type=range]{width:100%;accent-color:var(--vereda);height:24px}
 
 <section class="seccion" id="preguntas">
   <div class="wrap faq-grid">
-    <div class="cabeza"><span class="etiqueta">Preguntas</span><h2>Lo que nos preguntan antes de empezar.</h2><p class="sub">¿Te queda otra duda? Escribinos a <a href="mailto:hola@dearmascostantini.com">hola@dearmascostantini.com</a>.</p></div>
+    <div class="cabeza"><span class="etiqueta">Preguntas</span><h2>Lo que nos preguntan antes de empezar.</h2><p class="sub">¿Te queda otra duda? <a href="#contacto">Agendá una demo</a> y la vemos en la llamada.</p></div>
     <div class="faq">
       <details><summary>¿Hay que cargar los clientes y los precios de nuevo?</summary><p>No. Libreta toma clientes, facturas, saldos y listas de precios de tu sistema de gestión y los actualiza solo. El vendedor no carga nada que ya exista.</p></details>
       <details><summary>¿Con qué sistemas funciona?</summary><p>Hoy tiene conexión directa con Doria. Con Zureo, Odoo, SAP Business One y otros sistemas se arma el conector en la instalación. Si tu sistema no tiene conexión, alcanza con la planilla que ya exporta.</p></details>
@@ -1340,26 +1372,26 @@ input[type=range]{width:100%;accent-color:var(--vereda);height:24px}
           <div class="f"><label for="f-empresa">Empresa</label><input id="f-empresa" name="empresa" autocomplete="organization" required></div>
         </div>
         <div class="dos">
-          <div class="f"><label for="f-tel">WhatsApp</label><input id="f-tel" name="whatsapp" type="tel" inputmode="tel" autocomplete="tel" placeholder="099 123 456" required></div>
-          <div class="f"><label for="f-sistema">Tu sistema</label>
-            <select id="f-sistema" name="sistema" required>
-              <option value="">Elegí uno</option><option>Doria</option><option>Zureo</option><option>Odoo</option><option>SAP Business One</option><option>Memory</option><option>GNS</option><option>Otro sistema</option><option>Planilla</option>
+          <div class="f"><label for="f-email">Mail</label><input id="f-email" name="email" type="email" inputmode="email" autocomplete="email" required></div>
+          <div class="f"><label for="f-vendedores">Vendedores en la calle</label>
+            <select id="f-vendedores" name="vendedores" required>
+              <option value="">Elegí un rango</option><option>De 1 a 5</option><option>De 6 a 20</option><option>21 o más</option>
             </select>
           </div>
         </div>
-        <div class="f"><label for="f-vendedores">Vendedores en la calle</label>
-          <select id="f-vendedores" name="vendedores" required>
-            <option value="">Elegí un rango</option><option>De 1 a 5</option><option>De 6 a 20</option><option>21 o más</option>
-          </select>
+        <div class="f"><label for="f-tel">WhatsApp <span class="opc">(opcional)</span></label>
+          <div class="tel-pais">
+            <select id="f-prefijo" name="prefijo" aria-label="Prefijo del país"><option value="+598" selected>🇺🇾 Uruguay +598</option><option value="+54">🇦🇷 Argentina +54</option><option value="+591">🇧🇴 Bolivia +591</option><option value="+55">🇧🇷 Brasil +55</option><option value="+56">🇨🇱 Chile +56</option><option value="+57">🇨🇴 Colombia +57</option><option value="+506">🇨🇷 Costa Rica +506</option><option value="+53">🇨🇺 Cuba +53</option><option value="+593">🇪🇨 Ecuador +593</option><option value="+503">🇸🇻 El Salvador +503</option><option value="+34">🇪🇸 España +34</option><option value="+502">🇬🇹 Guatemala +502</option><option value="+504">🇭🇳 Honduras +504</option><option value="+52">🇲🇽 México +52</option><option value="+505">🇳🇮 Nicaragua +505</option><option value="+507">🇵🇦 Panamá +507</option><option value="+595">🇵🇾 Paraguay +595</option><option value="+51">🇵🇪 Perú +51</option><option value="+1">🇵🇷 Puerto Rico +1</option><option value="+1">🇩🇴 República Dominicana +1</option><option value="+58">🇻🇪 Venezuela +58</option></select>
+            <input id="f-tel" name="whatsapp" type="tel" inputmode="tel" autocomplete="tel-national" placeholder="Número, sin el 0 inicial">
+          </div>
         </div>
-        <button class="btn btn-p btn-bloque" type="submit">Pedir la demo</button>
-        <p class="legal">Te abrimos WhatsApp con el mensaje listo para enviar. Usamos tus datos solo para contactarte sobre Libreta.</p>
+        <button class="btn btn-p btn-bloque" type="submit">Elegir día y hora</button>
+        <p class="legal">Después elegís el día y la hora en nuestra agenda. Usamos tus datos solo para contactarte sobre Libreta.</p>
       </form>
       <div class="form gracias" id="gracias" hidden>
-        <h3>Listo. Falta un paso.</h3>
-        <p id="gracias-txt">Se abrió WhatsApp con tu mensaje: mandalo y te respondemos en el día hábil.</p>
-        <div class="copia" id="gracias-msg"></div>
-        <p>¿No se abrió? Escribinos a <a href="mailto:hola@dearmascostantini.com">hola@dearmascostantini.com</a>.</p>
+        <h3 id="gracias-tit">Elegí el día y la hora.</h3>
+        <p id="gracias-txt">Se abrió la agenda con tus datos cargados. Elegí el horario que te quede cómodo y la confirmación te llega por mail.</p>
+        <p><a class="btn btn-p" id="gracias-agenda" href="https://calendly.com/dearmascostantini/30min" target="_blank" rel="noopener">Abrir la agenda</a></p>
       </div>
     </div>
   </div>
@@ -1372,19 +1404,24 @@ input[type=range]{width:100%;accent-color:var(--vereda);height:24px}
     <div class="pie-grid">
       <a href="#top" class="marca" aria-label="Libreta, ir al inicio"><svg viewBox="0 6 398 100" role="img" aria-label="Libreta"><g fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M40 44V100M68 14V100M68 72A28 28 0 1 0 124 72A28 28 0 1 0 68 72M150 100V44M150 72A28 28 0 0 1 178 44M202 72H258A28 28 0 1 0 252.7 88.5M290 31.2V83A17 17 0 0 0 307 100M278 44H305M386 72A28 28 0 1 0 330 72A28 28 0 1 0 386 72M386 44V100" stroke="#10222A" stroke-width="11"/><path d="M12 14V100" stroke="#0B6E7C" stroke-width="11"/></g><circle cx="40" cy="22" r="9" fill="#FF6A3D"/></svg></a>
       <nav aria-label="Pie de página">
-        <a href="#como">Cómo funciona</a><a href="#panel">Panel</a><a href="#suma">Cuánto suma</a><a href="#precios">Precios</a><a href="#preguntas">Preguntas</a><a href="#contacto">Pedir una demo</a>
+        <a href="#como">Cómo funciona</a><a href="#panel">Panel</a><a href="#suma">Cuánto suma</a><a href="#precios">Precios</a><a href="#preguntas">Preguntas</a><a href="#contacto">Pedir una demo</a><a href="https://app.libreta.dev/login">Login</a>
       </nav>
     </div>
     <div class="pie-baja">
       <p class="producto">Un producto de <a href="https://dearmascostantini.com" target="_blank" rel="noopener">Dearmas <span class="amp">&amp;</span> Costantini</a></p>
       <details class="privacidad">
         <summary>Privacidad y datos</summary>
-        <p>Dearmas &amp; Costantini es responsable de los datos que dejás en el formulario. Los usamos solo para contactarte sobre Libreta; no los vendemos ni los compartimos con terceros. Podés pedir acceso, rectificación o eliminación escribiendo a hola@dearmascostantini.com, según la Ley 18.331 de protección de datos personales. Doria, Zureo, Odoo, SAP Business One, Memory, GNS, Excel, Google Sheets y WhatsApp son marcas de sus respectivos dueños.</p>
+        <p>Dearmas &amp; Costantini es responsable de los datos que dejás en el formulario. Los usamos solo para contactarte sobre Libreta; no los vendemos ni los compartimos con terceros. Para agendar la reunión usamos Calendly. Podés pedir acceso, rectificación o eliminación de tus datos respondiendo el mail de confirmación de la reunión, según la Ley 18.331 de protección de datos personales. Doria, Zureo, Odoo, SAP Business One, Memory, GNS, Excel, Google Sheets y WhatsApp son marcas de sus respectivos dueños.</p>
       </details>
-      <span>Montevideo, Uruguay · <a href="mailto:hola@dearmascostantini.com">hola@dearmascostantini.com</a></span>
+      <span>Montevideo, Uruguay</span>
     </div>
   </div>
 </footer>
+
+<dialog class="agenda" id="agenda" aria-label="Agenda de Dearmas &amp; Costantini">
+  <button type="button" class="agenda-cerrar" id="agenda-cerrar" aria-label="Cerrar la agenda"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <div class="agenda-widget" id="agenda-widget"></div>
+</dialog>
 
 <div class="fijo-movil" id="fijo-movil"><a class="btn btn-p btn-bloque" href="#contacto" data-evento="cta_fijo_movil">Pedir una demo</a></div>
 
@@ -2821,29 +2858,66 @@ input[type=range]{width:100%;accent-color:var(--vereda);height:24px}
   }); });
   $$('[data-vendedores]').forEach(function(a){ a.addEventListener('click', function(){ $('f-vendedores').value = a.getAttribute('data-vendedores'); }); });
 
-  /* ================= Formulario ================= */
+  /* ================= Formulario: pide los datos y abre la agenda de Calendly con todo cargado ================= */
+  // La misma agenda que la web de D&C. Calendly recibe el nombre con la empresa, el mail y dos respuestas:
+  // a1 (el motivo) y a2 (la empresa).
   var CONFIG = {
-    whatsapp: '59899921383', // número en formato internacional, sin + ni espacios. Ej.: 59899123456
-    email: 'hola@dearmascostantini.com',
+    calendly: 'https://calendly.com/dearmascostantini/30min',   // directo al calendario de la reunión de 30 minutos
     formEndpoint: ''    // opcional: URL de Formspree o Basin para guardar cada pedido de demo
   };
-  $('form').addEventListener('submit', function(e){
-    e.preventDefault();
-    var f = e.target;
-    if (!f.checkValidity()){ f.reportValidity(); return; }
-    var d = {nombre: f.nombre.value.trim(), empresa: f.empresa.value.trim(), whatsapp: f.whatsapp.value.trim(), sistema: f.sistema.value, vendedores: f.vendedores.value};
-    var msgTxt = 'Hola, quiero ver una demo de Libreta.\nNombre: ' + d.nombre + '\nEmpresa: ' + d.empresa + '\nWhatsApp: ' + d.whatsapp + '\nSistema: ' + d.sistema + '\nVendedores en la calle: ' + d.vendedores;
-    if (CONFIG.formEndpoint){
-      try { fetch(CONFIG.formEndpoint, {method: 'POST', headers: {'Content-Type': 'application/json', 'Accept': 'application/json'}, body: JSON.stringify(Object.assign({mensaje: msgTxt}, d))}).catch(function(){}); } catch (x) {}
+  var form = $('form'), gracias = $('gracias'), agenda = $('agenda'), agendaW = $('agenda-widget'), ultimo = null;
+  function motivo(d){
+    var tel = d.whatsapp ? d.prefijo + ' ' + d.whatsapp.replace(/^0+/, '') : '';
+    return 'Demo de Libreta. Vendedores en la calle: ' + d.vendedores.toLowerCase() + '.' + (tel ? ' WhatsApp: ' + tel + '.' : '');
+  }
+  function datosAgenda(d){
+    return {name: d.nombre + ' (' + d.empresa + ')', email: d.email, customAnswers: {a1: motivo(d), a2: d.empresa}};
+  }
+  function urlAgenda(p){
+    return CONFIG.calendly + '?name=' + encodeURIComponent(p.name) + '&email=' + encodeURIComponent(p.email) + '&a1=' + encodeURIComponent(p.customAnswers.a1) + '&a2=' + encodeURIComponent(p.customAnswers.a2);
+  }
+  function abrirAgenda(p){
+    if (window.Calendly && window.Calendly.initInlineWidget && agenda && agenda.showModal){
+      agendaW.innerHTML = '';
+      agenda.showModal();
+      document.body.style.overflow = 'hidden';
+      window.Calendly.initInlineWidget({url: CONFIG.calendly, parentElement: agendaW, prefill: p, resize: false});
+      return true;
     }
-    var url;
-    if (CONFIG.whatsapp) url = 'https://wa.me/' + CONFIG.whatsapp + '?text=' + encodeURIComponent(msgTxt);
-    else url = 'mailto:' + CONFIG.email + '?subject=' + encodeURIComponent('Quiero una demo de Libreta') + '&body=' + encodeURIComponent(msgTxt);
-    evento('lead_enviar', {sistema: d.sistema, vendedores: d.vendedores});
-    f.hidden = true; $('gracias').hidden = false;
-    $('gracias-txt').textContent = CONFIG.whatsapp ? 'Se abrió WhatsApp con tu mensaje: mandalo y te respondemos en el día hábil.' : 'Se abrió tu correo con el mensaje listo: mandalo y te respondemos en el día hábil.';
-    $('gracias-msg').textContent = msgTxt;
-    window.location.href = url;
+    return false;
+  }
+  if (agenda){
+    $('agenda-cerrar').addEventListener('click', function(){ agenda.close(); });
+    agenda.addEventListener('click', function(e){ if (e.target === agenda) agenda.close(); });
+    agenda.addEventListener('close', function(){ agendaW.innerHTML = ''; document.body.style.overflow = ''; });
+  }
+  $('gracias-agenda').addEventListener('click', function(e){ if (ultimo && abrirAgenda(ultimo)) e.preventDefault(); });
+  // Calendly avisa cuando la reunión quedó agendada
+  window.addEventListener('message', function(e){
+    if (e.origin !== 'https://calendly.com' || !e.data || e.data.event !== 'calendly.event_scheduled') return;
+    $('gracias-tit').textContent = 'Listo, quedó agendada.';
+    $('gracias-txt').textContent = 'La confirmación te llega por mail, con el link de la reunión. Nos vemos ahí.';
+    $('gracias-agenda').hidden = true;
+    evento('demo_agendada', {});
+  });
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    if (!form.checkValidity()){ form.reportValidity(); return; }
+    var d = {};
+    Array.prototype.forEach.call(form.elements, function(x){ if (x.name) d[x.name] = (x.value || '').trim(); });
+    ultimo = datosAgenda(d);
+    evento('lead_enviar', {vendedores: d.vendedores, pais: d.prefijo});
+    if (CONFIG.formEndpoint){
+      try { fetch(CONFIG.formEndpoint, {method: 'POST', headers: {'Content-Type': 'application/json', 'Accept': 'application/json'}, body: JSON.stringify(Object.assign({mensaje: motivo(d)}, d))}).catch(function(){}); } catch (x) {}
+    }
+    var url = urlAgenda(ultimo);
+    $('gracias-agenda').href = url;
+    form.hidden = true;
+    gracias.hidden = false;
+    if (!abrirAgenda(ultimo)){
+      var w = window.open(url, '_blank');
+      if (w){ try { w.opener = null; } catch (x) {} } else { window.location.href = url; }
+    }
   });
 
   /* ================= Botón fijo en el celular ================= */
@@ -2885,14 +2959,22 @@ input[type=range]{width:100%;accent-color:var(--vereda);height:24px}
       notificar('Laura te dejó una tarea', txt + '.');
     }
   });
-  var vc = $('ventana-cuerpo'), ifr = $('tablero-demo');
+  // El mismo cálculo que la landing de Rondín: el tablero se dibuja en 1440 × 860 y se achica para que
+  // entre entero, hasta 0,7 con el texto al costado y 0,62 debajo. En el celular va a todo el ancho y 820 px de alto.
+  var vc = $('ventana-cuerpo'), ifr = $('tablero-demo'), ventana = $('ventana'), secTablero = $('panel');
   function escalarTablero(){
-    if (!vc || !ifr) return;
-    var w = vc.clientWidth;
-    if (w < 740){ vc.style.height = '820px'; ifr.style.transform = ''; return; }
-    var k = Math.min(1, w / 1440);
+    if (!vc || !ifr || !ventana || !secTablero) return;
+    var wrap = secTablero.querySelector('.wrap'), cs = getComputedStyle(secTablero), cw = getComputedStyle(wrap);
+    var dosColumnas = cw.display === 'grid';
+    var w = dosColumnas ? parseFloat(cw.gridTemplateColumns.split(' ')[1]) : wrap.clientWidth - parseFloat(cw.paddingLeft) - parseFloat(cw.paddingRight);
+    if (w < 740){ ventana.style.maxWidth = ''; vc.style.height = '820px'; ifr.style.transform = ''; return; }
+    var pads = parseFloat(cs.paddingTop) + parseFloat(cs.paddingBottom);
+    var resto = dosColumnas ? ventana.querySelector('.ventana-barra').offsetHeight : wrap.offsetHeight - vc.offsetHeight;
+    var alto = window.innerHeight - 65 - pads - resto - 8;
+    var k = Math.max(.42, Math.min(dosColumnas ? .7 : .62, w / 1440, alto / 860));
+    ventana.style.maxWidth = Math.round(1440 * k) + 2 + 'px';
     ifr.style.transform = 'scale(' + k + ')';
-    vc.style.height = Math.round(940 * k) + 'px';
+    vc.style.height = Math.round(860 * k) + 'px';
   }
   escalarTablero();
   window.addEventListener('resize', escalarTablero);
