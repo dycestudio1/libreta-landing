@@ -234,16 +234,16 @@ p{margin:0}
 /* tablero: igual que en la landing de Rondín. Se dibuja en 1440 × 860 y escalarTablero lo achica para que entre entero */
 .ventana{margin-inline:auto}
 @media (min-width:901px) and (min-height:640px){
-  #panel{min-height:calc(100vh - 65px);min-height:calc(100svh - 65px);display:grid;align-content:center;padding-block:clamp(20px,3vh,36px)}
-  #panel > .wrap{width:100%}
-  #panel .cabeza{margin-bottom:16px}
-  #panel .ventana-nota{margin-top:8px}
+  #tablero{min-height:calc(100vh - 65px);min-height:calc(100svh - 65px);display:grid;align-content:center;padding-block:clamp(20px,3vh,36px)}
+  #tablero > .wrap{width:100%}
+  #tablero .cabeza{margin-bottom:16px}
+  #tablero .ventana-nota{margin-top:8px}
 }
 @media (min-width:1200px){
-  #panel .wrap{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.7fr);column-gap:clamp(32px,4vw,72px);align-items:center}
-  #panel .tab-cab{grid-column:1;grid-row:1;margin:0;align-self:end}
-  #panel .ventana{grid-column:2;grid-row:1 / span 2;width:100%}
-  #panel .ventana-nota{grid-column:1;grid-row:2;align-self:start;margin-top:16px}
+  #tablero .wrap{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.7fr);column-gap:clamp(32px,4vw,72px);align-items:center}
+  #tablero .tab-cab{grid-column:1;grid-row:1;margin:0;align-self:end}
+  #tablero .ventana{grid-column:2;grid-row:1 / span 2;width:100%}
+  #tablero .ventana-nota{grid-column:1;grid-row:2;align-self:start;margin-top:16px}
 }
 /* pantallas grandes: el contenido ocupa todo el ancho, así que el celular y la letra crecen con él */
 @media (min-width:1700px){.hero .tel{zoom:1}body{font-size:17.5px}}
@@ -971,7 +971,7 @@ input[type=range]{width:100%;accent-color:var(--vereda);height:24px}
     <div class="nav-der">
       <nav aria-label="Secciones">
         <a href="#como">Cómo funciona</a>
-        <a href="#panel">Panel</a>
+        <a href="#tablero">Tablero</a>
         <a href="#suma">Cuánto suma</a>
         <a href="#precios">Precios</a>
         <a href="#preguntas">Preguntas</a>
@@ -1293,7 +1293,7 @@ input[type=range]{width:100%;accent-color:var(--vereda);height:24px}
   </div>
 </section>
 
-<section class="seccion gris" id="panel">
+<section class="seccion gris" id="tablero">
   <div class="wrap">
     <div class="cabeza tab-cab">
       <span class="etiqueta">El tablero del supervisor</span>
@@ -1474,7 +1474,7 @@ input[type=range]{width:100%;accent-color:var(--vereda);height:24px}
     <div class="pie-grid">
       <a href="#top" class="marca" aria-label="Libreta, ir al inicio"><svg viewBox="0 6 398 100" role="img" aria-label="Libreta"><g fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M40 44V100M68 14V100M68 72A28 28 0 1 0 124 72A28 28 0 1 0 68 72M150 100V44M150 72A28 28 0 0 1 178 44M202 72H258A28 28 0 1 0 252.7 88.5M290 31.2V83A17 17 0 0 0 307 100M278 44H305M386 72A28 28 0 1 0 330 72A28 28 0 1 0 386 72M386 44V100" stroke="#10222A" stroke-width="11"/><path d="M12 14V100" stroke="#0B6E7C" stroke-width="11"/></g><circle cx="40" cy="22" r="9" fill="#FF6A3D"/></svg></a>
       <nav aria-label="Pie de página">
-        <a href="#como">Cómo funciona</a><a href="#panel">Panel</a><a href="#suma">Cuánto suma</a><a href="#precios">Precios</a><a href="#preguntas">Preguntas</a><a href="#contacto">Pedir una demo</a><a href="https://app.libreta.dev/login">Login</a>
+        <a href="#como">Cómo funciona</a><a href="#tablero">Tablero</a><a href="#suma">Cuánto suma</a><a href="#precios">Precios</a><a href="#preguntas">Preguntas</a><a href="#contacto">Pedir una demo</a><a href="https://app.libreta.dev/login">Login</a>
       </nav>
     </div>
     <div class="pie-baja">
@@ -2171,7 +2171,7 @@ input[type=range]{width:100%;accent-color:var(--vereda);height:24px}
       barra.hidden = true;
       h += '<div class="enviado"><span class="ok" style="color:#fff">' + IC.check + '</span><b>Pedido ' + e.n + ' enviado</b><p>' + e.lineas + (e.lineas === 1 ? ' producto' : ' productos') + ' · ' + pesos(e.tot) + ' sin IVA · entrega el jueves</p>';
       h += '<div class="destinos"><div><i>' + IC.panel + '</i><span><b>Panel de Laura</b><small>Ya lo ve en Pedidos</small></span></div><div><i>' + IC.sistema + '</i><span><b>Doria</b><small>Entra como pedido pendiente de facturar</small></span></div><div><i>' + IC.plata + '</i><span><b>Tu comisión</b><small>+' + pesos(e.tot * MARIA.com) + ' este mes' + (e.visita ? ' · visita marcada como hecha' : '') + '</small></span></div></div></div>';
-      h += '<div style="display:flex;flex-direction:column;gap:6px;margin-top:6px"><button type="button" class="app-btn" data-accion="ir-hoy">Volver a Hoy</button><button type="button" class="app-btn sec" data-accion="ver-panel">Ver el pedido en el panel</button></div>';
+      h += '<div style="display:flex;flex-direction:column;gap:6px;margin-top:6px"><button type="button" class="app-btn" data-accion="ir-hoy">Volver a Hoy</button><button type="button" class="app-btn sec" data-accion="ver-panel">Ver el pedido en el tablero</button></div>';
     }
     $('p-cuerpo').innerHTML = h;
     if (P.paso === 'productos'){ pintarListaProd(); $('p-buscar').addEventListener('input', function(){ S.ped.q = this.value; pintarListaProd(); }); }
@@ -2677,7 +2677,7 @@ input[type=range]{width:100%;accent-color:var(--vereda);height:24px}
       case 'ir-hoy': S.ped = null; ir('hoy'); break;
       case 'ver-panel':
         alTablero({tipo: 'libreta-ir', vista: 'ped'});
-        document.getElementById('panel').scrollIntoView({behavior: 'smooth'});
+        document.getElementById('tablero').scrollIntoView({behavior: 'smooth'});
         break;
     }
   });
@@ -3198,7 +3198,7 @@ input[type=range]{width:100%;accent-color:var(--vereda);height:24px}
   });
   // El mismo cálculo que la landing de Rondín: el tablero se dibuja en 1440 × 860 y se achica para que
   // entre entero, hasta 0,7 con el texto al costado y 0,62 debajo. En el celular va a todo el ancho y 820 px de alto.
-  var vc = $('ventana-cuerpo'), ifr = $('tablero-demo'), ventana = $('ventana'), secTablero = $('panel');
+  var vc = $('ventana-cuerpo'), ifr = $('tablero-demo'), ventana = $('ventana'), secTablero = $('tablero');
   function escalarTablero(){
     if (!vc || !ifr || !ventana || !secTablero) return;
     var wrap = secTablero.querySelector('.wrap'), cs = getComputedStyle(secTablero), cw = getComputedStyle(wrap);
@@ -3215,6 +3215,8 @@ input[type=range]{width:100%;accent-color:var(--vereda);height:24px}
   }
   escalarTablero();
   window.addEventListener('resize', escalarTablero);
+  // la sección se llamaba #panel: los links viejos llevan al tablero
+  if (location.hash === '#panel'){ try { history.replaceState(null, '', '#tablero'); } catch (x) {} setTimeout(function(){ secTablero.scrollIntoView(); }, 0); }
 
   /* ================= Asesor del vendedor =================
      Igual que el botón flotante de la app real (AgentConsultorWidget): responde
