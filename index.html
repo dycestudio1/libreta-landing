@@ -383,7 +383,7 @@ input[type=range]{width:100%;accent-color:var(--vereda);height:24px}
 .plan li{display:grid;grid-template-columns:18px minmax(0,1fr);gap:10px}
 .plan li::before{content:"";width:9px;height:9px;margin:7px 0 0 3px;border-radius:50%;border:2.5px solid var(--vereda)}
 .plan .btn{margin-top:auto}
-.instalacion{margin-top:18px;background:#fff;border:1px solid var(--linea);border-radius:16px;padding:18px 20px;display:grid;grid-template-columns:minmax(0,.9fr) repeat(3,minmax(0,1fr));gap:14px 24px;align-items:center}
+.instalacion{margin-top:18px;background:#fff;border:1px solid var(--linea);border-radius:16px;padding:18px 20px;display:grid;grid-template-columns:minmax(0,1.1fr) repeat(2,minmax(0,1fr));gap:14px 24px;align-items:center}
 @media (max-width:900px){.instalacion{grid-template-columns:minmax(0,1fr)}}
 .instalacion > div:first-child b{display:block;font-size:15.5px}
 .instalacion > div:first-child span{font-size:13.5px;color:var(--tinta-3)}
@@ -391,6 +391,7 @@ input[type=range]{width:100%;accent-color:var(--vereda);height:24px}
 @media (max-width:900px){.inst{border-left:0;border-top:1px solid var(--linea-2);padding:12px 0 0}}
 .inst small{font-size:13px;color:var(--tinta-2)}
 .inst b{font-size:1.25rem;letter-spacing:-.02em}
+.inst em{font-style:normal;font-size:12.5px;color:var(--tinta-3)}
 
 /* preguntas */
 .faq-grid{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:clamp(24px,4vw,56px);align-items:start}
@@ -1329,10 +1330,9 @@ input[type=range]{width:100%;accent-color:var(--vereda);height:24px}
       </div>
     </div>
     <div class="instalacion">
-      <div><b>Instalación, una sola vez</b><span>La hacemos nosotros, sin tocar tu sistema.</span></div>
-      <div class="inst"><small>Con planilla</small><b>USD 690</b></div>
-      <div class="inst"><small>Integración completa con tu sistema</small><b>USD 1.950</b></div>
-      <div class="inst"><small>A medida (varias empresas, integraciones)</small><b>desde USD 2.500</b></div>
+      <div><b>Instalación</b><span>Es un pago único, no se suma a la mensualidad. La hacemos nosotros, sin tocar tu sistema.</span></div>
+      <div class="inst"><small>Integración completa con tu sistema</small><b>USD 1.950</b><em>Pago único</em></div>
+      <div class="inst"><small>A medida (varias empresas, integraciones)</small><b>desde USD 2.500</b><em>Pago único</em></div>
     </div>
   </div>
 </section>
