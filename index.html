@@ -910,16 +910,17 @@ input[type=range]{width:100%;accent-color:var(--vereda);height:24px}
 
 /* ============ asistente de ventas (chat) ============ */
 .asv{position:fixed;right:20px;bottom:20px;z-index:60;display:flex;flex-direction:column;align-items:flex-end;gap:10px;font-family:var(--f)}
-.asv-btn{display:inline-flex;align-items:center;gap:9px;height:52px;padding:0 18px 0 14px;border:0;border-radius:999px;background:var(--vereda);color:#fff;font:700 15px var(--f);cursor:pointer;box-shadow:0 16px 34px -14px rgba(11,110,124,.85),0 2px 6px rgba(16,34,42,.18)}
+.asv-btn{display:flex;align-items:center;justify-content:center;width:60px;height:60px;padding:0;border:0;border-radius:50%;background:var(--vereda);color:#fff;cursor:pointer;box-shadow:0 16px 34px -14px rgba(11,110,124,.85),0 2px 6px rgba(16,34,42,.18)}
 .asv-btn:hover{background:var(--vereda-600)}
-.asv-btn svg{width:30px;height:30px;flex:none;margin:0 -3px}
+.asv-btn svg{width:40px;height:40px;flex:none}
+.asv-btn:focus-visible{outline:3px solid var(--vereda-clara);outline-offset:3px}
 .asv.abierto .asv-btn{display:none}
-.asv-bienv{position:relative;width:min(300px,calc(100vw - 40px));background:#fff;border:1px solid var(--linea);border-radius:16px 16px 4px 16px;box-shadow:var(--sombra-3);padding:14px 16px;font-size:14.5px;line-height:1.45;color:var(--tinta-2);animation:entra .35s ease}
-.asv-bienv b{color:var(--tinta)}
-.asv-bienv-acc{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
-.asv-bienv-acc button{height:34px;padding:0 13px;border-radius:9px;border:1px solid var(--linea);background:#fff;font:700 13px var(--f);color:var(--tinta);cursor:pointer}
-.asv-bienv-acc button.p{background:var(--vereda);border-color:var(--vereda);color:#fff}
-.asv-bienv-x{position:absolute;top:6px;right:6px;width:26px;height:26px;border:0;border-radius:8px;background:none;color:var(--tinta-3);font-size:18px;line-height:1;cursor:pointer}
+.asv-bienv{position:relative;max-width:280px;background:#fff;border:1px solid var(--linea);border-radius:14px;box-shadow:var(--sombra-3);padding:12px 34px 12px 14px;font-size:14px;line-height:1.45;color:var(--tinta-2);cursor:pointer;animation:globo .35s ease-out both}
+@keyframes globo{from{opacity:0;transform:translateY(8px)}}
+.asv-bienv::after{content:"";position:absolute;right:24px;bottom:-7px;width:12px;height:12px;background:#fff;border-right:1px solid var(--linea);border-bottom:1px solid var(--linea);transform:rotate(45deg)}
+.asv-bienv b{display:block;margin-bottom:2px;color:var(--tinta)}
+.asv-bienv-x{position:absolute;top:6px;right:6px;width:24px;height:24px;border:0;border-radius:7px;background:none;color:var(--tinta-3);font-size:18px;line-height:1;cursor:pointer}
+@media (prefers-reduced-motion:reduce){.asv-bienv{animation:none}}
 .asv-panel{width:min(400px,calc(100vw - 40px));height:min(620px,calc(100vh - 110px));height:min(620px,calc(100dvh - 110px));background:#fff;border:1px solid var(--linea);border-radius:18px;box-shadow:var(--sombra-3);display:flex;flex-direction:column;overflow:hidden;animation:entra .25s ease}
 .asv-cab{flex:none;display:flex;align-items:center;gap:11px;padding:13px 12px 13px 16px;border-bottom:1px solid var(--linea);background:var(--papel)}
 .asv-av{flex:none;width:38px;height:38px;display:block}
@@ -932,9 +933,12 @@ input[type=range]{width:100%;accent-color:var(--vereda);height:24px}
 .asv-m{max-width:88%;padding:10px 13px;border-radius:14px;font-size:14.5px;line-height:1.5;white-space:pre-line;overflow-wrap:anywhere}
 .asv-m.ia{align-self:flex-start;background:var(--papel);color:var(--tinta);border-bottom-left-radius:4px}
 .asv-m.yo{align-self:flex-end;background:var(--vereda);color:#fff;border-bottom-right-radius:4px}
-.asv-m .asv-pausa{display:inline-flex;gap:4px;padding:3px 0}
-.asv-m .asv-pausa i{width:6px;height:6px;border-radius:50%;background:var(--tinta-3);animation:late 1s infinite}
-.asv-m .asv-pausa i:nth-child(2){animation-delay:.15s}.asv-m .asv-pausa i:nth-child(3){animation-delay:.3s}
+.asv-m.tipeando{display:flex;gap:5px;align-items:center;padding:13px 14px}
+.asv-m.tipeando i{width:7px;height:7px;border-radius:50%;background:var(--tinta-3);opacity:.35;animation:tipea 1.2s ease-in-out infinite}
+.asv-m.tipeando i:nth-child(2){animation-delay:.18s}
+.asv-m.tipeando i:nth-child(3){animation-delay:.36s}
+@keyframes tipea{30%{opacity:1;transform:translateY(-3px)}60%{opacity:.35;transform:none}}
+@media (prefers-reduced-motion:reduce){.asv-m.tipeando i{animation:none;opacity:.6}}
 .asv-acc{align-self:flex-start;display:flex;gap:8px;flex-wrap:wrap;margin-top:-2px}
 .asv-acc button{height:38px;padding:0 15px;border-radius:10px;border:0;background:var(--vereda);color:#fff;font:700 13.5px var(--f);cursor:pointer}
 .asv-acc button.s{background:#fff;color:var(--tinta);border:1px solid var(--linea)}
@@ -951,9 +955,8 @@ input[type=range]{width:100%;accent-color:var(--vereda);height:24px}
 @media (max-width:760px){
   .asv{right:14px;bottom:14px}
   body.fijo-vis .asv{bottom:84px}
-  .asv-btn{width:56px;height:56px;padding:0;justify-content:center}
-  .asv-btn svg{width:36px;height:36px;margin:0}
-  .asv-btn span{display:none}
+  .asv-btn{width:56px;height:56px}
+  .asv-btn svg{width:38px;height:38px}
   .asv.abierto{inset:0;right:0;bottom:0;z-index:90}
   body.fijo-vis .asv.abierto{bottom:0}
   .asv-panel{width:100vw;height:100vh;height:100dvh;border-radius:0;border:0}
@@ -1491,11 +1494,7 @@ input[type=range]{width:100%;accent-color:var(--vereda);height:24px}
 </dialog>
 
 <div class="asv" id="asv">
-  <div class="asv-bienv" id="asv-bienv" hidden>
-    <button type="button" class="asv-bienv-x" id="asv-bienv-x" aria-label="Cerrar">&times;</button>
-    <p><b>Hola.</b> Si tenés dudas sobre Libreta, preguntame: cómo funciona, si anda con tu sistema o cuánto sale para tu equipo.</p>
-    <div class="asv-bienv-acc"><button type="button" class="p" id="asv-bienv-ir">Preguntar</button><button type="button" id="asv-bienv-probar">Probar la app</button></div>
-  </div>
+  <div class="asv-bienv" id="asv-bienv" hidden><span><b>¿Dudas? Preguntame.</b> Te ayudo con precios, la conexión con tu sistema y cómo funciona Libreta.</span><button type="button" class="asv-bienv-x" id="asv-bienv-x" aria-label="Cerrar">&times;</button></div>
   <section class="asv-panel" id="asv-panel" role="dialog" aria-label="Asistente de Libreta" hidden>
     <div class="asv-cab"><span class="asv-av"><svg viewBox="0 0 128 128" aria-hidden="true"><rect width="128" height="128" rx="28" fill="#0B6E7C"/><g transform="translate(64 64) scale(0.72) translate(-64 -64)"><g fill="none" stroke="#FFFFFF" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"><rect x="30" y="12" width="68" height="104" rx="14"/><path d="M78 4V124"/></g><circle cx="54" cy="38" r="10" fill="#FF6A3D"/></g></svg></span><div><b>Asistente de Libreta</b><small>Responde al momento y te ayuda a agendar la demo</small></div><button type="button" class="asv-x" id="asv-x" aria-label="Cerrar el chat">&times;</button></div>
     <div class="asv-msgs" id="asv-msgs" aria-live="polite"></div>
@@ -1503,7 +1502,7 @@ input[type=range]{width:100%;accent-color:var(--vereda);height:24px}
     <form class="asv-in" id="asv-form"><input id="asv-txt" maxlength="600" autocomplete="off" placeholder="Escribí tu pregunta" aria-label="Tu pregunta"><button type="submit" id="asv-enviar" aria-label="Enviar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 3 10 14M21 3l-7 18-4-7-7-4z"/></svg></button></form>
     <p class="asv-pie">Respuestas automáticas. Las condiciones se confirman en la demo.</p>
   </section>
-  <button type="button" class="asv-btn" id="asv-btn" aria-controls="asv-panel" aria-expanded="false"><svg viewBox="0 0 128 128" aria-hidden="true"><g fill="none" stroke="#FFFFFF" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"><rect x="30" y="12" width="68" height="104" rx="14"/><path d="M78 4V124"/></g><circle cx="54" cy="38" r="9" fill="#FF6A3D"/></svg><span>¿Dudas? Preguntame</span></button>
+  <button type="button" class="asv-btn" id="asv-btn" aria-controls="asv-panel" aria-expanded="false" aria-label="Abrir el chat de Libreta" title="¿Dudas? Preguntame"><svg viewBox="0 0 128 128" aria-hidden="true"><g fill="none" stroke="#FFFFFF" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"><rect x="30" y="12" width="68" height="104" rx="14"/><path d="M78 4V124"/></g><circle cx="54" cy="38" r="9" fill="#FF6A3D"/></svg></button>
 </div>
 
 <div class="fijo-movil" id="fijo-movil"><a class="btn btn-p btn-bloque" href="#contacto" data-evento="cta_fijo_movil">Pedir una demo</a></div>
@@ -3023,7 +3022,9 @@ input[type=range]{width:100%;accent-color:var(--vereda);height:24px}
   /* ================= Asistente de ventas ================= */
   // Responde con Claude desde el Sistema D&C (CONFIG.chat). Si el servicio no contesta, usa respuestas
   // armadas y ofrece la demo. Las marcas [[AGENDA]] y [[PROBAR]] del final de un mensaje se vuelven botones.
-  var ASV = {abierto: false, ocupado: false, hist: [], vendedores: null};
+  // Ritmo de persona, como el chat de Rondín: lee el mensaje, aparece «escribiendo» y la respuesta sale
+  // entera, con una demora según su largo. Las preguntas se contestan de a una y en orden.
+  var ASV = {abierto: false, ocupado: false, saludando: false, trasSaludo: null, hist: [], cola: [], vendedores: null};
   var asv = $('asv'), asvPanel = $('asv-panel'), asvMsgs = $('asv-msgs'), asvTxt = $('asv-txt'), asvBienv = $('asv-bienv');
   var ASV_SUG = ['¿Cuánto sale para mi equipo?', '¿Funciona con mi sistema?', '¿Cómo sabe qué ofrecerle a cada cliente?', 'Quiero agendar una demo'];
   var ASV_HOLA = 'Hola, soy el asistente de Libreta. Preguntame lo que quieras: cómo funciona, si anda con tu sistema o cuánto sale para tu equipo.';
@@ -3033,6 +3034,8 @@ input[type=range]{width:100%;accent-color:var(--vereda);height:24px}
   function marcaDe(t){ var m = /\[\[(AGENDA|PROBAR)\]\]/.exec(t); return m ? m[1] : null; }
   function bajar(){ asvMsgs.scrollTop = asvMsgs.scrollHeight; }
   function burbuja(cls, txt){ var d = document.createElement('div'); d.className = 'asv-m ' + cls; d.textContent = txt; asvMsgs.appendChild(d); bajar(); return d; }
+  function puntos(){ var d = document.createElement('div'); d.className = 'asv-m ia tipeando'; d.setAttribute('aria-label', 'Escribiendo'); d.innerHTML = '<i></i><i></i><i></i>'; asvMsgs.appendChild(d); bajar(); return d; }
+  function demora(t){ return Math.min(4500, Math.max(1400, 700 + sinMarcas(t).length * 18)); }
   function botones(marca){
     if (!marca) return;
     var box = document.createElement('div'); box.className = 'asv-acc';
@@ -3051,10 +3054,22 @@ input[type=range]{width:100%;accent-color:var(--vereda);height:24px}
   }
   try { var h0 = JSON.parse(leer('libreta-chat') || '[]'); if (Array.isArray(h0)) ASV.hist = h0.filter(function(m){ return m && (m.role === 'user' || m.role === 'assistant') && typeof m.content === 'string'; }).slice(-20); } catch (x) {}
   function cerrarBienv(guardarla){ asvBienv.hidden = true; if (guardarla) guardar('libreta-chat-bienvenida', '1'); }
+  function saludar(){
+    // El saludo también llega con «escribiendo», como si lo tipeara una persona.
+    ASV.saludando = true;
+    var t = null, aparece = setTimeout(function(){ t = puntos(); }, 200);
+    setTimeout(function(){
+      clearTimeout(aparece); if (t) t.remove();
+      burbuja('ia', ASV_HOLA);
+      ASV.saludando = false;
+      if (ASV.trasSaludo){ var q = ASV.trasSaludo; ASV.trasSaludo = null; preguntar(q); }
+      else sugerencias(ASV_SUG);
+    }, 1100);
+  }
   function abrirAsv(){
     ASV.abierto = true; asv.classList.add('abierto'); asvPanel.hidden = false; $('asv-btn').setAttribute('aria-expanded', 'true');
     cerrarBienv(true);
-    if (!asvMsgs.childNodes.length) pintarHistoria();
+    if (!asvMsgs.childNodes.length){ if (ASV.hist.length) pintarHistoria(); else saludar(); }
     if (window.innerWidth > 760) setTimeout(function(){ asvTxt.focus({preventScroll: true}); }, 60);
     bajar();
     evento('chat_abrir');
@@ -3084,42 +3099,49 @@ input[type=range]{width:100%;accent-color:var(--vereda);height:24px}
     if (/demo|agend|reuni|llamad|contrat|empezar|arranc/.test(q)) return 'Perfecto. Completás nombre, empresa y mail, y elegís día y hora: son 30 minutos, en tu empresa o por videollamada, y te mostramos Libreta con datos tuyos.\n[[AGENDA]]';
     return 'Ahora no puedo responderte con detalle. Lo vemos en una demo de 30 minutos, o mientras tanto probá la app en el celular de arriba.\n[[AGENDA]]';
   }
-  function escribirEn(div, txt){ div.textContent = sinMarcas(txt); bajar(); }
-  function terminar(div, txt){
-    escribirEn(div, txt);
-    ASV.hist.push({role: 'assistant', content: txt.slice(0, 2000)}); ASV.hist = ASV.hist.slice(-20);
-    guardar('libreta-chat', JSON.stringify(ASV.hist));
-    botones(marcaDe(txt));
-    ASV.ocupado = false; $('asv-enviar').disabled = false;
-  }
-  function preguntar(texto){
-    texto = String(texto || '').trim().slice(0, 600);
-    if (!texto || ASV.ocupado) return;
-    var nm = /(\d{1,4})\s*(vendedor|preventist|persona|tipo)/i.exec(texto) || (/^\s*(\d{1,4})\s*$/.exec(texto));
-    if (nm) ASV.vendedores = +nm[1];
-    burbuja('yo', texto); sugerencias([]); asvTxt.value = '';
-    ASV.hist.push({role: 'user', content: texto});
-    ASV.ocupado = true; $('asv-enviar').disabled = true;
-    var div = burbuja('ia', ''); div.innerHTML = '<span class="asv-pausa"><i></i><i></i><i></i></span>';
-    evento('chat_pregunta');
-    var local = function(){ terminar(div, respuestaLocal(texto)); };
-    if (!CONFIG.chat || !window.fetch || !window.TextDecoder){ setTimeout(local, 500); return; }
+  // Pide la respuesta completa (el servicio la manda en partes y acá se junta).
+  function obtener(texto){
+    if (!CONFIG.chat || !window.fetch || !window.TextDecoder || location.protocol === 'file:') return Promise.resolve(respuestaLocal(texto));
     var acum = '', ctrl = window.AbortController ? new AbortController() : null, reloj = setTimeout(function(){ if (ctrl) ctrl.abort(); }, 45000);
-    fetch(CONFIG.chat, {method: 'POST', headers: {'Content-Type': 'application/json'}, credentials: 'omit', signal: ctrl ? ctrl.signal : undefined, body: JSON.stringify({messages: ASV.hist})})
+    return fetch(CONFIG.chat, {method: 'POST', headers: {'Content-Type': 'application/json'}, credentials: 'omit', signal: ctrl ? ctrl.signal : undefined, body: JSON.stringify({messages: ASV.hist})})
       .then(function(res){
         if (!res.ok || !res.body) throw new Error('chat ' + res.status);
         var lector = res.body.getReader(), dec = new TextDecoder();
-        function leerTrozo(){
-          return lector.read().then(function(r){
-            if (r.done){ clearTimeout(reloj); if (!acum.trim()) return local(); terminar(div, acum); return; }
-            acum += dec.decode(r.value, {stream: true});
-            escribirEn(div, acum);
-            return leerTrozo();
-          });
-        }
+        function leerTrozo(){ return lector.read().then(function(r){ if (r.done) return; acum += dec.decode(r.value, {stream: true}); return leerTrozo(); }); }
         return leerTrozo();
       })
-      .catch(function(){ clearTimeout(reloj); if (acum.trim()) terminar(div, acum); else local(); });
+      .then(function(){ return acum.trim() ? acum : respuestaLocal(texto); }, function(){ return acum.trim() ? acum : respuestaLocal(texto); })
+      .then(function(t){ clearTimeout(reloj); return t; });
+  }
+  function responder(txt){
+    burbuja('ia', sinMarcas(txt));
+    ASV.hist.push({role: 'assistant', content: txt.slice(0, 2000)}); ASV.hist = ASV.hist.slice(-20);
+    guardar('libreta-chat', JSON.stringify(ASV.hist));
+    botones(marcaDe(txt));
+  }
+  function preguntar(texto){
+    texto = String(texto || '').trim().slice(0, 600);
+    if (!texto) return;
+    asvTxt.value = '';
+    if (ASV.saludando){ ASV.trasSaludo = texto; return; }
+    var nm = /(\d{1,4})\s*(vendedor|preventist|persona|tipo)/i.exec(texto) || (/^\s*(\d{1,4})\s*$/.exec(texto));
+    if (nm) ASV.vendedores = +nm[1];
+    burbuja('yo', texto); sugerencias([]);
+    evento('chat_pregunta');
+    ASV.cola.push({texto: texto, desde: Date.now()});
+    if (!ASV.ocupado) siguiente();
+  }
+  function siguiente(){
+    var p = ASV.cola.shift();
+    if (!p){ ASV.ocupado = false; return; }
+    ASV.ocupado = true;
+    ASV.hist.push({role: 'user', content: p.texto});
+    // lee el mensaje medio segundo, después aparece «escribiendo» hasta que sale la respuesta
+    var t = null, aparece = setTimeout(function(){ t = puntos(); }, Math.max(0, 500 - (Date.now() - p.desde)));
+    obtener(p.texto).then(function(txt){
+      var falta = Math.max(0, 500 + demora(txt) - (Date.now() - p.desde));
+      setTimeout(function(){ clearTimeout(aparece); if (t) t.remove(); responder(txt); siguiente(); }, falta);
+    });
   }
   $('asv-btn').addEventListener('click', abrirAsv);
   $('asv-x').addEventListener('click', cerrarAsv);
@@ -3129,18 +3151,11 @@ input[type=range]{width:100%;accent-color:var(--vereda);height:24px}
     var b = e.target.closest('[data-asv]'); if (!b) return;
     if (b.getAttribute('data-asv') === 'agenda') irAgenda(); else irDemo();
   });
-  $('asv-bienv-ir').addEventListener('click', abrirAsv);
-  $('asv-bienv-probar').addEventListener('click', function(){ cerrarBienv(true); irDemo(); });
-  $('asv-bienv-x').addEventListener('click', function(){ cerrarBienv(true); evento('chat_bienvenida_cerrar'); });
+  asvBienv.addEventListener('click', function(e){ if (!e.target.closest('#asv-bienv-x')) abrirAsv(); });
+  $('asv-bienv-x').addEventListener('click', function(e){ e.stopPropagation(); cerrarBienv(true); evento('chat_bienvenida_cerrar'); });
   document.addEventListener('keydown', function(e){ if (e.key === 'Escape' && ASV.abierto) cerrarAsv(); });
-  // La bienvenida aparece cuando la persona baja de la portada, para no tapar el celular de la demo.
-  // Si la cierran o abren el chat, no vuelve en la visita.
-  function revisarBienv(){
-    if (ASV.abierto || leer('libreta-chat-bienvenida') || !asvBienv.hidden) return;
-    var top = $('top'); if (!top) return;
-    if (top.getBoundingClientRect().bottom < window.innerHeight * .35){ asvBienv.hidden = false; window.removeEventListener('scroll', revisarBienv); }
-  }
-  window.addEventListener('scroll', revisarBienv, {passive: true});
+  // Apenas entra la persona, el chat la saluda (en cada visita, hasta que lo cierre o lo abra).
+  setTimeout(function(){ if (!ASV.abierto && !leer('libreta-chat-bienvenida')) asvBienv.hidden = false; }, 1200);
 
   /* ================= Botón fijo en el celular ================= */
   var fijo = $('fijo-movil'), contacto = $('contacto');
