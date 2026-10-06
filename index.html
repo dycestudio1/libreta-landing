@@ -251,7 +251,10 @@ p{margin:0}
 .ventana-barra span{margin-left:12px;font-family:var(--mono);font-size:11.5px;color:var(--tinta-3);background:#fff;border:1px solid var(--linea);border-radius:7px;padding:3px 12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
 .ventana-cuerpo{position:relative;overflow:hidden;height:600px;background:var(--papel)}
 .ventana-cuerpo iframe{position:absolute;left:0;top:0;border:0;width:1440px;height:860px;transform-origin:0 0;background:var(--papel)}
-@media (max-width:760px){.ventana-cuerpo iframe{position:static;width:100%;height:100%;transform:none}}
+.ventana-foto{display:none;width:100%;height:auto}
+.solo-celu{display:none}
+/* en el celular, una imagen del tablero en lugar del tablero interactivo (como en Rondín) */
+@media (max-width:800px){.ventana-cuerpo{display:none}.ventana-foto{display:block}.solo-compu{display:none}.solo-celu{display:inline}[data-accion="ver-panel"]{display:none}}
 .ventana-nota{margin-top:12px;font-size:13px;color:var(--tinta-3)}
 /* tablero: igual que en la landing de Rondín. Se dibuja en 1440 × 860 y escalarTablero lo achica para que entre entero */
 .ventana{margin-inline:auto}
@@ -1335,13 +1338,14 @@ input[type=range]{width:100%;accent-color:var(--vereda);height:24px}
     <div class="cabeza tab-cab">
       <span class="etiqueta">El tablero del supervisor</span>
       <h2>Toda la calle, en una pantalla.</h2>
-      <p class="sub">Cinco pantallas: el día en la calle (quién salió, cómo van las rutas, qué pedidos entraron y qué espera tu respuesta), cada vendedor contra su objetivo, lo que suma Libreta en venta extra, los clientes que dejaron de comprar o deben, y la bandeja de pedidos para pasar a tu sistema. Probalo: cargá un pedido o avisá un desvío en el celular de arriba y mirá cómo llega. Si aprobás el desvío acá, a María le llega el aviso.</p>
+      <p class="sub">Cinco pantallas: el día en la calle (quién salió, cómo van las rutas, qué pedidos entraron y qué espera tu respuesta), cada vendedor contra su objetivo, lo que suma Libreta en venta extra, los clientes que dejaron de comprar o deben, y la bandeja de pedidos para pasar a tu sistema. <span class="solo-compu">Probalo: cargá un pedido o avisá un desvío en el celular de arriba y mirá cómo llega. Si aprobás el desvío acá, a María le llega el aviso.</span><span class="solo-celu">Desde la compu lo podés probar.</span></p>
     </div>
     <div class="ventana" id="ventana">
       <div class="ventana-barra" aria-hidden="true"><i></i><i></i><i></i><span>app.libreta.dev · Distribuidora Central</span></div>
       <div class="ventana-cuerpo" id="ventana-cuerpo">
-        <iframe id="tablero-demo" src="tablero.html" title="Tablero del supervisor de Libreta, con datos de ejemplo" loading="lazy"></iframe>
+        <iframe id="tablero-demo" data-src="tablero.html" title="Tablero del supervisor de Libreta, con datos de ejemplo" loading="lazy"></iframe>
       </div>
+      <img class="ventana-foto" src="tablero-foto.webp" width="1200" height="717" alt="Tablero del supervisor de Libreta: quién está en la calle, cómo van las rutas, los pedidos de hoy y lo que espera respuesta" loading="lazy" decoding="async">
     </div>
     <p class="ventana-nota">Datos de ejemplo de una distribuidora de consumo masivo con tres vendedores. El tablero se usa en la compu; el vendedor usa la app en el celular.</p>
   </div>
@@ -3249,12 +3253,18 @@ input[type=range]{width:100%;accent-color:var(--vereda);height:24px}
   // El mismo cálculo que la landing de Rondín: el tablero se dibuja en 1440 × 860 y se achica para que
   // entre entero, hasta 0,7 con el texto al costado y 0,62 debajo. En el celular va a todo el ancho y 820 px de alto.
   var vc = $('ventana-cuerpo'), ifr = $('tablero-demo'), ventana = $('ventana'), secTablero = $('tablero');
+  // El tablero interactivo se carga solo en pantallas grandes; en el celular se ve la imagen.
+  function cargarTablero(){
+    if (ifr.getAttribute('src') || ifr.getAttribute('srcdoc')) return;
+    if (ifr.dataset.srcdoc) ifr.setAttribute('srcdoc', ifr.dataset.srcdoc); else ifr.setAttribute('src', ifr.dataset.src);
+  }
   function escalarTablero(){
     if (!vc || !ifr || !ventana || !secTablero) return;
     var wrap = secTablero.querySelector('.wrap'), cs = getComputedStyle(secTablero), cw = getComputedStyle(wrap);
     var dosColumnas = cw.display === 'grid';
     var w = dosColumnas ? parseFloat(cw.gridTemplateColumns.split(' ')[1]) : wrap.clientWidth - parseFloat(cw.paddingLeft) - parseFloat(cw.paddingRight);
-    if (w < 740){ ventana.style.maxWidth = ''; vc.style.height = '820px'; ifr.style.transform = ''; return; }
+    if (window.innerWidth <= 800){ ventana.style.maxWidth = ''; return; }
+    cargarTablero();
     var pads = parseFloat(cs.paddingTop) + parseFloat(cs.paddingBottom);
     var resto = dosColumnas ? ventana.querySelector('.ventana-barra').offsetHeight : wrap.offsetHeight - vc.offsetHeight;
     var alto = window.innerHeight - 65 - pads - resto - 8;
