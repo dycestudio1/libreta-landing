@@ -1079,7 +1079,7 @@ mark.of-tag{font-size:8.5px;font-weight:700;text-transform:uppercase;letter-spac
                 <div class="j-cap" id="j-cap" hidden><span id="j-cap-b" style="width:0%"></span></div>
               </div>
               <div class="mini2">
-                <div><small>Comisión del mes</small><b id="h-comision">$U 38.450</b><em>5 % de lo vendido</em></div>
+                <div><small>Comisión del mes</small><b id="h-comision">$U 38.450</b><em id="h-com-p">5 % de lo vendido</em></div>
                 <button type="button" data-ir="progreso" title="Ver tu progreso" style="cursor:pointer"><small>Objetivo del mes</small><b id="h-obj">81 %</b><div class="cap" style="width:100%"><span id="h-obj-b" style="width:81%"></span></div><em id="h-obj-t">$U 769.000 de 950.000</em></button>
               </div>
               <div class="bloque-t">Ruta de hoy<button type="button" data-ir="ruta">Ver ruta</button></div>
@@ -1778,6 +1778,7 @@ mark.of-tag{font-size:8.5px;font-weight:700;text-transform:uppercase;letter-spac
   function presuNuevo(){ S.presu = {cli: null, libre: '', lineas: {}, cat: 'Todo', q: '', dto: 0, paso: 'armar', n: S.nPresu++}; }
   presuNuevo();
   var MARIA = VEND[0];
+  function pctCom(){ return String(Math.round(MARIA.com * 1000) / 10).replace('.', ',') + ' %'; }
 
   var pantalla = $('pantalla'), demoEl = $('demo');
   function hora(){ var h = Math.floor(S.min / 60), m = S.min % 60; return (h < 10 ? '0' : '') + h + ':' + (m < 10 ? '0' : '') + m; }
@@ -1972,6 +1973,7 @@ mark.of-tag{font-size:8.5px;font-weight:700;text-transform:uppercase;letter-spac
     }
     var v = vendidoMaria(), pct = Math.round(v / MARIA.obj.set * 100);
     $('h-comision').textContent = pesos(v * MARIA.com);
+    $('h-com-p').textContent = pctCom() + ' de lo vendido';
     $('h-obj').textContent = pct + ' %';
     $('h-obj-b').style.width = Math.min(pct, 100) + '%';
     $('h-obj-t').textContent = pesos(v) + ' de ' + fmt.format(MARIA.obj.set);
@@ -2502,7 +2504,7 @@ mark.of-tag{font-size:8.5px;font-weight:700;text-transform:uppercase;letter-spac
     var ofr = MARIA.ofr + OPS.filter(function(o){ return o.est === 'ofrecida' || o.est === 'no' || o.est === 'vendida'; }).length;
     var vendidas = MARIA.conc + OPS.filter(function(o){ return o.est === 'vendida'; }).length;
     var h = '<div class="prog"><small>Ventas de setiembre, sin IVA</small><div class="grande"><b>' + pesos(v) + '</b><span>' + pct + ' %</span></div><div class="j-cap"><span style="width:' + Math.min(pct, 100) + '%"></span></div><small>Objetivo ' + pesos(ob) + (falta ? ' · te faltan ' + pesos(falta) : ' · objetivo cumplido') + '</small></div>';
-    h += '<div class="mini2"><div><small>Tu comisión · 5 %</small><b>' + pesos(v * MARIA.com) + '</b><em>sobre lo vendido sin IVA</em></div><div><small>Días hábiles</small><b>' + dias + '</b><em>hoy y mañana</em></div>';
+    h += '<div class="mini2"><div><small>Tu comisión · ' + pctCom() + '</small><b>' + pesos(v * MARIA.com) + '</b><em>sobre lo vendido sin IVA</em></div><div><small>Días hábiles</small><b>' + dias + '</b><em>hoy y mañana</em></div>';
     h += '<div><small>Necesitás por día</small><b>' + (falta ? pesos(falta / dias) : '—') + '</b><em>' + (falta ? 'para llegar al objetivo' : 'ya llegaste') + '</em></div><div><small>Visitas del mes</small><b>' + visH + ' de ' + visT + '</b><em>' + Math.round(visH / visT * 100) + ' % hechas</em></div></div>';
     var sem = SEMANAS.map(function(x, i){ return x[1] + (i === SEMANAS.length - 1 ? S.vendidoDemo : 0); });
     var ritmo = ob / 30 * 7, max = Math.max(Math.max.apply(null, sem), ritmo) * 1.05, alto = 66;
@@ -3287,6 +3289,15 @@ mark.of-tag{font-size:8.5px;font-weight:700;text-transform:uppercase;letter-spac
       OFERTAS_APP = OFERTAS_APP.filter(function(x){ return x.id !== +d.id; });
       if (S.scr === 'hoy') pintarOfertasHoy();
       if (S.scr === 'precios') pintarPrecios();
+    } else if (d.tipo === 'libreta-objetivo' && d.ven === 'mf'){
+      var cambio = '';
+      if (d.mes === '2026-09' && +d.obj > 0){ MARIA.obj.set = Math.round(+d.obj); cambio = 'Tu objetivo de setiembre ahora es ' + pesos(MARIA.obj.set) + '.'; }
+      if (typeof d.com === 'number' && d.com >= 0 && d.com <= .2){ MARIA.com = d.com; cambio = 'Tu comisión ahora es del ' + pctCom() + ' de lo vendido.'; }
+      if (cambio){
+        if (S.scr === 'hoy') pintarHoy();
+        if (S.scr === 'progreso') pintarProgreso();
+        notificar('Laura', cambio);
+      }
     } else if (d.tipo === 'libreta-tarea' && d.ven === 'mf'){
       var txt = String(d.txt || 'Nueva tarea').slice(0, 90);
       TAREAS.unshift({t: txt, s: 'Te la dejó Laura desde el tablero', ok: false, nueva: true});
