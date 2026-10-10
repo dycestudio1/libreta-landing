@@ -22,6 +22,11 @@
            clientes recuperados y lo vendido por sugerencias, mes a mes.
     #cli   Clientes: dejaron de comprar a su ritmo y deuda vencida. Tocá uno para ver su ficha.
     #ped   Pedidos: la bandeja de la app (Pendiente / En el sistema / Anulado) y la planilla para Doria.
+    #ops   Oportunidades: las de cada vendedor (tipo, estado, en la ruta de hoy) y qué pasó con lo ofrecido.
+    #ofe   Ofertas: se cargan, le llegan a la app de los vendedores elegidos y se sigue quién la vio,
+           pedidos, unidades e importe contra una meta.
+    #rut   Rutas fijas: qué clientes visita cada vendedor cada día y cada cuánto.
+    #conf  Configuración: usuarios y permisos, uso de la app de cada uno, criterios, objetivos y avisos.
   La versión anterior (réplica del portal «Comercial» del Business Hub, 18 pantallas) quedó en
   dashboard/anterior/Libreta_Dashboard_Hub_Comercial.html.
 
@@ -67,7 +72,12 @@
      { tipo: 'libreta-panel-listo' }                                      al cargar
      { tipo: 'libreta-solicitud-respuesta', id, est: 'aprobada'|'rechazada'|'revisada' }
      { tipo: 'libreta-pedido-estado', n, est: 'cargado'|'anulado'|'pendiente', comprobante?, motivo? }
-     { tipo: 'libreta-tarea', ven, cli, txt }                             al pedir una visita o un cobro
+     { tipo: 'libreta-tarea', ven, cli, txt }                             al pedir una visita o un cobro,
+                                                                          al pedir una oportunidad o al fijar un cliente hoy
+     { tipo: 'libreta-oferta', oferta: {id, cod, prod, cond, hasta, ven: ['mf', …]} }   al cargar una oferta vigente
+     { tipo: 'libreta-oferta-fin', id }   al terminar una oferta vigente (se saca de la app)
+  Un pedido que llega con el producto de una oferta vigente (del vendedor avisado y dentro de las
+  fechas) suma al seguimiento de esa oferta y su renglón queda marcado «oferta».
   ====================================================================================
 -->
 <style>
@@ -413,6 +423,9 @@ table.t{width:100%;border-collapse:collapse;font-size:13.5px}
 @keyframes entra{from{transform:translateX(30px);opacity:0}to{transform:none;opacity:1}}
 .fi-h{background:#fff;border-bottom:1px solid var(--linea);padding:16px 18px;display:grid;grid-template-columns:40px minmax(0,1fr) auto;gap:12px;align-items:center}
 .fi-h .av,.fi-h .avt{width:40px;height:40px;font-size:13px}
+.fi-h .av svg{width:20px;height:20px;color:#fff}
+.t tr.nuevo td{animation:resalta 3s ease}
+.sug.of{background:var(--aviso-50);color:var(--aviso-tinta)}
 .fi-h small{display:block;font-size:12px;color:var(--tinta-3)}
 .fi-h h2{margin:0;font-size:18px;font-weight:600;letter-spacing:-.01em}
 .fi-b{flex:1;overflow-y:auto;padding:16px 18px 24px;display:flex;flex-direction:column;gap:14px}
@@ -487,6 +500,126 @@ table.t{width:100%;border-collapse:collapse;font-size:13.5px}
   .ped-h{padding:12px 14px}
   .ped-b{padding:10px 12px 12px}
   .ped-in .campo{min-width:0;flex-basis:100%}
+}
+
+/* ============ menú agrupado ============ */
+.menu-g{font:500 10.5px var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--tinta-3);padding:12px 10px 4px}
+.menu-g:first-child{padding-top:2px}
+.menu .it.conf{margin-top:6px}
+
+/* ============ formularios, pestañas y llaves ============ */
+.fm{display:flex;flex-direction:column;gap:12px}
+.fm label,.fm fieldset{display:flex;flex-direction:column;gap:5px;font-size:12.5px;font-weight:600;color:var(--tinta-2);margin:0;border:0;padding:0;min-width:0}
+.fm legend{padding:0;margin-bottom:5px}
+.fm .campo{height:38px;width:100%;font-size:13.5px}
+.fm .dos{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:10px}
+.fm .ayuda{font-weight:500;color:var(--tinta-3);font-size:12px}
+.cks{display:flex;flex-wrap:wrap;gap:6px}
+.ck{display:inline-flex!important;flex-direction:row!important;align-items:center;gap:7px!important;height:32px;padding:0 11px;border:1px solid var(--linea);border-radius:999px;background:#fff;font-weight:600;font-size:13px;color:var(--tinta-2);cursor:pointer}
+.ck input{margin:0;accent-color:var(--vereda)}
+.ck:has(input:checked){background:var(--vereda-50);border-color:var(--vereda-100);color:var(--vereda)}
+.prev{background:var(--papel);border-radius:12px;padding:10px 12px}
+.prev .lbl{display:block;font:500 10.5px var(--mono);text-transform:uppercase;letter-spacing:.05em;color:var(--tinta-3);margin-bottom:6px}
+.noti-p{display:grid;grid-template-columns:30px minmax(0,1fr) auto;gap:10px;align-items:center;background:#fff;border-radius:12px;padding:9px 10px;box-shadow:var(--sombra-1)}
+.noti-p .ic{width:30px;height:30px;border-radius:8px;background:var(--vereda);display:grid;place-items:center}
+.noti-p .ic svg{width:22px;height:22px}
+.noti-p b{display:block;font-size:13px}
+.noti-p small{display:block;font-size:12px;color:var(--tinta-3);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tabs-c{display:flex;gap:2px;border-bottom:1px solid var(--linea);overflow-x:auto;scrollbar-width:none}
+.tabs-c::-webkit-scrollbar{display:none}
+.tabs-c button{flex:none;border:0;background:none;padding:10px 14px;font-weight:700;font-size:13.5px;color:var(--tinta-3);border-bottom:2px solid transparent;margin-bottom:-1px}
+.tabs-c button:hover{color:var(--tinta)}
+.tabs-c button[aria-selected="true"]{color:var(--vereda);border-bottom-color:var(--vereda)}
+.sw{position:relative;display:inline-flex;align-items:center;gap:8px;border:0;background:none;padding:0;font-weight:600;font-size:12.5px;color:var(--tinta-2);white-space:nowrap}
+.sw i{width:34px;height:20px;border-radius:999px;background:#C9D1D6;position:relative;flex:none;transition:background .15s}
+.sw i::after{content:"";position:absolute;top:2px;left:2px;width:16px;height:16px;border-radius:50%;background:#fff;box-shadow:0 1px 2px rgba(0,0,0,.2);transition:transform .15s}
+.sw[aria-pressed="true"] i{background:var(--vereda)}
+.sw[aria-pressed="true"] i::after{transform:translateX(14px)}
+.num-in{width:84px!important;text-align:right;font-family:var(--mono)}
+.lnk-clave{display:block;margin-top:7px;font-size:12px;font-weight:600;color:var(--vereda);white-space:nowrap}
+.lnk-clave:disabled{color:var(--tinta-3);cursor:default}
+.clave{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;background:var(--aviso-50);border:1px solid #FFD5C4;border-radius:12px;padding:10px 12px;font-size:13px}
+.clave code{font:600 15px var(--mono);letter-spacing:.06em;color:var(--tinta)}
+
+/* ============ oportunidades ============ */
+.op-por{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.op-v{display:flex;flex-direction:column;gap:9px;width:100%;text-align:left;background:#fff;border:1px solid var(--linea);border-radius:14px;box-shadow:var(--sombra-1);padding:14px 16px}
+.op-v:hover{border-color:#C6CED6}
+.op-v[aria-pressed="true"]{border-color:var(--vereda);box-shadow:0 0 0 3px var(--vereda-50)}
+.op-v .fila-n{display:flex;justify-content:space-between;gap:10px;font-size:12.5px;color:var(--tinta-3)}
+.op-v .fila-n b{font:500 13px var(--mono);color:var(--tinta)}
+.op-v .grande{font-size:20px;font-weight:600;letter-spacing:-.01em;font-variant-numeric:tabular-nums}
+.op-que b{display:block;font-weight:600;font-size:13.5px}
+.op-que small{display:block;font-size:12px;color:var(--tinta-3);line-height:1.4;margin-top:2px;white-space:normal}
+
+/* ============ ofertas ============ */
+.of-p b{display:block;font-weight:600}
+.of-p small{display:block;font-size:12px;color:var(--tinta-3)}
+.of-meta{display:flex;align-items:center;gap:8px;min-width:130px}
+.of-meta .meter{flex:1}
+.of-meta span{font:500 12px var(--mono);white-space:nowrap}
+.avs{display:flex;gap:3px}
+.avs+small{white-space:nowrap}
+.avs .avt{width:24px;height:24px;font-size:10px}
+.avs .avt.no{opacity:.35}
+
+/* ============ rutas fijas ============ */
+.dias{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;align-items:start}
+.dia{background:#fff;border:1px solid var(--linea);border-radius:14px;box-shadow:var(--sombra-1);padding:12px 12px 10px;min-width:0}
+.dia.hoy{border-color:var(--vereda);box-shadow:0 0 0 3px var(--vereda-50)}
+.dia-h{display:flex;justify-content:space-between;align-items:baseline;gap:8px;margin-bottom:8px}
+.dia-h b{font-size:14.5px}
+.dia-h small{font-size:12px;color:var(--tinta-3)}
+.rf{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+.rf li{display:grid;grid-template-columns:22px minmax(0,1fr) auto;gap:8px;align-items:center;padding:7px 0;border-top:1px solid var(--linea-2)}
+.rf li:first-child{border-top:0}
+.rf .n{width:22px;height:22px;border-radius:50%;background:var(--papel);display:grid;place-items:center;font:600 11px var(--mono);color:var(--tinta-2)}
+.rf b{display:block;font-weight:600;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rf small{display:block;font-size:11.5px;color:var(--tinta-3);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rf .fr{color:var(--aviso-tinta)}
+.rf .bt{display:flex;gap:2px;opacity:.35;transition:opacity .15s}
+.rf li:hover .bt,.rf li:focus-within .bt{opacity:1}
+.rf .bt button{width:24px;height:24px;border:0;border-radius:6px;background:none;color:var(--tinta-2);display:grid;place-items:center;padding:0}
+.rf .bt button:hover{background:var(--papel);color:var(--tinta)}
+.rf .bt svg{width:13px;height:13px}
+.dia .vacio-d{font-size:12.5px;color:var(--tinta-3);padding:6px 0 4px}
+.dia .agregar{width:100%;margin-top:8px;height:32px;border:1px dashed #C6CED6;border-radius:9px;background:none;color:var(--vereda);font-weight:700;font-size:12.5px}
+.dia .agregar:hover{border-color:var(--vereda);background:var(--vereda-50)}
+.rf-lista{display:flex;flex-direction:column;max-height:44vh;overflow-y:auto;border:1px solid var(--linea);border-radius:12px;background:#fff}
+.rf-lista label{display:grid!important;grid-template-columns:18px minmax(0,1fr) auto;gap:10px;align-items:center;padding:9px 12px;border-top:1px solid var(--linea-2);font-weight:500!important;color:var(--tinta)!important;cursor:pointer}
+.rf-lista label:first-child{border-top:0}
+.rf-lista input{accent-color:var(--vereda);margin:0}
+.rf-lista small{font-size:12px;color:var(--tinta-3);font-family:var(--mono)}
+
+/* ============ configuración: uso de la app ============ */
+.ucards{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:12px}
+.ucard{display:flex;flex-direction:column;gap:9px;width:100%;text-align:left;background:#fff;border:1px solid var(--linea);border-radius:14px;box-shadow:var(--sombra-1);padding:14px 16px}
+.ucard:hover{border-color:#C6CED6}
+.ucard.apagada{opacity:.55;box-shadow:none}
+.ucard .ent{display:flex;align-items:baseline;gap:8px}
+.ucard .ent b{font-size:26px;font-weight:600;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.ucard .ent span{font-size:12.5px;color:var(--tinta-3)}
+.ucard p{margin:0;font-size:12.5px;color:var(--tinta-2)}
+.ucard .secs{display:flex;flex-wrap:wrap;gap:5px}
+.ucard .secs span{font-size:11.5px;background:var(--papel);border-radius:999px;padding:2px 8px;color:var(--tinta-2)}
+.ucard .secs span b{font:500 11px var(--mono);margin-left:3px}
+.acc-l{display:flex;flex-direction:column}
+.acc-l div{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-top:1px solid var(--linea-2);font-size:13px}
+.acc-l div:first-child{border-top:0;padding-top:0}
+.acc-l small{display:block;font-size:11.5px;color:var(--tinta-3)}
+.acc-l b{font:500 13px var(--mono)}
+
+@media (max-width:1280px){
+  .dias{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media (max-width:900px){
+  .op-por{grid-template-columns:minmax(0,1fr)}
+  .dias{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+}
+@media (max-width:760px){
+  .dias{grid-template-columns:minmax(0,1fr)}
+  .fm .dos{grid-template-columns:minmax(0,1fr)}
+  .rf .bt{opacity:1}
 }
 
 /* ============ asesor (consultor comercial, como en la app) ============ */
@@ -964,11 +1097,15 @@ var SOL = [
 ];
 
 /* ================= Ofertas ================= */
+/* ven: por vendedor, [pedidos, unidades, importe] con la oferta. vio: cuándo la abrió cada uno en la app. */
 var OFERTAS = [
-  {id: 1, p: 'AL-005', c: '$U 219 llevando 10 o más', tipo: 'Llevando X unidades', d1: '28/09', d2: '04/10', to: 'Almacenes y autoservicios', sel: ['mf', 'cr', 'lm'], ch: ['App', 'WhatsApp'], lista: true, seen: 3, sold: 52560, st: 'Vigente'},
-  {id: 2, p: 'LI-004', c: 'Combo con lavandina bidón 5 L a $U 440', tipo: 'Combo', d1: '21/09', d2: '30/09', to: 'Todos los clientes', sel: ['mf', 'cr', 'lm'], ch: ['App'], lista: true, seen: 3, sold: 38280, st: 'Vigente'},
-  {id: 3, p: 'BE-003', c: '8 % de descuento', tipo: '% de descuento', d1: '01/10', d2: '15/10', to: 'Zona Este y Maldonado', sel: ['cr'], ch: ['App', 'Mail'], lista: false, seen: 0, sold: 0, st: 'Programada'},
-  {id: 4, p: 'GO-001', c: '$U 339 la caja', tipo: 'Precio especial', d1: '01/09', d2: '15/09', to: 'Kioscos', sel: ['mf', 'lm'], ch: ['App', 'WhatsApp'], lista: true, seen: 2, sold: 41000, st: 'Terminada'}
+  {id: 1, p: 'AL-005', c: '$U 219 llevando 10 o más', tipo: 'Llevando X unidades', d1: '28/09', d2: '04/10', to: 'Almacenes y autoservicios', sel: ['mf', 'cr', 'lm'], lista: true, st: 'Vigente', meta: 150,
+    vio: {mf: '28/09 08:41', cr: '28/09 07:59', lm: '28/09 07:47'}, ven: {mf: [3, 30, 6570], cr: [4, 52, 11388], lm: [2, 20, 4380]}},
+  {id: 2, p: 'LI-004', c: 'Combo con lavandina bidón 5 L a $U 440', tipo: 'Combo', d1: '21/09', d2: '30/09', to: 'Todos los clientes', sel: ['mf', 'cr', 'lm'], lista: true, st: 'Vigente', meta: 80,
+    vio: {mf: '21/09 08:55', cr: '21/09 08:02', lm: '22/09 07:50'}, ven: {mf: [5, 26, 11440], cr: [6, 38, 16720], lm: [2, 9, 3960]}},
+  {id: 3, p: 'BE-003', c: '8 % de descuento', tipo: '% de descuento', d1: '01/10', d2: '15/10', to: 'Zona Este y Maldonado', sel: ['cr'], lista: false, st: 'Programada', meta: 200, vio: {}, ven: {}},
+  {id: 4, p: 'GO-001', c: '$U 339 la caja', tipo: 'Precio especial', d1: '01/09', d2: '15/09', to: 'Kioscos', sel: ['mf', 'lm'], lista: true, st: 'Terminada', meta: 100,
+    vio: {mf: '01/09 08:40', lm: '01/09 07:52'}, ven: {mf: [9, 64, 21696], lm: [7, 57, 19323]}}
 ];
 var OF_TIPOS = ['Precio especial', '% de descuento', 'Llevando X unidades', 'Combo'];
 var OF_PARA = ['Todos los clientes', 'Almacenes y autoservicios', 'Supermercados', 'Cafeterías y panaderías', 'Kioscos', 'Zona Montevideo', 'Zona Este y Maldonado', 'Zona Costa de Oro'];
@@ -1094,6 +1231,10 @@ function ic(n, sw){ return '<svg viewBox="0 0 24 24" fill="none" stroke="current
 var LIBRETA_IC = '<svg viewBox="0 0 128 128" aria-hidden="true"><g fill="none" stroke="#fff" stroke-width="13" stroke-linecap="round" stroke-linejoin="round" transform="translate(64 64) scale(.78) translate(-64 -64)"><rect x="30" y="12" width="68" height="104" rx="14"/><path d="M78 4V124"/></g><circle cx="56" cy="40" r="8" fill="#FF6A3D"/></svg>';
 IC.cal = '<rect x="4" y="5.5" width="16" height="14.5" rx="2"/><path d="M4 10h16M8.5 3.5v4M15.5 3.5v4"/>';
 IC.chev = '<path d="m9 6 6 6-6 6"/>';
+IC.gear = '<circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/>';
+IC.arr = '<path d="m6 15 6-6 6 6"/>';
+IC.aba = '<path d="m6 9 6 6 6-6"/>';
+IC.tag = '<path d="M20.5 13.5l-7 7a1.5 1.5 0 0 1-2.1 0L3.5 12.6V3.5h9.1l7.9 7.9a1.5 1.5 0 0 1 0 2.1z"/><circle cx="8" cy="8" r="1.5"/>';
 
 /* ================= Agregados de esta versión =================
    Hora en que cada vendedor inició la jornada en la app (hoy). */
@@ -1121,18 +1262,28 @@ var S = {
   v: 'hoy', per: 'set', venCli: 'todos',
   pedV: 'pend', pedVen: 'todos', pedOpen: {}, pedModo: {}, pedTxt: {},
   sort: {}, pag: {}, ficha: null, vendF: null, nuevo: {}, pedidasVisita: {}, pedidoCobro: {},
-  hora: HOY.hora, extraConc: 0, vendHoy: []
+  hora: HOY.hora, extraConc: 0, vendHoy: [],
+  opsVen: 'todos', opsTipo: 'todas', opsEst: 'abiertas', opsPedida: {},
+  ofeSel: null, ofeVen: {mf: true, cr: true, lm: true},
+  rfVen: 'mf', rfAdd: null,
+  confTab: 'usu', usoPer: 'set', usoUser: null, nuevaClave: null
 };
 var SECC = [
   ['hoy', 'Hoy', 'cal', 'Quién está en la calle, cómo van las rutas, qué pedidos entraron y qué espera tu respuesta.'],
+  ['ped', 'Pedidos', 'cart', 'Lo que cargan los vendedores en el comercio. Pasalo a Doria y marcalo como cargado.'],
   ['vend', 'Vendedores', 'users', 'Venta contra objetivo, ruta, pedidos, oportunidades y comisión de cada vendedor.'],
-  ['suma', 'Lo que suma Libreta', 'trend', 'Lo que se vendió de más porque la app le dijo al vendedor a quién ofrecerle qué.'],
+  ['ops', 'Oportunidades', 'target', 'Qué tiene para ofrecer cada vendedor, cliente por cliente, y qué pasó con lo que ofreció.'],
   ['cli', 'Clientes', 'store', 'Quién dejó de comprar a su ritmo y quién debe. Tocá un cliente para ver su ficha.'],
-  ['ped', 'Pedidos', 'cart', 'Lo que cargan los vendedores en el comercio. Pasalo a Doria y marcalo como cargado.']
+  ['suma', 'Lo que suma Libreta', 'trend', 'Lo que se vendió de más porque la app le dijo al vendedor a quién ofrecerle qué.'],
+  ['ofe', 'Ofertas', 'tag', 'Cargá una oferta y le llega a la app de cada vendedor. Seguí quién la vio y cuánto se vende.'],
+  ['rut', 'Rutas fijas', 'map', 'Qué clientes visita cada vendedor cada día de la semana. La ruta del día se arma sola con esto.'],
+  ['conf', 'Configuración', 'gear', 'Usuarios y permisos, uso de la app de cada uno, criterios, objetivos y avisos.']
 ];
+/* grupos del menú de la izquierda */
+var GRUPOS = [['', ['hoy', 'ped']], ['Ventas', ['vend', 'ops', 'cli', 'suma']], ['Gestión', ['ofe', 'rut']], ['', ['conf']]];
 var VINFO = {}; SECC.forEach(function(s){ VINFO[s[0]] = {t: s[1], i: s[2], d: s[3]}; });
 /* secciones viejas (y del contrato de mensajes) que ahora viven en otra */
-var ALIAS = {dash: 'hoy', desv: 'hoy', ruta: 'hoy', ofr: 'suma', est: 'vend', objs: 'vend', evo: 'cli', cart: 'cli', cobc: 'cli', pros: 'cli'};
+var ALIAS = {dash: 'hoy', desv: 'hoy', ruta: 'hoy', ofr: 'ops', oportunidades: 'ops', ofertas: 'ofe', rutas: 'rut', fijas: 'rut', uso: 'conf', usuarios: 'conf', config: 'conf', est: 'vend', objs: 'conf', evo: 'cli', cart: 'cli', cobc: 'cli', pros: 'cli'};
 
 /* ================================ cálculos ================================ */
 function mesIx(){ return IX[S.per]; }
@@ -1253,7 +1404,7 @@ R.hoy = function(){
   var h = '<section class="kpis k-hoy">' +
     '<div class="kpi dest grande"><div class="fd"><small>Vendido hoy</small><small>' + ph.length + ' pedidos · ticket ' + $u(ph.length ? tot / ph.length : 0) + '</small></div><b>' + $u(tot) + '</b><div class="bb" aria-hidden="true"><i style="width:' + pc(hechas, plan) + '%"></i></div><em>' + hechas + ' de ' + plan + ' visitas hechas a las ' + S.hora + '</em></div>' +
     kpi('Visitas de hoy', hechas + ' de ' + plan, pc(hechas, plan) + ' % de la ruta del día') +
-    kpi('Para ofrecer en la ruta', String(oh.length), oh.length ? '≈ ' + $m(suma(oh, function(o){ return o.v; })) + ' por mes · ' + vendHoy + ' vendida' + (vendHoy === 1 ? '' : 's') + ' hoy' : vendHoy + ' vendidas hoy', '', '', 'suma') +
+    kpi('Para ofrecer en la ruta', String(oh.length), oh.length ? '≈ ' + $m(suma(oh, function(o){ return o.v; })) + ' por mes · ' + vendHoy + ' vendida' + (vendHoy === 1 ? '' : 's') + ' hoy' : vendHoy + ' vendidas hoy', '', '', 'ops') +
     kpi('Por cargar en Doria', String(pend.length), pend.length ? $u(suma(pend, function(x){ return x.tot; })) + ' en pedidos' : 'Todo al día', '', '', 'ped') +
     kpi('Objetivo de setiembre', p + ' %', 'hoy deberías ir por ' + ritmo('set') + ' %', p >= ritmo('set') - 5 ? 'bien' : 'mal', '', 'vend') + '</section>';
 
@@ -1430,7 +1581,7 @@ function pedidoHtml(p){
   var e = PED_EST[p.est], ab = S.pedOpen[p.n] != null ? S.pedOpen[p.n] : p.est === 'pend', modo = S.pedModo[p.n], c = CX[p.cli];
   var h = '<li class="ped' + (S.nuevo[p.n] ? ' nuevo' : '') + '" id="ped-' + p.n + '"><button type="button" class="ped-h" data-a="pedToggle" data-id="' + p.n + '" aria-expanded="' + ab + '"><span class="l"><span><span class="n">' + p.n + '</span>' + esc(c ? c.n : p.cli) + ' ' + chip(e[0], e[1]) + (S.nuevo[p.n] || p.demo ? chip('tinta', 'Recién llegado') : '') + '</span><small>' + esc(nomV(p.ven)) + ' · ' + (p.f === '29/09' ? 'hoy' : p.f === '28/09' ? 'ayer' : p.f) + ' ' + p.hora + ' · ' + p.lin.length + (p.lin.length === 1 ? ' producto' : ' productos') + '</small></span><span class="tot">' + $u(p.tot) + '</span></button>';
   if (ab){
-    h += '<div class="ped-b">' + tabla('pl-' + p.n, [{l: 'Código', s: false, nw: 1}, {l: 'Producto', s: false}, {l: 'Cant.', r: 1, s: false}, {l: 'Precio', r: 1, s: false}, {l: 'Importe', r: 1, s: false}], p.lin.map(function(l){ return {c: ['<span class="mono muted" style="font-size:12px">' + esc(l.c) + '</span>', esc(l.d) + (l.sug ? '<span class="sug">sugerido</span>' : ''), String(l.q), $u(l.p), $u(l.imp)], s: []}; }));
+    h += '<div class="ped-b">' + tabla('pl-' + p.n, [{l: 'Código', s: false, nw: 1}, {l: 'Producto', s: false}, {l: 'Cant.', r: 1, s: false}, {l: 'Precio', r: 1, s: false}, {l: 'Importe', r: 1, s: false}], p.lin.map(function(l){ return {c: ['<span class="mono muted" style="font-size:12px">' + esc(l.c) + '</span>', esc(l.d) + (l.sug ? '<span class="sug">sugerido</span>' : '') + (l.of ? '<span class="sug of">oferta</span>' : ''), String(l.q), $u(l.p), $u(l.imp)], s: []}; }));
     if (p.nota) h += '<p class="ped-nota">Nota: ' + esc(p.nota) + '</p>';
     if (p.est === 'cargado') h += '<p class="nota">Cargado por ' + esc(p.por || 'Laura') + (p.at ? ' el ' + esc(p.at) : '') + (p.comp ? ' · comprobante ' + esc(p.comp) : '') + '.</p>';
     if (p.est === 'anulado') h += '<p class="nota">Anulado: ' + esc(p.motivo || '—') + '</p>';
@@ -1459,19 +1610,480 @@ function facturasDe(c){
   return r;
 }
 
+/* ================================ secciones nuevas (10/10/2026) ================================
+   Oportunidades de cada vendedor, ofertas que llegan a la app con su seguimiento, rutas fijas y
+   configuración (usuarios, uso de la app, criterios y avisos). Mismo mundo de datos que el resto. */
+var SIS = 'Doria';                      // sistema de gestión conectado (los mockups de clientes lo cambian)
+var MAIL = 'distribuidoracentral.uy';   // dominio de los mails de ejemplo
+var LISTA = 'Lista 3 · Mayorista';      // lista de precios que usa la app
+function hoyD(){ return new Date(2026, 8, 29); }
+function dm(d){ return String(d.getDate()).padStart(2, '0') + '/' + String(d.getMonth() + 1).padStart(2, '0'); }
+function aFecha(t){ var p = String(t).split('/'); return new Date(2026, +p[1] - 1, +p[0]); }
+function rnd(seed){ var x = Math.sin(seed * 12.9898) * 43758.5453; return x - Math.floor(x); }
+function yLista(a){ return a.length > 1 ? a.slice(0, -1).join(', ') + ' y ' + a[a.length - 1] : (a[0] || ''); }
+
+/* ---------- Oportunidades ---------- */
+// Cómo terminaron dos de las de hoy: a Bolivia ya se la ofreció Carlos y a Malvín Norte no le interesó.
+OPS.forEach(function(o){
+  if (o.id === 13){ o.est = 'ofrecida'; o.hora = '08:38'; }
+  if (o.id === 9){ o.est = 'no'; o.hora = '09:26'; o.nota = 'Dice que otro mayorista le da mejor precio.'; }
+});
+// Lo que pasó con lo ofrecido en los últimos 30 días (lo de hoy sale de OPS)
+var SEGUIM = [
+  {f: '28/09', c: 'shangrila', w: 'lm', t: 'recompra', p: 'GO-001', res: 'ofrecida', nota: 'Pidió que vuelva el jueves.'},
+  {f: '28/09', c: 'parquerodo', w: 'mf', t: 'cruzada', p: 'LI-003', res: 'vendida', ped: 'P-2413'},
+  {f: '25/09', c: 'rambla', w: 'mf', t: 'cruzada', p: 'PE-001', res: 'vendida', fc: '25/09'},
+  {f: '24/09', c: 'arocena', w: 'cr', t: 'recompra', p: 'LI-004', res: 'vendida', ped: 'P-2412'},
+  {f: '23/09', c: 'lagomar', w: 'lm', t: 'recompra', p: 'BE-004', res: 'vendida', fc: '23/09'},
+  {f: '22/09', c: 'faro', w: 'cr', t: 'reactivar', p: 'BE-008', res: 'ofrecida', nota: 'Vuelve a comprar en noviembre, con la temporada.'},
+  {f: '22/09', c: 'familia', w: 'mf', t: 'cruzada', p: 'AL-003', res: 'no'},
+  {f: '18/09', c: 'puntagorda', w: 'cr', t: 'recompra', p: 'LA-001', res: 'vendida', fc: '18/09'},
+  {f: '16/09', c: 'atlantida', w: 'lm', t: 'cobrar', res: 'cobrada', nota: 'Pagó una factura; queda una vencida.'},
+  {f: '15/09', c: 'toscas', w: 'lm', t: 'reactivar', p: 'GO-001', res: 'no', nota: 'Cerró por reformas hasta fin de mes.'},
+  {f: '11/09', c: 'bolivia', w: 'cr', t: 'recompra', p: 'AL-005', res: 'vendida', fc: '11/09'}
+];
+var RES_OP = {vendida: ['ver', 'Vendida'], ofrecida: ['arena', 'Ofrecida'], no: ['gris', 'No le interesó'], ruta: ['borde', 'En la ruta de hoy'], abierta: ['gris', 'Abierta'], cobrada: ['ver', 'Cobrada']};
+function enRutaHoy(o){ return !!o.c && RUTAS[o.w].some(function(s){ return s.c === o.c && (s.est === 'pend' || s.est === 'visita'); }); }
+function estOp(o){ return o.est === 'vendida' ? 'vendida' : o.est === 'no' ? 'no' : (o.est === 'ofrecida' || o.est === 'ruta' || o.est === 'wa') ? 'ofrecida' : enRutaHoy(o) ? 'ruta' : 'abierta'; }
+function abiertaOp(o){ var e = estOp(o); return e === 'abierta' || e === 'ruta'; }
+function nomOp(o){ return o.c ? nombreCli(o.c) : o.n; }
+function prodOp(o){ return o.cods && o.cods[0] && PROD[o.cods[0]] ? PROD[o.cods[0]].d : OPT[o.t]; }
+
+R.ops = function(){
+  var vs = S.opsVen, base = OPS.filter(function(o){ return !o.off && (vs === 'todos' || o.w === vs); });
+  var L = base.filter(function(o){ var e = estOp(o); return (S.opsTipo === 'todas' || o.t === S.opsTipo) && (S.opsEst === 'todas' || (S.opsEst === 'abiertas' ? (e === 'abierta' || e === 'ruta') : e === S.opsEst)); });
+  var ab = base.filter(abiertaOp), enRuta = base.filter(function(o){ return estOp(o) === 'ruta'; }), O = opsMes('set', vs === 'todos' ? null : vs);
+  var noMes = base.filter(function(o){ return o.est === 'no'; }).length + SEGUIM.filter(function(x){ return x.res === 'no' && (vs === 'todos' || x.w === vs); }).length;
+  var h = '<section class="kpis k4">' +
+    kpi('En juego', '≈ ' + $m(suma(ab, function(o){ return o.v; })) + ' /mes', ab.length + (ab.length === 1 ? ' oportunidad abierta' : ' oportunidades abiertas'), '', 'dest') +
+    kpi('En la ruta de hoy', String(enRuta.length), enRuta.length ? '≈ ' + $m(suma(enRuta, function(o){ return o.v; })) + ' por mes para ofrecer hoy' : 'Nada pendiente en la ruta') +
+    kpi('Ofrecidas en setiembre', String(O.ofr), O.conc + ' vendidas · ' + pc(O.conc, O.ofr) + ' %') +
+    kpi('No le interesó', String(noMes), 'en setiembre · se esconden ' + PARAM.noint + ' días') + '</section>';
+  if (vs === 'todos') h += '<div class="op-por">' + VEND.map(function(v){
+    var mine = OPS.filter(function(o){ return !o.off && o.w === v.id; }), a = mine.filter(abiertaOp), r = mine.filter(function(o){ return estOp(o) === 'ruta'; }), om = opsMes('set', v.id);
+    var top = a.slice().sort(function(x, y){ return y.v - x.v; })[0];
+    return '<button type="button" class="op-v" data-a="filtro" data-k="opsVen" data-val="' + v.id + '"><span class="quien">' + avt(v.id) + '<span><b>' + v.nom + '</b><small>' + v.zona + '</small></span></span>' +
+      '<span class="fila-n"><span>Abiertas</span><b>' + a.length + ' · ≈ ' + $m(suma(a, function(o){ return o.v; })) + '/mes</b></span>' +
+      '<span class="fila-n"><span>En la ruta de hoy</span><b>' + r.length + '</b></span>' +
+      '<span class="fila-n"><span>Vendidas en setiembre</span><b>' + om.conc + ' de ' + om.ofr + ' · ' + pc(om.conc, om.ofr) + ' %</b></span>' + medidor(pc(om.conc, om.ofr)) +
+      (top ? '<span class="fila-n"><span>La más grande: <b style="font:600 12.5px var(--f)">' + esc(nomOp(top)) + '</b></span><b>≈ ' + $m(top.v) + '</b></span>' : '') + '</button>';
+  }).join('') + '</div>';
+  var cnt = function(t){ return base.filter(function(o){ return t === 'todas' || o.t === t; }).length; };
+  h += '<div style="display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center">' + chipsVend('opsVen', S.opsVen) + '<span class="fsep"></span>' +
+    filtroChips('opsTipo', [['todas', 'Todos los tipos', cnt('todas')], ['reactivar', 'Reactivar', cnt('reactivar')], ['cruzada', 'Venta cruzada', cnt('cruzada')], ['recompra', 'Recompra', cnt('recompra')], ['cobrar', 'Cobrar', cnt('cobrar')], ['prospecto', 'Prospectos', cnt('prospecto')]], S.opsTipo) + '<span class="fsep"></span>' +
+    filtroChips('opsEst', [['abiertas', 'Abiertas'], ['ofrecida', 'Ofrecidas'], ['vendida', 'Vendidas'], ['no', 'No le interesó'], ['todas', 'Todas']], S.opsEst) + '</div>';
+  var filas = L.slice().sort(function(a, b){ return (abiertaOp(b) - abiertaOp(a)) || ((estOp(b) === 'ruta') - (estOp(a) === 'ruta')) || (b.v - a.v); }).map(function(o){
+    var e = estOp(o), r = RES_OP[e];
+    var acc = abiertaOp(o) ? (S.opsPedida[o.id] ? chip('ver', 'Pedida a ' + corV(o.w)) : '<button type="button" class="btn btn-s btn-sm" data-a="opPedir" data-id="' + o.id + '">Pedírsela a ' + corV(o.w) + '</button>') : (o.ped ? '<button type="button" class="btn btn-g btn-sm" data-a="pedVer" data-id="' + esc(o.ped) + '">Ver ' + esc(o.ped) + '</button>' : '');
+    return {a: o.c ? 'class="fk" data-a="ficha" data-id="' + o.c + '"' : '', s: [nomOp(o), corV(o.w), OPT[o.t], '', o.v, e, ''], c: [
+      '<b>' + esc(nomOp(o)) + '</b><small>' + esc(o.c ? CX[o.c].z : 'Prospecto') + '</small>',
+      '<div class="quien">' + avt(o.w) + '<b>' + corV(o.w) + '</b></div>',
+      '<span class="tag ' + o.t + '">' + OPT[o.t] + '</span>',
+      '<div class="op-que"><b>' + esc(o.a + ' ' + nomOp(o)) + '</b><small>' + esc(o.why) + (o.sug ? ' ' + esc(o.sug) : '') + '</small></div>',
+      '≈ ' + $m(o.v) + '<small>por mes</small>',
+      chip(r[0], r[1] + (o.hora && !abiertaOp(o) ? ' · ' + o.hora : '')) + (o.nota ? '<small style="margin-top:4px">' + esc(o.nota) + '</small>' : ''),
+      acc]};
+  });
+  h += card('Oportunidades' + (vs !== 'todos' ? ' de ' + corV(vs) : ' del equipo'), tabla('ops', [{l: 'Cliente', w: 150}, {l: 'Vendedor'}, {l: 'Tipo'}, {l: 'Qué hacer y por qué', s: false, w: 250}, {l: 'Vale', r: 1}, {l: 'Estado'}, {l: '', s: false}], filas, {vacio: 'No hay oportunidades con estos filtros.'}), '<span class="s">' + L.length + ' de ' + base.length + ' · tocá un cliente para ver su ficha</span>');
+  var deHoy = OPS.filter(function(o){ return !o.off && (o.est === 'vendida' || o.est === 'ofrecida' || o.est === 'no') && (vs === 'todos' || o.w === vs); }).map(function(o){
+    var p = o.ped ? PEDIDOS.filter(function(x){ return x.n === o.ped; })[0] : null;
+    return {f: 'Hoy ' + (o.hora || (p ? p.hora : '')), c: o.c, n: o.n, w: o.w, t: o.t, txt: prodOp(o), res: o.est, ped: o.ped, nota: o.nota};
+  });
+  var hist = deHoy.concat(SEGUIM.filter(function(x){ return vs === 'todos' || x.w === vs; }).map(function(x){ return {f: x.f, c: x.c, w: x.w, t: x.t, txt: x.p ? PROD[x.p].d : OPT[x.t], res: x.res, ped: x.ped, fc: x.fc, nota: x.nota}; }));
+  h += card('Qué pasó con lo que se ofreció', tabla('seg', [{l: 'Cuándo', s: false}, {l: 'Cliente', s: false}, {l: 'Quién', s: false}, {l: 'Qué', s: false}, {l: 'Resultado', s: false}], hist.map(function(x){
+    var r = RES_OP[x.res];
+    return {c: ['<span class="nw">' + esc(x.f) + '</span>', '<b>' + esc(x.c ? nombreCli(x.c) : x.n) + '</b>', corV(x.w), '<span class="tag ' + x.t + '">' + OPT[x.t] + '</span> <span class="muted">' + esc(x.txt) + '</span>',
+      chip(r[0], x.res === 'vendida' ? (x.ped ? 'Vendida · ' + x.ped : 'Compró el ' + x.fc) : r[1]) + (x.nota ? '<small style="margin-top:4px">' + esc(x.nota) + '</small>' : '')]};
+  }), {pag: 8, vacio: 'Todavía no hay seguimiento.'}), '<span class="s">hoy y los últimos 30 días</span>');
+  h += '<p class="nota">Ofrecida: el vendedor la marcó en la app o cargó un pedido en ese cliente ese día. Vendida: el cliente compró esos productos en la visita o en los 60 días siguientes. Lo que no le interesó se le esconde al vendedor ' + PARAM.noint + ' días.</p>';
+  return h;
+};
+
+/* ---------- Ofertas ---------- */
+var OF_EST = {Vigente: 'ver', Programada: 'arena', Terminada: 'gris'};
+var N_OFE = 5;
+function ofeTot(o, ven){ var ids = ven ? [ven] : Object.keys(o.ven); return ids.reduce(function(t, k){ var x = o.ven[k]; if (x){ t.ped += x[0]; t.uni += x[1]; t.imp += x[2]; } return t; }, {ped: 0, uni: 0, imp: 0}); }
+function ofeVistas(o){ return o.sel.filter(function(k){ return o.vio[k]; }).length; }
+// Marca los renglones de un pedido que llevan una oferta vigente (del vendedor avisado y dentro de las fechas).
+function marcarOfertas(ped){
+  var hits = [], fd = aFecha(ped.f);
+  OFERTAS.forEach(function(o){
+    if (o.st !== 'Vigente' || o.sel.indexOf(ped.ven) < 0 || fd < aFecha(o.d1) || fd > aFecha(o.d2)) return;
+    ped.lin.forEach(function(l){ if (l.c === o.p && !l.of){ l.of = o.id; hits.push([o, l]); } });
+  });
+  return hits;
+}
+PEDIDOS.forEach(marcarOfertas);   // los de hoy y ayer ya están en los totales de cada oferta
+R.ofe = function(){
+  var vig = ofertasVig(), prog = OFERTAS.filter(function(o){ return o.st === 'Programada'; }), conVenta = OFERTAS.filter(function(o){ return o.st !== 'Programada'; });
+  var T = conVenta.reduce(function(t, o){ var x = ofeTot(o); t.ped += x.ped; t.uni += x.uni; t.imp += x.imp; return t; }, {ped: 0, uni: 0, imp: 0});
+  var avisos = suma(conVenta, function(o){ return o.sel.length; }), vistas = suma(conVenta, ofeVistas);
+  var mejor = vig.filter(function(o){ return o.meta; }).sort(function(a, b){ return ofeTot(b).uni / b.meta - ofeTot(a).uni / a.meta; })[0];
+  var h = '<section class="kpis k4">' + kpi('Ofertas vigentes', String(vig.length), prog.length + (prog.length === 1 ? ' programada' : ' programadas'), '', 'dest') +
+    kpi('Vendido con ofertas', $u(T.imp), T.ped + ' pedidos · ' + fmt.format(T.uni) + ' unidades') +
+    kpi('La vieron en la app', vistas + ' de ' + avisos, 'de los vendedores avisados') +
+    kpi('La que mejor va', mejor ? pc(ofeTot(mejor).uni, mejor.meta) + ' %' : 'Sin meta', mejor ? 'de la meta · ' + PROD[mejor.p].d : 'Ninguna vigente tiene meta') + '</section>';
+  var filas = OFERTAS.map(function(o){
+    var p = PROD[o.p], t = ofeTot(o), pm = o.meta ? pc(t.uni, o.meta) : null;
+    return {a: 'class="fk' + (S.nuevo['of' + o.id] ? ' nuevo' : '') + '" data-a="ofeVer" data-id="' + o.id + '"', s: [p.d, '', t.imp, pm || 0, o.st], c: [
+      '<div class="of-p"><b>' + esc(p.d) + '</b><small>' + esc(o.c) + '</small><small>' + o.d1 + ' al ' + o.d2 + ' · ' + esc(o.to) + '</small></div>',
+      '<div class="avs">' + o.sel.map(function(k){ return avt(k).replace('class="avt ', 'class="avt ' + (o.vio[k] ? '' : 'no ')); }).join('') + '</div><small>' + (o.st === 'Programada' ? 'Le llega el ' + o.d1 : 'La vieron ' + ofeVistas(o) + ' de ' + o.sel.length) + '</small>',
+      $u(t.imp) + '<small>' + t.ped + (t.ped === 1 ? ' pedido · ' : ' pedidos · ') + fmt.format(t.uni) + ' u.</small>',
+      o.meta ? '<div class="of-meta">' + medidor(pm, o.st === 'Terminada' && pm < 100 ? 'mal' : '') + '<span>' + fmt.format(t.uni) + ' de ' + fmt.format(o.meta) + '</span></div>' : '<span class="muted">Sin meta</span>',
+      chip(OF_EST[o.st] || 'gris', o.st === 'Terminada' && pm >= 100 ? 'Terminada · cumplió' : o.st)]};
+  });
+  var f = '<form class="fm" id="ofForm" novalidate>' +
+    '<label>Producto<select class="campo" id="ofP">' + CATALOGO.map(function(p){ return '<option value="' + p.c + '">' + esc(p.d) + ' · ' + $u(p.p) + '</option>'; }).join('') + '</select></label>' +
+    '<div class="dos"><label>Tipo<select class="campo" id="ofT">' + OF_TIPOS.map(function(x){ return '<option>' + x + '</option>'; }).join('') + '</select></label><label>Condición<input class="campo" id="ofC" maxlength="60" autocomplete="off" placeholder="Ej.: 10 % menos llevando 6"></label></div>' +
+    '<div class="dos"><label>Desde<input class="campo" id="ofD1" type="date" value="2026-09-29" min="2026-09-29"></label><label>Hasta<input class="campo" id="ofD2" type="date" value="2026-10-06" min="2026-09-29"></label></div>' +
+    '<div class="dos"><label>Para qué clientes<select class="campo" id="ofTo">' + OF_PARA.map(function(x){ return '<option>' + x + '</option>'; }).join('') + '</select></label><label>Meta de unidades <span class="ayuda">opcional</span><input class="campo" id="ofM" type="number" min="1" step="1" inputmode="numeric" placeholder="Ej.: 100"></label></div>' +
+    '<fieldset><legend>Le llega a la app de</legend><div class="cks">' + VEND.map(function(v){ return '<label class="ck"><input type="checkbox" name="ofS" value="' + v.id + '"' + (S.ofeVen[v.id] ? ' checked' : '') + '>' + v.corto + '</label>'; }).join('') + '</div></fieldset>' +
+    '<label class="ck" style="align-self:flex-start"><input type="checkbox" id="ofLista" checked>Marcarla en la lista de precios de la app</label>' +
+    '<div class="prev"><span class="lbl">Así le llega al vendedor</span><div class="noti-p"><span class="ic">' + LIBRETA_IC + '</span><div><b id="ofPrevT">Nueva oferta</b><small id="ofPrevD">Escribí la condición</small></div><small class="muted">ahora</small></div></div>' +
+    '<button class="btn btn-p" type="submit">' + ic('send') + 'Cargar y mandar a la app</button></form>';
+  h += '<div class="fila f21">' + card('Ofertas', tabla('ofe', [{l: 'Oferta', w: 210}, {l: 'Avisada a', s: false}, {l: 'Vendido', r: 1}, {l: 'Meta', w: 130}, {l: 'Estado'}], filas), '<span class="s">tocá una para ver quién la vio y cuánto vendió</span>') +
+    card('Nueva oferta', f, '<span class="s">le llega a la app al instante</span>', 'card-ofe" id="ofCard') + '</div>';
+  h += '<p class="nota">El seguimiento suma cada pedido de la app que lleva el producto de la oferta, de un vendedor avisado y dentro de las fechas. En el pedido, el renglón queda marcado <span class="sug of" style="margin:0">oferta</span>.</p>';
+  return h;
+};
+R.ofe.despues = function(){ prevOferta(); };
+function prevOferta(){
+  var p = $('ofP'); if (!p) return;
+  var c = $('ofC').value.trim(), d2 = $('ofD2').value.split('-');
+  $('ofPrevT').textContent = 'Nueva oferta · ' + PROD[p.value].d;
+  $('ofPrevD').textContent = (c || 'Escribí la condición') + ' · para ' + $('ofTo').value.toLowerCase() + (d2.length === 3 ? ' · hasta el ' + d2[2] + '/' + d2[1] : '');
+}
+function crearOferta(){
+  var p = $('ofP').value, c = $('ofC').value.trim(), d1 = $('ofD1').value, d2 = $('ofD2').value, meta = Math.round(+$('ofM').value) || null;
+  var sel = [].slice.call(document.querySelectorAll('input[name="ofS"]:checked')).map(function(x){ return x.value; });
+  if (c.length < 3){ $('ofC').focus(); toast('Escribí la condición de la oferta, por ejemplo «10 % menos llevando 6».'); return; }
+  if (!sel.length){ toast('Elegí al menos un vendedor.'); return; }
+  if (!d1 || !d2 || d2 < d1){ toast('Revisá las fechas: «Hasta» tiene que ser igual o después de «Desde».'); return; }
+  var a = d1.split('-'), b = d2.split('-'), vig = d1 <= '2026-09-29';
+  var o = {id: N_OFE++, p: p, c: c.slice(0, 60), tipo: $('ofT').value, d1: a[2] + '/' + a[1], d2: b[2] + '/' + b[1], to: $('ofTo').value, sel: sel, lista: $('ofLista').checked, st: vig ? 'Vigente' : 'Programada', meta: meta, vio: {}, ven: {}};
+  OFERTAS.unshift(o); marcarNuevo('of' + o.id);
+  var quienes = yLista(sel.map(corV));
+  if (vig){
+    avisarPadre({tipo: 'libreta-oferta', oferta: {id: o.id, cod: p, prod: PROD[p].d, cond: o.c, hasta: o.d2, ven: sel}});
+    toast('Oferta cargada. Le llegó a la app de ' + quienes + '.');
+    // cada vendedor la abre al rato (en la demo, a los pocos segundos)
+    sel.forEach(function(k, i){ setTimeout(function(){ if (!o.vio[k]) o.vio[k] = '29/09 ' + S.hora; if (S.v === 'ofe') render(true); if (S.ofeSel === o.id) pintarCapa(); }, 2600 + i * 1700); });
+  } else toast('Oferta programada. Le llega a ' + quienes + ' el ' + o.d1 + '.');
+  render(true);
+}
+function fichaOferta(o){
+  var p = PROD[o.p], t = ofeTot(o), pm = o.meta ? pc(t.uni, o.meta) : null;
+  var h = cabFicha('<span class="av" style="background:var(--aviso)">' + ic('tag') + '</span>', esc(o.tipo) + ' · ' + o.d1 + ' al ' + o.d2 + ' · ' + o.st.toLowerCase(), p.d);
+  h += '<section class="kpis k3">' + kpi('Vendido', $u(t.imp), t.ped + (t.ped === 1 ? ' pedido' : ' pedidos')) + kpi('Unidades', fmt.format(t.uni), o.meta ? pm + ' % de la meta de ' + fmt.format(o.meta) : 'sin meta', pm >= 100 ? 'bien' : '') + kpi('La vieron', ofeVistas(o) + ' de ' + o.sel.length, o.st === 'Programada' ? 'le llega el ' + o.d1 : 'vendedores avisados') + '</section>';
+  h += card('Condición', '<p style="margin:0;font-size:14.5px"><b>' + esc(o.c) + '</b></p><p class="nota" style="margin-top:6px">Para ' + esc(o.to.toLowerCase()) + '. ' + (o.lista ? 'Marcada en la lista de precios de la app.' : 'No se marca en la lista de precios.') + ' Precio de lista: ' + $u(p.p) + '.</p>');
+  h += card('Por vendedor', '<div class="tw"><table class="t"><thead><tr><th>Vendedor</th><th>La vio</th><th class="r">Pedidos</th><th class="r">Unidades</th><th class="r">Importe</th></tr></thead><tbody>' + o.sel.map(function(k){
+    var x = ofeTot(o, k);
+    return '<tr><td><div class="quien">' + avt(k) + '<b>' + corV(k) + '</b></div></td><td>' + (o.vio[k] ? '<span class="nw">' + o.vio[k] + '</span>' : '<span class="muted">' + (o.st === 'Programada' ? 'Le llega el ' + o.d1 : 'Todavía no la abrió') + '</span>') + '</td><td class="r">' + x.ped + '</td><td class="r">' + fmt.format(x.uni) + '</td><td class="r">' + $u(x.imp) + '</td></tr>';
+  }).join('') + '</tbody></table></div>');
+  var conOfe = PEDIDOS.filter(function(pd){ return pd.est !== 'anulado' && pd.lin.some(function(l){ return l.of === o.id; }); });
+  if (conOfe.length) h += card('Pedidos de hoy y ayer con la oferta', '<div class="facs">' + conOfe.map(function(pd){
+    var l = pd.lin.filter(function(x){ return x.of === o.id; })[0];
+    return '<div><span><button type="button" class="lnk" data-a="pedVer" data-id="' + esc(pd.n) + '"><b>' + esc(pd.n) + '</b></button> <span class="muted">· ' + esc(nombreCli(pd.cli)) + ' · ' + corV(pd.ven) + ' · ' + (pd.f === '29/09' ? 'hoy' : 'ayer') + '</span></span><span class="mono">' + l.q + ' u.</span><b>' + $u(l.imp) + '</b></div>';
+  }).join('') + '</div>');
+  h += '<p class="nota">Suma cada pedido de la app que lleva el producto, de un vendedor avisado y dentro de las fechas. Los totales del período cierran con las facturas de ' + SIS + '.</p>';
+  h += '<div class="acts">' + (o.st === 'Vigente' ? '<button type="button" class="btn btn-s btn-sm" data-a="ofeReenviar" data-id="' + o.id + '">' + ic('send') + 'Reenviar a la app</button><button type="button" class="btn btn-g btn-sm" data-a="ofeTerminar" data-id="' + o.id + '">Terminar la oferta</button>' : o.st === 'Programada' ? '<button type="button" class="btn btn-g btn-sm" data-a="ofeTerminar" data-id="' + o.id + '">Cancelar la oferta</button>' : '') + '</div>';
+  return h + '</div></aside>';
+}
+
+/* ---------- Rutas fijas ---------- */
+// Plantilla de la semana: cada mañana arma la ruta del día (se saltean feriados y clientes en pausa,
+// se ordena por cercanía y se suman las visitas que agregue el vendedor). El martes es la ruta de hoy.
+var DIAS_RF = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes'];
+var HOY_DIA = 'Martes';
+var FREC = {1: 'Todas las semanas', 2: 'Cada 15 días', 3: 'Cada 3 semanas', 4: '1 vez al mes'};
+var FREC_C = {2: 'cada 15 días', 3: 'cada 3 semanas', 4: '1 vez al mes'};
+function frecDe(c){ return c.f >= 28 ? 4 : c.f >= 21 ? 3 : c.f >= 14 ? 2 : 1; }
+var RFIJAS = {};
+(function(){
+  var cupo = {mf: 6, cr: 8, lm: 6};
+  VEND.forEach(function(v){
+    var r = RFIJAS[v.id] = {}, usados = {};
+    DIAS_RF.forEach(function(d){ r[d] = []; });
+    RUTAS[v.id].filter(function(s){ return !s.fuera; }).forEach(function(s){ r.Martes.push({c: s.c, fr: frecDe(CX[s.c])}); usados[s.c] = 1; });
+    DIAS_RF.forEach(function(d){
+      if (d === HOY_DIA) return;
+      CLIENTES.filter(function(c){ return c.v === v.id && c.dia === d && !usados[c.id] && c.meses[11] + c.meses[10] > 0; })
+        .sort(function(a, b){ return b.m - a.m; }).slice(0, cupo[v.id] - (d === 'Viernes' ? 1 : 0))
+        .forEach(function(c){ r[d].push({c: c.id, fr: frecDe(c)}); usados[c.id] = 1; });
+    });
+  });
+})();
+function proxFechas(dia, fr){
+  var idx = DIAS_RF.indexOf(dia) + 1, d = hoyD(), r = [];
+  d.setDate(d.getDate() + 1); while (d.getDay() !== idx) d.setDate(d.getDate() + 1);
+  for (var k = 0; k < 3; k++){ r.push(dm(d)); d.setDate(d.getDate() + 7 * fr); }
+  return r;
+}
+function enRutaFija(vid){ var u = {}; DIAS_RF.forEach(function(d){ RFIJAS[vid][d].forEach(function(x){ u[x.c] = 1; }); }); return u; }
+R.rut = function(){
+  var vid = S.rfVen, r = RFIJAS[vid], v = VX[vid], fijos = enRutaFija(vid), sem = 0, mas = DIAS_RF[0];
+  DIAS_RF.forEach(function(d){ r[d].forEach(function(x){ sem += 1 / x.fr; }); if (r[d].length > r[mas].length) mas = d; });
+  var activos = CLIENTES.filter(function(c){ return c.v === vid && c.meses[11] + c.meses[10] + c.meses[9] > 0; });
+  var sin = activos.filter(function(c){ return !fijos[c.id]; }).sort(function(a, b){ return b.m - a.m; });
+  var h = '<div class="lead">' + filtroChips('rfVen', VEND.map(function(x){ return [x.id, x.corto, Object.keys(enRutaFija(x.id)).length]; }), vid) + '<p class="nota">La ruta del día se arma sola cada mañana con esto. Tocá + para sumar clientes a un día.</p></div>';
+  h += '<section class="kpis k4">' + kpi('Clientes con ruta fija', String(Object.keys(fijos).length), 'de ' + activos.length + ' activos de ' + v.corto, '', 'dest') +
+    kpi('Visitas por semana', String(Math.round(sem)), 'promedio, con las frecuencias') +
+    kpi('El día más cargado', mas, r[mas].length + ' clientes') +
+    kpi('Activos sin ruta fija', String(sin.length), 'los visita cuando hace falta', sin.length > activos.length / 2 ? 'mal' : '') + '</section>';
+  h += '<div class="dias">' + DIAS_RF.map(function(d){
+    var L = r[d];
+    return '<section class="dia' + (d === HOY_DIA ? ' hoy' : '') + '"><div class="dia-h"><b>' + d + '</b><small>' + (d === HOY_DIA ? 'hoy · ' : '') + (L.length ? L.length + (L.length === 1 ? ' cliente' : ' clientes') : 'sin fijos') + '</small></div>' +
+      (L.length ? '<ol class="rf">' + L.map(function(x, i){
+        var c = CX[x.c];
+        return '<li><span class="n">' + (i + 1) + '</span><span><b>' + esc(c.n) + '</b><small>' + esc(c.z) + (x.fr > 1 ? ' · <span class="fr">' + FREC_C[x.fr] + '</span>' : '') + '</small></span><span class="bt">' +
+          (i ? '<button type="button" data-a="rfMover" data-d="' + d + '" data-i="' + i + '" data-m="-1" aria-label="Subir a ' + esc(c.n) + '" title="Subir">' + ic('arr', 2.2) + '</button>' : '') +
+          (i < L.length - 1 ? '<button type="button" data-a="rfMover" data-d="' + d + '" data-i="' + i + '" data-m="1" aria-label="Bajar a ' + esc(c.n) + '" title="Bajar">' + ic('aba', 2.2) + '</button>' : '') +
+          '<button type="button" data-a="rfQuitar" data-d="' + d + '" data-i="' + i + '" aria-label="Quitar a ' + esc(c.n) + ' de la ruta fija" title="Quitar de la ruta fija">' + ic('x', 2.2) + '</button></span></li>';
+      }).join('') + '</ol>' : '<p class="vacio-d">Nadie fijo este día.</p>') +
+      '<button type="button" class="agregar" data-a="rfAbrir" data-d="' + d + '">+ Agregar clientes</button></section>';
+  }).join('') + '</div>';
+  h += card('Activos sin ruta fija', tabla('rfsin', [{l: 'Cliente', w: 170}, {l: 'Compra cada', r: 1}, {l: 'Compra por mes', r: 1}, {l: 'Suele comprar'}, {l: '', s: false}], sin.map(function(c){
+    var d = DIAS_RF.indexOf(c.dia) >= 0 ? c.dia : 'Lunes';
+    return {a: 'class="fk" data-a="ficha" data-id="' + c.id + '"', s: [c.n, c.f, c.m, c.dia, ''], c: ['<b>' + esc(c.n) + '</b><small>' + esc(c.z) + '</small>', c.f + ' días', $u(c.m), esc(c.dia), '<button type="button" class="btn btn-s btn-sm" data-a="rfFijarUno" data-id="' + c.id + '" data-d="' + d + '">Fijar el ' + d.toLowerCase() + '</button>']};
+  }), {pag: 6, vacio: 'Todos los activos tienen ruta fija.'}), '<span class="s">ordenados por lo que compran</span>');
+  h += '<p class="nota">Quitar un cliente de la ruta fija no borra las visitas que ya estaban agendadas. Los que se visitan cada 15 días o una vez al mes aparecen en la ruta solo las semanas que les toca.</p>';
+  return h;
+};
+function candidatosRf(){
+  var a = S.rfAdd, ya = RFIJAS[a.ven][a.d].map(function(x){ return x.c; }), q = sinT(a.q.trim());
+  return CLIENTES.filter(function(c){ return c.v === a.ven && ya.indexOf(c.id) < 0 && (!q || sinT(c.n + ' ' + c.z).indexOf(q) >= 0); })
+    .sort(function(x, y){ return ((y.dia === a.d) - (x.dia === a.d)) || (y.m - x.m); }).slice(0, 40);
+}
+function listaRf(){
+  var L = candidatosRf(), a = S.rfAdd;
+  return L.length ? L.map(function(c){ return '<label><input type="checkbox" data-rfc="' + c.id + '"' + (a.sel[c.id] ? ' checked' : '') + '><span><b style="font-weight:600">' + esc(c.n) + '</b><small style="display:block;font-family:var(--f)">' + esc(c.z) + (c.dia === a.d ? ' · suele comprar los ' + c.dia.toLowerCase() : '') + '</small></span><small>' + $m(c.m) + '/mes</small></label>'; }).join('') : '<p class="nota" style="padding:12px">No hay clientes con esa búsqueda.</p>';
+}
+function textoFijar(){ var n = Object.keys(S.rfAdd.sel).filter(function(k){ return S.rfAdd.sel[k]; }).length; return 'Fijar' + (n ? ' (' + n + ')' : ''); }
+function panelRuta(){
+  var a = S.rfAdd, v = VX[a.ven];
+  var h = cabFicha(avt(a.ven), 'Ruta fija de ' + esc(v.nom), 'Agregar clientes al ' + a.d.toLowerCase());
+  h += '<div class="fm"><label>Buscar cliente<input class="campo" id="rfQ" data-rfq="1" autocomplete="off" placeholder="Nombre o barrio" value="' + esc(a.q) + '"></label>' +
+    '<div class="rf-lista" id="rf-lista">' + listaRf() + '</div>' +
+    '<label>Cada cuánto visitarlos<select class="campo" id="rfFr">' + [1, 2, 3, 4].map(function(k){ return '<option value="' + k + '"' + (a.fr === k ? ' selected' : '') + '>' + FREC[k] + '</option>'; }).join('') + '</select></label>' +
+    '<p class="nota" id="rfProx">Próximas visitas: ' + proxFechas(a.d, a.fr).join(', ') + (a.d === HOY_DIA ? '. Si lo fijás hoy, se suma también a la ruta de hoy.' : '.') + '</p>' +
+    '<div class="acts"><button type="button" class="btn btn-p" data-a="rfFijar" id="rfOk">' + textoFijar() + '</button><button type="button" class="btn btn-g" data-a="fichaCerrar">Cancelar</button></div></div>';
+  return h + '</div></aside>';
+}
+function fijarClientes(ven, d, ids, fr){
+  var hoy = d === HOY_DIA, nuevos = [];
+  ids.forEach(function(id){
+    if (RFIJAS[ven][d].some(function(x){ return x.c === id; })) return;
+    RFIJAS[ven][d].push({c: id, fr: fr}); nuevos.push(nombreCli(id));
+    if (hoy && !RUTAS[ven].some(function(s){ return s.c === id; })){
+      var ult = RUTAS[ven][RUTAS[ven].length - 1], m = aMin(ult ? ult.h : '12:00') + 40;
+      RUTAS[ven].push({c: id, h: String(Math.floor(m / 60)).padStart(2, '0') + ':' + String(m % 60).padStart(2, '0'), est: 'pend'});
+      avisarPadre({tipo: 'libreta-tarea', ven: ven, cli: id, txt: 'Visitar ' + nombreCli(id) + ' (ruta fija)'});
+    }
+  });
+  if (nuevos.length) toast(yLista(nuevos) + (nuevos.length === 1 ? ' quedó' : ' quedaron') + ' en la ruta fija del ' + d.toLowerCase() + ' de ' + corV(ven) + (hoy ? '. Se suma a la ruta de hoy y le aparece en la app.' : '. Le aparece en la app ese día.'));
+  return nuevos.length;
+}
+
+/* ---------- Configuración ---------- */
+var ROLES = {ADMIN: ['Administrador', 'Todo el tablero, incluida la configuración'], OPERADOR: ['Operador', 'Pedidos, ofertas y rutas fijas, sin configuración'], LECTURA: ['Solo lectura', 'Ve el tablero y no cambia nada'], VENDEDOR: ['Vendedor', 'La app del celular, con su cartera']};
+var USERS = [
+  {id: 'u1', nom: 'Laura Gómez', mail: 'laura@' + MAIL, rol: 'ADMIN', ven: null, ult: 'Hoy 10:18', act: true, yo: true},
+  {id: 'u2', nom: 'Martín Pérez', mail: 'martin@' + MAIL, rol: 'LECTURA', ven: null, ult: 'Ayer 19:42', act: true},
+  {id: 'u3', nom: 'Ana Rodríguez', mail: 'ana@' + MAIL, rol: 'OPERADOR', ven: null, ult: 'Hoy 09:58', act: true},
+  {id: 'u4', nom: 'María Fernández', mail: 'maria@' + MAIL, rol: 'VENDEDOR', ven: 'mf', ult: 'Hoy 10:12', act: true},
+  {id: 'u5', nom: 'Carlos Rodríguez', mail: 'carlos@' + MAIL, rol: 'VENDEDOR', ven: 'cr', ult: 'Hoy 10:05', act: true},
+  {id: 'u6', nom: 'Lucía Méndez', mail: 'lucia@' + MAIL, rol: 'VENDEDOR', ven: 'lm', ult: 'Hoy 10:12', act: true},
+  {id: 'u7', nom: 'Diego Silva', mail: 'diego@' + MAIL, rol: 'VENDEDOR', ven: 'ds', ult: '14/08', act: false}
+];
+var N_USER = 8;
+// Vendedores tal como vienen del sistema de gestión
+var SISTEMA_VEN = [
+  {cod: 'V01', nom: 'María Fernández', ven: 'mf', calle: true, cuenta: true},
+  {cod: 'V02', nom: 'Carlos Rodríguez', ven: 'cr', calle: true, cuenta: true},
+  {cod: 'V03', nom: 'Lucía Méndez', ven: 'lm', calle: true, cuenta: true},
+  {cod: 'V04', nom: 'Diego Silva', ven: 'ds', calle: true, cuenta: false, nota: 'Dejó la empresa en agosto'},
+  {cod: 'V09', nom: 'Mostrador', ven: null, calle: false, cuenta: true, nota: 'Ventas en el local'}
+];
+var DIAS_HAB = {set: 21, ago: 20};
+// Uso de la app. acc: lo que registró el vendedor desde la app en el mes.
+var USO = {
+  set: {
+    u1: {ent: 412, dias: 21, ult: 'hoy 10:18', secc: [['Hoy', 168], ['Pedidos', 96], ['Vendedores', 58], ['Clientes', 41], ['Lo que suma Libreta', 27], ['Configuración', 22]]},
+    u2: {ent: 46, dias: 9, ult: 'ayer 19:42', secc: [['Lo que suma Libreta', 18], ['Vendedores', 16], ['Hoy', 12]]},
+    u3: {ent: 236, dias: 20, ult: 'hoy 09:58', secc: [['Pedidos', 182], ['Clientes', 31], ['Hoy', 23]]},
+    u4: {ent: 1236, dias: 21, ult: 'hoy 10:12', secc: [['Hoy', 362], ['Ruta', 284], ['Cargar pedido', 236], ['Oportunidades', 148], ['Cartera', 112], ['Lista de precios', 58], ['Presupuesto', 21], ['Prospectos', 15]],
+      acc: {hechas: 82, llegue: 79, prob: 3, fuera: 4, ped: 112, ofr: 41, noint: 6, notas: 14, pros: 5, jorn: 21, desv: 3, tareas: 9}},
+    u5: {ent: 978, dias: 20, ult: 'hoy 10:05', secc: [['Ruta', 260], ['Hoy', 241], ['Cargar pedido', 198], ['Cartera', 104], ['Oportunidades', 96], ['Lista de precios', 49], ['Presupuesto', 18], ['Prospectos', 12]],
+      acc: {hechas: 74, llegue: 70, prob: 5, fuera: 2, ped: 90, ofr: 29, noint: 4, notas: 6, pros: 3, jorn: 20, desv: 4, tareas: 5}},
+    u6: {ent: 604, dias: 17, ult: 'hoy 10:12', secc: [['Hoy', 171], ['Ruta', 148], ['Cargar pedido', 131], ['Oportunidades', 77], ['Cartera', 46], ['Lista de precios', 21], ['Prospectos', 10]],
+      acc: {hechas: 61, llegue: 52, prob: 2, fuera: 6, ped: 64, ofr: 33, noint: 3, notas: 11, pros: 4, jorn: 17, desv: 2, tareas: 7}}
+  },
+  ago: {
+    u1: {ent: 380, dias: 20, ult: '31/08 18:02', secc: [['Hoy', 151], ['Pedidos', 92], ['Vendedores', 61], ['Clientes', 38], ['Lo que suma Libreta', 24]]},
+    u2: {ent: 51, dias: 10, ult: '31/08 20:10', secc: [['Lo que suma Libreta', 21], ['Vendedores', 17], ['Hoy', 13]]},
+    u3: {ent: 221, dias: 20, ult: '31/08 17:40', secc: [['Pedidos', 170], ['Clientes', 29], ['Hoy', 22]]},
+    u4: {ent: 1302, dias: 20, ult: '31/08 17:55', secc: [['Hoy', 381], ['Ruta', 300], ['Cargar pedido', 249], ['Oportunidades', 152], ['Cartera', 118], ['Lista de precios', 61], ['Presupuesto', 24], ['Prospectos', 17]],
+      acc: {hechas: 96, llegue: 93, prob: 2, fuera: 5, ped: 125, ofr: 36, noint: 5, notas: 16, pros: 4, jorn: 20, desv: 2, tareas: 8}},
+    u5: {ent: 1040, dias: 20, ult: '31/08 17:31', secc: [['Ruta', 276], ['Hoy', 255], ['Cargar pedido', 214], ['Cartera', 109], ['Oportunidades', 99], ['Lista de precios', 52], ['Presupuesto', 20], ['Prospectos', 15]],
+      acc: {hechas: 90, llegue: 86, prob: 4, fuera: 3, ped: 106, ofr: 27, noint: 3, notas: 8, pros: 2, jorn: 20, desv: 3, tareas: 6}},
+    u6: {ent: 712, dias: 19, ult: '31/08 16:48', secc: [['Hoy', 198], ['Ruta', 170], ['Cargar pedido', 152], ['Oportunidades', 90], ['Cartera', 58], ['Lista de precios', 30], ['Prospectos', 14]],
+      acc: {hechas: 74, llegue: 68, prob: 1, fuera: 4, ped: 79, ofr: 28, noint: 2, notas: 12, pros: 3, jorn: 19, desv: 1, tareas: 6}},
+    u7: {ent: 88, dias: 9, ult: '14/08 12:20', secc: [['Hoy', 30], ['Ruta', 24], ['Cargar pedido', 21], ['Cartera', 13]],
+      acc: {hechas: 21, llegue: 15, prob: 1, fuera: 0, ped: 14, ofr: 4, noint: 1, notas: 0, pros: 0, jorn: 9, desv: 0, tareas: 1}}
+  }
+};
+var PARAM = {
+  riesgo: [['Sin actividad', 'Días sin comprar, para cualquier cliente', 60, 'días'], ['Caída de volumen', 'Cuánto bajó lo que compró en los últimos 60 días contra los 60 anteriores', 50, '%'], ['Cliente grande sin actividad', 'Días sin comprar, para los 20 que más compran', 45, 'días'], ['Nuevo sin recompra', 'Días desde la primera compra sin una segunda', 30, 'días']],
+  ofrecida: 30, noint: 180, cruzada: 60, excluidas: [],
+  cierre: '17:00', mails: ['laura@' + MAIL, 'martin@' + MAIL],
+  app: [['Oportunidades nuevas', 'cada mañana a las 07:30', true], ['Ofertas nuevas', 'al momento de cargarlas', true], ['Tareas y respuestas de Laura', 'al momento', true], ['Recordatorio de iniciar la jornada', 'a las 08:30, si no la inició', false]]
+};
+function avU(u){ return u.ven && VX[u.ven] ? avt(u.ven) : '<span class="avt gr" style="background:#5E7F86" title="' + esc(u.nom) + '">' + esc(iniciales(u.nom)) + '</span>'; }
+function diasHabLista(per){
+  var r = [], d = new Date(2026, per === 'set' ? 8 : 7, 1), m = d.getMonth(), tope = per === 'set' ? 29 : 31;
+  while (d.getMonth() === m && d.getDate() <= tope){ var w = d.getDay(); if (w > 0 && w < 6 && !(per === 'ago' && d.getDate() === 25)) r.push(d.getDate()); d.setDate(d.getDate() + 1); }
+  return r;
+}
+function usoDias(id, per){
+  var x = USO[per][id], L = diasHabLista(per), n = L.length, faltan = Math.max(0, n - (x ? x.dias : 0)), sem = (+id.slice(1)) * 7 + (per === 'set' ? 3 : 11), off = {};
+  if (id === 'u7' && per === 'ago') L.forEach(function(dd, i){ if (dd > 14) off[i] = 1; });
+  else for (var k = 0; k < faltan; k++){ var i = Math.floor(rnd(sem + k * 5.1) * n); while (off[i]) i = (i + 1) % n; off[i] = 1; }
+  var pesos = L.map(function(dd, i){ return off[i] ? 0 : .6 + rnd(sem + i * 1.7) * .8; }), tot = suma(pesos);
+  return pesos.map(function(p){ return tot && x ? Math.round(x.ent * p / tot) : 0; });
+}
+function usoHoras(u, x){
+  var w = u.rol === 'VENDEDOR' ? [1, 8, 16, 14, 12, 11, 8, 4, 5, 9, 9, 7, 4, 2, 1, 1, 0, 0] : [0, 1, 6, 12, 11, 9, 7, 5, 8, 9, 8, 6, 5, 3, 2, 1, 1, 0], t = suma(w);
+  return w.map(function(k){ return Math.round(x.ent * k / t); });
+}
+var CONF = {};
+R.conf = function(){
+  var tabs = [['usu', 'Usuarios y permisos'], ['uso', 'Uso de la app'], ['cri', 'Criterios y objetivos'], ['avi', 'Avisos y empresa']];
+  return '<div class="tabs-c" role="tablist">' + tabs.map(function(t){ return '<button type="button" role="tab" data-a="filtro" data-k="confTab" data-val="' + t[0] + '" aria-selected="' + (S.confTab === t[0]) + '">' + t[1] + '</button>'; }).join('') + '</div>' + CONF[S.confTab]();
+};
+CONF.usu = function(){
+  var h = '';
+  if (S.nuevaClave) h += '<div class="clave"><span>Contraseña temporal de <b>' + esc(S.nuevaClave[0]) + '</b>: <code>' + S.nuevaClave[1] + '</code>. Pasásela ahora: no se vuelve a mostrar y la cambia en su primer ingreso.</span><button type="button" class="btn btn-s btn-sm" data-a="claveOk">Listo, la pasé</button></div>';
+  var filas = USERS.map(function(u){
+    var vinc = u.rol === 'VENDEDOR' ? (SISTEMA_VEN.filter(function(x){ return x.ven === u.ven; })[0] || null) : null;
+    return {a: u.act ? '' : 'style="opacity:.6"', s: [u.nom, ROLES[u.rol][0], u.ult, u.act ? 1 : 0], c: [
+      '<b>' + esc(u.nom) + (u.yo ? ' <span class="muted" style="font-weight:500">(vos)</span>' : '') + '</b><small>' + esc(u.mail) + '</small>',
+      '<select class="campo" style="width:150px" data-urol="' + u.id + '" aria-label="Rol de ' + esc(u.nom) + '"' + (u.yo ? ' disabled title="No podés cambiar tu propio rol"' : '') + '>' + Object.keys(ROLES).map(function(k){ return '<option value="' + k + '"' + (u.rol === k ? ' selected' : '') + '>' + ROLES[k][0] + '</option>'; }).join('') + '</select><small>' + (u.rol === 'VENDEDOR' ? (vinc ? 'Es ' + esc(vinc.nom) + ' (' + vinc.cod + ') en ' + SIS : 'Sin vendedor asignado') : ROLES[u.rol][1]) + '</small>',
+      '<span class="nw">' + esc(u.ult) + '</span>',
+      '<button type="button" class="sw" data-a="userAct" data-id="' + u.id + '" aria-pressed="' + u.act + '"><i></i>' + (u.act ? 'Activo' : 'Inactivo') + '</button>' +
+      '<button type="button" class="lnk lnk-clave" data-a="userClave" data-id="' + u.id + '"' + (u.act ? '' : ' disabled') + '>Nueva contraseña</button>']};
+  });
+  var libres = SISTEMA_VEN.filter(function(x){ return x.calle && !USERS.some(function(u){ return u.ven === x.ven && u.act; }); });
+  var f = '<form class="fm" id="uForm" novalidate>' +
+    '<label>Nombre<input class="campo" id="uNom" maxlength="60" autocomplete="off"></label>' +
+    '<label>Mail<input class="campo" id="uMail" type="email" maxlength="80" autocomplete="off" placeholder="nombre@' + MAIL + '"></label>' +
+    '<label>Rol<select class="campo" id="uRol">' + Object.keys(ROLES).map(function(k){ return '<option value="' + k + '"' + (k === 'VENDEDOR' ? ' selected' : '') + '>' + ROLES[k][0] + ': ' + ROLES[k][1].toLowerCase() + '</option>'; }).join('') + '</select></label>' +
+    '<label id="uVenL">¿Qué vendedor es en ' + SIS + '?<select class="campo" id="uVen">' + (libres.length ? libres.map(function(x){ return '<option value="' + x.ven + '">' + esc(x.nom) + ' · ' + x.cod + '</option>'; }).join('') : '<option value="">Todos los vendedores ya tienen usuario</option>') + '</select></label>' +
+    '<p class="nota">La contraseña se genera sola y se muestra una vez. La persona la cambia en su primer ingreso.</p>' +
+    '<button class="btn btn-p" type="submit">' + ic('plus') + 'Crear usuario</button></form>';
+  h += '<div class="fila f21">' + card('Usuarios', tabla('usu', [{l: 'Usuario', w: 170}, {l: 'Rol', s: false}, {l: 'Último ingreso'}, {l: 'Estado'}], filas), '<span class="s">' + USERS.filter(function(u){ return u.act; }).length + ' activos</span>') + card('Agregar usuario', f) + '</div>';
+  h += card('Vendedores en ' + SIS, '<div class="tw"><table class="t"><thead><tr><th>Vendedor</th><th>Tipo</th><th>Cuenta en los números</th><th>Usuario de la app</th></tr></thead><tbody>' + SISTEMA_VEN.map(function(x, i){
+    var tiene = USERS.some(function(u){ return u.ven && u.ven === x.ven && u.act; });
+    return '<tr' + (x.cuenta ? '' : ' style="opacity:.6"') + '><td><b>' + esc(x.nom) + '</b><small>' + x.cod + (x.nota ? ' · ' + esc(x.nota) : '') + '</small></td><td><button type="button" class="sw" data-a="sisCalle" data-i="' + i + '" aria-pressed="' + x.calle + '"><i></i>' + (x.calle ? 'Vendedor de calle' : 'Mostrador') + '</button></td><td><button type="button" class="sw" data-a="sisCuenta" data-i="' + i + '" aria-pressed="' + x.cuenta + '"><i></i>' + (x.cuenta ? 'Sí' : 'No') + '</button></td><td>' + (x.calle ? (tiene ? chip('ver', 'Con usuario') : chip('gris', 'Sin usuario')) : '<span class="muted">No usa la app</span>') + '</td></tr>';
+  }).join('') + '</tbody></table></div><p class="nota" style="margin-top:10px">Vienen de ' + SIS + '. Los de calle usan la app; los que no cuentan en los números no aparecen en el tablero.</p>');
+  h += '<p class="nota">Solo un administrador ve esta sección. No podés desactivarte ni cambiarte el rol, y siempre queda al menos un administrador activo.</p>';
+  return h;
+};
+CONF.uso = function(){
+  var per = S.usoPer, hab = DIAS_HAB[per], D = USO[per], mesL = per === 'set' ? 'setiembre' : 'agosto';
+  var vendU = USERS.filter(function(u){ return u.rol === 'VENDEDOR' && VX[u.ven]; });
+  var hoyCnt = vendU.filter(function(u){ return D[u.id] && /^hoy/.test(D[u.id].ult); }).length;
+  var pedApp = suma(vendU, function(u){ return D[u.id] && D[u.id].acc ? D[u.id].acc.ped : 0; }), pedTot = suma(VEND, function(v){ return v.ped[per]; });
+  var jorn = suma(vendU, function(u){ return D[u.id] && D[u.id].acc ? D[u.id].acc.jorn : 0; });
+  var h = '<div class="lead">' + filtroChips('usoPer', [['set', 'Setiembre 2026'], ['ago', 'Agosto 2026']], per) + '<p class="nota">' + hab + ' días hábiles' + (per === 'set' ? ' hasta hoy' : '') + '. El uso se guarda 180 días.</p></div>';
+  h += '<section class="kpis k4">' + kpi(per === 'set' ? 'Usaron la app hoy' : 'Vendedores que la usaron', (per === 'set' ? hoyCnt : vendU.filter(function(u){ return D[u.id]; }).length) + ' de ' + vendU.length, 'vendedores de calle', '', 'dest') +
+    kpi('Días con uso', pc(suma(vendU, function(u){ return D[u.id] ? D[u.id].dias : 0; }), hab * vendU.length) + ' %', 'de los días hábiles, promedio') +
+    kpi('Pedidos cargados en la app', pc(pedApp, pedTot) + ' %', pedApp + ' de ' + pedTot + ' pedidos del mes') +
+    kpi('Jornadas iniciadas', jorn + ' de ' + hab * vendU.length, '«Iniciar» y «Terminar» en la app') + '</section>';
+  var flojos = vendU.filter(function(u){ return D[u.id] && D[u.id].acc && D[u.id].acc.jorn < hab - 2; });
+  if (flojos.length) h += '<div class="alertas">' + flojos.map(function(u){
+    var x = D[u.id];
+    return '<button type="button" class="alerta" data-a="usoVer" data-id="' + u.id + '"><span class="ic arena">' + ic('flag') + '</span><span><b>' + esc(VX[u.ven].corto) + ' no inició la jornada ' + (hab - x.acc.jorn) + ' días hábiles de ' + mesL + '</b><small>Esos días no hay llegadas a las visitas ni oportunidades marcadas. Usó la app ' + x.dias + ' de ' + hab + ' días y cargó ' + x.acc.ped + ' de ' + VX[u.ven].ped[per] + ' pedidos desde el celular.</small></span></button>';
+  }).join('') + '</div>';
+  h += '<div class="ucards">' + USERS.map(function(u){
+    var x = D[u.id], v = u.ven && VX[u.ven], sub = u.rol === 'VENDEDOR' ? 'Vendedor' + (v ? ' · ' + v.zona : '') : ROLES[u.rol][0];
+    var cab = '<span class="quien">' + avU(u) + '<span><b>' + esc(u.nom) + '</b><small>' + sub + (u.act ? '' : ' · inactivo') + '</small></span></span>';
+    if (!x || !x.ent) return '<button type="button" class="ucard apagada" data-a="usoVer" data-id="' + u.id + '">' + cab + '<p>No abrió la app en ' + mesL + '.</p></button>';
+    return '<button type="button" class="ucard" data-a="usoVer" data-id="' + u.id + '">' + cab + '<span class="ent"><b>' + fmt.format(x.ent) + '</b><span>entradas</span></span><p>La usó ' + x.dias + ' de ' + hab + ' días hábiles · última vez ' + x.ult + '</p><span class="secs">' + x.secc.slice(0, 3).map(function(s){ return '<span>' + s[0] + '<b>' + s[1] + '</b></span>'; }).join('') + '</span>' +
+      (x.acc ? '<p>' + [x.acc.hechas + ' visitas', x.acc.ped + ' pedidos', x.acc.ofr + ' oportunidades', x.acc.notas + ' notas'].join(' · ') + '</p>' : '') + '</button>';
+  }).join('') + '</div>';
+  h += '<p class="nota">Una entrada es cada vez que alguien abre una pantalla. Lo que registra el vendedor (visitas, notas, oportunidades y pedidos) sale de la app; la ubicación solo se toma al llegar y salir de cada visita, durante la jornada.</p>';
+  return h;
+};
+function fichaUso(u){
+  var per = S.usoPer, x = USO[per][u.id], hab = DIAS_HAB[per], mesL = per === 'set' ? 'setiembre' : 'agosto';
+  var h = cabFicha(avU(u), (u.rol === 'VENDEDOR' ? 'Vendedor' : ROLES[u.rol][0]) + ' · uso de la app en ' + mesL, u.nom);
+  if (!x || !x.ent){ h += '<p class="nota">No abrió la app en ' + mesL + '.' + (u.act ? '' : ' El usuario está inactivo; el último ingreso fue el ' + esc(u.ult) + '.') + '</p>'; return h + '</div></aside>'; }
+  h += '<section class="kpis k3">' + kpi('Entradas', fmt.format(x.ent), 'pantallas abiertas') + kpi('Días con uso', x.dias + ' de ' + hab, pc(x.dias, hab) + ' % de los hábiles', x.dias < hab - 2 ? 'mal' : '') + kpi('Última vez', x.ult, '') + '</section>';
+  var mx = x.secc[0][1];
+  h += card('Secciones más usadas', x.secc.map(function(s){ return hbar(s[0], s[1], mx, fmt.format(s[1]) + ' · ' + pc(s[1], x.ent) + ' %'); }).join(''));
+  if (x.acc){
+    var a = x.acc, v = VX[u.ven], plan = v ? v.vis[per][1] : null;
+    var L = [['Visitas marcadas hechas', a.hechas, plan ? 'de ' + plan + ' planificadas' : ''], ['Con «Llegué» registrado', a.llegue, 'llegada a la visita'], ['Visitas con problema', a.prob, ''], ['Visitas fuera de ruta', a.fuera, ''], ['Pedidos cargados', a.ped, v ? 'de ' + v.ped[per] + ' del mes' : ''], ['Oportunidades ofrecidas', a.ofr, ''], ['«No le interesa»', a.noint, ''], ['Notas en fichas', a.notas, ''], ['Prospectos en su cartera', a.pros, ''], ['Jornadas iniciadas', a.jorn, 'de ' + hab + ' días hábiles'], ['Pedidos a Laura', a.desv, 'desvíos y reprogramaciones'], ['Tareas resueltas', a.tareas, '']];
+    h += card('Qué registró desde la app', '<div class="acc-l">' + L.map(function(l){ return '<div><span>' + l[0] + (l[2] ? '<small>' + l[2] + '</small>' : '') + '</span><b>' + l[1] + '</b></div>'; }).join('') + '</div>', '<span class="s">' + suma(L, function(l){ return l[1]; }) + ' acciones</span>');
+  }
+  h += card('Entradas por día', barras([{n: 'Entradas', v: usoDias(u.id, per), c: '#0B6E7C'}], diasHabLista(per).map(String), {h: 130, aria: 'Entradas por día hábil'}), '<span class="s">días hábiles de ' + mesL + '</span>');
+  var hs = []; for (var k = 6; k <= 23; k++) hs.push(String(k));
+  h += card('A qué hora la usa', barras([{n: 'Entradas', v: usoHoras(u, x), c: '#8FD6DE'}], hs, {h: 120, aria: 'Entradas por hora del día'}), '<span class="s">hora de Uruguay</span>');
+  return h + '</div></aside>';
+}
+CONF.cri = function(){
+  var h = '<div class="fila f2 estira">';
+  h += card('Cliente en riesgo', '<div class="tw"><table class="t"><thead><tr><th>Regla</th><th>Qué mide</th><th class="r">Umbral</th></tr></thead><tbody>' + PARAM.riesgo.map(function(r, i){
+    return '<tr><td><b>' + r[0] + '</b></td><td><small style="font-size:12.5px;color:var(--tinta-2)">' + r[1] + '</small></td><td class="r"><span class="nw"><input class="campo num-in" type="number" min="1" data-par="riesgo" data-i="' + i + '" value="' + r[2] + '" aria-label="' + r[0] + '"> ' + r[3] + '</span></td></tr>';
+  }).join('') + '</tbody></table></div><p class="nota" style="margin-top:10px">Con estas reglas sale la lista «Dejaron de comprar a su ritmo» y la oportunidad «Reactivar» de la app.</p>');
+  h += card('Oportunidades', '<div class="acc-l"><div><span>Se esconde después de ofrecida<small>para no repetirla en cada visita</small></span><span class="nw"><input class="campo num-in" type="number" min="1" data-par="ofrecida" value="' + PARAM.ofrecida + '" aria-label="Días que se esconde después de ofrecida"> días</span></div>' +
+    '<div><span>Se esconde si no le interesó<small>después vuelve a aparecer</small></span><span class="nw"><input class="campo num-in" type="number" min="1" data-par="noint" value="' + PARAM.noint + '" aria-label="Días que se esconde si no le interesó"> días</span></div>' +
+    '<div><span>Venta cruzada desde<small>de cada 100 clientes parecidos que llevan los dos productos</small></span><span class="nw"><input class="campo num-in" type="number" min="1" max="100" data-par="cruzada" value="' + PARAM.cruzada + '" aria-label="Venta cruzada desde"> de 100</span></div></div>' +
+    '<p class="nota" style="margin:12px 0 6px">Familias que no generan oportunidades</p><div class="cks">' + CATS.map(function(k){ return '<label class="ck"><input type="checkbox" data-excl="' + esc(k) + '"' + (PARAM.excluidas.indexOf(k) >= 0 ? ' checked' : '') + '>' + esc(k) + '</label>'; }).join('') + '</div>');
+  h += '</div>';
+  h += card('Objetivos y comisiones', '<div class="tw"><table class="t"><thead><tr><th>Vendedor</th><th class="r">Objetivo de setiembre</th><th class="r">Objetivo de octubre</th><th class="r">Comisión</th></tr></thead><tbody>' + VEND.map(function(v){
+    return '<tr><td><div class="quien">' + avt(v.id) + '<b>' + v.nom + '</b></div></td>' +
+      '<td class="r"><span class="nw">$U <input class="campo num-in" style="width:120px!important" type="number" step="10000" min="0" data-obj="' + v.id + '" data-per="set" value="' + v.obj.set + '" aria-label="Objetivo de setiembre de ' + v.corto + '"></span></td>' +
+      '<td class="r"><span class="nw">$U <input class="campo num-in" style="width:120px!important" type="number" step="10000" min="0" data-obj="' + v.id + '" data-per="oct" value="' + v.obj.oct + '" aria-label="Objetivo de octubre de ' + v.corto + '"></span></td>' +
+      '<td class="r"><span class="nw"><input class="campo num-in" style="width:70px!important" type="number" min="0" max="20" step=".5" data-ucom="' + v.id + '" value="' + Math.round(v.com * 1000) / 10 + '" aria-label="Comisión de ' + v.corto + '"> %</span></td></tr>';
+  }).join('') + '</tbody></table></div><p class="nota" style="margin-top:10px">Cada vendedor ve su objetivo y su comisión en la app, en «Progreso». La comisión se calcula sobre la venta sin IVA.</p>', '<span class="s">los cambios se ven al momento en Vendedores</span>');
+  h += '<div class="acts"><button type="button" class="btn btn-p" data-a="paramGuardar">' + ic('check') + 'Guardar criterios</button></div>';
+  return h;
+};
+CONF.avi = function(){
+  var h = '<div class="fila f2 estira">';
+  h += card('Cierre del día', '<div class="fm"><label>A qué hora llega el mail<select class="campo" data-par="cierre">' + ['17:00', '17:30', '18:00', '19:00'].map(function(x){ return '<option' + (PARAM.cierre === x ? ' selected' : '') + '>' + x + '</option>'; }).join('') + '</select></label>' +
+    '<p class="nota">Con la venta del día, las visitas, los pedidos que faltan pasar a ' + SIS + ' y lo que quedó por decidir.</p>' +
+    '<fieldset><legend>Le llega a</legend><div class="facs">' + PARAM.mails.map(function(m, i){ return '<div><span class="mono">' + esc(m) + '</span><span></span><button type="button" class="ib" data-a="mailQuitar" data-i="' + i + '" aria-label="Quitar ' + esc(m) + '">' + ic('x', 2.2) + '</button></div>'; }).join('') + '</div></fieldset>' +
+    '<form id="mailForm" class="ped-in" novalidate><input class="campo" id="mailNuevo" type="email" maxlength="80" placeholder="otro@' + MAIL + '" aria-label="Agregar un mail"><button class="btn btn-s btn-sm" type="submit">Agregar</button></form></div>');
+  h += card('Avisos en la app del vendedor', '<div class="acc-l">' + PARAM.app.map(function(a, i){ return '<div><span>' + a[0] + '<small>' + a[1] + '</small></span><button type="button" class="sw" data-a="avisoApp" data-i="' + i + '" aria-pressed="' + a[2] + '"><i></i>' + (a[2] ? 'Sí' : 'No') + '</button></div>'; }).join('') + '</div>');
+  h += '</div>';
+  h += card('Empresa y sistema', '<div class="acc-l"><div><span>Empresa</span><b style="font-family:var(--f)">Distribuidora Central</b></div>' +
+    '<div><span>Sistema de gestión<small>clientes, facturas, saldos, listas de precios y stock</small></span><span class="nw">' + chip('ver', 'Conectado', true) + ' <b style="font-family:var(--f);margin-left:6px">' + SIS + '</b></span></div>' +
+    '<div><span>Última sincronización<small>cada 5 minutos</small></span><b>' + S.hora + '</b></div>' +
+    '<div><span>Lista de precios de la app</span><b style="font-family:var(--f)">' + LISTA + '</b></div></div>' +
+    '<p class="nota" style="margin-top:10px">Los datos se tratan según la Ley 18.331. La app solo registra la ubicación al llegar y salir de cada visita, durante la jornada.</p>');
+  return h;
+};
+
 /* ================================ paneles laterales ================================ */
-function abrirFicha(id){ if (!CX[id]) return; S.ficha = id; S.vendF = null; pintarCapa(); }
-function abrirVend(id){ if (!VX[id]) return; S.vendF = id; S.ficha = null; pintarCapa(); }
-function cerrarCapa(){ S.ficha = null; S.vendF = null; pintarCapa(); }
+function hayCapa(){ return !!(S.ficha || S.vendF || S.ofeSel || S.usoUser || S.rfAdd); }
+function limpiarCapa(){ S.ficha = null; S.vendF = null; S.ofeSel = null; S.usoUser = null; S.rfAdd = null; }
+function abrirFicha(id){ if (!CX[id]) return; limpiarCapa(); S.ficha = id; pintarCapa(); }
+function abrirVend(id){ if (!VX[id]) return; limpiarCapa(); S.vendF = id; pintarCapa(); }
+function cerrarCapa(){ limpiarCapa(); pintarCapa(); }
 function pintarCapa(){
-  var capa = $('capa');
+  var capa = $('capa'), o = S.ofeSel ? OFERTAS.filter(function(x){ return x.id === S.ofeSel; })[0] : null, u = S.usoUser ? USERS.filter(function(x){ return x.id === S.usoUser; })[0] : null;
   if (S.ficha) capa.innerHTML = fichaCliente(CX[S.ficha]);
   else if (S.vendF) capa.innerHTML = fichaVendedor(VX[S.vendF]);
+  else if (o) capa.innerHTML = fichaOferta(o);
+  else if (u) capa.innerHTML = fichaUso(u);
+  else if (S.rfAdd) capa.innerHTML = panelRuta();
   else capa.innerHTML = '';
 }
 function cabFicha(av, sub, tit){ return '<div class="velo-f" data-a="fichaCerrar"></div><aside class="ficha" role="dialog" aria-modal="true" aria-label="' + esc(tit) + '"><div class="fi-h">' + av + '<div><small>' + sub + '</small><h2>' + esc(tit) + '</h2></div><button type="button" class="x" data-a="fichaCerrar" aria-label="Cerrar">' + ic('x', 2.2) + '</button></div><div class="fi-b">'; }
 function fichaCliente(c){
-  var peds = PEDIDOS.filter(function(p){ return p.cli === c.id; }), ops = OPS.filter(function(o){ return o.c === c.id && !o.off && o.est !== 'vendida'; });
+  var peds = PEDIDOS.filter(function(p){ return p.cli === c.id; }), ops = OPS.filter(function(o){ return o.c === c.id && !o.off && o.est !== 'vendida' && o.est !== 'no'; });
   var h = cabFicha('<span class="av" style="background:#5E7F86">' + esc(iniciales(c.n)) + '</span>', esc(c.r) + ' · ' + esc(c.z) + ' · ' + c.cod + ' · ' + esc(corV(c.v)), c.n);
   h += '<section class="kpis k3">' + kpi('Compra por mes', $u(c.m), 'cada ' + c.f + ' días') + kpi('Última compra', hace(c.u), c.est === 'riesgo' ? 'pasó su frecuencia' : 'a su ritmo', c.est === 'riesgo' ? 'mal' : '') + kpi('Saldo', c.sal ? $u(c.sal) : 'Al día', c.ven ? $u(c.ven) + ' vencido · ' + c.dv + ' días' : 'sin vencidos', c.ven ? 'mal' : '') + '</section>';
   h += card('Últimos 12 meses', barras([{n: c.n, v: c.meses, c: function(k){ return k === 11 ? '#0B6E7C' : '#8FC3CA'; }}], MESES, {h: 140, fmt: function(v){ return $u(v); }, hl: 11, aria: 'Compras por mes'}), '<span class="s">' + $u(c.y) + ' en el año</span>');
@@ -1491,7 +2103,7 @@ function timeline(ven){
     var c = CX[s.c], d = s.est === 'hecha' ? 'hecha' : s.est === 'visita' ? 'visita' : s.est === 'prob' ? 'prob' : '';
     var ped = s.ped ? PEDIDOS.filter(function(p){ return p.n === s.ped; })[0] : null;
     var res = s.est === 'hecha' ? (s.ped ? chip('ver', 'Pedido ' + esc(s.ped) + (ped ? ' · ' + $m(ped.tot) : '')) : chip('gris', esc(s.res || 'Visita hecha'))) : s.est === 'visita' ? chip('borde', 'En visita desde ' + esc(s.lle), true) : s.est === 'prob' ? chip('rojo', esc(s.res || 'Con problema')) : s.fuera ? chip('arena', 'Fuera de ruta') : chip('gris', 'Pendiente');
-    var op = OPS.filter(function(o){ return o.c === s.c && !o.off && o.est !== 'vendida'; }).map(function(o){ return OPT[o.t]; });
+    var op = OPS.filter(function(o){ return o.c === s.c && !o.off && o.est !== 'vendida' && o.est !== 'no'; }).map(function(o){ return OPT[o.t]; });
     return '<div class="tl-i"><span class="h">' + s.h + '</span><span class="d ' + d + '">' + (k + 1) + (op.length && !d ? '<i class="op"></i>' : '') + '</span><div>' + cliLink(s.c) + '<small>' + esc(c.z) + (s.lle ? ' · llegó ' + esc(s.lle) + (s.sal ? ', se fue ' + esc(s.sal) : '') : '') + (op.length ? ' · <span style="color:var(--aviso-tinta)">' + op.join(', ') + '</span>' : '') + (c.ven ? ' · <span class="baja">debe ' + $u(c.ven) + '</span>' : '') + '</small></div><div>' + res + '</div></div>';
   }).join('') + '</div>';
 }
@@ -1508,8 +2120,14 @@ function fichaVendedor(v){
 
 /* ================================ render ================================ */
 function pintarMenu(){
-  var cnt = {hoy: [solPend().length, 1], ped: [pendientes().length, 1], cli: [riesgo().length + vencidos('todos').length, 0]};
-  $('menu').innerHTML = SECC.map(function(s){ var n = cnt[s[0]]; return '<button type="button" class="it" data-a="ir" data-v="' + s[0] + '"' + (S.v === s[0] ? ' aria-current="page"' : '') + '>' + ic(s[2]) + '<span>' + s[1] + '</span>' + (n && n[0] ? '<i class="cnt' + (n[1] ? ' av-n' : '') + '">' + n[0] + '</i>' : '') + '</button>'; }).join('');
+  var cnt = {hoy: [solPend().length, 1], ped: [pendientes().length, 1], cli: [riesgo().length + vencidos('todos').length, 0], ops: [OPS.filter(function(o){ return !o.off && (estOp(o) === 'abierta' || estOp(o) === 'ruta'); }).length, 0], ofe: [ofertasVig().length, 0]};
+  var por = {}; SECC.forEach(function(s){ por[s[0]] = s; });
+  $('menu').innerHTML = GRUPOS.map(function(g){
+    return (g[0] ? '<div class="menu-g">' + g[0] + '</div>' : '') + g[1].map(function(k){
+      var s = por[k], n = cnt[k];
+      return '<button type="button" class="it' + (k === 'conf' ? ' conf' : '') + '" data-a="ir" data-v="' + k + '"' + (S.v === k ? ' aria-current="page"' : '') + '>' + ic(s[2]) + '<span>' + s[1] + '</span>' + (n && n[0] ? '<i class="cnt' + (n[1] ? ' av-n' : '') + '">' + n[0] + '</i>' : '') + '</button>';
+    }).join('');
+  }).join('');
 }
 var CAL_IC = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5.5" width="16" height="14.5" rx="2"/><path d="M4 10h16M8.5 3.5v4M15.5 3.5v4"/></svg>';
 function pintarCab(){
@@ -1520,6 +2138,8 @@ function pintarCab(){
   if (S.v === 'vend' || S.v === 'suma') der = '<label class="periodo">' + CAL_IC + '<span class="sr">Período</span><select id="per"><option value="set"' + (S.per === 'set' ? ' selected' : '') + '>Setiembre 2026</option><option value="ago"' + (S.per === 'ago' ? ' selected' : '') + '>Agosto 2026</option></select></label>';
   if (S.v === 'ped') der = '<button type="button" class="btn btn-s" data-a="csvPed">' + ic('down') + 'Bajar planilla</button>';
   if (S.v === 'cli') der = '<span class="reloj"><i></i>saldos de Doria · 29/09</span>';
+  if (S.v === 'ofe') der = '<button type="button" class="btn btn-p" data-a="ofeIrForm">' + ic('plus') + 'Nueva oferta</button>';
+  if (S.v === 'ops' || S.v === 'rut') der = '<span class="reloj"><i></i>mar 29/09 · ' + S.hora + '</span>';
   $('cab-der').innerHTML = der;
 }
 function render(mantenerScroll){
@@ -1528,7 +2148,8 @@ function render(mantenerScroll){
   var y = window.scrollY;
   $('main').innerHTML = R[S.v]();
   if (mantenerScroll) window.scrollTo(0, y);
-  if (S.ficha || S.vendF) pintarCapa();
+  if (hayCapa() && !S.rfAdd) pintarCapa();
+  if (R[S.v].despues) R[S.v].despues();
 }
 function ir(v, sinScroll){
   v = ALIAS[v] || v;
@@ -1649,8 +2270,88 @@ var A = {
     render(true);
   },
   pedReabrir: function(el){ var n = el.getAttribute('data-id'), p = buscarPed(n); p.est = 'pend'; delete S.pedOpen[n]; toast('Pedido ' + n + ' de vuelta en pendientes.'); avisarPadre({tipo: 'libreta-pedido-estado', n: n, est: 'pendiente'}); render(true); },
-  csvPed: function(){ CSV.pedidos(S.pedV); }
+  csvPed: function(){ CSV.pedidos(S.pedV); },
+  /* oportunidades */
+  opPedir: function(el, e){
+    e.stopPropagation();
+    var o = OPS.filter(function(x){ return x.id == el.getAttribute('data-id'); })[0]; if (!o) return;
+    S.opsPedida[o.id] = true;
+    avisarPadre({tipo: 'libreta-tarea', ven: o.w, cli: o.c, txt: o.a + ' ' + nomOp(o)});
+    toast('Tarea para ' + corV(o.w) + ': ' + o.a.charAt(0).toLowerCase() + o.a.slice(1) + ' ' + nomOp(o) + '. Le aparece en la app.');
+    render(true);
+  },
+  /* ofertas */
+  ofeVer: function(el){ limpiarCapa(); S.ofeSel = +el.getAttribute('data-id'); pintarCapa(); },
+  ofeIrForm: function(){ var c = $('ofCard'); if (!c) return; c.scrollIntoView({behavior: 'smooth', block: 'start'}); setTimeout(function(){ var i = $('ofC'); if (i) i.focus({preventScroll: true}); }, 450); },
+  ofeReenviar: function(el){
+    var o = OFERTAS.filter(function(x){ return x.id == el.getAttribute('data-id'); })[0]; if (!o) return;
+    avisarPadre({tipo: 'libreta-oferta', oferta: {id: o.id, cod: o.p, prod: PROD[o.p].d, cond: o.c, hasta: o.d2, ven: o.sel}});
+    toast('Oferta reenviada a la app de ' + yLista(o.sel.map(corV)) + '.');
+  },
+  ofeTerminar: function(el){
+    var o = OFERTAS.filter(function(x){ return x.id == el.getAttribute('data-id'); })[0]; if (!o) return;
+    var antes = o.st; o.st = 'Terminada';
+    if (antes === 'Vigente') avisarPadre({tipo: 'libreta-oferta-fin', id: o.id});
+    toast(antes === 'Programada' ? 'Oferta cancelada: no le va a llegar a los vendedores.' : 'Oferta terminada: se saca de la app y de la lista de precios.', 'Deshacer', function(){
+      o.st = antes; render(true); if (S.ofeSel === o.id) pintarCapa();
+      if (antes === 'Vigente') avisarPadre({tipo: 'libreta-oferta', oferta: {id: o.id, cod: o.p, prod: PROD[o.p].d, cond: o.c, hasta: o.d2, ven: o.sel}});
+    });
+    render(true); pintarCapa();
+  },
+  /* rutas fijas */
+  rfAbrir: function(el){ limpiarCapa(); S.rfAdd = {ven: S.rfVen, d: el.getAttribute('data-d'), q: '', sel: {}, fr: 1}; pintarCapa(); setTimeout(function(){ var q = $('rfQ'); if (q) q.focus(); }, 60); },
+  rfFijar: function(){
+    var a = S.rfAdd; if (!a) return;
+    var ids = Object.keys(a.sel).filter(function(k){ return a.sel[k]; });
+    if (!ids.length){ toast('Elegí al menos un cliente.'); return; }
+    fijarClientes(a.ven, a.d, ids, a.fr);
+    cerrarCapa(); render(true);
+  },
+  rfFijarUno: function(el, e){ e.stopPropagation(); var c = CX[el.getAttribute('data-id')]; if (!c) return; fijarClientes(S.rfVen, el.getAttribute('data-d'), [c.id], frecDe(c)); render(true); },
+  rfQuitar: function(el){
+    var d = el.getAttribute('data-d'), i = +el.getAttribute('data-i'), L = RFIJAS[S.rfVen][d], x = L[i]; if (!x) return;
+    L.splice(i, 1);
+    toast(nombreCli(x.c) + ' salió de la ruta fija del ' + d.toLowerCase() + '. Las visitas ya agendadas siguen.', 'Deshacer', function(){ L.splice(i, 0, x); render(true); });
+    render(true);
+  },
+  rfMover: function(el){
+    var d = el.getAttribute('data-d'), i = +el.getAttribute('data-i'), m = +el.getAttribute('data-m'), L = RFIJAS[S.rfVen][d], j = i + m;
+    if (j < 0 || j >= L.length) return;
+    var t = L[i]; L[i] = L[j]; L[j] = t; render(true);
+  },
+  /* configuración */
+  usoVer: function(el){ limpiarCapa(); S.usoUser = el.getAttribute('data-id'); pintarCapa(); },
+  userAct: function(el){
+    var u = USERS.filter(function(x){ return x.id === el.getAttribute('data-id'); })[0]; if (!u) return;
+    if (u.yo){ toast('No podés desactivar tu propio usuario.'); return; }
+    if (u.act && u.rol === 'ADMIN' && USERS.filter(function(x){ return x.act && x.rol === 'ADMIN'; }).length < 2){ toast('Tiene que quedar al menos un administrador activo.'); return; }
+    u.act = !u.act;
+    toast(u.nom + (u.act ? ' vuelve a tener acceso.' : ' ya no puede entrar. Sus datos y su historia quedan.'));
+    render(true);
+  },
+  userClave: function(el){
+    var u = USERS.filter(function(x){ return x.id === el.getAttribute('data-id'); })[0]; if (!u) return;
+    S.nuevaClave = [u.nom, claveNueva()]; render(true); window.scrollTo(0, 0);
+  },
+  claveOk: function(){ S.nuevaClave = null; render(true); },
+  sisCalle: function(el){ var x = SISTEMA_VEN[+el.getAttribute('data-i')]; x.calle = !x.calle; toast(x.nom + (x.calle ? ' es vendedor de calle: usa la app.' : ' queda como mostrador: no usa la app.')); render(true); },
+  sisCuenta: function(el){ var x = SISTEMA_VEN[+el.getAttribute('data-i')]; x.cuenta = !x.cuenta; toast(x.nom + (x.cuenta ? ' cuenta en los números del tablero.' : ' sale de los números del tablero.')); render(true); },
+  avisoApp: function(el){ var a = PARAM.app[+el.getAttribute('data-i')]; a[2] = !a[2]; toast(a[0] + (a[2] ? ': le llega a la app.' : ': no le llega más.')); render(true); },
+  mailQuitar: function(el){ var i = +el.getAttribute('data-i'), m = PARAM.mails[i]; if (PARAM.mails.length < 2){ toast('Tiene que quedar al menos un mail.'); return; } PARAM.mails.splice(i, 1); toast(m + ' ya no recibe el cierre del día.'); render(true); },
+  paramGuardar: function(){ toast('Guardado. El tablero y la app usan los criterios nuevos desde ahora.'); }
 };
+function claveNueva(){ var a = 'abcdefghjkmnpqrstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ23456789', r = ''; for (var i = 0; i < 10; i++) r += a.charAt(Math.floor(Math.random() * a.length)); return r; }
+function crearUsuario(){
+  var nom = $('uNom').value.trim(), mail = $('uMail').value.trim(), rol = $('uRol').value, ven = rol === 'VENDEDOR' ? $('uVen').value : null;
+  if (nom.length < 3){ $('uNom').focus(); toast('Escribí el nombre.'); return; }
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(mail)){ $('uMail').focus(); toast('Revisá el mail.'); return; }
+  if (USERS.some(function(u){ return u.mail.toLowerCase() === mail.toLowerCase(); })){ toast('Ya hay un usuario con ese mail.'); return; }
+  if (rol === 'VENDEDOR' && !ven){ toast('Elegí qué vendedor es.'); return; }
+  USERS.push({id: 'u' + N_USER++, nom: nom.slice(0, 60), mail: mail.slice(0, 80), rol: rol, ven: ven, ult: 'Nunca', act: true});
+  S.nuevaClave = [nom, claveNueva()];
+  toast('Usuario creado. Pasale la contraseña temporal.');
+  render(true); window.scrollTo(0, 0);
+}
 
 /* ================================ eventos ================================ */
 document.addEventListener('click', function(e){
@@ -1667,9 +2368,46 @@ document.addEventListener('change', function(e){
   var t = e.target;
   if (t.id === 'per'){ S.per = t.value; render(true); toast('Período: ' + t.options[t.selectedIndex].text); }
 });
+document.addEventListener('input', function(e){
+  var t = e.target; if (!t.getAttribute) return;
+  if (t.hasAttribute('data-rfq') && S.rfAdd){ S.rfAdd.q = t.value; $('rf-lista').innerHTML = listaRf(); return; }
+  if (t.closest && t.closest('#ofForm')){ prevOferta(); return; }
+  if (t.hasAttribute('data-obj')){ var v = VX[t.getAttribute('data-obj')], n = Math.round(+t.value); if (v && n > 0) v.obj[t.getAttribute('data-per')] = n; return; }
+  if (t.hasAttribute('data-ucom')){ var w = VX[t.getAttribute('data-ucom')], c = +t.value; if (w && c >= 0 && c <= 20) w.com = c / 100; return; }
+  if (t.hasAttribute('data-par') && t.type === 'number'){ var k = t.getAttribute('data-par'), x = Math.round(+t.value); if (x > 0){ if (k === 'riesgo') PARAM.riesgo[+t.getAttribute('data-i')][2] = x; else PARAM[k] = x; } }
+});
+document.addEventListener('change', function(e){
+  var t = e.target; if (!t.getAttribute) return;
+  if (t.hasAttribute('data-rfc') && S.rfAdd){ S.rfAdd.sel[t.getAttribute('data-rfc')] = t.checked; $('rfOk').textContent = textoFijar(); return; }
+  if (t.id === 'rfFr' && S.rfAdd){ S.rfAdd.fr = +t.value; $('rfProx').textContent = 'Próximas visitas: ' + proxFechas(S.rfAdd.d, S.rfAdd.fr).join(', ') + (S.rfAdd.d === HOY_DIA ? '. Si lo fijás hoy, se suma también a la ruta de hoy.' : '.'); return; }
+  if (t.name === 'ofS'){ S.ofeVen[t.value] = t.checked; return; }
+  if (t.closest && t.closest('#ofForm')){ prevOferta(); return; }
+  if (t.id === 'uRol'){ $('uVenL').hidden = t.value !== 'VENDEDOR'; return; }
+  if (t.hasAttribute('data-urol')){
+    var u = USERS.filter(function(x){ return x.id === t.getAttribute('data-urol'); })[0]; if (!u) return;
+    if (u.rol === 'ADMIN' && t.value !== 'ADMIN' && USERS.filter(function(x){ return x.act && x.rol === 'ADMIN'; }).length < 2){ toast('Tiene que quedar al menos un administrador activo.'); render(true); return; }
+    u.rol = t.value; if (u.rol !== 'VENDEDOR') u.ven = null;
+    toast(u.nom + ' ahora es ' + ROLES[u.rol][0].toLowerCase() + '.'); render(true); return;
+  }
+  if (t.hasAttribute('data-excl')){ var f = t.getAttribute('data-excl'), i = PARAM.excluidas.indexOf(f); if (t.checked && i < 0) PARAM.excluidas.push(f); if (!t.checked && i >= 0) PARAM.excluidas.splice(i, 1); return; }
+  if (t.hasAttribute('data-par') && t.tagName === 'SELECT'){ PARAM[t.getAttribute('data-par')] = t.value; toast('El cierre del día llega a las ' + t.value + '.'); return; }
+  if (t.hasAttribute('data-obj') || t.hasAttribute('data-ucom')) toast('Listo. Se ve al momento en Vendedores y en la app.');
+});
+document.addEventListener('submit', function(e){
+  var f = e.target;
+  if (f.id === 'ofForm'){ e.preventDefault(); crearOferta(); }
+  else if (f.id === 'uForm'){ e.preventDefault(); crearUsuario(); }
+  else if (f.id === 'mailForm'){
+    e.preventDefault();
+    var m = $('mailNuevo').value.trim();
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(m)){ toast('Revisá el mail.'); return; }
+    if (PARAM.mails.indexOf(m) < 0) PARAM.mails.push(m.slice(0, 80));
+    toast(m + ' recibe el cierre del día.'); render(true);
+  }
+});
 document.addEventListener('keydown', function(e){
   if (e.key === 'Enter' && e.target.hasAttribute && e.target.hasAttribute('data-pedtxt')){ var n = e.target.getAttribute('data-pedtxt'), b = document.querySelector('[data-a="pedCargar"][data-id="' + n + '"],[data-a="pedAnular"][data-id="' + n + '"]'); if (b && !b.disabled) b.click(); }
-  if (e.key === 'Escape'){ if (S.ficha || S.vendF) cerrarCapa(); document.body.classList.remove('menu-abierto'); }
+  if (e.key === 'Escape'){ if (hayCapa()) cerrarCapa(); document.body.classList.remove('menu-abierto'); }
 });
 
 /* ================================ asesor comercial ================================
@@ -1677,7 +2415,7 @@ document.addEventListener('keydown', function(e){
    y recomendación, con los datos del panel. Las acciones se proponen y se hacen
    recién al confirmar. No usa WhatsApp. */
 var ASE = {abierto: false, saludo: false, acciones: {}, n: 0};
-var ASE_SUG = ['¿Cómo venimos contra el objetivo?', '¿Qué clientes de María no compran hace más de 30 días?', '¿Quién debe más de 30 días?', 'Dame un brief de Carlos', '¿Qué pedidos faltan cargar?', 'Pedile a María que pase por La Trattoria el jueves'];
+var ASE_SUG = ['¿Cómo venimos contra el objetivo?', '¿Cómo vienen las ofertas?', '¿Quién usa menos la app?', '¿Qué clientes de María no compran hace más de 30 días?', 'Dame un brief de Carlos', '¿Qué pedidos faltan cargar?', 'Pedile a María que pase por La Trattoria el jueves'];
 var GEN_RUBRO = /^(almacen|supermercado|autoservicio|cafeteria|pizzeria|panaderia|kiosco|minimercado|bar|rotiseria|parador|parrillada|despensa|restaurante) /;
 function aseCli(t){
   var mejor = null, largo = 0;
@@ -1699,6 +2437,19 @@ function aseRespuesta(texto){
       S.pedidasVisita[c.id] = true; avisarPadre({tipo: 'libreta-tarea', ven: w, cli: c.id, txt: 'Pasá por ' + c.n + (cuando ? ' el ' + cuando[0].replace('miercoles', 'miércoles').replace('sabado', 'sábado').replace('manana', 'mañana') : '')}); render(true);
       return 'Listo. ' + corV(w) + ' tiene la tarea en «Hoy» de su app.'; }};
     r.ir = ['Ver la ficha de ' + c.n, 'ficha', c.id];
+    return r;
+  }
+  if (/uso de la app|usa(n)? (la app|menos|mas)|entradas|jornada/.test(t)){
+    var DU = USO.set, LU = USERS.filter(function(u){ return u.rol === 'VENDEDOR' && VX[u.ven] && DU[u.id]; }).sort(function(a, b){ return DU[a.id].dias - DU[b.id].dias; });
+    r.txt = 'Uso de la app en setiembre, ' + DIAS_HAB.set + ' días hábiles:<ul>' + LU.map(function(u){ var x = DU[u.id]; return '<li><b>' + esc(VX[u.ven].corto) + '</b>: la usó ' + x.dias + ' días, ' + fmt.format(x.ent) + ' entradas, inició ' + x.acc.jorn + ' jornadas y cargó ' + x.acc.ped + ' de ' + VX[u.ven].ped.set + ' pedidos desde el celular.</li>'; }).join('') + '</ul>' +
+      (LU[0] && DU[LU[0].id].dias < DIAS_HAB.set - 2 ? '<span class="et">Recomendación</span>La que menos la usa es <b>' + esc(VX[LU[0].ven].corto) + '</b>: los días que no inicia la jornada no hay llegadas a las visitas ni oportunidades marcadas. Conviene hablarlo con ella.' : '');
+    r.ir = ['Ver el uso de la app', 'conf:uso']; r.sug = ['¿Cómo vienen las ofertas?', '¿Cómo venimos contra el objetivo?'];
+    return r;
+  }
+  if (/ruta(s)? fija/.test(t)){
+    var vr = ven || 'mf', rf = RFIJAS[vr];
+    r.txt = 'Ruta fija de <b>' + VX[vr].corto + '</b>:<ul>' + DIAS_RF.map(function(d){ return '<li><b>' + d + '</b>: ' + (rf[d].length ? rf[d].map(function(x){ return esc(nombreCli(x.c)) + (x.fr > 1 ? ' (' + FREC_C[x.fr] + ')' : ''); }).join(', ') : 'nadie fijo') + '</li>'; }).join('') + '</ul>';
+    r.ir = ['Abrir Rutas fijas', 'rut:' + vr];
     return r;
   }
   if (/(carg|pas).*(pedido|sistema)|pedidos? (pendiente|falta)|falta(n)? cargar/.test(t)){
@@ -1739,8 +2490,10 @@ function aseRespuesta(texto){
     return r;
   }
   if (/oferta|promo/.test(t)){
-    var vg = OFERTAS.filter(function(o){ return o.st === 'Vigente'; }), pg = OFERTAS.filter(function(o){ return o.st === 'Programada'; });
-    r.txt = 'Hay <b>' + vg.length + ' ofertas vigentes</b>:<ul>' + vg.map(function(o){ return '<li>' + esc(PROD[o.p].d) + ': ' + esc(o.c) + ' (hasta el ' + o.d2 + ') · vendido ' + $u(o.sold) + '</li>'; }).join('') + '</ul>' + (pg.length ? 'Programada: ' + pg.map(function(o){ return esc(PROD[o.p].d) + ', ' + esc(o.c) + ' desde el ' + o.d1; }).join('; ') + '.' : '') + ' En setiembre se vendieron ' + $u(suma(OFERTAS, function(o){ return o.sold; })) + ' con ofertas.';
+    var vg = ofertasVig(), pg = OFERTAS.filter(function(o){ return o.st === 'Programada'; });
+    r.txt = 'Hay <b>' + vg.length + ' ofertas vigentes</b>:<ul>' + vg.map(function(o){ var x = ofeTot(o); return '<li>' + esc(PROD[o.p].d) + ': ' + esc(o.c) + ' (hasta el ' + o.d2 + '). ' + $u(x.imp) + ' en ' + x.ped + ' pedidos' + (o.meta ? ', el ' + pc(x.uni, o.meta) + ' % de la meta' : '') + '; la vieron ' + ofeVistas(o) + ' de ' + o.sel.length + '.</li>'; }).join('') + '</ul>' +
+      (pg.length ? 'Programada: ' + pg.map(function(o){ return esc(PROD[o.p].d) + ', ' + esc(o.c) + ', desde el ' + o.d1; }).join('; ') + '.' : '');
+    r.ir = ['Abrir Ofertas', 'ofe']; r.sug = ['¿Quién usa menos la app?', '¿Qué pedidos faltan cargar?'];
     return r;
   }
   if (/presupuesto/.test(t)){
@@ -1810,7 +2563,7 @@ function aseRespuesta(texto){
   if (/oportunidad|ofrecer|semana/.test(t)){
     var O = OPS.filter(function(o){ return !o.est && !o.off && (!ven || o.w === ven); }).sort(function(a, b){ return b.v - a.v; });
     r.txt = 'Las que más plata mueven:<ul>' + O.slice(0, 5).map(function(o){ return '<li><b>' + esc(o.a + ' ' + (o.c ? nombreCli(o.c) : o.n)) + '</b> (' + esc(corV(o.w)) + ', ≈ ' + $m(o.v) + '/mes): ' + esc(o.why) + '</li>'; }).join('') + '</ul>';
-    r.ir = ['Ver lo que suma Libreta', 'suma'];
+    r.ir = ['Abrir Oportunidades', 'ops'];
     return r;
   }
   if (c){
@@ -1859,7 +2612,8 @@ $('ase').addEventListener('click', function(e){
   if (g){
     var k = g.getAttribute('data-ase-ir'), gid = g.getAttribute('data-ase-id');
     if (window.innerWidth < 900) aseCerrar();
-    if (k === 'ficha') abrirFicha(gid); else if (k === 'vendedor') abrirVend(gid); else { cerrarCapa(); ir(k); }
+    if (k === 'ficha') abrirFicha(gid); else if (k === 'vendedor') abrirVend(gid);
+    else { var pp = k.split(':'); if (pp[1]){ if (pp[0] === 'conf') S.confTab = pp[1]; if (pp[0] === 'rut') S.rfVen = pp[1]; } cerrarCapa(); ir(pp[0]); }
     return;
   }
   var c = e.target.closest('[data-ase-conf]'); if (!c) return;
@@ -1888,6 +2642,9 @@ function recibirPedido(d){
   var hora = typeof d.hora === 'string' && /^\d{1,2}:\d{2}$/.test(d.hora) ? d.hora : S.hora;
   var ped = {n: num, cli: cliId || String(d.cli || 'Cliente').slice(0, 60), ven: ven, f: '29/09', hora: hora, est: 'pend', lin: lin, tot: tot, nota: typeof d.nota === 'string' ? d.nota.slice(0, 200) : '', demo: true};
   PEDIDOS.unshift(ped);
+  // seguimiento de ofertas: el pedido suma a la oferta vigente de ese producto
+  var ofHits = marcarOfertas(ped);
+  ofHits.forEach(function(x){ var o = x[0], l = x[1], t = o.ven[ven] || (o.ven[ven] = [0, 0, 0]); t[0]++; t[1] += l.q; t[2] += l.imp; if (!o.vio[ven]) o.vio[ven] = '29/09 ' + hora; });
   if (cliId){
     var c = CX[cliId]; c.u = 0;
     RUTAS[ven].forEach(function(s){ if (s.c === cliId && s.est !== 'hecha'){ s.est = 'hecha'; s.lle = s.lle || hora; s.ped = num; } });
@@ -1897,7 +2654,7 @@ function recibirPedido(d){
     } });
   }
   S.pedOpen[num] = true; marcarNuevo(num);
-  toast('Pedido nuevo de ' + corV(ven) + ': ' + num + ' · ' + (cliId ? CX[cliId].n : ped.cli) + ' · ' + $u(tot), S.v === 'ped' ? null : 'Ver', function(){ S.pedV = 'pend'; S.pedVen = 'todos'; ir('ped'); });
+  toast('Pedido nuevo de ' + corV(ven) + ': ' + num + ' · ' + (cliId ? CX[cliId].n : ped.cli) + ' · ' + $u(tot) + (ofHits.length ? ' · lleva la oferta de ' + PROD[ofHits[0][0].p].d : ''), S.v === 'ped' ? null : 'Ver', function(){ S.pedV = 'pend'; S.pedVen = 'todos'; ir('ped'); });
   if (S.v === 'ped'){ S.pedV = S.pedV === 'todos' ? 'todos' : 'pend'; }
   render(true);
 }
