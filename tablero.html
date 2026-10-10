@@ -76,6 +76,8 @@
                                                                           al pedir una oportunidad o al fijar un cliente hoy
      { tipo: 'libreta-oferta', oferta: {id, cod, prod, cond, hasta, ven: ['mf', …]} }   al cargar una oferta vigente
      { tipo: 'libreta-oferta-fin', id }   al terminar una oferta vigente (se saca de la app)
+     { tipo: 'libreta-objetivo', ven, mes: 'AAAA-MM', obj } o { tipo: 'libreta-objetivo', ven, com }
+                                          al cambiar el objetivo del mes en curso o la comisión
   Un pedido que llega con el producto de una oferta vigente (del vendedor avisado y dentro de las
   fechas) suma al seguimiento de esa oferta y su renglón queda marcado «oferta».
   ====================================================================================
@@ -536,6 +538,14 @@ table.t{width:100%;border-collapse:collapse;font-size:13.5px}
 .sw[aria-pressed="true"] i{background:var(--vereda)}
 .sw[aria-pressed="true"] i::after{transform:translateX(14px)}
 .num-in{width:84px!important;text-align:right;font-family:var(--mono)}
+.mes-sel{display:flex;align-items:center;gap:6px}
+.mes-sel .btn{width:38px;height:38px;padding:0;justify-content:center}
+.mes-sel .btn svg{width:16px;height:16px}
+.cab-acc{display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+.lnk-v{color:var(--vereda);font-weight:700;white-space:nowrap}
+.lnk-v:hover{text-decoration:underline}
+.obj-acc{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:12px}
+.obj-acc label{display:inline-flex;align-items:center;gap:6px;font-size:13px;color:var(--tinta-2);margin-left:auto}
 .lnk-clave{display:block;margin-top:7px;font-size:12px;font-weight:600;color:var(--vereda);white-space:nowrap}
 .lnk-clave:disabled{color:var(--tinta-3);cursor:default}
 .clave{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;background:var(--aviso-50);border:1px solid #FFD5C4;border-radius:12px;padding:10px 12px;font-size:13px}
@@ -1934,7 +1944,7 @@ var USO = {
 };
 var PARAM = {
   riesgo: [['Sin actividad', 'Días sin comprar, para cualquier cliente', 60, 'días'], ['Caída de volumen', 'Cuánto bajó lo que compró en los últimos 60 días contra los 60 anteriores', 50, '%'], ['Cliente grande sin actividad', 'Días sin comprar, para los 20 que más compran', 45, 'días'], ['Nuevo sin recompra', 'Días desde la primera compra sin una segunda', 30, 'días']],
-  ofrecida: 30, noint: 180, cruzada: 60, excluidas: [],
+  ofrecida: 30, noint: 180, cruzada: 60, crec: 8, excluidas: [],
   cierre: '17:00', mails: ['laura@' + MAIL, 'martin@' + MAIL],
   app: [['Oportunidades nuevas', 'cada mañana a las 07:30', true], ['Ofertas nuevas', 'al momento de cargarlas', true], ['Tareas y respuestas de Laura', 'al momento', true], ['Recordatorio de iniciar la jornada', 'a las 08:30, si no la inició', false]]
 };
@@ -2031,6 +2041,93 @@ function fichaUso(u){
   h += card('A qué hora la usa', barras([{n: 'Entradas', v: usoHoras(u, x), c: '#8FD6DE'}], hs, {h: 120, aria: 'Entradas por hora del día'}), '<span class="s">hora de Uruguay</span>');
   return h + '</div></aside>';
 }
+/* ---------- Objetivos de cualquier mes (10/10/2026) ----------
+   v.obj guarda 'ago', 'set' y 'oct' (los meses que ya usaba el tablero) y 'AAAA-MM' para el resto. */
+var ALIAS_OBJ = {'2026-08': 'ago', '2026-09': 'set', '2026-10': 'oct'}, YM_PER = {set: '2026-09', ago: '2026-08'}, YM_HOY = '2026-09';
+var MES_NOM = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'setiembre', 'octubre', 'noviembre', 'diciembre'];
+var OBJ_MESES = []; (function(){ var y = 2025, m = 10; while (y < 2028){ OBJ_MESES.push(y + '-' + (m < 10 ? '0' : '') + m); if (++m > 12){ m = 1; y++; } } })();
+function ymIx(ym){ var p = ym.split('-'); return (+p[0] - 2025) * 12 + (+p[1] - 10); }   // 0 = octubre 2025, 11 = setiembre 2026
+function ymMas(ym, d){ var p = ym.split('-'), n = +p[0] * 12 + (+p[1] - 1) + d; return Math.floor(n / 12) + '-' + ('0' + (n % 12 + 1)).slice(-2); }
+function ymNom(ym, conAnio){ var p = ym.split('-'); return MES_NOM[+p[1] - 1] + (conAnio ? ' ' + p[0] : ''); }
+function capM(t){ return t.charAt(0).toUpperCase() + t.slice(1); }
+function objDe(v, ym){ return v.obj[ALIAS_OBJ[ym] || ym] || 0; }
+function fijarObj(v, ym, n){ v.obj[ALIAS_OBJ[ym] || ym] = n; }
+function ventaYm(v, ym){ var i = ymIx(ym); return i >= 0 && i < 12 ? v.mes[i] : null; }
+function lyYm(v, ym){ return ventaYm(v, ymMas(ym, -12)); }
+function sugerido(v, ym){ var base = lyYm(v, ym) || objDe(v, ymMas(ym, -12)); return base ? Math.round(base * (1 + PARAM.crec / 100) / 10000) * 10000 : 0; }
+function objYmSel(){ return S.objYm && OBJ_MESES.indexOf(S.objYm) >= 0 ? S.objYm : (YM_PER[S.per] || YM_HOY); }
+function objEst(ym){ return ym < YM_HOY ? 'cerrado' : ym === YM_HOY ? 'curso' : 'futuro'; }
+// los objetivos de los meses que ya cerraron (agosto y setiembre ya estaban)
+(function(){
+  var F = [1.06, .97, 1.04, 1.08, .99, 1.05, 1.1, 1.02, .96, 1.07];
+  VEND.forEach(function(v, j){ for (var i = 0; i < 10; i++){ var ym = OBJ_MESES[i]; if (!objDe(v, ym)) fijarObj(v, ym, Math.round(v.mes[i] * F[(i + j * 3) % F.length] / 10000) * 10000); } });
+})();
+function objPct(v, ym){
+  var est = objEst(ym), o = objDe(v, ym);
+  if (est === 'futuro') return '';
+  if (!o) return '<span class="muted">sin objetivo</span>';
+  var p = pc(ventaYm(v, ym), o);
+  return est === 'cerrado' ? chip(p >= 100 ? 'ver' : 'arena', p + ' %') : '<b>' + p + ' %</b>';
+}
+function objTot(ym){
+  var o = suma(VEND, function(v){ return objDe(v, ym); }), faltan = VEND.filter(function(v){ return !objDe(v, ym); }).length;
+  var vd = ym <= YM_HOY ? suma(VEND, function(v){ return ventaYm(v, ym) || 0; }) : null;
+  return {obj: o ? $u(o) + (faltan ? ' <small class="muted">falta' + (faltan > 1 ? 'n ' + faltan : ' 1') + '</small>' : '') : '<span class="muted">sin cargar</span>', p: vd !== null && o ? pc(vd, o) + ' %' : ''};
+}
+function objTotales(){
+  var ym = objYmSel(), t = objTot(ym), a = $('objTot'), b = $('objTotP');
+  if (a) a.innerHTML = t.obj;
+  if (b && objEst(ym) !== 'futuro') b.textContent = t.p;
+  VEND.forEach(function(v){ var c = $('objP-' + v.id); if (c) c.innerHTML = objPct(v, ym); });
+}
+function objAvisar(ven, ym){
+  var v = VX[ven]; if (!v) return;
+  var o = objDe(v, ym), m = ymNom(ym), est = objEst(ym);
+  if (est === 'curso' && o) avisarPadre({tipo: 'libreta-objetivo', ven: v.id, mes: ym, obj: o});
+  toast(!o ? v.corto + ' queda sin objetivo para ' + m + '.' : est === 'cerrado' ? 'Objetivo de ' + m + ' corregido: cambia el cumplimiento, no la comisión.' : est === 'curso' ? 'Listo. ' + v.corto + ' ya ve su objetivo nuevo en la app.' : 'Objetivo de ' + m + ' cargado. ' + v.corto + ' lo ve en la app desde el 1.º de ' + m + '.');
+}
+function cardObjetivos(){
+  var ym = objYmSel(), est = objEst(ym), ant = ymMas(ym, -1), mes = ymNom(ym), anio = +ym.slice(0, 4), i = OBJ_MESES.indexOf(ym);
+  var anios = {}; OBJ_MESES.forEach(function(x){ (anios[x.slice(0, 4)] = anios[x.slice(0, 4)] || []).push(x); });
+  var opts = Object.keys(anios).map(function(a){
+    return '<optgroup label="' + a + '">' + anios[a].map(function(x){
+      var sin = x > YM_HOY && !VEND.some(function(v){ return objDe(v, x); });
+      return '<option value="' + x + '"' + (x === ym ? ' selected' : '') + '>' + capM(ymNom(x)) + ' ' + a + (x === YM_HOY ? ' · en curso' : sin ? ' · sin cargar' : '') + '</option>';
+    }).join('') + '</optgroup>';
+  }).join('');
+  var sel = '<span class="mes-sel"><button type="button" class="btn btn-s" data-a="objMover" data-d="-1" aria-label="Mes anterior"' + (i <= 0 ? ' disabled' : '') + '>' + ic('izq', 2.2) + '</button>' +
+    '<label class="periodo">' + CAL_IC + '<select id="objMes" aria-label="Mes del objetivo">' + opts + '</select></label>' +
+    '<button type="button" class="btn btn-s" data-a="objMover" data-d="1" aria-label="Mes siguiente"' + (i >= OBJ_MESES.length - 1 ? ' disabled' : '') + '>' + ic('der', 2.2) + '</button></span>';
+  var c2 = est === 'cerrado' ? ['Vendido', 'Cumplimiento'] : est === 'curso' ? ['Vendido al 29/09', 'Va en'] : [capM(mes) + ' ' + (anio - 1), 'Sugerido (+' + PARAM.crec + ' %)'];
+  var h = '<div class="tw"><table class="t"><thead><tr><th>Vendedor</th><th class="r">Objetivo de ' + mes + ' ' + anio + '</th><th class="r">' + c2[0] + '</th><th class="r">' + c2[1] + '</th><th class="r">Comisión</th></tr></thead><tbody>';
+  var tl = 0, ts = 0;
+  h += VEND.map(function(v){
+    var o = objDe(v, ym), r1, r2;
+    if (est === 'futuro'){
+      var ly = lyYm(v, ym), sg = sugerido(v, ym); tl += ly || 0; ts += sg;
+      r1 = ly === null ? '<span class="muted">sin datos</span>' : $u(ly);
+      r2 = sg ? '<button type="button" class="lnk lnk-v" data-a="objSug" data-ven="' + v.id + '" title="Usar este objetivo">' + $u(sg) + '</button>' : '<span class="muted">sin datos</span>';
+    } else { r1 = $u(ventaYm(v, ym)); r2 = '<span id="objP-' + v.id + '">' + objPct(v, ym) + '</span>'; }
+    return '<tr><td><div class="quien">' + avt(v.id) + '<b>' + v.nom + '</b></div></td>' +
+      '<td class="r"><span class="nw">$U <input class="campo num-in" style="width:130px!important" type="number" step="10000" min="0" data-obj="' + v.id + '" data-ym="' + ym + '" value="' + (o || '') + '" placeholder="sin cargar" aria-label="Objetivo de ' + mes + ' de ' + v.corto + '"></span></td>' +
+      '<td class="r">' + r1 + '</td><td class="r">' + r2 + '</td>' +
+      '<td class="r"><span class="nw"><input class="campo num-in" style="width:70px!important" type="number" min="0" max="20" step=".5" data-ucom="' + v.id + '" value="' + Math.round(v.com * 1000) / 10 + '" aria-label="Comisión de ' + v.corto + '"> %</span></td></tr>';
+  }).join('');
+  var T = objTot(ym);
+  h += '<tr class="tot"><td>Equipo</td><td class="r" id="objTot">' + T.obj + '</td>' +
+    (est === 'futuro' ? '<td class="r">' + (tl ? $u(tl) : '') + '</td><td class="r">' + (ts ? $u(ts) : '') + '</td>' : '<td class="r">' + $u(suma(VEND, function(v){ return ventaYm(v, ym) || 0; })) + '</td><td class="r" id="objTotP">' + T.p + '</td>') +
+    '<td></td></tr></tbody></table></div>';
+  var hayAnt = VEND.some(function(v){ return objDe(v, ant); });
+  h += '<div class="obj-acc"><button type="button" class="btn btn-s btn-sm" data-a="objCopiar"' + (hayAnt ? '' : ' disabled') + '>Copiar los de ' + ymNom(ant) + '</button>' +
+    (est === 'futuro' ? '<button type="button" class="btn btn-s btn-sm" data-a="objSugTodos"' + (ts ? '' : ' disabled') + '>Usar los sugeridos</button>' +
+      '<label>Crecimiento sugerido <input class="campo num-in" style="width:64px!important" type="number" min="1" max="50" data-par="crec" value="' + PARAM.crec + '" aria-label="Crecimiento sugerido"> %</label>' : '') + '</div>';
+  var nota = est === 'cerrado' ? capM(mes) + ' ya cerró: corregir el objetivo cambia el cumplimiento del mes, no la comisión, que sale de la venta.'
+    : est === 'curso' ? 'Es el mes en curso: cada vendedor ve el cambio al momento en la app, en Hoy y en «Progreso».'
+    : 'Los vendedores lo ven en la app desde el 1.º de ' + mes + '. El sugerido parte de ' + mes + ' de ' + (anio - 1) + ' y le suma el crecimiento que elijas.';
+  h += '<p class="nota" style="margin-top:10px">' + nota + ' La comisión es la misma todos los meses y se calcula sobre la venta sin IVA.</p>';
+  return '<div id="objCard">' + card('Objetivos y comisiones', h, sel) + '</div>';
+}
+
 CONF.cri = function(){
   var h = '<div class="fila f2 estira">';
   h += card('Cliente en riesgo', '<div class="tw"><table class="t"><thead><tr><th>Regla</th><th>Qué mide</th><th class="r">Umbral</th></tr></thead><tbody>' + PARAM.riesgo.map(function(r, i){
@@ -2041,12 +2138,7 @@ CONF.cri = function(){
     '<div><span>Venta cruzada desde<small>de cada 100 clientes parecidos que llevan los dos productos</small></span><span class="nw"><input class="campo num-in" type="number" min="1" max="100" data-par="cruzada" value="' + PARAM.cruzada + '" aria-label="Venta cruzada desde"> de 100</span></div></div>' +
     '<p class="nota" style="margin:12px 0 6px">Familias que no generan oportunidades</p><div class="cks">' + CATS.map(function(k){ return '<label class="ck"><input type="checkbox" data-excl="' + esc(k) + '"' + (PARAM.excluidas.indexOf(k) >= 0 ? ' checked' : '') + '>' + esc(k) + '</label>'; }).join('') + '</div>');
   h += '</div>';
-  h += card('Objetivos y comisiones', '<div class="tw"><table class="t"><thead><tr><th>Vendedor</th><th class="r">Objetivo de setiembre</th><th class="r">Objetivo de octubre</th><th class="r">Comisión</th></tr></thead><tbody>' + VEND.map(function(v){
-    return '<tr><td><div class="quien">' + avt(v.id) + '<b>' + v.nom + '</b></div></td>' +
-      '<td class="r"><span class="nw">$U <input class="campo num-in" style="width:120px!important" type="number" step="10000" min="0" data-obj="' + v.id + '" data-per="set" value="' + v.obj.set + '" aria-label="Objetivo de setiembre de ' + v.corto + '"></span></td>' +
-      '<td class="r"><span class="nw">$U <input class="campo num-in" style="width:120px!important" type="number" step="10000" min="0" data-obj="' + v.id + '" data-per="oct" value="' + v.obj.oct + '" aria-label="Objetivo de octubre de ' + v.corto + '"></span></td>' +
-      '<td class="r"><span class="nw"><input class="campo num-in" style="width:70px!important" type="number" min="0" max="20" step=".5" data-ucom="' + v.id + '" value="' + Math.round(v.com * 1000) / 10 + '" aria-label="Comisión de ' + v.corto + '"> %</span></td></tr>';
-  }).join('') + '</tbody></table></div><p class="nota" style="margin-top:10px">Cada vendedor ve su objetivo y su comisión en la app, en «Progreso». La comisión se calcula sobre la venta sin IVA.</p>', '<span class="s">los cambios se ven al momento en Vendedores</span>');
+  h += cardObjetivos();
   h += '<div class="acts"><button type="button" class="btn btn-p" data-a="paramGuardar">' + ic('check') + 'Guardar criterios</button></div>';
   return h;
 };
@@ -2136,6 +2228,7 @@ function pintarCab(){
   $('bajada').textContent = info.d;
   if (S.v === 'hoy') der = '<span class="reloj"><i></i>mar 29/09 · <span id="reloj-h">' + S.hora + '</span></span>';
   if (S.v === 'vend' || S.v === 'suma') der = '<label class="periodo">' + CAL_IC + '<span class="sr">Período</span><select id="per"><option value="set"' + (S.per === 'set' ? ' selected' : '') + '>Setiembre 2026</option><option value="ago"' + (S.per === 'ago' ? ' selected' : '') + '>Agosto 2026</option></select></label>';
+  if (S.v === 'vend') der = '<span class="cab-acc">' + der + '<button type="button" class="btn btn-s" data-a="objIr" data-ym="' + YM_PER[S.per] + '">' + ic('target') + 'Objetivos de ' + MESES_L[IX[S.per]] + '</button></span>';
   if (S.v === 'ped') der = '<button type="button" class="btn btn-s" data-a="csvPed">' + ic('down') + 'Bajar planilla</button>';
   if (S.v === 'cli') der = '<span class="reloj"><i></i>saldos de Doria · 29/09</span>';
   if (S.v === 'ofe') der = '<button type="button" class="btn btn-p" data-a="ofeIrForm">' + ic('plus') + 'Nueva oferta</button>';
@@ -2280,6 +2373,23 @@ var A = {
     toast('Tarea para ' + corV(o.w) + ': ' + o.a.charAt(0).toLowerCase() + o.a.slice(1) + ' ' + nomOp(o) + '. Le aparece en la app.');
     render(true);
   },
+  /* objetivos */
+  objMover: function(el){ var i = OBJ_MESES.indexOf(objYmSel()) + +el.getAttribute('data-d'); if (i >= 0 && i < OBJ_MESES.length){ S.objYm = OBJ_MESES[i]; render(true); } },
+  objIr: function(el){ S.objYm = el.getAttribute('data-ym'); S.confTab = 'cri'; ir('conf'); setTimeout(function(){ var c = $('objCard'); if (c) c.scrollIntoView({behavior: 'smooth', block: 'start'}); }, 80); },
+  objCopiar: function(){
+    var ym = objYmSel(), ant = ymMas(ym, -1), antes = VEND.map(function(v){ return objDe(v, ym); });
+    VEND.forEach(function(v){ var o = objDe(v, ant); if (o) fijarObj(v, ym, o); });
+    if (objEst(ym) === 'curso') VEND.forEach(function(v){ avisarPadre({tipo: 'libreta-objetivo', ven: v.id, mes: ym, obj: objDe(v, ym)}); });
+    toast('Listo: ' + ymNom(ym) + ' quedó con los objetivos de ' + ymNom(ant) + '.', 'Deshacer', function(){ VEND.forEach(function(v, j){ fijarObj(v, ym, antes[j]); }); render(true); });
+    render(true);
+  },
+  objSug: function(el){ var v = VX[el.getAttribute('data-ven')], ym = objYmSel(), sg = v ? sugerido(v, ym) : 0; if (!sg) return; fijarObj(v, ym, sg); objAvisar(v.id, ym); render(true); },
+  objSugTodos: function(){
+    var ym = objYmSel(), antes = VEND.map(function(v){ return objDe(v, ym); });
+    VEND.forEach(function(v){ var sg = sugerido(v, ym); if (sg) fijarObj(v, ym, sg); });
+    toast('Listo: ' + ymNom(ym) + ' quedó con los sugeridos (+' + PARAM.crec + ' %).', 'Deshacer', function(){ VEND.forEach(function(v, j){ fijarObj(v, ym, antes[j]); }); render(true); });
+    render(true);
+  },
   /* ofertas */
   ofeVer: function(el){ limpiarCapa(); S.ofeSel = +el.getAttribute('data-id'); pintarCapa(); },
   ofeIrForm: function(){ var c = $('ofCard'); if (!c) return; c.scrollIntoView({behavior: 'smooth', block: 'start'}); setTimeout(function(){ var i = $('ofC'); if (i) i.focus({preventScroll: true}); }, 450); },
@@ -2372,7 +2482,7 @@ document.addEventListener('input', function(e){
   var t = e.target; if (!t.getAttribute) return;
   if (t.hasAttribute('data-rfq') && S.rfAdd){ S.rfAdd.q = t.value; $('rf-lista').innerHTML = listaRf(); return; }
   if (t.closest && t.closest('#ofForm')){ prevOferta(); return; }
-  if (t.hasAttribute('data-obj')){ var v = VX[t.getAttribute('data-obj')], n = Math.round(+t.value); if (v && n > 0) v.obj[t.getAttribute('data-per')] = n; return; }
+  if (t.hasAttribute('data-obj')){ var v = VX[t.getAttribute('data-obj')], ym = t.getAttribute('data-ym'), n = Math.round(+t.value); if (v && n > 0){ fijarObj(v, ym, n); objTotales(); } else if (v && t.value === '' && objEst(ym) === 'futuro'){ fijarObj(v, ym, 0); objTotales(); } return; }
   if (t.hasAttribute('data-ucom')){ var w = VX[t.getAttribute('data-ucom')], c = +t.value; if (w && c >= 0 && c <= 20) w.com = c / 100; return; }
   if (t.hasAttribute('data-par') && t.type === 'number'){ var k = t.getAttribute('data-par'), x = Math.round(+t.value); if (x > 0){ if (k === 'riesgo') PARAM.riesgo[+t.getAttribute('data-i')][2] = x; else PARAM[k] = x; } }
 });
@@ -2391,7 +2501,10 @@ document.addEventListener('change', function(e){
   }
   if (t.hasAttribute('data-excl')){ var f = t.getAttribute('data-excl'), i = PARAM.excluidas.indexOf(f); if (t.checked && i < 0) PARAM.excluidas.push(f); if (!t.checked && i >= 0) PARAM.excluidas.splice(i, 1); return; }
   if (t.hasAttribute('data-par') && t.tagName === 'SELECT'){ PARAM[t.getAttribute('data-par')] = t.value; toast('El cierre del día llega a las ' + t.value + '.'); return; }
-  if (t.hasAttribute('data-obj') || t.hasAttribute('data-ucom')) toast('Listo. Se ve al momento en Vendedores y en la app.');
+  if (t.id === 'objMes'){ S.objYm = t.value; render(true); return; }
+  if (t.getAttribute('data-par') === 'crec'){ render(true); return; }
+  if (t.hasAttribute('data-obj')){ objAvisar(t.getAttribute('data-obj'), t.getAttribute('data-ym')); return; }
+  if (t.hasAttribute('data-ucom')){ var vc = VX[t.getAttribute('data-ucom')]; if (vc){ avisarPadre({tipo: 'libreta-objetivo', ven: vc.id, com: vc.com}); toast('Listo. ' + vc.corto + ' ve su comisión nueva en la app.'); } return; }
 });
 document.addEventListener('submit', function(e){
   var f = e.target;
