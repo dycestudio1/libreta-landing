@@ -1,0 +1,32 @@
+/* Las páginas de privacidad, soporte y baja: los mismos colores y la misma letra que la landing. */
+:root{
+  --blanco:#FFFFFF; --papel:#F4F5F8; --tinta:#10222A; --tinta-2:#44555C; --tinta-3:#74848A;
+  --linea:#E1E5EA; --vereda:#0B6E7C; --vereda-50:#E7F3F5; --aviso:#FF6A3D;
+  --f:'Figtree',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--papel);color:var(--tinta);font-family:var(--f);font-size:16.5px;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:var(--vereda)}
+:focus-visible{outline:2px solid var(--vereda);outline-offset:2px;border-radius:6px}
+.cab{background:var(--blanco);border-bottom:1px solid var(--linea)}
+.cab .col{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:16px}
+.cab .marca svg{display:block;width:104px;height:auto}
+.cab nav{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:14px;font-weight:500}
+.cab nav a{color:var(--tinta-2);text-decoration:none}
+.cab nav a[aria-current="page"]{color:var(--vereda);font-weight:700}
+.col{max-width:46rem;margin:0 auto;padding-inline:16px}
+main .col{padding-block:36px 56px}
+h1{font-size:clamp(28px,5vw,36px);line-height:1.15;letter-spacing:-.02em;margin:0 0 6px}
+.fecha{color:var(--tinta-3);font-size:14px;margin:0 0 28px}
+h2{font-size:20px;letter-spacing:-.01em;margin:32px 0 8px}
+p,li{color:var(--tinta-2)}
+ul{padding-left:1.2em}
+li{margin:4px 0}
+.tarjeta{background:var(--blanco);border:1px solid var(--linea);border-radius:14px;padding:18px 20px;margin:20px 0}
+.tarjeta p{margin:6px 0}
+.destacado{background:var(--vereda-50);border-color:#CBE6EA}
+.pie{border-top:1px solid var(--linea);background:var(--blanco);font-size:13.5px;color:var(--tinta-3)}
+.pie .col{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px;padding-block:20px calc(20px + env(safe-area-inset-bottom,0px))}
+.pie a{color:var(--tinta-2)}
