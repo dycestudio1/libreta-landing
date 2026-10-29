@@ -1,0 +1,4527 @@
+{
+ "textos": [
+  {
+   "es": "Libreta | Tu libreta ya sabe qué venderle a cada uno",
+   "pt": "Libreta | Sua caderneta já sabe o que vender para cada cliente",
+   "en": "Libreta | Your notebook already knows what to sell to each customer"
+  },
+  {
+   "es": "Libreta es la app de los vendedores de calle de distribuidoras, mayoristas y fábricas: ruta del día, qué ofrecerle a cada cliente, pedidos que entran solos a tu sistema y un panel para el supervisor.",
+   "pt": "O Libreta é o app dos vendedores externos de distribuidoras, atacadistas e indústrias: a rota do dia, o que oferecer a cada cliente, pedidos que entram sozinhos no seu sistema e um painel para o supervisor.",
+   "en": "Libreta is the app for field sales reps at distributors, wholesalers and manufacturers: today’s route, what to offer each customer, orders that flow straight into your system, and a dashboard for the supervisor."
+  },
+  {
+   "es": "Libreta · Tu libreta ya sabe qué venderle a cada uno",
+   "pt": "Libreta · Sua caderneta já sabe o que vender para cada cliente",
+   "en": "Libreta · Your notebook already knows what to sell to each customer"
+  },
+  {
+   "es": "La app del vendedor de calle y el panel del supervisor, sobre tu sistema de siempre. Pedí una demo con los datos de tu empresa.",
+   "pt": "O app do vendedor externo e o painel do supervisor, sobre o sistema que você já usa. Peça uma demo com os dados da sua empresa.",
+   "en": "The field rep’s app and the supervisor’s dashboard, on top of the system you already use. Request a demo with your company’s data."
+  },
+  {
+   "es": "App para vendedores de calle y panel del supervisor: ruta del día, oportunidades de venta por cliente, carga de pedidos al sistema de gestión, cartera y cobranzas.",
+   "pt": "App para vendedores externos e painel do supervisor: rota do dia, oportunidades de venda por cliente, lançamento de pedidos no sistema de gestão, carteira e cobranças.",
+   "en": "App for field sales reps and dashboard for supervisors: daily route, sales opportunities by customer, order entry into your ERP, accounts and collections."
+  },
+  {
+   "es": "Libreta, ir al inicio",
+   "pt": "Libreta, voltar ao início",
+   "en": "Libreta, back to top"
+  },
+  {
+   "es": "Secciones",
+   "pt": "Seções",
+   "en": "Sections"
+  },
+  {
+   "es": "Cómo funciona",
+   "pt": "Como funciona",
+   "en": "How it works"
+  },
+  {
+   "es": "Tablero",
+   "pt": "Painel",
+   "en": "Dashboard"
+  },
+  {
+   "es": "Cuánto suma",
+   "pt": "Quanto rende",
+   "en": "ROI"
+  },
+  {
+   "es": "Precios",
+   "pt": "Preços",
+   "en": "Pricing"
+  },
+  {
+   "es": "Preguntas",
+   "pt": "Perguntas",
+   "en": "FAQ"
+  },
+  {
+   "es": "Idioma",
+   "pt": "Idioma",
+   "en": "Language"
+  },
+  {
+   "es": "Idioma: Español",
+   "pt": "Idioma: Português",
+   "en": "Language: English"
+  },
+  {
+   "es": "Pedir una demo",
+   "pt": "Pedir uma demo",
+   "en": "Request a demo"
+  },
+  {
+   "es": "Login",
+   "pt": "Entrar",
+   "en": "Log in"
+  },
+  {
+   "es": "Abrir el menú",
+   "pt": "Abrir o menu",
+   "en": "Open menu"
+  },
+  {
+   "es": "Para distribuidoras, mayoristas y fábricas con vendedores en la calle",
+   "pt": "Para distribuidoras, atacadistas e indústrias com vendedores externos",
+   "en": "For distributors, wholesalers and manufacturers with field sales reps"
+  },
+  {
+   "es": "Tu libreta ya sabe qué venderle a cada uno.",
+   "pt": "Sua caderneta já sabe o que vender para cada cliente.",
+   "en": "Your notebook already knows what to sell to each customer."
+  },
+  {
+   "es": "Vos solo vendés.",
+   "pt": "Você só vende.",
+   "en": "You just sell."
+  },
+  {
+   "es": "Libreta lee tu sistema de gestión y le arma a cada vendedor la ruta del día, qué ofrecerle a cada cliente y quién tiene que pagar. El pedido se carga en el celular y entra solo a tu sistema. El supervisor lo ve todo desde un panel.",
+   "pt": "O Libreta lê o seu sistema de gestão e monta para cada vendedor a rota do dia, o que oferecer a cada cliente e quem precisa pagar. O pedido é lançado no celular e entra sozinho no seu sistema. O supervisor acompanha tudo em um painel.",
+   "en": "Libreta reads your ERP and builds each rep’s day: the route, what to offer every customer and who needs to pay. Orders are entered on the phone and flow straight into your system. The supervisor sees it all from one dashboard."
+  },
+  {
+   "es": "Probar la app",
+   "pt": "Testar o app",
+   "en": "Try the app"
+  },
+  {
+   "es": "Cada visita con un motivo",
+   "pt": "Cada visita com um motivo",
+   "en": "Every visit has a reason"
+  },
+  {
+   "es": "Qué reponer, qué ofrecer de nuevo y qué cobrar, cliente por cliente.",
+   "pt": "O que repor, o que oferecer de novo e o que cobrar, cliente por cliente.",
+   "en": "What to restock, what new to offer and what to collect, customer by customer."
+  },
+  {
+   "es": "El pedido, sin tipear dos veces",
+   "pt": "O pedido, sem digitar duas vezes",
+   "en": "Orders, typed only once"
+  },
+  {
+   "es": "Se carga en el celular con la lista de precios y llega al sistema.",
+   "pt": "É lançado no celular com a tabela de preços e chega ao sistema.",
+   "en": "Entered on the phone with the price list, and straight into your system."
+  },
+  {
+   "es": "La calle, a la vista",
+   "pt": "A rua, à vista",
+   "en": "The field, in plain sight"
+  },
+  {
+   "es": "Ventas contra objetivo, visitas y clientes que se enfrían.",
+   "pt": "Vendas contra a meta, visitas e clientes que estão esfriando.",
+   "en": "Sales vs. target, visits and customers going cold."
+  },
+  {
+   "es": "Probala acá.",
+   "pt": "Teste aqui.",
+   "en": "Try it here."
+  },
+  {
+   "es": "Es la app del vendedor, funcionando. Tocá «Iniciar» y recorré un día de calle.",
+   "pt": "É o app do vendedor, funcionando. Toque em “Iniciar” e percorra um dia de rua.",
+   "en": "This is the rep’s app, live. Tap “Start” and walk through a day in the field."
+  },
+  {
+   "es": "Cerrar la invitación",
+   "pt": "Fechar o convite",
+   "en": "Close the invitation"
+  },
+  {
+   "es": "ahora",
+   "pt": "agora",
+   "en": "now"
+  },
+  {
+   "es": "Hoy",
+   "pt": "Hoje",
+   "en": "Today"
+  },
+  {
+   "es": "Buenos días, María",
+   "pt": "Bom dia, María",
+   "en": "Good morning, María"
+  },
+  {
+   "es": "Martes 29/09 · Distribuidora Central",
+   "pt": "Terça, 29/09 · Distribuidora Central",
+   "en": "Tuesday, 9/29 · Distribuidora Central"
+  },
+  {
+   "es": "Tu jornada",
+   "pt": "Sua jornada",
+   "en": "Your day"
+  },
+  {
+   "es": "5 visitas y 4 oportunidades en tu ruta",
+   "pt": "5 visitas e 4 oportunidades na sua rota",
+   "en": "5 visits and 4 opportunities on your route"
+  },
+  {
+   "es": "Iniciar",
+   "pt": "Iniciar",
+   "en": "Start"
+  },
+  {
+   "es": "Comisión del mes",
+   "pt": "Comissão do mês",
+   "en": "Commission this month"
+  },
+  {
+   "es": "$U 38.450",
+   "pt": "$U 38.450",
+   "en": "$U 38,450"
+  },
+  {
+   "es": "5 % de lo vendido",
+   "pt": "5% das vendas",
+   "en": "5% of sales"
+  },
+  {
+   "es": "Ver tu progreso",
+   "pt": "Ver seu progresso",
+   "en": "See your progress"
+  },
+  {
+   "es": "Objetivo del mes",
+   "pt": "Meta do mês",
+   "en": "Monthly target"
+  },
+  {
+   "es": "$U 769.000 de 950.000",
+   "pt": "$U 769.000 de 950.000",
+   "en": "$U 769,000 of 950,000"
+  },
+  {
+   "es": "81 %",
+   "pt": "81%",
+   "en": "81%"
+  },
+  {
+   "es": "Ruta de hoy",
+   "pt": "Rota de hoje",
+   "en": "Today’s route"
+  },
+  {
+   "es": "Ver ruta",
+   "pt": "Ver rota",
+   "en": "See route"
+  },
+  {
+   "es": "Para ofrecer hoy",
+   "pt": "Para oferecer hoje",
+   "en": "To offer today"
+  },
+  {
+   "es": "Ver todas",
+   "pt": "Ver todas",
+   "en": "See all"
+  },
+  {
+   "es": "Ofertas de Laura",
+   "pt": "Ofertas da Laura",
+   "en": "Laura’s promotions"
+  },
+  {
+   "es": "2 vigentes",
+   "pt": "2 ativas",
+   "en": "2 active"
+  },
+  {
+   "es": "Te dejó Laura",
+   "pt": "A Laura deixou",
+   "en": "From Laura"
+  },
+  {
+   "es": "2 pendientes",
+   "pt": "2 pendentes",
+   "en": "2 pending"
+  },
+  {
+   "es": "Ruta",
+   "pt": "Rota",
+   "en": "Route"
+  },
+  {
+   "es": "5 visitas · 14,2 km",
+   "pt": "5 visitas · 14,2 km",
+   "en": "5 visits · 14.2 km"
+  },
+  {
+   "es": "Visita fuera de ruta",
+   "pt": "Visita fora da rota",
+   "en": "Off-route visit"
+  },
+  {
+   "es": "Avisar desvío",
+   "pt": "Avisar desvio",
+   "en": "Report detour"
+  },
+  {
+   "es": "Oportunidades",
+   "pt": "Oportunidades",
+   "en": "Opportunities"
+  },
+  {
+   "es": "Filtrar oportunidades",
+   "pt": "Filtrar oportunidades",
+   "en": "Filter opportunities"
+  },
+  {
+   "es": "Cartera",
+   "pt": "Carteira",
+   "en": "Accounts"
+  },
+  {
+   "es": "8 clientes · 3 alertas",
+   "pt": "8 clientes · 3 alertas",
+   "en": "8 customers · 3 alerts"
+  },
+  {
+   "es": "Buscar cliente",
+   "pt": "Buscar cliente",
+   "en": "Search customers"
+  },
+  {
+   "es": "Buscar cliente o barrio",
+   "pt": "Buscar cliente ou bairro",
+   "en": "Search customer or area"
+  },
+  {
+   "es": "Filtrar cartera",
+   "pt": "Filtrar carteira",
+   "en": "Filter accounts"
+  },
+  {
+   "es": "Ficha del cliente",
+   "pt": "Ficha do cliente",
+   "en": "Customer profile"
+  },
+  {
+   "es": "Lista de precios",
+   "pt": "Tabela de preços",
+   "en": "Price list"
+  },
+  {
+   "es": "28 productos",
+   "pt": "28 produtos",
+   "en": "28 products"
+  },
+  {
+   "es": "Buscar en la lista de precios",
+   "pt": "Buscar na tabela de preços",
+   "en": "Search the price list"
+  },
+  {
+   "es": "Buscar producto o código",
+   "pt": "Buscar produto ou código",
+   "en": "Search product or code"
+  },
+  {
+   "es": "Filtrar por familia",
+   "pt": "Filtrar por família",
+   "en": "Filter by product family"
+  },
+  {
+   "es": "Precios con o sin IVA",
+   "pt": "Preços com ou sem IVA",
+   "en": "Prices incl. or excl. VAT"
+  },
+  {
+   "es": "Sin IVA",
+   "pt": "Sem IVA",
+   "en": "Excl. VAT"
+  },
+  {
+   "es": "Con IVA",
+   "pt": "Com IVA",
+   "en": "Incl. VAT"
+  },
+  {
+   "es": "Descargar PDF",
+   "pt": "Baixar PDF",
+   "en": "Download PDF"
+  },
+  {
+   "es": "Crear presupuesto",
+   "pt": "Criar orçamento",
+   "en": "Create quote"
+  },
+  {
+   "es": "Presupuesto",
+   "pt": "Orçamento",
+   "en": "Quote"
+  },
+  {
+   "es": "En PDF, válido 7 días",
+   "pt": "Em PDF, válido por 7 dias",
+   "en": "PDF, valid for 7 days"
+  },
+  {
+   "es": "0 productos · sin IVA",
+   "pt": "0 produtos · sem IVA",
+   "en": "0 products · excl. VAT"
+  },
+  {
+   "es": "Revisar",
+   "pt": "Revisar",
+   "en": "Review"
+  },
+  {
+   "es": "Prospectos",
+   "pt": "Prospects",
+   "en": "Prospects"
+  },
+  {
+   "es": "Nuevo prospecto",
+   "pt": "Novo prospect",
+   "en": "New prospect"
+  },
+  {
+   "es": "Filtrar por etapa",
+   "pt": "Filtrar por etapa",
+   "en": "Filter by stage"
+  },
+  {
+   "es": "Progreso",
+   "pt": "Progresso",
+   "en": "Progress"
+  },
+  {
+   "es": "Tu progreso",
+   "pt": "Seu progresso",
+   "en": "Your progress"
+  },
+  {
+   "es": "Setiembre",
+   "pt": "Setembro",
+   "en": "September"
+  },
+  {
+   "es": "Desvío de ruta",
+   "pt": "Desvio de rota",
+   "en": "Route detour"
+  },
+  {
+   "es": "Martes 29/09",
+   "pt": "Terça, 29/09",
+   "en": "Tuesday, 9/29"
+  },
+  {
+   "es": "Cargar pedido",
+   "pt": "Lançar pedido",
+   "en": "Take order"
+  },
+  {
+   "es": "Volver",
+   "pt": "Voltar",
+   "en": "Back"
+  },
+  {
+   "es": "Nuevo pedido",
+   "pt": "Novo pedido",
+   "en": "New order"
+  },
+  {
+   "es": "Elegí el cliente",
+   "pt": "Escolha o cliente",
+   "en": "Choose the customer"
+  },
+  {
+   "es": "Abrir el asesor",
+   "pt": "Abrir o assistente",
+   "en": "Open the advisor"
+  },
+  {
+   "es": "Asesor de Libreta",
+   "pt": "Assistente do Libreta",
+   "en": "Libreta advisor"
+  },
+  {
+   "es": "Tu asesor",
+   "pt": "Seu assistente",
+   "en": "Your advisor"
+  },
+  {
+   "es": "Preguntale por tus clientes, tu ruta o tu objetivo",
+   "pt": "Pergunte sobre seus clientes, sua rota ou sua meta",
+   "en": "Ask about your customers, your route or your target"
+  },
+  {
+   "es": "Cerrar el asesor",
+   "pt": "Fechar o assistente",
+   "en": "Close the advisor"
+  },
+  {
+   "es": "Pregunta para el asesor",
+   "pt": "Pergunta para o assistente",
+   "en": "Question for the advisor"
+  },
+  {
+   "es": "Escribí o dictá tu pregunta…",
+   "pt": "Escreva ou dite sua pergunta…",
+   "en": "Type or dictate your question…"
+  },
+  {
+   "es": "Dictar",
+   "pt": "Ditar",
+   "en": "Dictate"
+  },
+  {
+   "es": "Enviar",
+   "pt": "Enviar",
+   "en": "Send"
+  },
+  {
+   "es": "Empezá por acá",
+   "pt": "Comece por aqui",
+   "en": "Start here"
+  },
+  {
+   "es": "Detalle",
+   "pt": "Detalhe",
+   "en": "Details"
+  },
+  {
+   "es": "Menú de la app",
+   "pt": "Menu do app",
+   "en": "App menu"
+  },
+  {
+   "es": "Desvío",
+   "pt": "Desvio",
+   "en": "Detour"
+  },
+  {
+   "es": "Pedido",
+   "pt": "Pedido",
+   "en": "Order"
+  },
+  {
+   "es": "Pasos de la demo",
+   "pt": "Etapas da demo",
+   "en": "Demo steps"
+  },
+  {
+   "es": "Jornada",
+   "pt": "Jornada",
+   "en": "Day"
+  },
+  {
+   "es": "Oportunidad",
+   "pt": "Oportunidade",
+   "en": "Opportunity"
+  },
+  {
+   "es": "Ficha",
+   "pt": "Ficha",
+   "en": "Profile"
+  },
+  {
+   "es": "Sistemas con los que funciona Libreta",
+   "pt": "Sistemas com os quais o Libreta funciona",
+   "en": "Systems Libreta works with"
+  },
+  {
+   "es": "Funciona con",
+   "pt": "Funciona com",
+   "en": "Works with"
+  },
+  {
+   "es": "De lo que ya está en tu sistema a una visita que vende más.",
+   "pt": "Do que já está no seu sistema a uma visita que vende mais.",
+   "en": "From the data already in your system to visits that sell more."
+  },
+  {
+   "es": "Qué hace Libreta",
+   "pt": "O que o Libreta faz",
+   "en": "What Libreta does"
+  },
+  {
+   "es": "Lee tu sistema",
+   "pt": "Lê o seu sistema",
+   "en": "Reads your system"
+  },
+  {
+   "es": "Clientes, facturas, saldos y listas de precios salen de tu sistema de gestión. Nadie carga nada de nuevo y el vendedor ve siempre el dato del día.",
+   "pt": "Clientes, faturas, saldos e tabelas de preços vêm do seu sistema de gestão. Ninguém digita nada de novo e o vendedor sempre vê o dado do dia.",
+   "en": "Customers, invoices, balances and price lists come straight from your ERP. Nobody re-enters anything, and reps always see today’s numbers."
+  },
+  {
+   "es": "Encuentra qué venderle",
+   "pt": "Descobre o que vender",
+   "en": "Finds what to sell"
+  },
+  {
+   "es": "Compara lo que compra cada cliente con lo que compran los parecidos, y con lo que compraba antes. De ahí salen cuatro tipos de oportunidad.",
+   "pt": "Compara o que cada cliente compra com o que compram os clientes parecidos e com o que ele comprava antes. Daí saem quatro tipos de oportunidade.",
+   "en": "It compares what each customer buys with what similar customers buy, and with what they used to buy. That produces four types of opportunity."
+  },
+  {
+   "es": "El pedido entra solo",
+   "pt": "O pedido entra sozinho",
+   "en": "Orders flow in on their own"
+  },
+  {
+   "es": "El vendedor lo carga en el celular con los precios de la lista del cliente. Llega al panel y a tu sistema como pedido, listo para facturar.",
+   "pt": "O vendedor lança no celular com os preços da tabela do cliente. Chega ao painel e ao seu sistema como pedido, pronto para faturar.",
+   "en": "The rep enters it on the phone with the customer’s price list. It lands in the dashboard and in your system as an order, ready to invoice."
+  },
+  {
+   "es": "El supervisor decide",
+   "pt": "O supervisor decide",
+   "en": "The supervisor decides"
+  },
+  {
+   "es": "Desvíos de ruta, visitas fuera de ruta y problemas en un cliente llegan a una bandeja. Se aprueban o se rechazan con un toque.",
+   "pt": "Desvios de rota, visitas fora da rota e problemas em um cliente chegam a uma caixa de entrada. Aprovar ou recusar leva um toque.",
+   "en": "Route detours, off-route visits and issues at a customer land in one inbox. Approve or decline with a tap."
+  },
+  {
+   "es": "Un asistente que pide permiso",
+   "pt": "Um assistente que pede permissão",
+   "en": "An assistant that asks first"
+  },
+  {
+   "es": "Responde preguntas del negocio y hace tareas en el sistema, desde la app del vendedor y desde el panel. Antes de cambiar algo, te muestra qué va a hacer y espera tu «sí».",
+   "pt": "Responde perguntas sobre o negócio e executa tarefas no sistema, no app do vendedor e no painel. Antes de mudar qualquer coisa, mostra o que vai fazer e espera o seu “sim”.",
+   "en": "It answers business questions and handles tasks in the system, from the rep’s app and from the dashboard. Before changing anything, it shows you what it will do and waits for your “yes.”"
+  },
+  {
+   "es": "Distribuidora Central · datos del sistema",
+   "pt": "Distribuidora Central · dados do sistema",
+   "en": "Distribuidora Central · system data"
+  },
+  {
+   "es": "Al día",
+   "pt": "Em dia",
+   "en": "Up to date"
+  },
+  {
+   "es": "Clientes",
+   "pt": "Clientes",
+   "en": "Customers"
+  },
+  {
+   "es": "Productos",
+   "pt": "Produtos",
+   "en": "Products"
+  },
+  {
+   "es": "Facturas del mes",
+   "pt": "Faturas do mês",
+   "en": "Invoices this month"
+  },
+  {
+   "es": "Listas de precios",
+   "pt": "Tabelas de preços",
+   "en": "Price lists"
+  },
+  {
+   "es": "1.126",
+   "pt": "1.126",
+   "en": "1,126"
+  },
+  {
+   "es": "1.842",
+   "pt": "1.842",
+   "en": "1,842"
+  },
+  {
+   "es": "Facturas y notas de crédito del día",
+   "pt": "Faturas e notas de crédito do dia",
+   "en": "Today’s invoices and credit notes"
+  },
+  {
+   "es": "Saldos y cobranzas por cliente",
+   "pt": "Saldos e cobranças por cliente",
+   "en": "Balances and collections by customer"
+  },
+  {
+   "es": "Lista de precios 3 (mayorista)",
+   "pt": "Tabela de preços 3 (atacado)",
+   "en": "Price list 3 (wholesale)"
+  },
+  {
+   "es": "Clientes nuevos y cambios de dirección",
+   "pt": "Clientes novos e mudanças de endereço",
+   "en": "New customers and address changes"
+  },
+  {
+   "es": "Stock por depósito",
+   "pt": "Estoque por depósito",
+   "en": "Stock by warehouse"
+  },
+  {
+   "es": "cada hora",
+   "pt": "a cada hora",
+   "en": "hourly"
+  },
+  {
+   "es": "Conectado a",
+   "pt": "Conectado ao",
+   "en": "Connected to"
+  },
+  {
+   "es": ". Con otros sistemas, el conector se arma en la instalación.",
+   "pt": ". Com outros sistemas, o conector é montado na instalação.",
+   "en": ". For other systems, we build the connector during setup."
+  },
+  {
+   "es": "Por qué aparece cada oportunidad",
+   "pt": "Por que cada oportunidade aparece",
+   "en": "Why each opportunity shows up"
+  },
+  {
+   "es": "Venta cruzada",
+   "pt": "Venda cruzada",
+   "en": "Cross-sell"
+  },
+  {
+   "es": "Tipos de oportunidad",
+   "pt": "Tipos de oportunidade",
+   "en": "Opportunity types"
+  },
+  {
+   "es": "Lo que llevan los parecidos y este cliente no.",
+   "pt": "O que os parecidos levam e este cliente não.",
+   "en": "What similar customers buy and this one doesn’t."
+  },
+  {
+   "es": "Recompra",
+   "pt": "Recompra",
+   "en": "Reorder"
+  },
+  {
+   "es": "Lo que suele llevar y ya le tocaba.",
+   "pt": "O que ele costuma levar e já está na hora.",
+   "en": "What they usually buy and are due for."
+  },
+  {
+   "es": "Reactivar",
+   "pt": "Reativar",
+   "en": "Win back"
+  },
+  {
+   "es": "Clientes que dejaron de comprar.",
+   "pt": "Clientes que pararam de comprar.",
+   "en": "Customers who stopped buying."
+  },
+  {
+   "es": "Cobrar",
+   "pt": "Cobrar",
+   "en": "Collect"
+  },
+  {
+   "es": "Facturas vencidas, en la visita.",
+   "pt": "Faturas vencidas, na visita.",
+   "en": "Overdue invoices, collected on the visit."
+  },
+  {
+   "es": "Así lo recibe tu sistema",
+   "pt": "Assim o seu sistema recebe",
+   "en": "How your system receives it"
+  },
+  {
+   "es": "Pendiente de facturar",
+   "pt": "Pendente de faturamento",
+   "en": "Pending invoicing"
+  },
+  {
+   "es": "Cliente",
+   "pt": "Cliente",
+   "en": "Customer"
+  },
+  {
+   "es": "Vendedor",
+   "pt": "Vendedor",
+   "en": "Sales rep"
+  },
+  {
+   "es": "Lista",
+   "pt": "Tabela",
+   "en": "Price list"
+  },
+  {
+   "es": "3 · Mayorista",
+   "pt": "3 · Atacado",
+   "en": "3 · Wholesale"
+  },
+  {
+   "es": "Entrega",
+   "pt": "Entrega",
+   "en": "Delivery"
+  },
+  {
+   "es": "Jueves 01/10",
+   "pt": "Quinta, 01/10",
+   "en": "Thursday, 10/1"
+  },
+  {
+   "es": "Origen",
+   "pt": "Origem",
+   "en": "Source"
+  },
+  {
+   "es": "App Libreta",
+   "pt": "App Libreta",
+   "en": "Libreta app"
+  },
+  {
+   "es": "Código",
+   "pt": "Código",
+   "en": "Code"
+  },
+  {
+   "es": "Producto",
+   "pt": "Produto",
+   "en": "Product"
+  },
+  {
+   "es": "Cant.",
+   "pt": "Qtd.",
+   "en": "Qty"
+  },
+  {
+   "es": "Importe",
+   "pt": "Valor",
+   "en": "Amount"
+  },
+  {
+   "es": "Cargado desde el celular a las 10:42. Nadie lo volvió a tipear.",
+   "pt": "Lançado pelo celular às 10:42. Ninguém digitou de novo.",
+   "en": "Entered from the phone at 10:42. Nobody retyped it."
+  },
+  {
+   "es": "Solicitudes · Laura, supervisora",
+   "pt": "Solicitações · Laura, supervisora",
+   "en": "Requests · Laura, supervisor"
+  },
+  {
+   "es": "Asistente de Libreta",
+   "pt": "Assistente do Libreta",
+   "en": "Libreta assistant"
+  },
+  {
+   "es": "En la app y en el panel",
+   "pt": "No app e no painel",
+   "en": "In the app and the dashboard"
+  },
+  {
+   "es": "Hola, Laura. Preguntame por ventas, clientes o vendedores, o pedime que haga algo.",
+   "pt": "Olá, Laura. Pergunte sobre vendas, clientes ou vendedores, ou me peça para fazer algo.",
+   "en": "Hi, Laura. Ask me about sales, customers or reps, or ask me to do something."
+  },
+  {
+   "es": "¿Qué clientes de María no compran hace más de 30 días?",
+   "pt": "Quais clientes da María não compram há mais de 30 dias?",
+   "en": "Which of María’s customers haven’t bought in over 30 days?"
+  },
+  {
+   "es": "¿Cómo venimos contra el objetivo?",
+   "pt": "Como estamos em relação à meta?",
+   "en": "How are we doing against target?"
+  },
+  {
+   "es": "Pedile a María que pase por La Trattoria el jueves",
+   "pt": "Peça para a María passar na La Trattoria na quinta",
+   "en": "Ask María to stop by La Trattoria on Thursday"
+  },
+  {
+   "es": "El tablero del supervisor",
+   "pt": "O painel do supervisor",
+   "en": "The supervisor dashboard"
+  },
+  {
+   "es": "Toda la calle, en una pantalla.",
+   "pt": "Toda a rua em uma tela.",
+   "en": "Your whole field team on one screen."
+  },
+  {
+   "es": "Cinco pantallas: el día en la calle (quién salió, cómo van las rutas, qué pedidos entraron y qué espera tu respuesta), cada vendedor contra su objetivo, lo que suma Libreta en venta extra, los clientes que dejaron de comprar o deben, y la bandeja de pedidos para pasar a tu sistema.",
+   "pt": "Cinco telas: o dia na rua (quem saiu, como estão as rotas, que pedidos entraram e o que espera a sua resposta), cada vendedor contra a sua meta, o que o Libreta soma em vendas extras, os clientes que pararam de comprar ou estão devendo e a caixa de pedidos para passar ao seu sistema.",
+   "en": "Five screens: the day in the field (who’s out, how routes are going, which orders came in and what needs your answer), each rep against target, the extra sales Libreta brings in, customers who stopped buying or owe money, and the order inbox for your system."
+  },
+  {
+   "es": "Probalo: cargá un pedido o avisá un desvío en el celular de arriba y mirá cómo llega. Si aprobás el desvío acá, a María le llega el aviso.",
+   "pt": "Teste: lance um pedido ou avise um desvio no celular acima e veja como chega. Se você aprovar o desvio aqui, a María recebe o aviso.",
+   "en": "Try it: enter an order or report a detour on the phone above and watch it arrive. Approve the detour here and María gets notified."
+  },
+  {
+   "es": "Desde la compu lo podés probar.",
+   "pt": "No computador, dá para testar.",
+   "en": "You can try it on a computer."
+  },
+  {
+   "es": "Tablero del supervisor de Libreta, con datos de ejemplo",
+   "pt": "Painel do supervisor do Libreta, com dados de exemplo",
+   "en": "Libreta supervisor dashboard, with sample data"
+  },
+  {
+   "es": "Tablero del supervisor de Libreta: quién está en la calle, cómo van las rutas, los pedidos de hoy y lo que espera respuesta",
+   "pt": "Painel do supervisor do Libreta: quem está na rua, como estão as rotas, os pedidos de hoje e o que espera resposta",
+   "en": "Libreta supervisor dashboard: who’s in the field, how routes are going, today’s orders and what needs an answer"
+  },
+  {
+   "es": "Datos de ejemplo de una distribuidora de consumo masivo con tres vendedores. El tablero se usa en la compu; el vendedor usa la app en el celular.",
+   "pt": "Dados de exemplo de uma distribuidora de bens de consumo com três vendedores. O painel é usado no computador; o vendedor usa o app no celular.",
+   "en": "Sample data from a consumer goods distributor with three reps. The dashboard runs on a computer; reps use the app on their phones."
+  },
+  {
+   "es": "Hacé la cuenta con tu cartera.",
+   "pt": "Faça a conta com a sua carteira.",
+   "en": "Run the numbers on your accounts."
+  },
+  {
+   "es": "Es una estimación con tus números, no una promesa. Movés los supuestos y ves cuánto tendría que vender de más cada vendedor para pagar Libreta.",
+   "pt": "É uma estimativa com os seus números, não uma promessa. Ajuste as premissas e veja quanto cada vendedor precisaria vender a mais para pagar o Libreta.",
+   "en": "It’s an estimate with your numbers, not a promise. Adjust the assumptions and see how much more each rep would need to sell to pay for Libreta."
+  },
+  {
+   "es": "Vendedores en la calle",
+   "pt": "Vendedores externos",
+   "en": "Field sales reps"
+  },
+  {
+   "es": "Clientes activos por vendedor",
+   "pt": "Clientes ativos por vendedor",
+   "en": "Active customers per rep"
+  },
+  {
+   "es": "Compra promedio por cliente al mes",
+   "pt": "Compra média por cliente por mês",
+   "en": "Average monthly purchase per customer"
+  },
+  {
+   "es": "$U 18.000",
+   "pt": "$U 18.000",
+   "en": "$U 18,000"
+  },
+  {
+   "es": "¿Cómo sabe hoy el vendedor qué ofrecer?",
+   "pt": "Como o vendedor sabe hoje o que oferecer?",
+   "en": "How do reps know what to offer today?"
+  },
+  {
+   "es": "De memoria",
+   "pt": "De memória",
+   "en": "From memory"
+  },
+  {
+   "es": "lo que se acuerda",
+   "pt": "o que lembra",
+   "en": "what they remember"
+  },
+  {
+   "es": "Planilla",
+   "pt": "Planilha",
+   "en": "Spreadsheet"
+  },
+  {
+   "es": "listados impresos",
+   "pt": "listas impressas",
+   "en": "printed lists"
+  },
+  {
+   "es": "Con datos",
+   "pt": "Com dados",
+   "en": "With data"
+  },
+  {
+   "es": "ya hay reportes",
+   "pt": "já há relatórios",
+   "en": "reports exist"
+  },
+  {
+   "es": "Supuesto: las oportunidades que se concretan suman entre 1 % y 3 % a lo que ya compra la cartera, según de dónde partís.",
+   "pt": "Premissa: as oportunidades fechadas somam entre 1% e 3% ao que a carteira já compra, dependendo do seu ponto de partida.",
+   "en": "Assumption: closed opportunities add 1% to 3% to what your accounts already buy, depending on where you start."
+  },
+  {
+   "es": "Venta extra estimada por mes",
+   "pt": "Venda extra estimada por mês",
+   "en": "Estimated extra sales per month"
+  },
+  {
+   "es": "Venta actual de la cartera",
+   "pt": "Venda atual da carteira",
+   "en": "Current sales from your accounts"
+  },
+  {
+   "es": "Libreta por mes",
+   "pt": "Libreta por mês",
+   "en": "Libreta per month"
+  },
+  {
+   "es": "Para pagarla, cada vendedor vende de más",
+   "pt": "Para pagá-lo, cada vendedor vende a mais",
+   "en": "To pay for it, each rep sells an extra"
+  },
+  {
+   "es": "Menos clientes que se van sin que nadie lo note",
+   "pt": "Menos clientes indo embora sem ninguém perceber",
+   "en": "Fewer customers slipping away unnoticed"
+  },
+  {
+   "es": "El que deja de comprar aparece en «Reactivar» y en el panel, con lo que compraba antes.",
+   "pt": "Quem para de comprar aparece em “Reativar” e no painel, com o que comprava antes.",
+   "en": "Anyone who stops buying shows up under “Win back” and in the dashboard, with what they used to buy."
+  },
+  {
+   "es": "Menos errores de precio",
+   "pt": "Menos erros de preço",
+   "en": "Fewer pricing errors"
+  },
+  {
+   "es": "El pedido sale de la lista del cliente, con el precio del día. No hay que copiarlo de un papel.",
+   "pt": "O pedido sai da tabela do cliente, com o preço do dia. Nada de copiar de um papel.",
+   "en": "Orders use the customer’s price list with today’s price. No copying from paper."
+  },
+  {
+   "es": "Menos tiempo en la oficina",
+   "pt": "Menos tempo no escritório",
+   "en": "Less time in the office"
+  },
+  {
+   "es": "Nadie arma listados para la calle ni pasa pedidos a mano. El vendedor sale con todo en el celular.",
+   "pt": "Ninguém monta listas para a rua nem digita pedidos à mão. O vendedor sai com tudo no celular.",
+   "en": "Nobody prints lists for the field or keys in orders by hand. Reps head out with everything on their phone."
+  },
+  {
+   "es": "Cobranzas en la visita",
+   "pt": "Cobranças na visita",
+   "en": "Collections on the visit"
+  },
+  {
+   "es": "Las facturas vencidas le aparecen al vendedor antes de entrar al comercio.",
+   "pt": "As faturas vencidas aparecem para o vendedor antes de ele entrar na loja.",
+   "en": "Overdue invoices show up for the rep before they walk into the store."
+  },
+  {
+   "es": "Un precio por vendedor, todo incluido.",
+   "pt": "Um preço por vendedor, tudo incluído.",
+   "en": "One price per rep, everything included."
+  },
+  {
+   "es": "App del vendedor, panel del supervisor, asistente y conexión con tu sistema en todos los planes. Los usuarios de supervisión no se cobran. Precios en dólares, más IVA.",
+   "pt": "App do vendedor, painel do supervisor, assistente e conexão com o seu sistema em todos os planos. Usuários de supervisão não pagam. Preços em dólares, mais impostos.",
+   "en": "Rep app, supervisor dashboard, assistant and connection to your system on every plan. Supervisor users are free. Prices in US dollars, plus taxes."
+  },
+  {
+   "es": "Forma de pago",
+   "pt": "Forma de pagamento",
+   "en": "Billing period"
+  },
+  {
+   "es": "Mensual",
+   "pt": "Mensal",
+   "en": "Monthly"
+  },
+  {
+   "es": "Anual",
+   "pt": "Anual",
+   "en": "Annual"
+  },
+  {
+   "es": "pagás 10 meses",
+   "pt": "pague 10 meses",
+   "en": "pay for 10 months"
+  },
+  {
+   "es": "Calle",
+   "pt": "Rua",
+   "en": "Field"
+  },
+  {
+   "es": "De 1 a 5 vendedores",
+   "pt": "De 1 a 5 vendedores",
+   "en": "1 to 5 reps"
+  },
+  {
+   "es": "por vendedor / mes",
+   "pt": "por vendedor / mês",
+   "en": "per rep / month"
+  },
+  {
+   "es": "App del vendedor completa: ruta, oportunidades, pedidos, cartera, prospectos, lista de precios y presupuestos",
+   "pt": "App do vendedor completo: rota, oportunidades, pedidos, carteira, prospects, tabela de preços e orçamentos",
+   "en": "Full rep app: route, opportunities, orders, accounts, prospects, price list and quotes"
+  },
+  {
+   "es": "Panel del supervisor",
+   "pt": "Painel do supervisor",
+   "en": "Supervisor dashboard"
+  },
+  {
+   "es": "Conexión directa con tu sistema de gestión",
+   "pt": "Conexão direta com o seu sistema de gestão",
+   "en": "Direct connection to your ERP"
+  },
+  {
+   "es": "Los pedidos entran solos al sistema",
+   "pt": "Os pedidos entram sozinhos no sistema",
+   "en": "Orders flow into your system automatically"
+  },
+  {
+   "es": "Asistente con IA en la app y en el panel",
+   "pt": "Assistente com IA no app e no painel",
+   "en": "AI assistant in the app and dashboard"
+  },
+  {
+   "es": "Recomendado",
+   "pt": "Recomendado",
+   "en": "Recommended"
+  },
+  {
+   "es": "Equipo",
+   "pt": "Equipe",
+   "en": "Team"
+  },
+  {
+   "es": "De 6 a 20 vendedores",
+   "pt": "De 6 a 20 vendedores",
+   "en": "6 to 20 reps"
+  },
+  {
+   "es": "Todo lo de Calle",
+   "pt": "Tudo do plano Rua",
+   "en": "Everything in Field"
+  },
+  {
+   "es": "Rutas fijas, objetivos y comisiones por vendedor",
+   "pt": "Rotas fixas, metas e comissões por vendedor",
+   "en": "Fixed routes, targets and commissions per rep"
+  },
+  {
+   "es": "Fuerza de ventas",
+   "pt": "Força de vendas",
+   "en": "Scale"
+  },
+  {
+   "es": "21 vendedores o más",
+   "pt": "21 vendedores ou mais",
+   "en": "21+ reps"
+  },
+  {
+   "es": "Todo lo de Equipo",
+   "pt": "Tudo do plano Equipe",
+   "en": "Everything in Team"
+  },
+  {
+   "es": "Varias sucursales, depósitos y listas de precios",
+   "pt": "Várias filiais, depósitos e tabelas de preços",
+   "en": "Multiple branches, warehouses and price lists"
+  },
+  {
+   "es": "Reportes programados por mail",
+   "pt": "Relatórios programados por e-mail",
+   "en": "Scheduled email reports"
+  },
+  {
+   "es": "Soporte prioritario y API",
+   "pt": "Suporte prioritário e API",
+   "en": "Priority support and API"
+  },
+  {
+   "es": "Instalación",
+   "pt": "Instalação",
+   "en": "Setup"
+  },
+  {
+   "es": "Es un pago único, no se suma a la mensualidad. La hacemos nosotros, sin tocar tu sistema.",
+   "pt": "É um pagamento único, não entra na mensalidade. Nós fazemos, sem mexer no seu sistema.",
+   "en": "A one-time fee, separate from the monthly plan. We handle it without touching your system."
+  },
+  {
+   "es": "Integración completa con tu sistema",
+   "pt": "Integração completa com o seu sistema",
+   "en": "Full integration with your system"
+  },
+  {
+   "es": "USD 1.950",
+   "pt": "USD 1.950",
+   "en": "USD 1,950"
+  },
+  {
+   "es": "Pago único",
+   "pt": "Pagamento único",
+   "en": "One-time fee"
+  },
+  {
+   "es": "A medida (varias empresas, integraciones)",
+   "pt": "Sob medida (várias empresas, integrações)",
+   "en": "Custom (multiple companies, integrations)"
+  },
+  {
+   "es": "desde USD 2.500",
+   "pt": "a partir de USD 2.500",
+   "en": "from USD 2,500"
+  },
+  {
+   "es": "Lo que nos preguntan antes de empezar.",
+   "pt": "O que nos perguntam antes de começar.",
+   "en": "What people ask us before getting started."
+  },
+  {
+   "es": "¿Te queda otra duda?",
+   "pt": "Ficou alguma dúvida?",
+   "en": "Still have questions?"
+  },
+  {
+   "es": "Agendá una demo",
+   "pt": "Agende uma demo",
+   "en": "Book a demo"
+  },
+  {
+   "es": "y la vemos en la llamada.",
+   "pt": "e vemos na conversa.",
+   "en": "and we’ll go over them on the call."
+  },
+  {
+   "es": "¿Hay que cargar los clientes y los precios de nuevo?",
+   "pt": "É preciso cadastrar os clientes e os preços de novo?",
+   "en": "Do we have to enter customers and prices all over again?"
+  },
+  {
+   "es": "No. Libreta toma clientes, facturas, saldos y listas de precios de tu sistema de gestión y los actualiza solo. El vendedor no carga nada que ya exista.",
+   "pt": "Não. O Libreta pega clientes, faturas, saldos e tabelas de preços do seu sistema de gestão e atualiza tudo sozinho. O vendedor não digita nada que já exista.",
+   "en": "No. Libreta pulls customers, invoices, balances and price lists from your ERP and keeps them updated on its own. Reps never re-enter anything that already exists."
+  },
+  {
+   "es": "¿Con qué sistemas funciona?",
+   "pt": "Com quais sistemas funciona?",
+   "en": "Which systems does it work with?"
+  },
+  {
+   "es": "Hoy tiene conexión directa con Doria. Con Zureo, Odoo, SAP Business One y otros sistemas se arma el conector en la instalación. Todos los planes incluyen la conexión con tu sistema.",
+   "pt": "Hoje tem conexão direta com o Doria. Com Zureo, Odoo, SAP Business One e outros sistemas, o conector é montado na instalação. Todos os planos incluem a conexão com o seu sistema.",
+   "en": "Today it connects directly to Doria. For Zureo, Odoo, SAP Business One and other systems, we build the connector during setup. Every plan includes the connection to your system."
+  },
+  {
+   "es": "¿Cómo sabe qué ofrecerle a cada cliente?",
+   "pt": "Como ele sabe o que oferecer a cada cliente?",
+   "en": "How does it know what to offer each customer?"
+  },
+  {
+   "es": "Mira el historial de compras. Si un cliente compra algo cada dos semanas y ya pasaron tres, es una recompra. Si 8 de cada 10 clientes que llevan detergente también llevan lavandina y este no, es una venta cruzada. Si dejó de comprar, es para reactivar. Si tiene facturas vencidas, es para cobrar. Cada oportunidad dice por qué aparece y cuánto vale por mes.",
+   "pt": "Ele olha o histórico de compras. Se um cliente compra algo a cada duas semanas e já se passaram três, é uma recompra. Se 8 de cada 10 clientes que levam detergente também levam água sanitária e este não, é uma venda cruzada. Se parou de comprar, é para reativar. Se tem faturas vencidas, é para cobrar. Cada oportunidade diz por que aparece e quanto vale por mês.",
+   "en": "It looks at purchase history. If a customer buys something every two weeks and three have gone by, it’s a reorder. If 8 out of 10 customers who buy dish soap also buy bleach and this one doesn’t, it’s a cross-sell. If they stopped buying, it’s a win-back. If they have overdue invoices, it’s a collection. Every opportunity says why it shows up and how much it’s worth per month."
+  },
+  {
+   "es": "¿El pedido va directo a mi sistema?",
+   "pt": "O pedido vai direto para o meu sistema?",
+   "en": "Does the order go straight into my system?"
+  },
+  {
+   "es": "Sí. Entra a tu sistema como pedido, con los precios de la lista del cliente, y queda para que lo facturen. El supervisor lo ve en el momento en el panel.",
+   "pt": "Sim. Entra no seu sistema como pedido, com os preços da tabela do cliente, e fica pronto para faturar. O supervisor vê na hora, no painel.",
+   "en": "Yes. It goes into your system as an order, with the customer’s price list, ready to be invoiced. The supervisor sees it instantly in the dashboard."
+  },
+  {
+   "es": "¿El asistente puede hacer algo sin que me entere?",
+   "pt": "O assistente pode fazer algo sem eu saber?",
+   "en": "Can the assistant do anything without me knowing?"
+  },
+  {
+   "es": "No. Antes de crear una tarea, mover una visita o cambiar una ruta, te muestra exactamente qué va a hacer y espera que confirmes. Para consultar datos no pide permiso.",
+   "pt": "Não. Antes de criar uma tarefa, mudar uma visita ou alterar uma rota, ele mostra exatamente o que vai fazer e espera você confirmar. Para consultar dados, não pede permissão.",
+   "en": "No. Before creating a task, moving a visit or changing a route, it shows you exactly what it will do and waits for you to confirm. It only skips asking when it’s just looking up data."
+  },
+  {
+   "es": "¿Los vendedores tienen que bajar una app?",
+   "pt": "Os vendedores precisam baixar um app?",
+   "en": "Do reps have to download an app?"
+  },
+  {
+   "es": "Se abre desde el celular, en Android o en iPhone, y se guarda en la pantalla de inicio como cualquier app. No hace falta pasar por ninguna tienda.",
+   "pt": "Abre no celular, em Android ou iPhone, e fica salvo na tela inicial como qualquer app. Não precisa passar por nenhuma loja de aplicativos.",
+   "en": "It opens on the phone, on Android or iPhone, and is saved to the home screen like any app. No app store needed."
+  },
+  {
+   "es": "¿Controla dónde está el vendedor todo el día?",
+   "pt": "Ele controla onde o vendedor está o dia todo?",
+   "en": "Does it track where reps are all day?"
+  },
+  {
+   "es": "No. Se registra la llegada y la salida de cada visita, y solo durante la jornada, entre «Iniciar» y «Terminar». Tratamos los datos según la Ley 18.331 de protección de datos personales y te ayudamos a informar a tu equipo.",
+   "pt": "Não. Registra a chegada e a saída de cada visita, e só durante a jornada, entre “Iniciar” e “Encerrar”. Tratamos os dados conforme a Lei 18.331 de proteção de dados pessoais do Uruguai e ajudamos você a informar a sua equipe.",
+   "en": "No. It only logs arrival and departure at each visit, and only during the workday, between “Start” and “End.” We handle data under Uruguay’s Personal Data Protection Law 18.331 and help you inform your team."
+  },
+  {
+   "es": "¿Cuánto tarda en estar funcionando?",
+   "pt": "Quanto tempo leva para começar a funcionar?",
+   "en": "How long until it’s up and running?"
+  },
+  {
+   "es": "De dos a cuatro semanas, según tu sistema y la cantidad de vendedores. Incluye la carga de rutas, objetivos y comisiones, y una capacitación con el equipo de calle.",
+   "pt": "De duas a quatro semanas, dependendo do seu sistema e do número de vendedores. Inclui o cadastro de rotas, metas e comissões e um treinamento com a equipe externa.",
+   "en": "Two to four weeks, depending on your system and number of reps. That includes loading routes, targets and commissions, plus training for your field team."
+  },
+  {
+   "es": "Veamos cómo vende tu equipo.",
+   "pt": "Vamos ver como a sua equipe vende.",
+   "en": "Let’s see how your team sells."
+  },
+  {
+   "es": "Te mostramos Libreta funcionando con datos de tu empresa y te pasamos una propuesta con la instalación y la mensualidad.",
+   "pt": "Mostramos o Libreta funcionando com os dados da sua empresa e enviamos uma proposta com a instalação e a mensalidade.",
+   "en": "We’ll show you Libreta running on your company’s data and send you a proposal with setup and monthly pricing."
+  },
+  {
+   "es": "Coordinamos una reunión de 30 minutos, en tu empresa o por videollamada.",
+   "pt": "Marcamos uma reunião de 30 minutos, na sua empresa ou por videochamada.",
+   "en": "We set up a 30-minute meeting, at your office or by video call."
+  },
+  {
+   "es": "Nos contás cuántos vendedores tenés, qué sistema usás y cómo arman hoy las rutas.",
+   "pt": "Você conta quantos vendedores tem, que sistema usa e como as rotas são montadas hoje.",
+   "en": "You tell us how many reps you have, which system you use and how routes are planned today."
+  },
+  {
+   "es": "Te mandamos la propuesta con tus números y un plan de arranque.",
+   "pt": "Enviamos a proposta com os seus números e um plano de implantação.",
+   "en": "We send you a proposal with your numbers and a rollout plan."
+  },
+  {
+   "es": "Pedí una demo",
+   "pt": "Peça uma demo",
+   "en": "Request a demo"
+  },
+  {
+   "es": "Nombre",
+   "pt": "Nome",
+   "en": "Name"
+  },
+  {
+   "es": "Empresa",
+   "pt": "Empresa",
+   "en": "Company"
+  },
+  {
+   "es": "Mail",
+   "pt": "E-mail",
+   "en": "Email"
+  },
+  {
+   "es": "Elegí un rango",
+   "pt": "Escolha uma faixa",
+   "en": "Choose a range"
+  },
+  {
+   "es": "De 1 a 5",
+   "pt": "De 1 a 5",
+   "en": "1 to 5"
+  },
+  {
+   "es": "De 6 a 20",
+   "pt": "De 6 a 20",
+   "en": "6 to 20"
+  },
+  {
+   "es": "21 o más",
+   "pt": "21 ou mais",
+   "en": "21 or more"
+  },
+  {
+   "es": "(opcional)",
+   "pt": "(opcional)",
+   "en": "(optional)"
+  },
+  {
+   "es": "Prefijo del país",
+   "pt": "Código do país",
+   "en": "Country code"
+  },
+  {
+   "es": "🇺🇾 Uruguay +598",
+   "pt": "🇺🇾 Uruguai +598",
+   "en": "🇺🇾 Uruguay +598"
+  },
+  {
+   "es": "🇦🇷 Argentina +54",
+   "pt": "🇦🇷 Argentina +54",
+   "en": "🇦🇷 Argentina +54"
+  },
+  {
+   "es": "🇧🇴 Bolivia +591",
+   "pt": "🇧🇴 Bolívia +591",
+   "en": "🇧🇴 Bolivia +591"
+  },
+  {
+   "es": "🇧🇷 Brasil +55",
+   "pt": "🇧🇷 Brasil +55",
+   "en": "🇧🇷 Brazil +55"
+  },
+  {
+   "es": "🇨🇱 Chile +56",
+   "pt": "🇨🇱 Chile +56",
+   "en": "🇨🇱 Chile +56"
+  },
+  {
+   "es": "🇨🇴 Colombia +57",
+   "pt": "🇨🇴 Colômbia +57",
+   "en": "🇨🇴 Colombia +57"
+  },
+  {
+   "es": "🇨🇷 Costa Rica +506",
+   "pt": "🇨🇷 Costa Rica +506",
+   "en": "🇨🇷 Costa Rica +506"
+  },
+  {
+   "es": "🇨🇺 Cuba +53",
+   "pt": "🇨🇺 Cuba +53",
+   "en": "🇨🇺 Cuba +53"
+  },
+  {
+   "es": "🇪🇨 Ecuador +593",
+   "pt": "🇪🇨 Equador +593",
+   "en": "🇪🇨 Ecuador +593"
+  },
+  {
+   "es": "🇸🇻 El Salvador +503",
+   "pt": "🇸🇻 El Salvador +503",
+   "en": "🇸🇻 El Salvador +503"
+  },
+  {
+   "es": "🇪🇸 España +34",
+   "pt": "🇪🇸 Espanha +34",
+   "en": "🇪🇸 Spain +34"
+  },
+  {
+   "es": "🇬🇹 Guatemala +502",
+   "pt": "🇬🇹 Guatemala +502",
+   "en": "🇬🇹 Guatemala +502"
+  },
+  {
+   "es": "🇭🇳 Honduras +504",
+   "pt": "🇭🇳 Honduras +504",
+   "en": "🇭🇳 Honduras +504"
+  },
+  {
+   "es": "🇲🇽 México +52",
+   "pt": "🇲🇽 México +52",
+   "en": "🇲🇽 Mexico +52"
+  },
+  {
+   "es": "🇳🇮 Nicaragua +505",
+   "pt": "🇳🇮 Nicarágua +505",
+   "en": "🇳🇮 Nicaragua +505"
+  },
+  {
+   "es": "🇵🇦 Panamá +507",
+   "pt": "🇵🇦 Panamá +507",
+   "en": "🇵🇦 Panama +507"
+  },
+  {
+   "es": "🇵🇾 Paraguay +595",
+   "pt": "🇵🇾 Paraguai +595",
+   "en": "🇵🇾 Paraguay +595"
+  },
+  {
+   "es": "🇵🇪 Perú +51",
+   "pt": "🇵🇪 Peru +51",
+   "en": "🇵🇪 Peru +51"
+  },
+  {
+   "es": "🇵🇷 Puerto Rico +1",
+   "pt": "🇵🇷 Porto Rico +1",
+   "en": "🇵🇷 Puerto Rico +1"
+  },
+  {
+   "es": "🇩🇴 República Dominicana +1",
+   "pt": "🇩🇴 República Dominicana +1",
+   "en": "🇩🇴 Dominican Republic +1"
+  },
+  {
+   "es": "🇻🇪 Venezuela +58",
+   "pt": "🇻🇪 Venezuela +58",
+   "en": "🇻🇪 Venezuela +58"
+  },
+  {
+   "es": "Número, sin el 0 inicial",
+   "pt": "Número, sem o 0 inicial",
+   "en": "Number, without the leading 0"
+  },
+  {
+   "es": "Elegir día y hora",
+   "pt": "Escolher dia e horário",
+   "en": "Pick a day and time"
+  },
+  {
+   "es": "Después elegís el día y la hora en nuestra agenda. Usamos tus datos solo para contactarte sobre Libreta.",
+   "pt": "Depois você escolhe o dia e o horário na nossa agenda. Usamos seus dados só para falar com você sobre o Libreta.",
+   "en": "Next, you pick a day and time on our calendar. We only use your details to contact you about Libreta."
+  },
+  {
+   "es": "Elegí el día y la hora.",
+   "pt": "Escolha o dia e o horário.",
+   "en": "Pick a day and time."
+  },
+  {
+   "es": "Se abrió la agenda con tus datos cargados. Elegí el horario que te quede cómodo y la confirmación te llega por mail.",
+   "pt": "A agenda abriu com os seus dados preenchidos. Escolha o horário que for melhor para você e a confirmação chega por e-mail.",
+   "en": "The calendar opened with your details filled in. Choose a time that works for you and you’ll get a confirmation by email."
+  },
+  {
+   "es": "Abrir la agenda",
+   "pt": "Abrir a agenda",
+   "en": "Open the calendar"
+  },
+  {
+   "es": "Pie de página",
+   "pt": "Rodapé",
+   "en": "Footer"
+  },
+  {
+   "es": "Un producto de",
+   "pt": "Um produto da",
+   "en": "A product of"
+  },
+  {
+   "es": "Privacidad y datos",
+   "pt": "Privacidade e dados",
+   "en": "Privacy and data"
+  },
+  {
+   "es": "Dearmas & Costantini es responsable de los datos que dejás en el formulario. Los usamos solo para contactarte sobre Libreta; no los vendemos ni los compartimos con terceros. Para agendar la reunión usamos Calendly. Podés pedir acceso, rectificación o eliminación de tus datos respondiendo el mail de confirmación de la reunión, según la Ley 18.331 de protección de datos personales. La política de la app está en",
+   "pt": "A Dearmas & Costantini é responsável pelos dados que você deixa no formulário. Usamos esses dados só para falar com você sobre o Libreta; não vendemos nem compartilhamos com terceiros. Para agendar a reunião usamos o Calendly. Você pode pedir acesso, retificação ou exclusão dos seus dados respondendo ao e-mail de confirmação da reunião, conforme a Lei 18.331 de proteção de dados pessoais do Uruguai. A política do app está em",
+   "en": "Dearmas & Costantini is responsible for the information you leave in the form. We only use it to contact you about Libreta; we don’t sell it or share it with third parties. We use Calendly to schedule the meeting. You can request access to, correction or deletion of your data by replying to the meeting confirmation email, under Uruguay’s Personal Data Protection Law 18.331. The app’s policy is in"
+  },
+  {
+   "es": "Privacidad",
+   "pt": "Privacidade",
+   "en": "Privacy"
+  },
+  {
+   "es": ". Doria, Zureo, Odoo, SAP Business One, Memory, GNS y WhatsApp son marcas de sus respectivos dueños.",
+   "pt": ". Doria, Zureo, Odoo, SAP Business One, Memory, GNS e WhatsApp são marcas de seus respectivos donos.",
+   "en": ". Doria, Zureo, Odoo, SAP Business One, Memory, GNS and WhatsApp are trademarks of their respective owners."
+  },
+  {
+   "es": "Privacidad y ayuda",
+   "pt": "Privacidade e ajuda",
+   "en": "Privacy and help"
+  },
+  {
+   "es": "Ayuda",
+   "pt": "Ajuda",
+   "en": "Help"
+  },
+  {
+   "es": "Baja de la cuenta",
+   "pt": "Excluir conta",
+   "en": "Delete account"
+  },
+  {
+   "es": "Montevideo, Uruguay",
+   "pt": "Montevidéu, Uruguai",
+   "en": "Montevideo, Uruguay"
+  },
+  {
+   "es": "Agenda de Dearmas & Costantini",
+   "pt": "Agenda da Dearmas & Costantini",
+   "en": "Dearmas & Costantini calendar"
+  },
+  {
+   "es": "Cerrar la agenda",
+   "pt": "Fechar a agenda",
+   "en": "Close the calendar"
+  },
+  {
+   "es": "¿Dudas? Preguntame.",
+   "pt": "Dúvidas? Pergunte.",
+   "en": "Questions? Ask me."
+  },
+  {
+   "es": "Te ayudo con precios, la conexión con tu sistema y cómo funciona Libreta.",
+   "pt": "Eu ajudo com preços, a conexão com o seu sistema e como o Libreta funciona.",
+   "en": "I can help with pricing, connecting to your system and how Libreta works."
+  },
+  {
+   "es": "Cerrar",
+   "pt": "Fechar",
+   "en": "Close"
+  },
+  {
+   "es": "Responde al momento y te ayuda a agendar la demo",
+   "pt": "Responde na hora e ajuda você a agendar a demo",
+   "en": "Answers right away and helps you book a demo"
+  },
+  {
+   "es": "Cerrar el chat",
+   "pt": "Fechar o chat",
+   "en": "Close chat"
+  },
+  {
+   "es": "Tu pregunta",
+   "pt": "Sua pergunta",
+   "en": "Your question"
+  },
+  {
+   "es": "Escribí tu pregunta",
+   "pt": "Escreva sua pergunta",
+   "en": "Type your question"
+  },
+  {
+   "es": "Respuestas automáticas. Las condiciones se confirman en la demo.",
+   "pt": "Respostas automáticas. As condições são confirmadas na demo.",
+   "en": "Automated answers. Terms are confirmed in the demo."
+  },
+  {
+   "es": "Abrir el chat de Libreta",
+   "pt": "Abrir o chat do Libreta",
+   "en": "Open the Libreta chat"
+  },
+  {
+   "es": "¿Dudas? Preguntame",
+   "pt": "Dúvidas? Pergunte",
+   "en": "Questions? Ask me"
+  }
+ ],
+ "iguales": [
+  "Libreta",
+  "ES",
+  "PT",
+  "EN",
+  "Español",
+  "Português",
+  "English",
+  "María Fernández",
+  "MF",
+  "Doria",
+  "Zureo",
+  "Odoo",
+  "SAP Business One",
+  "Memory",
+  "GNS",
+  "P-2410",
+  "Autoservicio Parque Rodó",
+  "app.libreta.dev · Distribuidora Central",
+  "$U 0",
+  "USD 0",
+  "USD 69",
+  "USD 59",
+  "USD 49",
+  "WhatsApp",
+  "Dearmas",
+  "Costantini"
+ ],
+ "js": [
+  {
+   "es": "new Intl.NumberFormat('es-UY'",
+   "pt": "new Intl.NumberFormat('pt-BR'",
+   "en": "new Intl.NumberFormat('en-US'"
+  },
+  {
+   "es": "if ((m = /pack x(\\d+)/.exec(p.d))) return 'Pack de ' + m[1];",
+   "pt": "if ((m = /pack c\\/(\\d+)/.exec(p.d))) return 'Pack com ' + m[1];",
+   "en": "if ((m = /(\\d+)-pack/.exec(p.d))) return m[1] + '-pack';"
+  },
+  {
+   "es": "if ((m = /caja x(\\d+)/.exec(p.d))) return 'Caja de ' + m[1];",
+   "pt": "if ((m = /caixa c\\/(\\d+)/.exec(p.d))) return 'Caixa com ' + m[1];",
+   "en": "if ((m = /(case|box) of (\\d+)/.exec(p.d))) return (m[1] === 'box' ? 'Box of ' : 'Case of ') + m[2];"
+  },
+  {
+   "es": "if ((m = / x(\\d+)$/.exec(p.d))) return 'Paquete de ' + m[1];",
+   "pt": "if ((m = / c\\/(\\d+)$/.exec(p.d))) return 'Pacote com ' + m[1];",
+   "en": "if ((m = /pack of (\\d+)$/.exec(p.d))) return 'Pack of ' + m[1];"
+  },
+  {
+   "es": "if (/x kg/.test(p.d)) return 'Por kilo';",
+   "pt": "if (/\\(kg\\)/.test(p.d)) return 'Por quilo';",
+   "en": "if (/per kg/.test(p.d)) return 'Per kg';"
+  },
+  {
+   "es": "if (/bidón/.test(p.d)) return 'Bidón';",
+   "pt": "if (/galão/.test(p.d)) return 'Galão';",
+   "en": "if (/jug/.test(p.d)) return 'Jug';"
+  },
+  {
+   "es": "return 'Unidad';",
+   "pt": "return 'Unidade';",
+   "en": "return 'Unit';"
+  },
+  {
+   "es": "'Todo'",
+   "pt": "'Todos'",
+   "en": "'All'"
+  },
+  {
+   "es": "'Todas'",
+   "pt": "'Todas'",
+   "en": "'All'"
+  },
+  {
+   "es": "var MESES = ['O', 'N', 'D', 'E', 'F', 'M', 'A', 'M', 'J', 'J', 'A', 'S'];",
+   "pt": "var MESES = ['O', 'N', 'D', 'J', 'F', 'M', 'A', 'M', 'J', 'J', 'A', 'S'];",
+   "en": "var MESES = ['O', 'N', 'D', 'J', 'F', 'M', 'A', 'M', 'J', 'J', 'A', 'S'];"
+  },
+  {
+   "es": "'Activo'",
+   "pt": "'Ativo'",
+   "en": "'Active'"
+  },
+  {
+   "es": "'En riesgo'",
+   "pt": "'Em risco'",
+   "en": "'At risk'"
+  },
+  {
+   "es": "'Nuevo'",
+   "pt": "'Novo'",
+   "en": "'New'"
+  },
+  {
+   "es": "'Martes'",
+   "pt": "'Terça'",
+   "en": "'Tuesday'"
+  },
+  {
+   "es": "'Lunes'",
+   "pt": "'Segunda'",
+   "en": "'Monday'"
+  },
+  {
+   "es": "'Jueves'",
+   "pt": "'Quinta'",
+   "en": "'Thursday'"
+  },
+  {
+   "es": "'Viernes'",
+   "pt": "'Sexta'",
+   "en": "'Friday'"
+  },
+  {
+   "es": "'Sábado'",
+   "pt": "'Sábado'",
+   "en": "'Saturday'"
+  },
+  {
+   "es": "'Miércoles'",
+   "pt": "'Quarta'",
+   "en": "'Wednesday'"
+  },
+  {
+   "es": "'+8 %'",
+   "pt": "'+8%'",
+   "en": "'+8%'"
+  },
+  {
+   "es": "'+3 %'",
+   "pt": "'+3%'",
+   "en": "'+3%'"
+  },
+  {
+   "es": "'−2 %'",
+   "pt": "'−2%'",
+   "en": "'−2%'"
+  },
+  {
+   "es": "'+1 %'",
+   "pt": "'+1%'",
+   "en": "'+1%'"
+  },
+  {
+   "es": "'−100 %'",
+   "pt": "'−100%'",
+   "en": "'−100%'"
+  },
+  {
+   "es": "'+4 %'",
+   "pt": "'+4%'",
+   "en": "'+4%'"
+  },
+  {
+   "es": "'+6 %'",
+   "pt": "'+6%'",
+   "en": "'+6%'"
+  },
+  {
+   "es": "ticket: 'nuevo'",
+   "pt": "ticket: 'novo'",
+   "en": "ticket: 'new'"
+  },
+  {
+   "es": "'Cobrada'",
+   "pt": "'Paga'",
+   "en": "'Paid'"
+  },
+  {
+   "es": "'Pendiente'",
+   "pt": "'Pendente'",
+   "en": "'Pending'"
+  },
+  {
+   "es": "'Vencida'",
+   "pt": "'Vencida'",
+   "en": "'Overdue'"
+  },
+  {
+   "es": "'Lo de siempre'",
+   "pt": "'O de sempre'",
+   "en": "'The usual'"
+  },
+  {
+   "es": "'Compraba siempre'",
+   "pt": "'Comprava sempre'",
+   "en": "'Used to buy'"
+  },
+  {
+   "es": "'Compra Ramón, el encargado. Mejor antes de las 11.'",
+   "pt": "'Quem compra é o Ramón, o encarregado. Melhor antes das 11h.'",
+   "en": "'Ramón, the manager, does the buying. Best before 11 a.m.'"
+  },
+  {
+   "es": "'Cierra de 13 a 16.'",
+   "pt": "'Fecha das 13h às 16h.'",
+   "en": "'Closed from 1 to 4 p.m.'"
+  },
+  {
+   "es": "'Cambió de dueño en julio. Preguntar por Martín.'",
+   "pt": "'Mudou de dono em julho. Perguntar pelo Martín.'",
+   "en": "'Changed owners in July. Ask for Martín.'"
+  },
+  {
+   "es": "'Cliente nuevo desde julio.'",
+   "pt": "'Cliente novo desde julho.'",
+   "en": "'New customer since July.'"
+  },
+  {
+   "es": "fam: 'Lavandina'",
+   "pt": "fam: 'Água sanitária'",
+   "en": "fam: 'Bleach'"
+  },
+  {
+   "es": "fam: 'Refrescos'",
+   "pt": "fam: 'Refrigerantes'",
+   "en": "fam: 'Soft drinks'"
+  },
+  {
+   "es": "fam: 'Yerba'",
+   "pt": "fam: 'Erva-mate'",
+   "en": "fam: 'Yerba mate'"
+  },
+  {
+   "es": "fam: 'Dulces'",
+   "pt": "fam: 'Doce de leite'",
+   "en": "fam: 'Dulce de leche'"
+  },
+  {
+   "es": "'Ofrecele Lavandina a'",
+   "pt": "'Ofereça água sanitária para'",
+   "en": "'Offer bleach to'"
+  },
+  {
+   "es": "'Reponele Refrescos a'",
+   "pt": "'Reponha refrigerantes para'",
+   "en": "'Restock soft drinks for'"
+  },
+  {
+   "es": "'Reponele Yerba a'",
+   "pt": "'Reponha erva-mate para'",
+   "en": "'Restock yerba mate for'"
+  },
+  {
+   "es": "'Pasá por'",
+   "pt": "'Passe em'",
+   "en": "'Stop by'"
+  },
+  {
+   "es": "'Cobrale a'",
+   "pt": "'Faça a cobrança em'",
+   "en": "'Collect from'"
+  },
+  {
+   "es": "'Ofrecele Dulce de leche a'",
+   "pt": "'Ofereça doce de leite para'",
+   "en": "'Offer dulce de leche to'"
+  },
+  {
+   "es": "'8 de cada 10 que llevan Detergentes también llevan Lavandina. Los Robles lleva Detergentes y nunca llevó Lavandina.'",
+   "pt": "'8 de cada 10 que levam detergente também levam água sanitária. Los Robles leva detergente e nunca levou água sanitária.'",
+   "en": "'8 out of 10 customers who buy dish soap also buy bleach. Los Robles buys dish soap and has never bought bleach.'"
+  },
+  {
+   "es": "'Lleva Refresco cola 2,25 L cada 7 días y van 9 sin comprar.'",
+   "pt": "'Leva refrigerante de cola 2,25 L a cada 7 dias e já são 9 sem comprar.'",
+   "en": "'Buys 2.25 L cola every 7 days and it’s been 9 days.'"
+  },
+  {
+   "es": "'Compra Yerba mate 1 kg cada 14 días y van 17 sin comprar.'",
+   "pt": "'Compra erva-mate 1 kg a cada 14 dias e já são 17 sem comprar.'",
+   "en": "'Buys 1 kg yerba mate every 14 days and it’s been 17.'"
+  },
+  {
+   "es": "'No compra hace 46 días. Antes compraba $U 18.400 por mes, sobre todo Quesos y Conservas.'",
+   "pt": "'Não compra há 46 dias. Antes comprava $U 18.400 por mês, principalmente queijos e conservas.'",
+   "en": "'Hasn’t bought in 46 days. Used to buy $U 18,400 a month, mostly cheese and canned goods.'"
+  },
+  {
+   "es": "'Tiene $U 12.840 vencidos hace 12 días (factura A 0081245).'",
+   "pt": "'Tem $U 12.840 vencidos há 12 dias (fatura A 0081245).'",
+   "en": "'Has $U 12,840 overdue for 12 days (invoice A 0081245).'"
+  },
+  {
+   "es": "'7 de cada 10 panaderías que llevan Harina también llevan Dulce de leche.'",
+   "pt": "'7 de cada 10 padarias que levam farinha também levam doce de leite.'",
+   "en": "'7 out of 10 bakeries that buy flour also buy dulce de leche.'"
+  },
+  {
+   "es": "'Llevale la lista nueva a Cafetería Buena Vista'",
+   "pt": "'Leve a tabela nova para a Cafetería Buena Vista'",
+   "en": "'Bring the new price list to Cafetería Buena Vista'"
+  },
+  {
+   "es": "'Cambiaron los precios de Desayuno'",
+   "pt": "'Mudaram os preços de café da manhã'",
+   "en": "'Breakfast prices changed'"
+  },
+  {
+   "es": "'Preguntá en Los Robles por la góndola de limpieza'",
+   "pt": "'Pergunte no Los Robles sobre a gôndola de limpeza'",
+   "en": "'Ask Los Robles about the cleaning aisle'"
+  },
+  {
+   "es": "'Quieren sumar una marca'",
+   "pt": "'Querem incluir uma marca'",
+   "en": "'They want to add a brand'"
+  },
+  {
+   "es": "'Este y Maldonado'",
+   "pt": "'Leste e Maldonado'",
+   "en": "'East & Maldonado'"
+  },
+  {
+   "es": "'$U 219 llevando 10 o más'",
+   "pt": "'$U 219 levando 10 ou mais'",
+   "en": "'$U 219 when buying 10 or more'"
+  },
+  {
+   "es": "'Combo con lavandina bidón 5 L a $U 440'",
+   "pt": "'Combo com água sanitária galão 5 L por $U 440'",
+   "en": "'Combo with a 5 L bleach jug for $U 440'"
+  },
+  {
+   "es": "'<mark class=\"of-tag\">Oferta</mark>'",
+   "pt": "'<mark class=\"of-tag\">Oferta</mark>'",
+   "en": "'<mark class=\"of-tag\">Promo</mark>'"
+  },
+  {
+   "es": "'Panadería'",
+   "pt": "'Padaria'",
+   "en": "'Bakery'"
+  },
+  {
+   "es": "'Minimercado'",
+   "pt": "'Minimercado'",
+   "en": "'Mini-market'"
+  },
+  {
+   "es": "'Cafetería'",
+   "pt": "'Cafeteria'",
+   "en": "'Café'"
+  },
+  {
+   "es": "'Rotisería'",
+   "pt": "'Rotisseria'",
+   "en": "'Deli'"
+  },
+  {
+   "es": "{dia: 'jueves', prox: '01/10'}",
+   "pt": "{dia: 'quinta', prox: '01/10'}",
+   "en": "{dia: 'Thursday', prox: '10/1'}"
+  },
+  {
+   "es": "{dia: 'viernes', prox: '02/10'}",
+   "pt": "{dia: 'sexta', prox: '02/10'}",
+   "en": "{dia: 'Friday', prox: '10/2'}"
+  },
+  {
+   "es": "{dia: 'martes', prox: '06/10'}",
+   "pt": "{dia: 'terça', prox: '06/10'}",
+   "en": "{dia: 'Tuesday', prox: '10/6'}"
+  },
+  {
+   "es": "'Lo viste abierto al pasar el jueves. Atiende Graciela.'",
+   "pt": "'Você viu aberto ao passar na quinta. Quem atende é a Graciela.'",
+   "en": "'You saw it open driving by on Thursday. Graciela runs the counter.'"
+  },
+  {
+   "es": "'Le pasaste la lista por WhatsApp el 22/09.'",
+   "pt": "'Você mandou a tabela pelo WhatsApp em 22/09.'",
+   "en": "'You sent them the price list on WhatsApp on 9/22.'"
+  },
+  {
+   "es": "'Pidió precio por bulto de bebidas y limpieza.'",
+   "pt": "'Pediu preço por fardo de bebidas e limpeza.'",
+   "en": "'Asked for case prices on beverages and cleaning products.'"
+  },
+  {
+   "es": "'Hizo su primer pedido el 21/09.'",
+   "pt": "'Fez o primeiro pedido em 21/09.'",
+   "en": "'Placed their first order on 9/21.'"
+  },
+  {
+   "es": "'Trabaja con otro proveedor y no quiere cambiar.'",
+   "pt": "'Trabalha com outro fornecedor e não quer trocar.'",
+   "en": "'Works with another supplier and doesn’t want to switch.'"
+  },
+  {
+   "es": "'Contactado'",
+   "pt": "'Contatado'",
+   "en": "'Contacted'"
+  },
+  {
+   "es": "'Interesado'",
+   "pt": "'Interessado'",
+   "en": "'Interested'"
+  },
+  {
+   "es": "'Ganado'",
+   "pt": "'Ganho'",
+   "en": "'Won'"
+  },
+  {
+   "es": "'Perdido'",
+   "pt": "'Perdido'",
+   "en": "'Lost'"
+  },
+  {
+   "es": "var SEMANAS = [['1 al 6', 182000], ['7 al 13', 205000], ['14 al 20', 176000], ['21 al 27', 188000], ['28 al 30', 18000]];",
+   "pt": "var SEMANAS = [['1 a 6', 182000], ['7 a 13', 205000], ['14 a 20', 176000], ['21 a 27', 188000], ['28 a 30', 18000]];",
+   "en": "var SEMANAS = [['1–6', 182000], ['7–13', 205000], ['14–20', 176000], ['21–27', 188000], ['28–30', 18000]];"
+  },
+  {
+   "es": "var MOTIVOS = ['Tránsito cortado o accidente', 'Un cliente me pidió que pase antes', 'Problema con el auto', 'Otro motivo'];",
+   "pt": "var MOTIVOS = ['Trânsito bloqueado ou acidente', 'Um cliente pediu para eu passar antes', 'Problema com o carro', 'Outro motivo'];",
+   "en": "var MOTIVOS = ['Road closed or accident', 'A customer asked me to come earlier', 'Car trouble', 'Other reason'];"
+  },
+  {
+   "es": "function pctCom(){ return String(Math.round(MARIA.com * 1000) / 10).replace('.', ',') + ' %'; }",
+   "pt": "function pctCom(){ return String(Math.round(MARIA.com * 1000) / 10).replace('.', ',') + '%'; }",
+   "en": "function pctCom(){ return String(Math.round(MARIA.com * 1000) / 10) + '%'; }"
+  },
+  {
+   "es": "$('noti-h').textContent = 'ahora';",
+   "pt": "$('noti-h').textContent = 'agora';",
+   "en": "$('noti-h').textContent = 'now';"
+  },
+  {
+   "es": "'Tu jornada'",
+   "pt": "'Sua jornada'",
+   "en": "'Your day'"
+  },
+  {
+   "es": "' visitas y '",
+   "pt": "' visitas e '",
+   "en": "' visits and '"
+  },
+  {
+   "es": "' oportunidades en tu ruta'",
+   "pt": "' oportunidades na sua rota'",
+   "en": "' opportunities on your route'"
+  },
+  {
+   "es": "btn.textContent = 'Iniciar';",
+   "pt": "btn.textContent = 'Iniciar';",
+   "en": "btn.textContent = 'Start';"
+  },
+  {
+   "es": "'En jornada desde las '",
+   "pt": "'Em jornada desde as '",
+   "en": "'On the clock since '"
+  },
+  {
+   "es": "hechas + ' de ' + RUTA.length + ' visitas'",
+   "pt": "hechas + ' de ' + RUTA.length + ' visitas'",
+   "en": "hechas + ' of ' + RUTA.length + ' visits'"
+  },
+  {
+   "es": "hechas + ' de ' + RUTA.length + ' visitas · '",
+   "pt": "hechas + ' de ' + RUTA.length + ' visitas · '",
+   "en": "hechas + ' of ' + RUTA.length + ' visits · '"
+  },
+  {
+   "es": "(S.pedidosDemo.length === 1 ? ' pedido' : ' pedidos')",
+   "pt": "(S.pedidosDemo.length === 1 ? ' pedido' : ' pedidos')",
+   "en": "(S.pedidosDemo.length === 1 ? ' order' : ' orders')"
+  },
+  {
+   "es": "btn.textContent = 'Terminar';",
+   "pt": "btn.textContent = 'Encerrar';",
+   "en": "btn.textContent = 'End';"
+  },
+  {
+   "es": "'Jornada cerrada a las '",
+   "pt": "'Jornada encerrada às '",
+   "en": "'Day ended at '"
+  },
+  {
+   "es": "' vendidos'",
+   "pt": "' vendidos'",
+   "en": "' sold'"
+  },
+  {
+   "es": "pctCom() + ' de lo vendido'",
+   "pt": "pctCom() + ' das vendas'",
+   "en": "pctCom() + ' of sales'"
+  },
+  {
+   "es": "$('h-obj').textContent = pct + ' %';",
+   "pt": "$('h-obj').textContent = pct + '%';",
+   "en": "$('h-obj').textContent = pct + '%';"
+  },
+  {
+   "es": "pesos(v) + ' de ' + fmt.format(MARIA.obj.set)",
+   "pt": "pesos(v) + ' de ' + fmt.format(MARIA.obj.set)",
+   "en": "pesos(v) + ' of ' + fmt.format(MARIA.obj.set)"
+  },
+  {
+   "es": "Ya ofreciste todo lo de tu ruta. Mirá el resto en Oportunidades.",
+   "pt": "Você já ofereceu tudo da sua rota. Veja o resto em Oportunidades.",
+   "en": "You’ve offered everything on your route. See the rest under Opportunities."
+  },
+  {
+   "es": "/mes",
+   "pt": "/mês",
+   "en": "/mo"
+  },
+  {
+   "es": "(pend === 1 ? ' pendiente' : ' pendientes') : 'Todo hecho'",
+   "pt": "(pend === 1 ? ' pendente' : ' pendentes') : 'Tudo feito'",
+   "en": "(pend === 1 ? ' pending' : ' pending') : 'All done'"
+  },
+  {
+   "es": "(n === 1 ? ' vigente' : ' vigentes')",
+   "pt": "(n === 1 ? ' ativa' : ' ativas')",
+   "en": "(n === 1 ? ' active' : ' active')"
+  },
+  {
+   "es": "(o.nueva ? 'Nueva' : 'hasta ' + esc(o.hasta))",
+   "pt": "(o.nueva ? 'Nova' : 'até ' + esc(o.hasta))",
+   "en": "(o.nueva ? 'New' : 'until ' + esc(o.hasta))"
+  },
+  {
+   "es": "(RUTA[a].est === 'visita' ? 'Estás en ' : 'Próxima: ')",
+   "pt": "(RUTA[a].est === 'visita' ? 'Você está em ' : 'Próxima: ')",
+   "en": "(RUTA[a].est === 'visita' ? 'You’re at ' : 'Next: ')"
+  },
+  {
+   "es": "(RUTA[a].prospecto ? 'prospecto' : RUTA[a].fuera ? 'fuera de ruta' : RUTA[a].hora)",
+   "pt": "(RUTA[a].prospecto ? 'prospect' : RUTA[a].fuera ? 'fora da rota' : RUTA[a].hora)",
+   "en": "(RUTA[a].prospecto ? 'prospect' : RUTA[a].fuera ? 'off route' : RUTA[a].hora)"
+  },
+  {
+   "es": "Terminaste la ruta de hoy.",
+   "pt": "Você terminou a rota de hoje.",
+   "en": "You’ve finished today’s route."
+  },
+  {
+   "es": "aria-label=\"Mapa de la ruta de hoy\"",
+   "pt": "aria-label=\"Mapa da rota de hoje\"",
+   "en": "aria-label=\"Map of today’s route\""
+  },
+  {
+   "es": ">Río de la Plata<",
+   "pt": ">Rio da Prata<",
+   "en": ">Río de la Plata<"
+  },
+  {
+   "es": "(r.ped ? 'Con pedido' : 'Hecha')",
+   "pt": "(r.ped ? 'Com pedido' : 'Feita')",
+   "en": "(r.ped ? 'With order' : 'Done')"
+  },
+  {
+   "es": ">Problema</span>",
+   "pt": ">Problema</span>",
+   "en": ">Issue</span>"
+  },
+  {
+   "es": ">En visita</span>",
+   "pt": ">Em visita</span>",
+   "en": ">Visiting</span>"
+  },
+  {
+   "es": ">Prospecto</span>",
+   "pt": ">Prospect</span>",
+   "en": ">Prospect</span>"
+  },
+  {
+   "es": ">Fuera de ruta</span>",
+   "pt": ">Fora da rota</span>",
+   "en": ">Off route</span>"
+  },
+  {
+   "es": "RUTA.length + ' visitas · 14,2 km'",
+   "pt": "RUTA.length + ' visitas · 14,2 km'",
+   "en": "RUTA.length + ' visits · 14.2 km'"
+  },
+  {
+   "es": "<span>Rubro</span>",
+   "pt": "<span>Ramo</span>",
+   "en": "<span>Business type</span>"
+  },
+  {
+   "es": "<span>Teléfono</span>",
+   "pt": "<span>Telefone</span>",
+   "en": "<span>Phone</span>"
+  },
+  {
+   "es": "<span>Llegaste</span>",
+   "pt": "<span>Chegada</span>",
+   "en": "<span>Arrived</span>"
+  },
+  {
+   "es": "(r.fuera ? 'Visita' : 'Horario sugerido')",
+   "pt": "(r.fuera ? 'Visita' : 'Horário sugerido')",
+   "en": "(r.fuera ? 'Visit' : 'Suggested time')"
+  },
+  {
+   "es": "(r.fuera ? 'fuera de ruta' : r.hora)",
+   "pt": "(r.fuera ? 'fora da rota' : r.hora)",
+   "en": "(r.fuera ? 'off route' : r.hora)"
+  },
+  {
+   "es": "<span>Última compra</span>",
+   "pt": "<span>Última compra</span>",
+   "en": "<span>Last purchase</span>"
+  },
+  {
+   "es": "<span>Saldo</span>",
+   "pt": "<span>Saldo</span>",
+   "en": "<span>Balance</span>"
+  },
+  {
+   "es": "(c.vencido ? ' vencido' : '') : 'Al día')",
+   "pt": "(c.vencido ? ' vencido' : '') : 'Em dia')",
+   "en": "(c.vencido ? ' overdue' : '') : 'Up to date')"
+  },
+  {
+   "es": "<span>Para ofrecer</span>",
+   "pt": "<span>Para oferecer</span>",
+   "en": "<span>To offer</span>"
+  },
+  {
+   "es": ">Ver en Prospectos<",
+   "pt": ">Ver em Prospects<",
+   "en": ">View in Prospects<"
+  },
+  {
+   "es": ">Ver ficha del cliente<",
+   "pt": ">Ver ficha do cliente<",
+   "en": ">View customer profile<"
+  },
+  {
+   "es": ">Llegué<",
+   "pt": ">Cheguei<",
+   "en": ">I’m here<"
+  },
+  {
+   "es": "(px ? 'Cargar su primer pedido' : 'Cargar pedido')",
+   "pt": "(px ? 'Lançar o primeiro pedido' : 'Lançar pedido')",
+   "en": "(px ? 'Take their first order' : 'Take order')"
+  },
+  {
+   "es": ">Visita hecha</button>",
+   "pt": ">Visita feita</button>",
+   "en": ">Visit done</button>"
+  },
+  {
+   "es": ">Con problema</button>",
+   "pt": ">Com problema</button>",
+   "en": ">Had an issue</button>"
+  },
+  {
+   "es": "'Visita hecha' + (r.ped ? ' con el pedido ' + r.ped : '') + '.' : 'Con problema: ' + esc(r.motivo) + '. Laura lo ve en el panel.'",
+   "pt": "'Visita feita' + (r.ped ? ' com o pedido ' + r.ped : '') + '.' : 'Com problema: ' + esc(r.motivo) + '. A Laura vê no painel.'",
+   "en": "'Visit done' + (r.ped ? ' with order ' + r.ped : '') + '.' : 'Issue: ' + esc(r.motivo) + '. Laura sees it in the dashboard.'"
+  },
+  {
+   "es": "toast('Jornada iniciada a las ' + S.inicio + '. Laura ya te ve en ruta.');",
+   "pt": "toast('Jornada iniciada às ' + S.inicio + '. A Laura já vê você na rota.');",
+   "en": "toast('Day started at ' + S.inicio + '. Laura can already see you on your route.');"
+  },
+  {
+   "es": "o.est === 'ofrecida' ? 'Le ofreciste <b>' + o.fam + '</b> a ' + c.nom + '.' : o.est === 'no' ? 'A ' + c.nom + ' no le interesa <b>' + o.fam + '</b>.' : o.est === 'vendida' ? 'Vendiste <b>' + (o.fam || 'lo sugerido') + '</b> a ' + c.nom + '.' : o.est === 'cobrada' ? 'Anotaste el cobro de <b>' + pesos(o.val) + '</b> a ' + c.nom + '.' : 'Listo.'",
+   "pt": "o.est === 'ofrecida' ? 'Você ofereceu <b>' + o.fam + '</b> para ' + c.nom + '.' : o.est === 'no' ? c.nom + ' não tem interesse em <b>' + o.fam + '</b>.' : o.est === 'vendida' ? 'Você vendeu <b>' + (o.fam || 'o sugerido') + '</b> para ' + c.nom + '.' : o.est === 'cobrada' ? 'Você registrou a cobrança de <b>' + pesos(o.val) + '</b> de ' + c.nom + '.' : 'Pronto.'",
+   "en": "o.est === 'ofrecida' ? 'You offered <b>' + o.fam + '</b> to ' + c.nom + '.' : o.est === 'no' ? c.nom + ' isn’t interested in <b>' + o.fam + '</b>.' : o.est === 'vendida' ? 'You sold <b>' + (o.fam || 'the suggested items') + '</b> to ' + c.nom + '.' : o.est === 'cobrada' ? 'You logged a <b>' + pesos(o.val) + '</b> payment from ' + c.nom + '.' : 'Done.'"
+  },
+  {
+   "es": ">Deshacer</button>",
+   "pt": ">Desfazer</button>",
+   "en": ">Undo</button>"
+  },
+  {
+   "es": "pesos(o.val) + ' vencido'",
+   "pt": "pesos(o.val) + ' vencido'",
+   "en": "pesos(o.val) + ' overdue'"
+  },
+  {
+   "es": ">Ya se lo ofrecí</button>",
+   "pt": ">Já ofereci</button>",
+   "en": ">Offered it</button>"
+  },
+  {
+   "es": ">No le interesa</button>",
+   "pt": ">Não tem interesse</button>",
+   "en": ">Not interested</button>"
+  },
+  {
+   "es": ">Registrar cobro</button>",
+   "pt": ">Registrar cobrança</button>",
+   "en": ">Log payment</button>"
+  },
+  {
+   "es": ">Ver ficha</button>",
+   "pt": ">Ver ficha</button>",
+   "en": ">View profile</button>"
+  },
+  {
+   "es": ">Cargar pedido</button>",
+   "pt": ">Lançar pedido</button>",
+   "en": ">Take order</button>"
+  },
+  {
+   "es": "'Venta cruzada'",
+   "pt": "'Venda cruzada'",
+   "en": "'Cross-sell'"
+  },
+  {
+   "es": "'Recompra'",
+   "pt": "'Recompra'",
+   "en": "'Reorder'"
+  },
+  {
+   "es": "'Reactivar'",
+   "pt": "'Reativar'",
+   "en": "'Win back'"
+  },
+  {
+   "es": "'Cobrar'",
+   "pt": "'Cobrar'",
+   "en": "'Collect'"
+  },
+  {
+   "es": "'Todo ofrecido'",
+   "pt": "'Tudo oferecido'",
+   "en": "'All offered'"
+  },
+  {
+   "es": ">En tu ruta de hoy<span>",
+   "pt": ">Na sua rota de hoje<span>",
+   "en": ">On today’s route<span>"
+  },
+  {
+   "es": ">En el resto de tu cartera<span>",
+   "pt": ">No resto da sua carteira<span>",
+   "en": ">Elsewhere in your accounts<span>"
+  },
+  {
+   "es": "No hay oportunidades de este tipo.",
+   "pt": "Não há oportunidades deste tipo.",
+   "en": "No opportunities of this type."
+  },
+  {
+   "es": "['todos', 'Todos']",
+   "pt": "['todos', 'Todos']",
+   "en": "['todos', 'All']"
+  },
+  {
+   "es": "['saldo', 'Con saldo']",
+   "pt": "['saldo', 'Com saldo']",
+   "en": "['saldo', 'With balance']"
+  },
+  {
+   "es": "['nuevos', 'Nuevos']",
+   "pt": "['nuevos', 'Novos']",
+   "en": "['nuevos', 'New']"
+  },
+  {
+   "es": ">En riesgo</span>",
+   "pt": ">Em risco</span>",
+   "en": ">At risk</span>"
+  },
+  {
+   "es": ">Vencido</span>",
+   "pt": ">Vencido</span>",
+   "en": ">Overdue</span>"
+  },
+  {
+   "es": ">Nuevo</span>",
+   "pt": ">Novo</span>",
+   "en": ">New</span>"
+  },
+  {
+   "es": ">Activo</span>",
+   "pt": ">Ativo</span>",
+   "en": ">Active</span>"
+  },
+  {
+   "es": "' · compró hace ' + c.ult + ' días</small>",
+   "pt": "' · comprou há ' + c.ult + ' dias</small>",
+   "en": "' · bought ' + c.ult + ' days ago</small>"
+  },
+  {
+   "es": "No hay clientes con ese nombre.",
+   "pt": "Não há clientes com esse nome.",
+   "en": "No customers by that name."
+  },
+  {
+   "es": "'Hoy'",
+   "pt": "'Hoje'",
+   "en": "'Today'"
+  },
+  {
+   "es": "'Ruta'",
+   "pt": "'Rota'",
+   "en": "'Route'"
+  },
+  {
+   "es": "'Oportunidades'",
+   "pt": "'Oportunidades'",
+   "en": "'Opportunities'"
+  },
+  {
+   "es": "'Cartera'",
+   "pt": "'Carteira'",
+   "en": "'Accounts'"
+  },
+  {
+   "es": "'Precios'",
+   "pt": "'Preços'",
+   "en": "'Prices'"
+  },
+  {
+   "es": "'Presupuesto'",
+   "pt": "'Orçamento'",
+   "en": "'Quote'"
+  },
+  {
+   "es": "'Prospectos'",
+   "pt": "'Prospects'",
+   "en": "'Prospects'"
+  },
+  {
+   "es": "'Progreso'",
+   "pt": "'Progresso'",
+   "en": "'Progress'"
+  },
+  {
+   "es": "'Desvío'",
+   "pt": "'Desvio'",
+   "en": "'Detour'"
+  },
+  {
+   "es": "Compras de los últimos 12 meses",
+   "pt": "Compras dos últimos 12 meses",
+   "en": "Purchases over the last 12 months"
+  },
+  {
+   "es": "'</b><small class=\"mono\">RUT ' + c.rut",
+   "pt": "'</b><small class=\"mono\">RUT ' + c.rut",
+   "en": "'</b><small class=\"mono\">Tax ID ' + c.rut"
+  },
+  {
+   "es": ">Saldo vencido</span>",
+   "pt": ">Saldo vencido</span>",
+   "en": ">Overdue balance</span>"
+  },
+  {
+   "es": "'<span class=\"chip gris\">Suele comprar los ' + c.dia.toLowerCase() + '</span>'",
+   "pt": "'<span class=\"chip gris\">Dia de compra: ' + c.dia.toLowerCase() + '</span>'",
+   "en": "'<span class=\"chip gris\">Usually buys on ' + c.dia + 's</span>'"
+  },
+  {
+   "es": "c.suc + ' sucursales</span>'",
+   "pt": "c.suc + ' filiais</span>'",
+   "en": "c.suc + ' locations</span>'"
+  },
+  {
+   "es": ">Presupuesto PDF</button>",
+   "pt": ">Orçamento PDF</button>",
+   "en": ">PDF quote</button>"
+  },
+  {
+   "es": "['resumen', 'Resumen'], ['compras', 'Compras'], ['cuenta', 'Cuenta'], ['notas', 'Notas']",
+   "pt": "['resumen', 'Resumo'], ['compras', 'Compras'], ['cuenta', 'Conta'], ['notas', 'Notas']",
+   "en": "['resumen', 'Summary'], ['compras', 'Purchases'], ['cuenta', 'Account'], ['notas', 'Notes']"
+  },
+  {
+   "es": "(c.seg === 'En riesgo' ? ' antes' : '')",
+   "pt": "(c.seg === 'Em risco' ? ' antes' : '')",
+   "en": "(c.seg === 'At risk' ? ' before' : '')"
+  },
+  {
+   "es": "<span>Qué día suele comprar</span>",
+   "pt": "<span>Dia em que costuma comprar</span>",
+   "en": "<span>Usual buying day</span>"
+  },
+  {
+   "es": "<span>Cómo viene el ticket</span>",
+   "pt": "<span>Tendência do tíquete</span>",
+   "en": "<span>Order size trend</span>"
+  },
+  {
+   "es": "<div><span>Última compra</span><b>hace ' + c.ult + ' días</b>",
+   "pt": "<div><span>Última compra</span><b>há ' + c.ult + ' dias</b>",
+   "en": "<div><span>Last purchase</span><b>' + c.ult + ' days ago</b>"
+  },
+  {
+   "es": "<span>Vendedora</span>",
+   "pt": "<span>Vendedora</span>",
+   "en": "<span>Sales rep</span>"
+  },
+  {
+   "es": "<div class=\"bloque-t\">Oportunidades</div>",
+   "pt": "<div class=\"bloque-t\">Oportunidades</div>",
+   "en": "<div class=\"bloque-t\">Opportunities</div>"
+  },
+  {
+   "es": ">Dejó de llevarlo</span>",
+   "pt": ">Parou de levar</span>",
+   "en": ">Stopped buying</span>"
+  },
+  {
+   "es": "'</span><b>' + f[1] + ' %</b>",
+   "pt": "'</span><b>' + f[1] + '%</b>",
+   "en": "'</span><b>' + f[1] + '%</b>"
+  },
+  {
+   "es": "Peso de cada familia en lo que compró en el último año.",
+   "pt": "Peso de cada família no que comprou no último ano.",
+   "en": "Share of each product family in the past year’s purchases."
+  },
+  {
+   "es": "(c.saldo ? pesos(c.saldo) : 'Al día')",
+   "pt": "(c.saldo ? pesos(c.saldo) : 'Em dia')",
+   "en": "(c.saldo ? pesos(c.saldo) : 'Up to date')"
+  },
+  {
+   "es": "<span>Condición</span><b>Crédito 15 días</b>",
+   "pt": "<span>Condição</span><b>Crédito 15 dias</b>",
+   "en": "<span>Terms</span><b>Net 15</b>"
+  },
+  {
+   "es": "<span>Lista de precios</span><b>3 · Mayorista</b>",
+   "pt": "<span>Tabela de preços</span><b>3 · Atacado</b>",
+   "en": "<span>Price list</span><b>3 · Wholesale</b>"
+  },
+  {
+   "es": "Últimas facturas",
+   "pt": "Últimas faturas",
+   "en": "Recent invoices"
+  },
+  {
+   "es": "f[3] === 'Vencida' ? 'nar' : f[3] === 'Pendiente'",
+   "pt": "f[3] === 'Vencida' ? 'nar' : f[3] === 'Pendente'",
+   "en": "f[3] === 'Overdue' ? 'nar' : f[3] === 'Pending'"
+  },
+  {
+   "es": "Todavía no hay notas.",
+   "pt": "Ainda não há notas.",
+   "en": "No notes yet."
+  },
+  {
+   "es": "placeholder=\"Anotá algo de este cliente\" aria-label=\"Nota\"",
+   "pt": "placeholder=\"Anote algo sobre este cliente\" aria-label=\"Nota\"",
+   "en": "placeholder=\"Add a note about this customer\" aria-label=\"Note\""
+  },
+  {
+   "es": ">Guardar</button>",
+   "pt": ">Salvar</button>",
+   "en": ">Save</button>"
+  },
+  {
+   "es": ", 'hoy']);",
+   "pt": ", 'hoje']);",
+   "en": ", 'today']);"
+  },
+  {
+   "es": "aria-label=\"Uno menos\"",
+   "pt": "aria-label=\"Um a menos\"",
+   "en": "aria-label=\"One less\""
+  },
+  {
+   "es": "aria-label=\"Uno más\"",
+   "pt": "aria-label=\"Um a mais\"",
+   "en": "aria-label=\"One more\""
+  },
+  {
+   "es": ">Agregar</button>",
+   "pt": ">Adicionar</button>",
+   "en": ">Add</button>"
+  },
+  {
+   "es": "$('p-titulo').textContent = 'Nuevo pedido'; $('p-sub').textContent = 'Elegí el cliente';",
+   "pt": "$('p-titulo').textContent = 'Novo pedido'; $('p-sub').textContent = 'Escolha o cliente';",
+   "en": "$('p-titulo').textContent = 'New order'; $('p-sub').textContent = 'Choose the customer';"
+  },
+  {
+   "es": "'<div class=\"bloque-t\">En tu ruta de hoy</div>",
+   "pt": "'<div class=\"bloque-t\">Na sua rota de hoje</div>",
+   "en": "'<div class=\"bloque-t\">On today’s route</div>"
+  },
+  {
+   "es": ">Visitado</span>",
+   "pt": ">Visitado</span>",
+   "en": ">Visited</span>"
+  },
+  {
+   "es": "Resto de tu cartera",
+   "pt": "Resto da sua carteira",
+   "en": "Rest of your accounts"
+  },
+  {
+   "es": "'Lista 3 · precios sin IVA'",
+   "pt": "'Tabela 3 · preços sem IVA'",
+   "en": "'List 3 · prices excl. VAT'"
+  },
+  {
+   "es": "placeholder=\"Buscar producto o código\" aria-label=\"Buscar producto\"",
+   "pt": "placeholder=\"Buscar produto ou código\" aria-label=\"Buscar produto\"",
+   "en": "placeholder=\"Search product or code\" aria-label=\"Search products\""
+  },
+  {
+   "es": "'Revisá el pedido'",
+   "pt": "'Revise o pedido'",
+   "en": "'Review the order'"
+  },
+  {
+   "es": "<span>Entrega</span><b>Jueves 01/10</b>",
+   "pt": "<span>Entrega</span><b>Quinta, 01/10</b>",
+   "en": "<span>Delivery</span><b>Thursday, 10/1</b>"
+  },
+  {
+   "es": "placeholder=\"Nota para el depósito (opcional)\" aria-label=\"Nota para el depósito\"",
+   "pt": "placeholder=\"Nota para o depósito (opcional)\" aria-label=\"Nota para o depósito\"",
+   "en": "placeholder=\"Note for the warehouse (optional)\" aria-label=\"Note for the warehouse\""
+  },
+  {
+   "es": "<span>Productos</span>",
+   "pt": "<span>Produtos</span>",
+   "en": "<span>Products</span>"
+  },
+  {
+   "es": "<span>Total sin IVA</span>",
+   "pt": "<span>Total sem IVA</span>",
+   "en": "<span>Total excl. VAT</span>"
+  },
+  {
+   "es": "'Pedido enviado'",
+   "pt": "'Pedido enviado'",
+   "en": "'Order sent'"
+  },
+  {
+   "es": "<b>Pedido ' + e.n + ' enviado</b>",
+   "pt": "<b>Pedido ' + e.n + ' enviado</b>",
+   "en": "<b>Order ' + e.n + ' sent</b>"
+  },
+  {
+   "es": "(e.lineas === 1 ? ' producto' : ' productos') + ' · ' + pesos(e.tot) + ' sin IVA · entrega el jueves</p>'",
+   "pt": "(e.lineas === 1 ? ' produto' : ' produtos') + ' · ' + pesos(e.tot) + ' sem IVA · entrega na quinta</p>'",
+   "en": "(e.lineas === 1 ? ' product' : ' products') + ' · ' + pesos(e.tot) + ' excl. VAT · delivery Thursday</p>'"
+  },
+  {
+   "es": "<b>Panel de Laura</b><small>Ya lo ve en Pedidos</small>",
+   "pt": "<b>Painel da Laura</b><small>Ela já vê em Pedidos</small>",
+   "en": "<b>Laura’s dashboard</b><small>She can already see it in Orders</small>"
+  },
+  {
+   "es": "<small>Entra como pedido pendiente de facturar</small>",
+   "pt": "<small>Entra como pedido pendente de faturamento</small>",
+   "en": "<small>Comes in as an order pending invoicing</small>"
+  },
+  {
+   "es": "<b>Tu comisión</b>",
+   "pt": "<b>Sua comissão</b>",
+   "en": "<b>Your commission</b>"
+  },
+  {
+   "es": "' este mes' + (e.visita ? ' · visita marcada como hecha' : '')",
+   "pt": "' este mês' + (e.visita ? ' · visita marcada como feita' : '')",
+   "en": "' this month' + (e.visita ? ' · visit marked done' : '')"
+  },
+  {
+   "es": ">Volver a Hoy</button>",
+   "pt": ">Voltar para Hoje</button>",
+   "en": ">Back to Today</button>"
+  },
+  {
+   "es": ">Ver el pedido en el tablero</button>",
+   "pt": ">Ver o pedido no painel</button>",
+   "en": ">See the order in the dashboard</button>"
+  },
+  {
+   "es": ">Sugeridos para '",
+   "pt": ">Sugeridos para '",
+   "en": ">Suggested for '"
+  },
+  {
+   "es": "(q ? 'Resultados' : (P.cat === 'Todo' ? 'Lista de precios' : P.cat))",
+   "pt": "(q ? 'Resultados' : (P.cat === 'Todos' ? 'Tabela de preços' : P.cat))",
+   "en": "(q ? 'Results' : (P.cat === 'All' ? 'Price list' : P.cat))"
+  },
+  {
+   "es": "No encontramos ese producto.",
+   "pt": "Não encontramos esse produto.",
+   "en": "We couldn’t find that product."
+  },
+  {
+   "es": "(tt.n === 1 ? ' producto' : ' productos') + ' · sin IVA'",
+   "pt": "(tt.n === 1 ? ' produto' : ' produtos') + ' · sem IVA'",
+   "en": "(tt.n === 1 ? ' product' : ' products') + ' · excl. VAT'"
+  },
+  {
+   "es": "S.ped.paso === 'revisar' ? 'Enviar pedido' : 'Revisar'",
+   "pt": "S.ped.paso === 'revisar' ? 'Enviar pedido' : 'Revisar'",
+   "en": "S.ped.paso === 'revisar' ? 'Send order' : 'Review'"
+  },
+  {
+   "es": "pxp.nota = 'Hizo su primer pedido hoy (' + num + ').';",
+   "pt": "pxp.nota = 'Fez o primeiro pedido hoje (' + num + ').';",
+   "en": "pxp.nota = 'Placed their first order today (' + num + ').';"
+  },
+  {
+   "es": "(lista.length === 1 ? ' producto' : ' productos')",
+   "pt": "(lista.length === 1 ? ' produto' : ' produtos')",
+   "en": "(lista.length === 1 ? ' product' : ' products')"
+  },
+  {
+   "es": "'Precios con IVA incluido (10 % o 22 % según el producto).' : 'Precios sin IVA. Se actualizan solos cuando cambia la lista en el sistema.'",
+   "pt": "'Preços com IVA incluído (10% ou 22%, conforme o produto).' : 'Preços sem IVA. Atualizam sozinhos quando a tabela muda no sistema.'",
+   "en": "'Prices incl. VAT (10% or 22% depending on the product).' : 'Prices excl. VAT. They update automatically when the list changes in the system.'"
+  },
+  {
+   "es": "var POR = {'Lo de siempre': 'Lo lleva siempre', 'Recompra': 'Lo lleva y ya le toca reponer', 'Compraba siempre': 'Lo llevaba siempre y dejó'};",
+   "pt": "var POR = {'O de sempre': 'Sempre leva', 'Recompra': 'Leva e já está na hora de repor', 'Comprava sempre': 'Sempre levava e parou'};",
+   "en": "var POR = {'The usual': 'Always buys it', 'Reorder': 'Buys it and is due to restock', 'Used to buy': 'Used to buy it and stopped'};"
+  },
+  {
+   "es": "p.cat + ' es el ' + f[1] + ' % de lo que compra'",
+   "pt": "p.cat + ' é ' + f[1] + '% do que compra'",
+   "en": "p.cat + ' is ' + f[1] + '% of what they buy'"
+  },
+  {
+   "es": "p.cat + ' · lista 3, mayorista</p>'",
+   "pt": "p.cat + ' · tabela 3, atacado</p>'",
+   "en": "p.cat + ' · list 3, wholesale</p>'"
+  },
+  {
+   "es": "'<p class=\"of-hoja\"><b>Oferta de Laura, hasta el ' + esc(of.hasta) + ':</b> ' + esc(of.cond) + '. Ofrecela a los que lo compran.</p>'",
+   "pt": "'<p class=\"of-hoja\"><b>Oferta da Laura, até ' + esc(of.hasta) + ':</b> ' + esc(of.cond) + '. Ofereça para quem compra.</p>'",
+   "en": "'<p class=\"of-hoja\"><b>Laura’s promotion, until ' + esc(of.hasta) + ':</b> ' + esc(of.cond) + '. Offer it to customers who buy it.</p>'"
+  },
+  {
+   "es": "<div><span>Código</span>",
+   "pt": "<div><span>Código</span>",
+   "en": "<div><span>Code</span>"
+  },
+  {
+   "es": "<span>Precio sin IVA</span>",
+   "pt": "<span>Preço sem IVA</span>",
+   "en": "<span>Price excl. VAT</span>"
+  },
+  {
+   "es": "<div><span>Con IVA (' + Math.round(t * 100) + ' %)</span><b>",
+   "pt": "<div><span>Com IVA (' + Math.round(t * 100) + '%)</span><b>",
+   "en": "<div><span>Incl. VAT (' + Math.round(t * 100) + '%)</span><b>"
+  },
+  {
+   "es": "<span>Unidad de venta</span>",
+   "pt": "<span>Unidade de venda</span>",
+   "en": "<span>Sales unit</span>"
+  },
+  {
+   "es": ">Lo suelen comprar</div>",
+   "pt": ">Costumam comprar</div>",
+   "en": ">Usually bought by</div>"
+  },
+  {
+   "es": "Nadie de tu cartera lo lleva todavía. Es para ofrecer.",
+   "pt": "Ninguém da sua carteira leva ainda. É para oferecer.",
+   "en": "No one in your accounts buys it yet. Worth offering."
+  },
+  {
+   "es": ">Sumar a un presupuesto</button>",
+   "pt": ">Adicionar a um orçamento</button>",
+   "en": ">Add to a quote</button>"
+  },
+  {
+   "es": "data-accion=\"cerrar-hoja\">Cerrar</button>",
+   "pt": "data-accion=\"cerrar-hoja\">Fechar</button>",
+   "en": "data-accion=\"cerrar-hoja\">Close</button>"
+  },
+  {
+   "es": "'22/09'",
+   "pt": "'22/09'",
+   "en": "'9/22'"
+  },
+  {
+   "es": "'15/09'",
+   "pt": "'15/09'",
+   "en": "'9/15'"
+  },
+  {
+   "es": "'08/09'",
+   "pt": "'08/09'",
+   "en": "'9/8'"
+  },
+  {
+   "es": "'23/09'",
+   "pt": "'23/09'",
+   "en": "'9/23'"
+  },
+  {
+   "es": "'16/09'",
+   "pt": "'16/09'",
+   "en": "'9/16'"
+  },
+  {
+   "es": "'12/09'",
+   "pt": "'12/09'",
+   "en": "'9/12'"
+  },
+  {
+   "es": "'17/09'",
+   "pt": "'17/09'",
+   "en": "'9/17'"
+  },
+  {
+   "es": "'03/09'",
+   "pt": "'03/09'",
+   "en": "'9/3'"
+  },
+  {
+   "es": "'14/08'",
+   "pt": "'14/08'",
+   "en": "'8/14'"
+  },
+  {
+   "es": "'24/09'",
+   "pt": "'24/09'",
+   "en": "'9/24'"
+  },
+  {
+   "es": "'26/09'",
+   "pt": "'26/09'",
+   "en": "'9/26'"
+  },
+  {
+   "es": "'12/08'",
+   "pt": "'12/08'",
+   "en": "'8/12'"
+  },
+  {
+   "es": "'03/07'",
+   "pt": "'03/07'",
+   "en": "'7/3'"
+  },
+  {
+   "es": "'20/08'",
+   "pt": "'20/08'",
+   "en": "'8/20'"
+  },
+  {
+   "es": "'15/07'",
+   "pt": "'15/07'",
+   "en": "'7/15'"
+  },
+  {
+   "es": "'01/10'",
+   "pt": "'01/10'",
+   "en": "'10/1'"
+  },
+  {
+   "es": "'02/10'",
+   "pt": "'02/10'",
+   "en": "'10/2'"
+  },
+  {
+   "es": "'04/10'",
+   "pt": "'04/10'",
+   "en": "'10/4'"
+  },
+  {
+   "es": "'30/09'",
+   "pt": "'30/09'",
+   "en": "'9/30'"
+  },
+  {
+   "es": "$('pr-titulo').textContent = 'Presupuesto'; $('pr-sub').textContent = 'En PDF, válido 7 días';",
+   "pt": "$('pr-titulo').textContent = 'Orçamento'; $('pr-sub').textContent = 'Em PDF, válido por 7 dias';",
+   "en": "$('pr-titulo').textContent = 'Quote'; $('pr-sub').textContent = 'PDF, valid for 7 days';"
+  },
+  {
+   "es": "<span>Para</span><input id=\"pr-para\" autocomplete=\"off\" placeholder=\"Cliente o comercio\"",
+   "pt": "<span>Para</span><input id=\"pr-para\" autocomplete=\"off\" placeholder=\"Cliente ou loja\"",
+   "en": "<span>For</span><input id=\"pr-para\" autocomplete=\"off\" placeholder=\"Customer or store\""
+  },
+  {
+   "es": "aria-label=\"Elegir de tu cartera\"",
+   "pt": "aria-label=\"Escolher da sua carteira\"",
+   "en": "aria-label=\"Pick from your accounts\""
+  },
+  {
+   "es": "IC.atras + 'Productos</button>'",
+   "pt": "IC.atras + 'Produtos</button>'",
+   "en": "IC.atras + 'Products</button>'"
+  },
+  {
+   "es": "<span>Descuento para este cliente</span>",
+   "pt": "<span>Desconto para este cliente</span>",
+   "en": "<span>Discount for this customer</span>"
+  },
+  {
+   "es": "aria-label=\"Descuento en porcentaje\"",
+   "pt": "aria-label=\"Desconto em porcentagem\"",
+   "en": "aria-label=\"Discount percentage\""
+  },
+  {
+   "es": "data-v=\"pdf\">Descargar PDF</button>",
+   "pt": "data-v=\"pdf\">Baixar PDF</button>",
+   "en": "data-v=\"pdf\">Download PDF</button>"
+  },
+  {
+   "es": "data-v=\"wa\">Mandar por WhatsApp</button>",
+   "pt": "data-v=\"wa\">Enviar pelo WhatsApp</button>",
+   "en": "data-v=\"wa\">Send on WhatsApp</button>"
+  },
+  {
+   "es": "Es una propuesta para el cliente: no entra al sistema ni suma a tus ventas hasta que se convierta en pedido.",
+   "pt": "É uma proposta para o cliente: não entra no sistema nem soma às suas vendas até virar pedido.",
+   "en": "It’s a proposal for the customer: it doesn’t go into the system or count toward your sales until it becomes an order."
+  },
+  {
+   "es": ">Lo que suele llevar ' + (CORTO[P.cli] || c.nom) + '</span>",
+   "pt": ">O que ' + (CORTO[P.cli] || c.nom) + ' costuma levar</span>",
+   "en": ">What ' + (CORTO[P.cli] || c.nom) + ' usually buys</span>"
+  },
+  {
+   "es": "'<div><span>Subtotal</span><b>'",
+   "pt": "'<div><span>Subtotal</span><b>'",
+   "en": "'<div><span>Subtotal</span><b>'"
+  },
+  {
+   "es": "'<div><span>Descuento ' + fmt1.format(d).replace(/,0$/, '') + ' %</span>",
+   "pt": "'<div><span>Desconto ' + fmt1.format(d).replace(/,0$/, '') + '%</span>",
+   "en": "'<div><span>Discount ' + fmt1.format(d).replace(/\\.0$/, '') + '%</span>"
+  },
+  {
+   "es": "<span>IVA</span>",
+   "pt": "<span>IVA</span>",
+   "en": "<span>VAT</span>"
+  },
+  {
+   "es": "<span>Total con IVA</span>",
+   "pt": "<span>Total com IVA</span>",
+   "en": "<span>Total incl. VAT</span>"
+  },
+  {
+   "es": "(t.n + (t.n === 1 ? ' producto' : ' productos') + (nom ? ' · sin IVA' : ' · falta el cliente')) : 'Agregá productos'",
+   "pt": "(t.n + (t.n === 1 ? ' produto' : ' produtos') + (nom ? ' · sem IVA' : ' · falta o cliente')) : 'Adicione produtos'",
+   "en": "(t.n + (t.n === 1 ? ' product' : ' products') + (nom ? ' · excl. VAT' : ' · customer missing')) : 'Add products'"
+  },
+  {
+   "es": "var archivo = 'Presupuesto_'",
+   "pt": "var archivo = 'Orcamento_'",
+   "en": "var archivo = 'Quote_'"
+  },
+  {
+   "es": "(canal === 'wa' ? 'Listo para mandar' : 'PDF descargado')",
+   "pt": "(canal === 'wa' ? 'Pronto para enviar' : 'PDF baixado')",
+   "en": "(canal === 'wa' ? 'Ready to send' : 'PDF downloaded')"
+  },
+  {
+   "es": "(canal === 'wa' ? 'Se abre WhatsApp con este PDF para ' + esc(nom) + '.' : '<span class=\"mono\">' + esc(archivo) + '</span> · así lo ve el cliente.')",
+   "pt": "(canal === 'wa' ? 'O WhatsApp abre com este PDF para ' + esc(nom) + '.' : '<span class=\"mono\">' + esc(archivo) + '</span> · é assim que o cliente vê.')",
+   "en": "(canal === 'wa' ? 'WhatsApp opens with this PDF for ' + esc(nom) + '.' : '<span class=\"mono\">' + esc(archivo) + '</span> · this is what the customer sees.')"
+  },
+  {
+   "es": "<small>Mayorista de consumo masivo · Montevideo</small>",
+   "pt": "<small>Atacadista de bens de consumo · Montevideo</small>",
+   "en": "<small>Consumer goods wholesaler · Montevideo</small>"
+  },
+  {
+   "es": "<span class=\"t-lbl\">Presupuesto<br>'",
+   "pt": "<span class=\"t-lbl\">Orçamento<br>'",
+   "en": "<span class=\"t-lbl\">Quote<br>'"
+  },
+  {
+   "es": "<div><small>Para</small>",
+   "pt": "<div><small>Para</small>",
+   "en": "<div><small>For</small>"
+  },
+  {
+   "es": "<div><small>Fecha</small><b>29/09/2026</b></div><div><small>Vendedora</small><b>María Fernández</b></div><div><small>Válido hasta</small><b>06/10/2026</b></div>",
+   "pt": "<div><small>Data</small><b>29/09/2026</b></div><div><small>Vendedora</small><b>María Fernández</b></div><div><small>Válido até</small><b>06/10/2026</b></div>",
+   "en": "<div><small>Date</small><b>9/29/2026</b></div><div><small>Sales rep</small><b>María Fernández</b></div><div><small>Valid until</small><b>10/6/2026</b></div>"
+  },
+  {
+   "es": "<thead><tr><th>Producto</th><th class=\"n\">Cant.</th><th class=\"n\">Importe</th></tr></thead>",
+   "pt": "<thead><tr><th>Produto</th><th class=\"n\">Qtd.</th><th class=\"n\">Valor</th></tr></thead>",
+   "en": "<thead><tr><th>Product</th><th class=\"n\">Qty</th><th class=\"n\">Amount</th></tr></thead>"
+  },
+  {
+   "es": " c/u<",
+   "pt": " cada<",
+   "en": " each<"
+  },
+  {
+   "es": "'<div><span>Descuento aplicado</span><b>' + fmt1.format(P.dto).replace(/,0$/, '') + ' %</b></div>'",
+   "pt": "'<div><span>Desconto aplicado</span><b>' + fmt1.format(P.dto).replace(/,0$/, '') + '%</b></div>'",
+   "en": "'<div><span>Discount applied</span><b>' + fmt1.format(P.dto).replace(/\\.0$/, '') + '%</b></div>'"
+  },
+  {
+   "es": "<div class=\"fin\"><span>Total</span>",
+   "pt": "<div class=\"fin\"><span>Total</span>",
+   "en": "<div class=\"fin\"><span>Total</span>"
+  },
+  {
+   "es": "Precios de lista vigentes a la fecha, sujetos a confirmación de stock. Presupuesto válido por 7 días.",
+   "pt": "Preços de tabela vigentes na data, sujeitos à confirmação de estoque. Orçamento válido por 7 dias.",
+   "en": "List prices as of this date, subject to stock confirmation. Quote valid for 7 days."
+  },
+  {
+   "es": "data-accion=\"cerrar-hoja\">Listo</button>",
+   "pt": "data-accion=\"cerrar-hoja\">Pronto</button>",
+   "en": "data-accion=\"cerrar-hoja\">Done</button>"
+  },
+  {
+   "es": ">Armar otro presupuesto</button>",
+   "pt": ">Montar outro orçamento</button>",
+   "en": ">Create another quote</button>"
+  },
+  {
+   "es": "toast(canal === 'wa' ? 'Se abrió WhatsApp con el presupuesto para ' + nom + '.' : 'Presupuesto descargado en PDF. Mandalo por WhatsApp o por mail.');",
+   "pt": "toast(canal === 'wa' ? 'O WhatsApp abriu com o orçamento para ' + nom + '.' : 'Orçamento baixado em PDF. Envie pelo WhatsApp ou por e-mail.');",
+   "en": "toast(canal === 'wa' ? 'WhatsApp opened with the quote for ' + nom + '.' : 'Quote downloaded as a PDF. Send it on WhatsApp or by email.');"
+  },
+  {
+   "es": "'Prospecto'",
+   "pt": "'Prospect'",
+   "en": "'Prospect'"
+  },
+  {
+   "es": "'Sin dirección'",
+   "pt": "'Sem endereço'",
+   "en": "'No address'"
+  },
+  {
+   "es": "'María sumó el prospecto ' + x.nom + ' (' + (x.zona || x.rubro || 'sin zona') + ') a su ruta de hoy.'",
+   "pt": "'María incluiu o prospect ' + x.nom + ' (' + (x.zona || x.rubro || 'sem região') + ') na rota de hoje.'",
+   "en": "'María added prospect ' + x.nom + ' (' + (x.zona || x.rubro || 'no area') + ') to today’s route.'"
+  },
+  {
+   "es": "return 'Hola ' + x.nom + ', te escribe María de Distribuidora Central. Trabajamos almacén, bebidas, lácteos, limpieza y perfumería, con entrega en el día' + (x.zona ? ' en ' + x.zona : '') + '. ¿Te paso la lista de precios?';",
+   "pt": "return 'Olá, ' + x.nom + '! Aqui é a María, da Distribuidora Central. Trabalhamos com mercearia, bebidas, laticínios, limpeza e higiene pessoal, com entrega no mesmo dia' + (x.zona ? ' em ' + x.zona : '') + '. Posso enviar a tabela de preços?';",
+   "en": "return 'Hi ' + x.nom + ', this is María from Distribuidora Central. We carry grocery, beverages, dairy, cleaning and personal care products, with same-day delivery' + (x.zona ? ' in ' + x.zona : '') + '. Can I send you our price list?';"
+  },
+  {
+   "es": "aria-label=\"Etapa de ",
+   "pt": "aria-label=\"Etapa de ",
+   "en": "aria-label=\"Stage for "
+  },
+  {
+   "es": "|| 'Sin datos')",
+   "pt": "|| 'Sem dados')",
+   "en": "|| 'No details')"
+  },
+  {
+   "es": "'<div class=\"agenda\"><span>Se agenda los <b>' + x.agenda.dia + '</b> · próxima ' + x.agenda.prox + '</span>",
+   "pt": "'<div class=\"agenda\"><span>Agendado às <b>' + x.agenda.dia + 's</b> · próxima ' + x.agenda.prox + '</span>",
+   "en": "'<div class=\"agenda\"><span>Scheduled on <b>' + x.agenda.dia + 's</b> · next ' + x.agenda.prox + '</span>"
+  },
+  {
+   "es": ">Dejar de agendar</button>",
+   "pt": ">Parar de agendar</button>",
+   "en": ">Stop scheduling</button>"
+  },
+  {
+   "es": ">+ Agendar todas las semanas</button>",
+   "pt": ">+ Agendar toda semana</button>",
+   "en": ">+ Schedule weekly</button>"
+  },
+  {
+   "es": "(ruta ? 'En tu ruta' : 'Sumar a hoy')",
+   "pt": "(ruta ? 'Na sua rota' : 'Incluir hoje')",
+   "en": "(ruta ? 'On your route' : 'Add to today')"
+  },
+  {
+   "es": "(activos === 1 ? ' en seguimiento' : ' en seguimiento')",
+   "pt": "(activos === 1 ? ' em acompanhamento' : ' em acompanhamento')",
+   "en": "(activos === 1 ? ' active' : ' active')"
+  },
+  {
+   "es": "No hay prospectos en esta etapa.",
+   "pt": "Não há prospects nesta etapa.",
+   "en": "No prospects at this stage."
+  },
+  {
+   "es": "<span class=\"hoja-t\">Nuevo prospecto</span><p class=\"hoja-s\">Un comercio que todavía no te compra.</p>",
+   "pt": "<span class=\"hoja-t\">Novo prospect</span><p class=\"hoja-s\">Uma loja que ainda não compra de você.</p>",
+   "en": "<span class=\"hoja-t\">New prospect</span><p class=\"hoja-s\">A store that doesn’t buy from you yet.</p>"
+  },
+  {
+   "es": "<span>Nombre del comercio</span>",
+   "pt": "<span>Nome da loja</span>",
+   "en": "<span>Store name</span>"
+  },
+  {
+   "es": "placeholder=\"Ej.: Almacén La Esquina\"",
+   "pt": "placeholder=\"Ex.: Almacén La Esquina\"",
+   "en": "placeholder=\"E.g., Almacén La Esquina\""
+  },
+  {
+   "es": "<span>Rubro</span><input",
+   "pt": "<span>Ramo</span><input",
+   "en": "<span>Business type</span><input"
+  },
+  {
+   "es": "placeholder=\"Almacén, panadería, kiosco…\"",
+   "pt": "placeholder=\"Mercearia, padaria, banca…\"",
+   "en": "placeholder=\"Grocery, bakery, kiosk…\""
+  },
+  {
+   "es": "<span>Dirección</span>",
+   "pt": "<span>Endereço</span>",
+   "en": "<span>Address</span>"
+  },
+  {
+   "es": "placeholder=\"Calle y número, barrio\"",
+   "pt": "placeholder=\"Rua e número, bairro\"",
+   "en": "placeholder=\"Street and number, area\""
+  },
+  {
+   "es": "<span>Teléfono</span><input",
+   "pt": "<span>Telefone</span><input",
+   "en": "<span>Phone</span><input"
+  },
+  {
+   "es": "<span>Visitarlo todas las semanas<small>Se agenda los martes en tu ruta. La próxima visita es el 06/10.</small></span>",
+   "pt": "<span>Visitar toda semana<small>Fica agendado às terças na sua rota. A próxima visita é em 06/10.</small></span>",
+   "en": "<span>Visit every week<small>Scheduled on Tuesdays on your route. Next visit is 10/6.</small></span>"
+  },
+  {
+   "es": "<span>Sumarlo también a la ruta de hoy</span>",
+   "pt": "<span>Incluir também na rota de hoje</span>",
+   "en": "<span>Also add to today’s route</span>"
+  },
+  {
+   "es": ">Guardar prospecto</button>",
+   "pt": ">Salvar prospect</button>",
+   "en": ">Save prospect</button>"
+  },
+  {
+   "es": "data-accion=\"cerrar-hoja\">Cancelar</button>",
+   "pt": "data-accion=\"cerrar-hoja\">Cancelar</button>",
+   "en": "data-accion=\"cerrar-hoja\">Cancel</button>"
+  },
+  {
+   "es": "'<span class=\"hoja-t\">Mensaje para ' + esc(x.nom) + '</span><p class=\"hoja-s\">Plantilla de prospección, al <span class=\"mono\">' + esc(x.tel) + '</span>. La podés cambiar antes de mandarla.</p>",
+   "pt": "'<span class=\"hoja-t\">Mensagem para ' + esc(x.nom) + '</span><p class=\"hoja-s\">Modelo de prospecção, para o <span class=\"mono\">' + esc(x.tel) + '</span>. Você pode alterar antes de enviar.</p>",
+   "en": "'<span class=\"hoja-t\">Message for ' + esc(x.nom) + '</span><p class=\"hoja-s\">Prospecting template, to <span class=\"mono\">' + esc(x.tel) + '</span>. You can edit it before sending.</p>"
+  },
+  {
+   "es": ">Abrir WhatsApp</button>",
+   "pt": ">Abrir o WhatsApp</button>",
+   "en": ">Open WhatsApp</button>"
+  },
+  {
+   "es": "function abrev(n){ return fmt.format(Math.round(n / 1000)) + ' mil'; }",
+   "pt": "function abrev(n){ return fmt.format(Math.round(n / 1000)) + ' mil'; }",
+   "en": "function abrev(n){ return fmt.format(Math.round(n / 1000)) + 'k'; }"
+  },
+  {
+   "es": "<small>Ventas de setiembre, sin IVA</small>",
+   "pt": "<small>Vendas de setembro, sem IVA</small>",
+   "en": "<small>September sales, excl. VAT</small>"
+  },
+  {
+   "es": "'</b><span>' + pct + ' %</span>",
+   "pt": "'</b><span>' + pct + '%</span>",
+   "en": "'</b><span>' + pct + '%</span>"
+  },
+  {
+   "es": "<small>Objetivo ' + pesos(ob) + (falta ? ' · te faltan ' + pesos(falta) : ' · objetivo cumplido') + '</small>",
+   "pt": "<small>Meta ' + pesos(ob) + (falta ? ' · faltam ' + pesos(falta) : ' · meta cumprida') + '</small>",
+   "en": "<small>Target ' + pesos(ob) + (falta ? ' · ' + pesos(falta) + ' to go' : ' · target met') + '</small>"
+  },
+  {
+   "es": "<small>Tu comisión · '",
+   "pt": "<small>Sua comissão · '",
+   "en": "<small>Your commission · '"
+  },
+  {
+   "es": "<em>sobre lo vendido sin IVA</em>",
+   "pt": "<em>sobre as vendas sem IVA</em>",
+   "en": "<em>on sales excl. VAT</em>"
+  },
+  {
+   "es": "<small>Días hábiles</small>",
+   "pt": "<small>Dias úteis</small>",
+   "en": "<small>Business days</small>"
+  },
+  {
+   "es": "<em>hoy y mañana</em>",
+   "pt": "<em>hoje e amanhã</em>",
+   "en": "<em>today and tomorrow</em>"
+  },
+  {
+   "es": "<small>Necesitás por día</small>",
+   "pt": "<small>Você precisa por dia</small>",
+   "en": "<small>Needed per day</small>"
+  },
+  {
+   "es": "(falta ? 'para llegar al objetivo' : 'ya llegaste')",
+   "pt": "(falta ? 'para chegar à meta' : 'você já chegou')",
+   "en": "(falta ? 'to hit your target' : 'target reached')"
+  },
+  {
+   "es": "<small>Visitas del mes</small><b>' + visH + ' de ' + visT + '</b><em>' + Math.round(visH / visT * 100) + ' % hechas</em>",
+   "pt": "<small>Visitas do mês</small><b>' + visH + ' de ' + visT + '</b><em>' + Math.round(visH / visT * 100) + '% feitas</em>",
+   "en": "<small>Visits this month</small><b>' + visH + ' of ' + visT + '</b><em>' + Math.round(visH / visT * 100) + '% done</em>"
+  },
+  {
+   "es": "Por semana<span>línea: ritmo para llegar</span>",
+   "pt": "Por semana<span>linha: ritmo para chegar à meta</span>",
+   "en": "By week<span>line: pace to hit target</span>"
+  },
+  {
+   "es": "'<div class=\"bloque-t\">En el equipo<span>' + pos + '.º de ' + rk.length + ' contra su objetivo</span>",
+   "pt": "'<div class=\"bloque-t\">Na equipe<span>' + pos + 'º de ' + rk.length + ' contra a meta</span>",
+   "en": "'<div class=\"bloque-t\">On the team<span>#' + pos + ' of ' + rk.length + ' vs. target</span>"
+  },
+  {
+   "es": "(r.x.id === 'mf' ? 'Vos' : r.x.nom)",
+   "pt": "(r.x.id === 'mf' ? 'Você' : r.x.nom)",
+   "en": "(r.x.id === 'mf' ? 'You' : r.x.nom)"
+  },
+  {
+   "es": "Math.round(r.p * 100) + ' %</b></li>'",
+   "pt": "Math.round(r.p * 100) + '%</b></li>'",
+   "en": "Math.round(r.p * 100) + '%</b></li>'"
+  },
+  {
+   "es": "<div class=\"bloque-t\">Oportunidades del mes</div>",
+   "pt": "<div class=\"bloque-t\">Oportunidades do mês</div>",
+   "en": "<div class=\"bloque-t\">Opportunities this month</div>"
+  },
+  {
+   "es": "<div><span>Ofrecidas</span><b>' + ofr + '</b></div><div><span>Vendidas</span>",
+   "pt": "<div><span>Oferecidas</span><b>' + ofr + '</b></div><div><span>Vendidas</span>",
+   "en": "<div><span>Offered</span><b>' + ofr + '</b></div><div><span>Sold</span>"
+  },
+  {
+   "es": "<span>De cada 10 que ofrecés, vendés</span>",
+   "pt": "<span>De cada 10 que você oferece, vende</span>",
+   "en": "<span>Out of every 10 you offer, you sell</span>"
+  },
+  {
+   "es": "<span>Te quedan para ofrecer</span>",
+   "pt": "<span>Ainda para oferecer</span>",
+   "en": "<span>Left to offer</span>"
+  },
+  {
+   "es": "data-ir=\"ops\">Ver oportunidades</button>",
+   "pt": "data-ir=\"ops\">Ver oportunidades</button>",
+   "en": "data-ir=\"ops\">See opportunities</button>"
+  },
+  {
+   "es": "Contale a Laura por qué te saliste del plan, a dónde fuiste y si quedó algo sin hacer. Lo ve en su bandeja y te contesta acá.",
+   "pt": "Conte para a Laura por que você saiu do plano, aonde foi e se ficou algo por fazer. Ela vê na caixa de entrada e responde aqui.",
+   "en": "Tell Laura why you left the plan, where you went and whether anything was left undone. She sees it in her inbox and replies here."
+  },
+  {
+   "es": "<span>¿Qué pasó?</span><div class=\"motivos\" role=\"group\" aria-label=\"Motivo\">",
+   "pt": "<span>O que aconteceu?</span><div class=\"motivos\" role=\"group\" aria-label=\"Motivo\">",
+   "en": "<span>What happened?</span><div class=\"motivos\" role=\"group\" aria-label=\"Reason\">"
+  },
+  {
+   "es": "<span>¿A dónde fuiste?</span><textarea id=\"d-a\" maxlength=\"140\" placeholder=\"Ej.: pasé por Almacén Sarandí, que me llamó por un pedido\">",
+   "pt": "<span>Aonde você foi?</span><textarea id=\"d-a\" maxlength=\"140\" placeholder=\"Ex.: passei no Almacén Sarandí, que me ligou por um pedido\">",
+   "en": "<span>Where did you go?</span><textarea id=\"d-a\" maxlength=\"140\" placeholder=\"E.g., stopped at Almacén Sarandí, they called about an order\">"
+  },
+  {
+   "es": "<span>¿Qué quedó sin hacer?</span><textarea id=\"d-falta\" maxlength=\"140\" placeholder=\"Ej.: no llegué a Pizzería La Trattoria\">",
+   "pt": "<span>O que ficou por fazer?</span><textarea id=\"d-falta\" maxlength=\"140\" placeholder=\"Ex.: não cheguei à Pizzería La Trattoria\">",
+   "en": "<span>What was left undone?</span><textarea id=\"d-falta\" maxlength=\"140\" placeholder=\"E.g., didn’t make it to Pizzería La Trattoria\">"
+  },
+  {
+   "es": "<small>Si llegaste a todo, dejalo vacío.</small>",
+   "pt": "<small>Se deu conta de tudo, deixe em branco.</small>",
+   "en": "<small>If you covered everything, leave it blank.</small>"
+  },
+  {
+   "es": ">Mandar a Laura</button>",
+   "pt": ">Enviar para a Laura</button>",
+   "en": ">Send to Laura</button>"
+  },
+  {
+   "es": "Enviados hoy<span>",
+   "pt": "Enviados hoje<span>",
+   "en": "Sent today<span>"
+  },
+  {
+   "es": ">Esperando a Laura</span>",
+   "pt": ">Aguardando a Laura</span>",
+   "en": ">Waiting on Laura</span>"
+  },
+  {
+   "es": ">Aprobado</span>",
+   "pt": ">Aprovado</span>",
+   "en": ">Approved</span>"
+  },
+  {
+   "es": ">No aprobado</span>",
+   "pt": ">Não aprovado</span>",
+   "en": ">Not approved</span>"
+  },
+  {
+   "es": "El estado de cada parada seguí marcándolo en tu ruta. Esto es para contar el desvío.",
+   "pt": "Continue marcando o status de cada parada na sua rota. Isto é para contar o desvio.",
+   "en": "Keep marking each stop’s status on your route. This is for explaining the detour."
+  },
+  {
+   "es": "Desvío de ruta",
+   "pt": "Desvio de rota",
+   "en": "Route detour"
+  },
+  {
+   "es": "Visita fuera de ruta",
+   "pt": "Visita fora da rota",
+   "en": "Off-route visit"
+  },
+  {
+   "es": "'Problema en una visita'",
+   "pt": "'Problema em uma visita'",
+   "en": "'Issue at a visit'"
+  },
+  {
+   "es": "(a ? ' Fue a: ' + a.replace(/\\.$/, '') + '.' : '') + (falta ? ' Quedó sin hacer: ' + falta.replace(/\\.$/, '') + '.' : ' Llegó a todo lo demás.')",
+   "pt": "(a ? ' Foi a: ' + a.replace(/\\.$/, '') + '.' : '') + (falta ? ' Ficou por fazer: ' + falta.replace(/\\.$/, '') + '.' : ' Deu conta de todo o resto.')",
+   "en": "(a ? ' Went to: ' + a.replace(/\\.$/, '') + '.' : '') + (falta ? ' Left undone: ' + falta.replace(/\\.$/, '') + '.' : ' Covered everything else.')"
+  },
+  {
+   "es": "'. Pide cambiar el orden de las visitas que le quedan.'",
+   "pt": "'. Pede para mudar a ordem das visitas que faltam.'",
+   "en": "'. Asks to reorder the remaining visits.'"
+  },
+  {
+   "es": "toast(x.nom + ' pasó a ' + ETAPA[x.etapa].lbl + (corta ? '. Deja de agendarse cada semana.' : '.'));",
+   "pt": "toast(x.nom + ' passou para ' + ETAPA[x.etapa].lbl + (corta ? '. Deixa de ser agendado toda semana.' : '.'));",
+   "en": "toast(x.nom + ' moved to ' + ETAPA[x.etapa].lbl + (corta ? '. No longer scheduled weekly.' : '.'));"
+  },
+  {
+   "es": "'<span class=\"hoja-t\">Terminar la jornada</span><p class=\"hoja-s\">Así le llega el resumen a Laura.</p><div class=\"datos\"><div><span>Visitas hechas</span><b>' + hechas + ' de ' + RUTA.length + '</b></div><div><span>Con problema</span><b>' + prob + '</b></div><div><span>Pedidos</span><b>' + S.pedidosDemo.length + '</b></div><div><span>Vendido hoy</span><b>' + pesos(S.vendidoDemo) + '</b></div><div><span>Oportunidades trabajadas</span><b>' + ofr + '</b></div></div>' + (faltan ? '<p class=\"hoja-s\">Te quedan ' + faltan + (faltan === 1 ? ' visita' : ' visitas') + '. Pasan a la ruta de mañana y Laura lo ve en el panel.</p>' : '') + '<div class=\"hoja-btns\"><button type=\"button\" class=\"app-btn\" data-accion=\"terminar\">Terminar y avisar a Laura</button><button type=\"button\" class=\"app-btn sec\" data-accion=\"cerrar-hoja\">Seguir en jornada</button></div>'",
+   "pt": "'<span class=\"hoja-t\">Encerrar a jornada</span><p class=\"hoja-s\">É assim que o resumo chega para a Laura.</p><div class=\"datos\"><div><span>Visitas feitas</span><b>' + hechas + ' de ' + RUTA.length + '</b></div><div><span>Com problema</span><b>' + prob + '</b></div><div><span>Pedidos</span><b>' + S.pedidosDemo.length + '</b></div><div><span>Vendido hoje</span><b>' + pesos(S.vendidoDemo) + '</b></div><div><span>Oportunidades trabalhadas</span><b>' + ofr + '</b></div></div>' + (faltan ? '<p class=\"hoja-s\">Ainda faltam ' + faltan + (faltan === 1 ? ' visita' : ' visitas') + '. Passam para a rota de amanhã e a Laura vê no painel.</p>' : '') + '<div class=\"hoja-btns\"><button type=\"button\" class=\"app-btn\" data-accion=\"terminar\">Encerrar e avisar a Laura</button><button type=\"button\" class=\"app-btn sec\" data-accion=\"cerrar-hoja\">Continuar a jornada</button></div>'",
+   "en": "'<span class=\"hoja-t\">End your day</span><p class=\"hoja-s\">This is the summary Laura will get.</p><div class=\"datos\"><div><span>Visits done</span><b>' + hechas + ' of ' + RUTA.length + '</b></div><div><span>With issues</span><b>' + prob + '</b></div><div><span>Orders</span><b>' + S.pedidosDemo.length + '</b></div><div><span>Sold today</span><b>' + pesos(S.vendidoDemo) + '</b></div><div><span>Opportunities worked</span><b>' + ofr + '</b></div></div>' + (faltan ? '<p class=\"hoja-s\">' + faltan + (faltan === 1 ? ' visit' : ' visits') + ' left. They move to tomorrow’s route and Laura sees it in the dashboard.</p>' : '') + '<div class=\"hoja-btns\"><button type=\"button\" class=\"app-btn\" data-accion=\"terminar\">End and notify Laura</button><button type=\"button\" class=\"app-btn sec\" data-accion=\"cerrar-hoja\">Keep working</button></div>'"
+  },
+  {
+   "es": "toast('Jornada cerrada a las ' + S.fin + '. Laura recibió tu resumen.');",
+   "pt": "toast('Jornada encerrada às ' + S.fin + '. A Laura recebeu seu resumo.');",
+   "en": "toast('Day ended at ' + S.fin + '. Laura got your summary.');"
+  },
+  {
+   "es": "toast('Tarea resuelta. Laura lo ve en el panel.');",
+   "pt": "toast('Tarefa concluída. A Laura vê no painel.');",
+   "en": "toast('Task done. Laura sees it in the dashboard.');"
+  },
+  {
+   "es": "toast('Llegada a ' + CLI[r.id].nom + ' registrada a las ' + r.llego + '.');",
+   "pt": "toast('Chegada em ' + CLI[r.id].nom + ' registrada às ' + r.llego + '.');",
+   "en": "toast('Arrival at ' + CLI[r.id].nom + ' logged at ' + r.llego + '.');"
+  },
+  {
+   "es": "toast('Visita hecha. Seguís con ' + (actual() >= 0 ? CLI[RUTA[actual()].id].nom : 'el cierre del día') + '.');",
+   "pt": "toast('Visita feita. Agora é ' + (actual() >= 0 ? CLI[RUTA[actual()].id].nom : 'o fechamento do dia') + '.');",
+   "en": "toast('Visit done. Next up: ' + (actual() >= 0 ? CLI[RUTA[actual()].id].nom : 'wrapping up the day') + '.');"
+  },
+  {
+   "es": "'<span class=\"hoja-t\">¿Qué pasó en ' + CLI[RUTA[i].id].nom + '?</span><p class=\"hoja-s\">Laura lo ve en el panel, en Solicitudes.</p><ul class=\"opciones\">' + ['Estaba cerrado', 'No estaba el encargado', 'No necesitaba nada', 'Me pidió que vuelva otro día']",
+   "pt": "'<span class=\"hoja-t\">O que aconteceu em ' + CLI[RUTA[i].id].nom + '?</span><p class=\"hoja-s\">A Laura vê no painel, em Solicitações.</p><ul class=\"opciones\">' + ['Estava fechado', 'O encarregado não estava', 'Não precisava de nada', 'Pediu para eu voltar outro dia']",
+   "en": "'<span class=\"hoja-t\">What happened at ' + CLI[RUTA[i].id].nom + '?</span><p class=\"hoja-s\">Laura sees it in the dashboard, under Requests.</p><ul class=\"opciones\">' + ['It was closed', 'The manager wasn’t in', 'Didn’t need anything', 'Asked me to come back another day']"
+  },
+  {
+   "es": "toast('Anotado. Laura lo ve en el panel.');",
+   "pt": "toast('Anotado. A Laura vê no painel.');",
+   "en": "toast('Noted. Laura sees it in the dashboard.');"
+  },
+  {
+   "es": "'<span class=\"hoja-t\">Avisar un desvío</span><p class=\"hoja-s\">Le llega a Laura. Mientras tanto, seguí con tu ruta.</p>",
+   "pt": "'<span class=\"hoja-t\">Avisar um desvio</span><p class=\"hoja-s\">Chega para a Laura. Enquanto isso, siga com a sua rota.</p>",
+   "en": "'<span class=\"hoja-t\">Report a detour</span><p class=\"hoja-s\">It goes to Laura. Meanwhile, keep going with your route.</p>"
+  },
+  {
+   "es": "data-ir=\"desvio\">Contarlo con más detalle</button>",
+   "pt": "data-ir=\"desvio\">Contar com mais detalhes</button>",
+   "en": "data-ir=\"desvio\">Add more detail</button>"
+  },
+  {
+   "es": "toast('Le avisaste a Laura. Te contesta acá.');",
+   "pt": "toast('Você avisou a Laura. Ela responde aqui.');",
+   "en": "toast('Laura has been notified. She’ll reply here.');"
+  },
+  {
+   "es": "Clientes de tu cartera cerca de donde estás. Queda registrada y Laura la ve.",
+   "pt": "Clientes da sua carteira perto de onde você está. Fica registrada e a Laura vê.",
+   "en": "Customers in your accounts near where you are. It’s logged and Laura sees it."
+  },
+  {
+   "es": "Ya sumaste a todos los que están cerca.",
+   "pt": "Você já incluiu todos os que estão perto.",
+   "en": "You’ve already added everyone nearby."
+  },
+  {
+   "es": "'María pasó por ' + CLI[id].nom + ', que no estaba en su ruta de hoy.'",
+   "pt": "'María passou em ' + CLI[id].nom + ', que não estava na rota de hoje.'",
+   "en": "'María stopped by ' + CLI[id].nom + ', which wasn’t on today’s route.'"
+  },
+  {
+   "es": "toast(CLI[id].nom + ' se sumó a tu ruta. Laura ya lo ve.');",
+   "pt": "toast(CLI[id].nom + ' entrou na sua rota. A Laura já vê.');",
+   "en": "toast(CLI[id].nom + ' was added to your route. Laura can see it.');"
+  },
+  {
+   "es": "toast(nl ? 'PDF listo: lista de precios' + (S.lista.cat !== 'Todo' ? ' de ' + S.lista.cat : '') + ', ' + nl + (nl === 1 ? ' producto' : ' productos') + ', ' + (S.lista.iva === 'con' ? 'con' : 'sin') + ' IVA. Para mandar por WhatsApp.' : 'No hay productos con ese filtro para armar el PDF.');",
+   "pt": "toast(nl ? 'PDF pronto: tabela de preços' + (S.lista.cat !== 'Todos' ? ' de ' + S.lista.cat : '') + ', ' + nl + (nl === 1 ? ' produto' : ' produtos') + ', ' + (S.lista.iva === 'con' ? 'com' : 'sem') + ' IVA. Para enviar pelo WhatsApp.' : 'Não há produtos com esse filtro para montar o PDF.');",
+   "en": "toast(nl ? 'PDF ready: price list' + (S.lista.cat !== 'All' ? ' for ' + S.lista.cat : '') + ', ' + nl + (nl === 1 ? ' product' : ' products') + ', ' + (S.lista.iva === 'con' ? 'incl.' : 'excl.') + ' VAT. Ready to send on WhatsApp.' : 'No products match that filter for the PDF.');"
+  },
+  {
+   "es": "toast(PROD[cs].d + ' está en el presupuesto.');",
+   "pt": "toast(PROD[cs].d + ' está no orçamento.');",
+   "en": "toast(PROD[cs].d + ' is in the quote.');"
+  },
+  {
+   "es": "nota: 'Lo cargaste hoy.'",
+   "pt": "nota: 'Você cadastrou hoje.'",
+   "en": "nota: 'You added it today.'"
+  },
+  {
+   "es": "toast('Guardado.' + (sem ? ' Se agenda los martes; la próxima visita es el 06/10.' : '') + (hoyX ? ' Ya está en tu ruta de hoy.' : ''));",
+   "pt": "toast('Salvo.' + (sem ? ' Fica agendado às terças; a próxima visita é em 06/10.' : '') + (hoyX ? ' Já está na sua rota de hoje.' : ''));",
+   "en": "toast('Saved.' + (sem ? ' Scheduled on Tuesdays; next visit is 10/6.' : '') + (hoyX ? ' It’s already on today’s route.' : ''));"
+  },
+  {
+   "es": "toast(xa.agenda ? xa.nom + ' se agenda los martes en tu ruta.' : xa.nom + ' deja de agendarse.');",
+   "pt": "toast(xa.agenda ? xa.nom + ' fica agendado às terças na sua rota.' : xa.nom + ' deixa de ser agendado.');",
+   "en": "toast(xa.agenda ? xa.nom + ' is scheduled on Tuesdays on your route.' : xa.nom + ' is no longer scheduled.');"
+  },
+  {
+   "es": "toast('Se abrió WhatsApp con el mensaje para ' + xw.nom + (paso ? '. Pasó a Contactado.' : '.'));",
+   "pt": "toast('O WhatsApp abriu com a mensagem para ' + xw.nom + (paso ? '. Passou para Contatado.' : '.'));",
+   "en": "toast('WhatsApp opened with the message for ' + xw.nom + (paso ? '. Moved to Contacted.' : '.'));"
+  },
+  {
+   "es": "toast(xr.nom + ' está en tu ruta de hoy. Laura lo ve en el panel.');",
+   "pt": "toast(xr.nom + ' está na sua rota de hoje. A Laura vê no painel.');",
+   "en": "toast(xr.nom + ' is on today’s route. Laura sees it in the dashboard.');"
+  },
+  {
+   "es": "toast('Nota guardada en la ficha.');",
+   "pt": "toast('Nota salva na ficha.');",
+   "en": "toast('Note saved to the profile.');"
+  },
+  {
+   "es": "toast(acc === 'op-ofrecida' ? 'Anotado: le ofreciste ' + o.fam : acc === 'op-no' ? 'Anotado: no le interesa ' + o.fam : 'Cobro anotado. Laura lo ve en Cobranzas.');",
+   "pt": "toast(acc === 'op-ofrecida' ? 'Anotado: você ofereceu ' + o.fam : acc === 'op-no' ? 'Anotado: não tem interesse em ' + o.fam : 'Cobrança registrada. A Laura vê em Cobranças.');",
+   "en": "toast(acc === 'op-ofrecida' ? 'Noted: you offered ' + o.fam : acc === 'op-no' ? 'Noted: not interested in ' + o.fam : 'Payment logged. Laura sees it under Collections.');"
+  },
+  {
+   "es": "['Clientes que llevan Detergentes', '62', 100], ['También llevan Lavandina', '50', 81], ['Llevan Detergentes y no Lavandina', '12', 19]",
+   "pt": "['Clientes que levam detergente', '62', 100], ['Também levam água sanitária', '50', 81], ['Levam detergente e não água sanitária', '12', 19]",
+   "en": "['Customers who buy dish soap', '62', 100], ['Also buy bleach', '50', 81], ['Buy dish soap but not bleach', '12', 19]"
+  },
+  {
+   "es": "'<b>Supermercado Los Robles</b> es uno de los 12. Por lo que compran los parecidos, la Lavandina le sumaría <b>≈ $U 6.200 por mes</b>. Por eso María lo ve como «8 de cada 10 que llevan Detergentes también llevan Lavandina».'",
+   "pt": "'O <b>Supermercado Los Robles</b> é um dos 12. Pelo que os parecidos compram, a água sanitária somaria <b>≈ $U 6.200 por mês</b>. Por isso a María vê como “8 de cada 10 que levam detergente também levam água sanitária”.'",
+   "en": "'<b>Supermercado Los Robles</b> is one of the 12. Based on what similar customers buy, bleach would add <b>≈ $U 6,200 a month</b>. That’s why María sees it as “8 out of 10 customers who buy dish soap also buy bleach.”'"
+  },
+  {
+   "es": "['Compras de Yerba mate 1 kg en el año', '24', 100], ['Suele comprar cada', '14 días', 58], ['Desde la última compra', '17 días', 71]",
+   "pt": "['Compras de erva-mate 1 kg no ano', '24', 100], ['Costuma comprar a cada', '14 dias', 58], ['Desde a última compra', '17 dias', 71]",
+   "en": "['Purchases of 1 kg yerba mate this year', '24', 100], ['Usually buys every', '14 days', 58], ['Since the last purchase', '17 days', 71]"
+  },
+  {
+   "es": "'A <b>Almacén Sarandí</b> ya le tocaba. Lleva unos 20 kg por compra: <b>≈ $U 4.700 por mes</b> que se pueden ir a otro proveedor si nadie pasa.'",
+   "pt": "'O <b>Almacén Sarandí</b> já estava na hora de comprar. Leva uns 20 kg por compra: <b>≈ $U 4.700 por mês</b> que podem ir para outro fornecedor se ninguém passar.'",
+   "en": "'<b>Almacén Sarandí</b> was due. They buy about 20 kg each time: <b>≈ $U 4,700 a month</b> that could go to another supplier if nobody stops by.'"
+  },
+  {
+   "es": "['Compra promedio hasta julio', '$U 18.400', 100], ['Compra en agosto', '$U 3.100', 17], ['Compra en setiembre', '$U 0', 1]",
+   "pt": "['Compra média até julho', '$U 18.400', 100], ['Compra em agosto', '$U 3.100', 17], ['Compra em setembro', '$U 0', 1]",
+   "en": "['Average purchase through July', '$U 18,400', 100], ['August purchases', '$U 3,100', 17], ['September purchases', '$U 0', 1]"
+  },
+  {
+   "es": "'<b>Pizzería La Trattoria</b> no compra hace 46 días. Le aparece a María para visitar y a Laura en «Clientes en riesgo», con lo que compraba antes.'",
+   "pt": "'A <b>Pizzería La Trattoria</b> não compra há 46 dias. Aparece para a María visitar e para a Laura em “Clientes em risco”, com o que comprava antes.'",
+   "en": "'<b>Pizzería La Trattoria</b> hasn’t bought in 46 days. It shows up for María to visit, and for Laura under “At-risk customers,” with what they used to buy.'"
+  },
+  {
+   "es": "['Facturas del cliente este año', '38', 100], ['Pendientes de cobro', '3', 8], ['Vencidas', '1', 3]",
+   "pt": "['Faturas do cliente este ano', '38', 100], ['Pendentes de cobrança', '3', 8], ['Vencidas', '1', 3]",
+   "en": "['Customer invoices this year', '38', 100], ['Awaiting payment', '3', 8], ['Overdue', '1', 3]"
+  },
+  {
+   "es": "'<b>Cafetería Buena Vista</b> tiene <b>$U 12.840 vencidos</b> hace 12 días (factura A 0081245). María lo ve antes de entrar al local.'",
+   "pt": "'A <b>Cafetería Buena Vista</b> tem <b>$U 12.840 vencidos</b> há 12 dias (fatura A 0081245). A María vê antes de entrar na loja.'",
+   "en": "'<b>Cafetería Buena Vista</b> has <b>$U 12,840 overdue</b> for 12 days (invoice A 0081245). María sees it before walking in.'"
+  },
+  {
+   "es": "$('erp-total').textContent = pesos(tot) + ' sin IVA';",
+   "pt": "$('erp-total').textContent = pesos(tot) + ' sem IVA';",
+   "en": "$('erp-total').textContent = pesos(tot) + ' excl. VAT';"
+  },
+  {
+   "es": "$('erp-nota').textContent = 'Es el pedido que cargaste en la demo, a las ' + p.hora + '. Nadie lo volvió a tipear.';",
+   "pt": "$('erp-nota').textContent = 'É o pedido que você lançou na demo, às ' + p.hora + '. Ninguém digitou de novo.';",
+   "en": "$('erp-nota').textContent = 'This is the order you entered in the demo, at ' + p.hora + '. Nobody retyped it.';"
+  },
+  {
+   "es": "est === 'aprobada' ? 'Aprobé tu desvío. Seguí por la ruta que te quede mejor.' : 'No aprobé el desvío. Seguí con la ruta de hoy, por favor.'",
+   "pt": "est === 'aprobada' ? 'Aprovei seu desvio. Siga pela rota que for melhor para você.' : 'Não aprovei o desvio. Siga com a rota de hoje, por favor.'",
+   "en": "est === 'aprobada' ? 'I approved your detour. Take whichever route works best.' : 'I didn’t approve the detour. Please stick to today’s route.'"
+  },
+  {
+   "es": ">Pendiente</span>",
+   "pt": ">Pendente</span>",
+   "en": ">Pending</span>"
+  },
+  {
+   "es": ">Aprobada</span>",
+   "pt": ">Aprovada</span>",
+   "en": ">Approved</span>"
+  },
+  {
+   "es": ">Rechazada</span>",
+   "pt": ">Recusada</span>",
+   "en": ">Declined</span>"
+  },
+  {
+   "es": ">Informada</span>",
+   "pt": ">Informada</span>",
+   "en": ">For info</span>"
+  },
+  {
+   "es": "data-est=\"aprobada\">Aprobar</button>",
+   "pt": "data-est=\"aprobada\">Aprovar</button>",
+   "en": "data-est=\"aprobada\">Approve</button>"
+  },
+  {
+   "es": "data-est=\"rechazada\">Rechazar</button>",
+   "pt": "data-est=\"rechazada\">Recusar</button>",
+   "en": "data-est=\"rechazada\">Decline</button>"
+  },
+  {
+   "es": "p ? p + (p === 1 ? ' pendiente' : ' pendientes') : 'Al día'",
+   "pt": "p ? p + (p === 1 ? ' pendente' : ' pendentes') : 'Em dia'",
+   "en": "p ? p + (p === 1 ? ' pending' : ' pending') : 'All clear'"
+  },
+  {
+   "es": "'María tiene 2 clientes que no compran hace más de 30 días:<ul><li><b>Pizzería La Trattoria</b>, 46 días. Antes compraba $U 18.400 por mes.</li><li><b>Rotisería La Esquina</b>, 34 días. Antes compraba $U 7.900 por mes.</li></ul>Entre los dos, $U 26.300 por mes. ¿Querés que le deje una tarea para visitarlos?'",
+   "pt": "'A María tem 2 clientes que não compram há mais de 30 dias:<ul><li><b>Pizzería La Trattoria</b>, 46 dias. Antes comprava $U 18.400 por mês.</li><li><b>Rotisería La Esquina</b>, 34 dias. Antes comprava $U 7.900 por mês.</li></ul>Juntos, $U 26.300 por mês. Quer que eu deixe uma tarefa para ela visitá-los?'",
+   "en": "'María has 2 customers who haven’t bought in over 30 days:<ul><li><b>Pizzería La Trattoria</b>, 46 days. Used to buy $U 18,400 a month.</li><li><b>Rotisería La Esquina</b>, 34 days. Used to buy $U 7,900 a month.</li></ul>Together, $U 26,300 a month. Want me to leave her a task to visit them?'"
+  },
+  {
+   "es": "return x.corto + ' en ' + Math.round(v / x.obj.set * 100) + ' %'; }).join(', ');",
+   "pt": "return x.corto + ' em ' + Math.round(v / x.obj.set * 100) + '%'; }).join(', ');",
+   "en": "return x.corto + ' at ' + Math.round(v / x.obj.set * 100) + '%'; }).join(', ');"
+  },
+  {
+   "es": "responder('Setiembre va en <b>' + pesos(t.v) + '</b>, el ' + pct + ' % del objetivo de ' + pesos(t.o) + ', y queda un día hábil. ' + det + '. Contra setiembre del año pasado, ' + (ly >= 0 ? ly + ' % más' : Math.abs(ly) + ' % menos') + '.');",
+   "pt": "responder('Setembro está em <b>' + pesos(t.v) + '</b>, ' + pct + '% da meta de ' + pesos(t.o) + ', e falta um dia útil. ' + det + '. Contra setembro do ano passado, ' + (ly >= 0 ? ly + '% a mais' : Math.abs(ly) + '% a menos') + '.');",
+   "en": "responder('September is at <b>' + pesos(t.v) + '</b>, ' + pct + '% of the ' + pesos(t.o) + ' target, with one business day left. ' + det + '. Versus last September, ' + (ly >= 0 ? ly + '% higher' : Math.abs(ly) + '% lower') + '.');"
+  },
+  {
+   "es": "'Voy a crear esta tarea:<ul><li><b>Para:</b> María Fernández</li><li><b>Qué:</b> pasar por Pizzería La Trattoria</li><li><b>Cuándo:</b> jueves 01/10</li><li><b>Nota:</b> no compra hace 46 días; antes compraba $U 18.400 por mes.</li></ul>¿La creo?<div class=\"conf\"><button type=\"button\" class=\"btn-mini p\" data-conf=\"si\">Sí, creala</button><button type=\"button\" class=\"btn-mini\" data-conf=\"no\">No</button></div>'",
+   "pt": "'Vou criar esta tarefa:<ul><li><b>Para:</b> María Fernández</li><li><b>O quê:</b> passar na Pizzería La Trattoria</li><li><b>Quando:</b> quinta, 01/10</li><li><b>Nota:</b> não compra há 46 dias; antes comprava $U 18.400 por mês.</li></ul>Posso criar?<div class=\"conf\"><button type=\"button\" class=\"btn-mini p\" data-conf=\"si\">Sim, pode criar</button><button type=\"button\" class=\"btn-mini\" data-conf=\"no\">Não</button></div>'",
+   "en": "'I’ll create this task:<ul><li><b>For:</b> María Fernández</li><li><b>What:</b> stop by Pizzería La Trattoria</li><li><b>When:</b> Thursday, 10/1</li><li><b>Note:</b> hasn’t bought in 46 days; used to buy $U 18,400 a month.</li></ul>Should I create it?<div class=\"conf\"><button type=\"button\" class=\"btn-mini p\" data-conf=\"si\">Yes, create it</button><button type=\"button\" class=\"btn-mini\" data-conf=\"no\">No</button></div>'"
+  },
+  {
+   "es": "msg('yo', 'Sí, creala');",
+   "pt": "msg('yo', 'Sim, pode criar');",
+   "en": "msg('yo', 'Yes, create it');"
+  },
+  {
+   "es": "responder('Listo. María la ve en «Hoy», en «Te dejó Laura». Mirá el celular de arriba.');",
+   "pt": "responder('Pronto. A María vê em “Hoje”, em “A Laura deixou”. Olhe o celular acima.');",
+   "en": "responder('Done. María sees it under “Today,” in “From Laura.” Check the phone above.');"
+  },
+  {
+   "es": "msg('yo', 'No'); responder('No hice nada. Si querés, la armamos para otro día.');",
+   "pt": "msg('yo', 'Não'); responder('Não fiz nada. Se quiser, montamos para outro dia.');",
+   "en": "msg('yo', 'No'); responder('I didn’t do anything. If you want, we can set it up for another day.');"
+  },
+  {
+   "es": "TAREAS.unshift({t: 'Pasá por Pizzería La Trattoria el jueves', s: 'No compra hace 46 días', ok: false});",
+   "pt": "TAREAS.unshift({t: 'Passe na Pizzería La Trattoria na quinta', s: 'Não compra há 46 dias', ok: false});",
+   "en": "TAREAS.unshift({t: 'Stop by Pizzería La Trattoria on Thursday', s: 'Hasn’t bought in 46 days', ok: false});"
+  },
+  {
+   "es": "notificar('Laura te dejó una tarea', 'Pasá por Pizzería La Trattoria el jueves.');",
+   "pt": "notificar('A Laura deixou uma tarefa', 'Passe na Pizzería La Trattoria na quinta.');",
+   "en": "notificar('Laura left you a task', 'Stop by Pizzería La Trattoria on Thursday.');"
+  },
+  {
+   "es": "'<span class=\"chip ver\">En Doria</span>' : e === 'revisar' ? '<span class=\"chip nar\">Revisar precio</span>' : '<span class=\"chip tinta\">Recién llegado</span>'",
+   "pt": "'<span class=\"chip ver\">No Doria</span>' : e === 'revisar' ? '<span class=\"chip nar\">Revisar preço</span>' : '<span class=\"chip tinta\">Recém-chegado</span>'",
+   "en": "'<span class=\"chip ver\">In Doria</span>' : e === 'revisar' ? '<span class=\"chip nar\">Check price</span>' : '<span class=\"chip tinta\">Just in</span>'"
+  },
+  {
+   "es": "aria-label=\"Vendedor\"><option value=\"todos\"",
+   "pt": "aria-label=\"Vendedor\"><option value=\"todos\"",
+   "en": "aria-label=\"Sales rep\"><option value=\"todos\""
+  },
+  {
+   "es": ">Todos los vendedores</option>",
+   "pt": ">Todos os vendedores</option>",
+   "en": ">All reps</option>"
+  },
+  {
+   "es": "aria-label=\"Período\"><button type=\"button\" data-per=\"set\" aria-pressed=\"' + (S.periodo === 'set') + '\">Setiembre</button><button type=\"button\" data-per=\"ago\" aria-pressed=\"' + (S.periodo === 'ago') + '\">Agosto</button>",
+   "pt": "aria-label=\"Período\"><button type=\"button\" data-per=\"set\" aria-pressed=\"' + (S.periodo === 'set') + '\">Setembro</button><button type=\"button\" data-per=\"ago\" aria-pressed=\"' + (S.periodo === 'ago') + '\">Agosto</button>",
+   "en": "aria-label=\"Period\"><button type=\"button\" data-per=\"set\" aria-pressed=\"' + (S.periodo === 'set') + '\">September</button><button type=\"button\" data-per=\"ago\" aria-pressed=\"' + (S.periodo === 'ago') + '\">August</button>"
+  },
+  {
+   "es": "<h3>Resumen</h3><small>' + (S.periodo === 'set' ? 'Setiembre al martes 29' : 'Agosto completo') + ' · ventas netas de notas de crédito</small>",
+   "pt": "<h3>Resumo</h3><small>' + (S.periodo === 'set' ? 'Setembro até terça, 29' : 'Agosto completo') + ' · vendas líquidas de notas de crédito</small>",
+   "en": "<h3>Summary</h3><small>' + (S.periodo === 'set' ? 'September through Tuesday the 29th' : 'All of August') + ' · sales net of credit notes</small>"
+  },
+  {
+   "es": "<small>Venta neta</small>",
+   "pt": "<small>Venda líquida</small>",
+   "en": "<small>Net sales</small>"
+  },
+  {
+   "es": "pct + ' % del objetivo de ' + pesos(k.o)",
+   "pt": "pct + '% da meta de ' + pesos(k.o)",
+   "en": "pct + '% of the ' + pesos(k.o) + ' target'"
+  },
+  {
+   "es": "<small>Contra el año pasado</small><b>' + (ly >= 0 ? '+' : '−') + Math.abs(ly) + ' %</b>",
+   "pt": "<small>Contra o ano passado</small><b>' + (ly >= 0 ? '+' : '−') + Math.abs(ly) + '%</b>",
+   "en": "<small>Vs. last year</small><b>' + (ly >= 0 ? '+' : '−') + Math.abs(ly) + '%</b>"
+  },
+  {
+   "es": "pesos(k.l) + ' en ' + (S.periodo === 'set' ? 'setiembre' : 'agosto') + ' 2025</em>",
+   "pt": "pesos(k.l) + ' em ' + (S.periodo === 'set' ? 'setembro' : 'agosto') + ' de 2025</em>",
+   "en": "pesos(k.l) + ' in ' + (S.periodo === 'set' ? 'September' : 'August') + ' 2025</em>"
+  },
+  {
+   "es": "<small>Clientes activos</small><b>' + k.act + '</b><em>' + k.nue + ' nuevos este mes</em>",
+   "pt": "<small>Clientes ativos</small><b>' + k.act + '</b><em>' + k.nue + ' novos este mês</em>",
+   "en": "<small>Active customers</small><b>' + k.act + '</b><em>' + k.nue + ' new this month</em>"
+  },
+  {
+   "es": "<small>A cobrar</small><b>' + pesos(k.cob) + '</b><em class=\"mal\">' + pesos(k.venc) + ' vencido</em>",
+   "pt": "<small>A receber</small><b>' + pesos(k.cob) + '</b><em class=\"mal\">' + pesos(k.venc) + ' vencido</em>",
+   "en": "<small>Receivables</small><b>' + pesos(k.cob) + '</b><em class=\"mal\">' + pesos(k.venc) + ' overdue</em>"
+  },
+  {
+   "es": "<b>Venta por vendedor</b><span>contra su objetivo</span>",
+   "pt": "<b>Venda por vendedor</b><span>contra a meta</span>",
+   "en": "<b>Sales by rep</b><span>vs. target</span>"
+  },
+  {
+   "es": "Math.round(val / ob * 100) + ' %</b></div>'",
+   "pt": "Math.round(val / ob * 100) + '%</b></div>'",
+   "en": "Math.round(val / ob * 100) + '%</b></div>'"
+  },
+  {
+   "es": "></i>Vendido</span>",
+   "pt": "></i>Vendido</span>",
+   "en": "></i>Sold</span>"
+  },
+  {
+   "es": "></i>Objetivo</span>",
+   "pt": "></i>Meta</span>",
+   "en": "></i>Target</span>"
+  },
+  {
+   "es": "<b>Oportunidades del mes</b><span>lo que salió de Libreta</span>",
+   "pt": "<b>Oportunidades do mês</b><span>o que saiu do Libreta</span>",
+   "en": "<b>Opportunities this month</b><span>what came from Libreta</span>"
+  },
+  {
+   "es": "<div><span>Ofrecidas</span><b>' + k.ofr + '</b></div><div><span>Se vendieron</span><b>' + k.conc + '</b></div><div><span>Venta que sumaron</span>",
+   "pt": "<div><span>Oferecidas</span><b>' + k.ofr + '</b></div><div><span>Vendidas</span><b>' + k.conc + '</b></div><div><span>Venda que somaram</span>",
+   "en": "<div><span>Offered</span><b>' + k.ofr + '</b></div><div><span>Sold</span><b>' + k.conc + '</b></div><div><span>Sales they added</span>"
+  },
+  {
+   "es": "<div><span>Clientes en riesgo</span>",
+   "pt": "<div><span>Clientes em risco</span>",
+   "en": "<div><span>At-risk customers</span>"
+  },
+  {
+   "es": "<div><span>Pedidos de hoy</span>",
+   "pt": "<div><span>Pedidos de hoje</span>",
+   "en": "<div><span>Today’s orders</span>"
+  },
+  {
+   "es": "<h3>Vendedores</h3><small>' + (S.periodo === 'set' ? 'Setiembre al martes 29' : 'Agosto completo') + '</small>",
+   "pt": "<h3>Vendedores</h3><small>' + (S.periodo === 'set' ? 'Setembro até terça, 29' : 'Agosto completo') + '</small>",
+   "en": "<h3>Sales reps</h3><small>' + (S.periodo === 'set' ? 'September through Tuesday the 29th' : 'All of August') + '</small>"
+  },
+  {
+   "es": "<span>Vendedor</span><span class=\"n\">Venta</span><span class=\"n\">Objetivo</span><span class=\"n\">Visitas</span><span class=\"n\">Oportunidades</span>",
+   "pt": "<span>Vendedor</span><span class=\"n\">Venda</span><span class=\"n\">Meta</span><span class=\"n\">Visitas</span><span class=\"n\">Oportunidades</span>",
+   "en": "<span>Sales rep</span><span class=\"n\">Sales</span><span class=\"n\">Target</span><span class=\"n\">Visits</span><span class=\"n\">Opportunities</span>"
+  },
+  {
+   "es": "v.zona + ' · comisión ' + Math.round(v.com * 100) + ' %</small>",
+   "pt": "v.zona + ' · comissão ' + Math.round(v.com * 100) + '%</small>",
+   "en": "v.zona + ' · commission ' + Math.round(v.com * 100) + '%</small>"
+  },
+  {
+   "es": "pct + ' %</span><span class=\"n\">' + v.vis[0] + ' de ' + v.vis[1] + '</span><span class=\"n\">' + conc + ' de ' + ofr + '</span>",
+   "pt": "pct + '%</span><span class=\"n\">' + v.vis[0] + ' de ' + v.vis[1] + '</span><span class=\"n\">' + conc + ' de ' + ofr + '</span>",
+   "en": "pct + '%</span><span class=\"n\">' + v.vis[0] + ' of ' + v.vis[1] + '</span><span class=\"n\">' + conc + ' of ' + ofr + '</span>"
+  },
+  {
+   "es": "Oportunidades: cuántas se vendieron de las que el vendedor ofreció. Uso de la app: los tres la abrieron todos los días hábiles del mes.",
+   "pt": "Oportunidades: quantas foram vendidas das que o vendedor ofereceu. Uso do app: os três abriram todos os dias úteis do mês.",
+   "en": "Opportunities: how many sold out of those the rep offered. App usage: all three opened it every business day this month."
+  },
+  {
+   "es": "<h3>Clientes en riesgo</h3><small>14 clientes · ' + pesos(186000) + ' por mes que se pueden perder. Estos son los que más pesan.</small>",
+   "pt": "<h3>Clientes em risco</h3><small>14 clientes · ' + pesos(186000) + ' por mês que podem ser perdidos. Estes são os que mais pesam.</small>",
+   "en": "<h3>At-risk customers</h3><small>14 customers · ' + pesos(186000) + ' a month that could be lost. These matter most.</small>"
+  },
+  {
+   "es": "<span>Cliente</span><span>Vendedor</span><span class=\"n\">Sin comprar</span>",
+   "pt": "<span>Cliente</span><span>Vendedor</span><span class=\"n\">Sem comprar</span>",
+   "en": "<span>Customer</span><span>Sales rep</span><span class=\"n\">Without buying</span>"
+  },
+  {
+   "es": "r.zona + ' · antes ' + pesos(r.antes) + '/mes</small>",
+   "pt": "r.zona + ' · antes ' + pesos(r.antes) + '/mês</small>",
+   "en": "r.zona + ' · used to buy ' + pesos(r.antes) + '/mo</small>"
+  },
+  {
+   "es": "r.dias + ' días</span>",
+   "pt": "r.dias + ' dias</span>",
+   "en": "r.dias + ' days</span>"
+  },
+  {
+   "es": ">Tarea enviada</span>",
+   "pt": ">Tarefa enviada</span>",
+   "en": ">Task sent</span>"
+  },
+  {
+   "es": ">Pedir visita</button>",
+   "pt": ">Pedir visita</button>",
+   "en": ">Request visit</button>"
+  },
+  {
+   "es": "<h3>Pedidos de hoy</h3><small>' + PEDIDOS.length + ' pedidos · ' + pesos(tot) + ' sin IVA. Los que carga el equipo en la app pasan solos a Doria.</small>",
+   "pt": "<h3>Pedidos de hoje</h3><small>' + PEDIDOS.length + ' pedidos · ' + pesos(tot) + ' sem IVA. Os que a equipe lança no app passam sozinhos para o Doria.</small>",
+   "en": "<h3>Today’s orders</h3><small>' + PEDIDOS.length + ' orders · ' + pesos(tot) + ' excl. VAT. Orders the team enters in the app flow into Doria automatically.</small>"
+  },
+  {
+   "es": "<span>N.º</span><span>Cliente</span><span>Vendedor</span><span class=\"n\">Importe</span><span style=\"text-align:right\">Estado</span>",
+   "pt": "<span>Nº</span><span>Cliente</span><span>Vendedor</span><span class=\"n\">Valor</span><span style=\"text-align:right\">Status</span>",
+   "en": "<span>No.</span><span>Customer</span><span>Sales rep</span><span class=\"n\">Amount</span><span style=\"text-align:right\">Status</span>"
+  },
+  {
+   "es": "(p.demo ? ' · cargado en esta demo' : '')",
+   "pt": "(p.demo ? ' · lançado nesta demo' : '')",
+   "en": "(p.demo ? ' · entered in this demo' : '')"
+  },
+  {
+   "es": "Cargá un pedido en el celular de arriba (el botón + del medio) y va a aparecer acá.",
+   "pt": "Lance um pedido no celular acima (o botão + do meio) e ele vai aparecer aqui.",
+   "en": "Enter an order on the phone above (the + button in the middle) and it will show up here."
+  },
+  {
+   "es": "<h3>Solicitudes</h3><small>' + (pend ? pend + ' esperan tu respuesta' : 'No hay nada esperando tu respuesta') + '. Al aprobar o rechazar, el vendedor recibe el aviso en la app.</small>",
+   "pt": "<h3>Solicitações</h3><small>' + (pend ? pend + ' aguardam sua resposta' : 'Não há nada aguardando sua resposta') + '. Ao aprovar ou recusar, o vendedor recebe o aviso no app.</small>",
+   "en": "<h3>Requests</h3><small>' + (pend ? pend + ' waiting for your answer' : 'Nothing waiting for your answer') + '. When you approve or reject, the rep gets notified in the app.</small>"
+  },
+  {
+   "es": "'Calle'",
+   "pt": "'Rua'",
+   "en": "'Field'"
+  },
+  {
+   "es": "'Equipo'",
+   "pt": "'Equipe'",
+   "en": "'Team'"
+  },
+  {
+   "es": "'Fuerza de ventas'",
+   "pt": "'Força de vendas'",
+   "en": "'Scale'"
+  },
+  {
+   "es": "$('r-nota').textContent = 'Plan ' + pl.n + ' (USD ' + pl.p + ' por vendedor), dólar a $U ' + TC + ' y margen bruto de ' + Math.round(MARGEN * 100) + ' %. Con estos supuestos, el margen de la venta extra cubre ' + fmt1.format(veces) + ' veces lo que cuesta Libreta. No incluye la instalación.';",
+   "pt": "$('r-nota').textContent = 'Plano ' + pl.n + ' (USD ' + pl.p + ' por vendedor), dólar a $U ' + TC + ' e margem bruta de ' + Math.round(MARGEN * 100) + '%. Com essas premissas, a margem da venda extra cobre ' + fmt1.format(veces) + ' vezes o custo do Libreta. Não inclui a instalação.';",
+   "en": "$('r-nota').textContent = pl.n + ' plan (USD ' + pl.p + ' per rep), USD 1 = $U ' + TC + ' and a ' + Math.round(MARGEN * 100) + '% gross margin. With these assumptions, the margin on extra sales covers ' + fmt1.format(veces) + ' times what Libreta costs. Setup not included.';"
+  },
+  {
+   "es": "' por vendedor al año'",
+   "pt": "' por vendedor por ano'",
+   "en": "' per rep per year'"
+  },
+  {
+   "es": "return 'Demo de Libreta. Vendedores en la calle: ' + d.vendedores.toLowerCase() + '.'",
+   "pt": "return 'Demo do Libreta. Vendedores externos: ' + d.vendedores.toLowerCase() + '.'",
+   "en": "return 'Libreta demo. Field sales reps: ' + d.vendedores.toLowerCase() + '.'"
+  },
+  {
+   "es": "' Origen: libreta.dev.'",
+   "pt": "' Origem: libreta.dev/pt.'",
+   "en": "' Source: libreta.dev/en.'"
+  },
+  {
+   "es": "'De 1 a 5'",
+   "pt": "'De 1 a 5'",
+   "en": "'1 to 5'"
+  },
+  {
+   "es": "'De 6 a 20'",
+   "pt": "'De 6 a 20'",
+   "en": "'6 to 20'"
+  },
+  {
+   "es": "'21 o más'",
+   "pt": "'21 ou mais'",
+   "en": "'21 or more'"
+  },
+  {
+   "es": "$('gracias-tit').textContent = 'Listo, quedó agendada.';",
+   "pt": "$('gracias-tit').textContent = 'Pronto, está agendada.';",
+   "en": "$('gracias-tit').textContent = 'Done, you’re booked.';"
+  },
+  {
+   "es": "$('gracias-txt').textContent = 'La confirmación te llega por mail, con el link de la reunión. Nos vemos ahí.';",
+   "pt": "$('gracias-txt').textContent = 'A confirmação chega por e-mail, com o link da reunião. Até lá!';",
+   "en": "$('gracias-txt').textContent = 'You’ll get a confirmation email with the meeting link. See you there.';"
+  },
+  {
+   "es": "abrir ? 'Cerrar el menú' : 'Abrir el menú'",
+   "pt": "abrir ? 'Fechar o menu' : 'Abrir o menu'",
+   "en": "abrir ? 'Close menu' : 'Open menu'"
+  },
+  {
+   "es": "var ASV_SUG = ['¿Cuánto sale para mi equipo?', '¿Funciona con mi sistema?', '¿Cómo sabe qué ofrecerle a cada cliente?', 'Quiero agendar una demo'];",
+   "pt": "var ASV_SUG = ['Quanto custa para a minha equipe?', 'Funciona com o meu sistema?', 'Como ele sabe o que oferecer a cada cliente?', 'Quero agendar uma demo'];",
+   "en": "var ASV_SUG = ['How much is it for my team?', 'Does it work with my system?', 'How does it know what to offer each customer?', 'I’d like to book a demo'];"
+  },
+  {
+   "es": "var ASV_HOLA = 'Hola, soy el asistente de Libreta. Preguntame lo que quieras: cómo funciona, si anda con tu sistema o cuánto sale para tu equipo.';",
+   "pt": "var ASV_HOLA = 'Olá, sou o assistente do Libreta. Pergunte o que quiser: como funciona, se funciona com o seu sistema ou quanto custa para a sua equipe.';",
+   "en": "var ASV_HOLA = 'Hi, I’m the Libreta assistant. Ask me anything: how it works, whether it runs on your system or how much it costs for your team.';"
+  },
+  {
+   "es": "d.setAttribute('aria-label', 'Escribiendo');",
+   "pt": "d.setAttribute('aria-label', 'Digitando');",
+   "en": "d.setAttribute('aria-label', 'Typing');"
+  },
+  {
+   "es": "box.innerHTML = '<button type=\"button\" data-asv=\"agenda\">Elegir día y hora</button><button type=\"button\" class=\"s\" data-asv=\"probar\">Probar la app</button>';",
+   "pt": "box.innerHTML = '<button type=\"button\" data-asv=\"agenda\">Escolher dia e horário</button><button type=\"button\" class=\"s\" data-asv=\"probar\">Testar o app</button>';",
+   "en": "box.innerHTML = '<button type=\"button\" data-asv=\"agenda\">Pick a day and time</button><button type=\"button\" class=\"s\" data-asv=\"probar\">Try the app</button>';"
+  },
+  {
+   "es": "box.innerHTML = '<button type=\"button\" data-asv=\"probar\">Probar la app</button><button type=\"button\" class=\"s\" data-asv=\"agenda\">Agendar la demo</button>';",
+   "pt": "box.innerHTML = '<button type=\"button\" data-asv=\"probar\">Testar o app</button><button type=\"button\" class=\"s\" data-asv=\"agenda\">Agendar a demo</button>';",
+   "en": "box.innerHTML = '<button type=\"button\" data-asv=\"probar\">Try the app</button><button type=\"button\" class=\"s\" data-asv=\"agenda\">Book the demo</button>';"
+  },
+  {
+   "es": "if (/precio|cuanto|sale|cuesta|costo|plan|pagar|mensual/.test(q)){",
+   "pt": "if (/precio|cuanto|\\bsale\\b|cuesta|costo|plan|pagar|mensual|preco|custa|custo|valor|quanto/.test(q)){",
+   "en": "if (/precio|cuanto|\\bsale\\b|cuesta|costo|plan|pagar|mensual|price|pricing|cost|how much|monthly|fee/.test(q)){"
+  },
+  {
+   "es": "return 'Con ' + n + ' vendedores te corresponde el plan ' + p[0] + ': ' + n + ' por USD ' + p[1] + ', USD ' + fmt.format(n * p[1]) + ' por mes más IVA. La instalación con integración a tu sistema es USD 1.950, por única vez. Si querés, lo vemos con tus datos en una demo de 30 minutos.\\n[[AGENDA]]';",
+   "pt": "return 'Com ' + n + ' vendedores, o seu plano é o ' + p[0] + ': ' + n + ' × USD ' + p[1] + ', USD ' + fmt.format(n * p[1]) + ' por mês mais impostos. A instalação com integração ao seu sistema custa USD 1.950, uma única vez. Se quiser, vemos com os seus dados em uma demo de 30 minutos.\\n[[AGENDA]]';",
+   "en": "return 'With ' + n + ' reps, you’d be on the ' + p[0] + ' plan: ' + n + ' × USD ' + p[1] + ', USD ' + fmt.format(n * p[1]) + ' per month plus taxes. Setup with integration to your system is a one-time USD 1,950. If you’d like, we can go over it with your data in a 30-minute demo.\\n[[AGENDA]]';"
+  },
+  {
+   "es": "return 'Se paga por vendedor activo por mes, más IVA: USD 69 de 1 a 5 vendedores, USD 59 de 6 a 20 y USD 49 desde 21. Los supervisores no se cobran. La instalación es un pago único: USD 1.950 con integración completa. ¿Cuántos vendedores tenés en la calle?';",
+   "pt": "return 'O preço é por vendedor ativo por mês, mais impostos: USD 69 de 1 a 5 vendedores, USD 59 de 6 a 20 e USD 49 a partir de 21. Supervisores não pagam. A instalação é um pagamento único: USD 1.950 com integração completa. Quantos vendedores externos você tem?';",
+   "en": "return 'Pricing is per active rep per month, plus taxes: USD 69 for 1 to 5 reps, USD 59 for 6 to 20 and USD 49 from 21 up. Supervisors are free. Setup is a one-time fee: USD 1,950 with full integration. How many field reps do you have?';"
+  },
+  {
+   "es": "if (/sistema|erp|doria|zureo|odoo|sap|memory|gns|excel|integr|conect/.test(q)) return 'Tiene conexión directa con Doria. Con Zureo, Odoo, SAP Business One y otros sistemas armamos el conector en la instalación. Si usás otro, lo revisamos en la demo.\\n[[AGENDA]]';",
+   "pt": "if (/sistema|erp|doria|zureo|odoo|sap|memory|gns|excel|integr|conect/.test(q)) return 'Tem conexão direta com o Doria. Com Zureo, Odoo, SAP Business One e outros sistemas, montamos o conector na instalação. Se você usa outro, vemos na demo.\\n[[AGENDA]]';",
+   "en": "if (/sistema|erp|doria|zureo|odoo|sap|memory|gns|excel|integr|conect|system|connect|software/.test(q)) return 'It connects directly to Doria. For Zureo, Odoo, SAP Business One and other systems, we build the connector during setup. If you use something else, we’ll look at it in the demo.\\n[[AGENDA]]';"
+  },
+  {
+   "es": "if (/ofrec|oportunidad|sugier|como sabe|recompra|cruzada/.test(q)) return 'Mira lo que compra cada cliente y lo compara con lo que compran los parecidos y con lo que compraba antes. Así salen cuatro motivos: recompra, venta cruzada, reactivar y cobrar, cada uno con cuánto vale por mes. Probalo en el celular de arriba.\\n[[PROBAR]]';",
+   "pt": "if (/ofrec|oportunidad|sugier|como sabe|recompra|cruzada|oferec|sugere|sabe o que/.test(q)) return 'Ele olha o que cada cliente compra e compara com o que os clientes parecidos compram e com o que ele comprava antes. Daí saem quatro motivos: recompra, venda cruzada, reativar e cobrar, cada um com quanto vale por mês. Teste no celular acima.\\n[[PROBAR]]';",
+   "en": "if (/ofrec|oportunidad|sugier|como sabe|recompra|cruzada|offer|opportunit|suggest|know what|reorder|cross/.test(q)) return 'It looks at what each customer buys and compares it with what similar customers buy and with what they used to buy. That gives four reasons: reorder, cross-sell, win back and collect, each with its monthly value. Try it on the phone above.\\n[[PROBAR]]';"
+  },
+  {
+   "es": "if (/demo|agend|reuni|llamad|contrat|empezar|arranc/.test(q)) return 'Perfecto. Completás nombre, empresa y mail, y elegís día y hora: son 30 minutos, en tu empresa o por videollamada, y te mostramos Libreta con datos tuyos.\\n[[AGENDA]]';",
+   "pt": "if (/demo|agend|reuni|llamad|contrat|empezar|arranc|ligac|comecar/.test(q)) return 'Perfeito. Você preenche nome, empresa e e-mail e escolhe dia e horário: são 30 minutos, na sua empresa ou por videochamada, e mostramos o Libreta com os seus dados.\\n[[AGENDA]]';",
+   "en": "if (/demo|agend|reuni|llamad|contrat|empezar|arranc|book|schedul|meeting|call|get started|sign up/.test(q)) return 'Great. Fill in your name, company and email, then pick a day and time: it’s 30 minutes, at your office or by video call, and we’ll show you Libreta with your own data.\\n[[AGENDA]]';"
+  },
+  {
+   "es": "return 'Ahora no puedo responderte con detalle. Lo vemos en una demo de 30 minutos, o mientras tanto probá la app en el celular de arriba.\\n[[AGENDA]]';",
+   "pt": "return 'Agora não consigo responder em detalhe. Vemos isso em uma demo de 30 minutos ou, enquanto isso, teste o app no celular acima.\\n[[AGENDA]]';",
+   "en": "return 'I can’t give you a detailed answer right now. We can cover it in a 30-minute demo, or in the meantime try the app on the phone above.\\n[[AGENDA]]';"
+  },
+  {
+   "es": "/(\\d{1,4})\\s*(vendedor|preventist|persona|tipo)/i",
+   "pt": "/(\\d{1,4})\\s*(vendedor|preventist|persona|tipo|pessoa)/i",
+   "en": "/(\\d{1,4})\\s*(vendedor|preventist|persona|tipo|rep|salespe|people|person)/i"
+  },
+  {
+   "es": "notificar('Laura', 'Tu pedido ' + d.n + ' ya está en el sistema'",
+   "pt": "notificar('Laura', 'Seu pedido ' + d.n + ' já está no sistema'",
+   "en": "notificar('Laura', 'Your order ' + d.n + ' is now in the system'"
+  },
+  {
+   "es": "notificar('Laura', 'Anulé el pedido ' + d.n",
+   "pt": "notificar('Laura', 'Cancelei o pedido ' + d.n",
+   "en": "notificar('Laura', 'I canceled order ' + d.n"
+  },
+  {
+   "es": "String(of.cond || 'Precio especial')",
+   "pt": "String(of.cond || 'Preço especial')",
+   "en": "String(of.cond || 'Special price')"
+  },
+  {
+   "es": "notificar('Laura te mandó una oferta',",
+   "pt": "notificar('A Laura enviou uma oferta',",
+   "en": "notificar('Laura sent you a promotion',"
+  },
+  {
+   "es": "cambio = 'Tu objetivo de setiembre ahora es ' + pesos(MARIA.obj.set) + '.';",
+   "pt": "cambio = 'Sua meta de setembro agora é ' + pesos(MARIA.obj.set) + '.';",
+   "en": "cambio = 'Your September target is now ' + pesos(MARIA.obj.set) + '.';"
+  },
+  {
+   "es": "cambio = 'Tu comisión ahora es del ' + pctCom() + ' de lo vendido.';",
+   "pt": "cambio = 'Sua comissão agora é de ' + pctCom() + ' das vendas.';",
+   "en": "cambio = 'Your commission is now ' + pctCom() + ' of sales.';"
+  },
+  {
+   "es": "String(d.txt || 'Nueva tarea')",
+   "pt": "String(d.txt || 'Nova tarefa')",
+   "en": "String(d.txt || 'New task')"
+  },
+  {
+   "es": "s: 'Te la dejó Laura desde el tablero'",
+   "pt": "s: 'A Laura deixou pelo painel'",
+   "en": "s: 'Laura left it from the dashboard'"
+  },
+  {
+   "es": "notificar('Laura te dejó una tarea', txt + '.');",
+   "pt": "notificar('A Laura deixou uma tarefa', txt + '.');",
+   "en": "notificar('Laura left you a task', txt + '.');"
+  },
+  {
+   "es": "var ASE_SUG = ['¿Qué les ofrezco a mis clientes de hoy?', '¿Cómo vengo contra mi objetivo del mes?', '¿Qué clientes de mi cartera están en riesgo?', '¿Quién me debe?', 'Armame el pedido de lo de siempre para Sarandí', 'Marcá hecha la visita a La Familia'];",
+   "pt": "var ASE_SUG = ['O que ofereço aos meus clientes de hoje?', 'Como estou em relação à meta do mês?', 'Quais clientes da minha carteira estão em risco?', 'Quem me deve?', 'Monte o pedido de sempre para Sarandí', 'Marque como feita a visita à La Familia'];",
+   "en": "var ASE_SUG = ['What should I offer my customers today?', 'How am I doing against my monthly target?', 'Which of my customers are at risk?', 'Who owes me money?', 'Build the usual order for Sarandí', 'Mark the La Familia visit as done'];"
+  },
+  {
+   "es": "aseMsg('ia', 'Hola, María. Tengo tu ruta, tus clientes, tus oportunidades y tu objetivo al día. Preguntame lo que necesites o pedime algo: te lo propongo y lo hago cuando confirmes.');",
+   "pt": "aseMsg('ia', 'Olá, María. Estou com a sua rota, seus clientes, suas oportunidades e sua meta em dia. Pergunte o que precisar ou me peça algo: eu proponho e faço quando você confirmar.');",
+   "en": "aseMsg('ia', 'Hi, María. I have your route, customers, opportunities and target up to date. Ask me anything or ask me to do something: I’ll propose it and do it once you confirm.');"
+  },
+  {
+   "es": "if (/(arm|carg|hac|prepar).*pedido|pedido (de|para)|lo de siempre/.test(t)){",
+   "pt": "if (/(arm|carg|hac|prepar|mont|lanc|faz).*pedido|pedido (de|para)|lo de siempre|de sempre/.test(t)){",
+   "en": "if (/(arm|carg|hac|prepar).*pedido|pedido (de|para)|lo de siempre|(build|make|prepar|creat|put together|load|start).*order|the usual|usual order/.test(t)){"
+  },
+  {
+   "es": "r.txt = '¿Para qué cliente? Los de tu ruta de hoy son: '",
+   "pt": "r.txt = 'Para qual cliente? Os da sua rota de hoje são: '",
+   "en": "r.txt = 'Which customer? The ones on today’s route are: '"
+  },
+  {
+   "es": "'Armame el pedido de lo de siempre para '",
+   "pt": "'Monte o pedido de sempre para '",
+   "en": "'Build the usual order for '"
+  },
+  {
+   "es": "'</b> todavía no tiene compras para armar «lo de siempre». Abrí el pedido y buscá los productos en la lista.'",
+   "pt": "'</b> ainda não tem compras para montar “o de sempre”. Abra o pedido e busque os produtos na tabela.'",
+   "en": "'</b> doesn’t have purchase history for “the usual” yet. Open the order and find the products in the list.'"
+  },
+  {
+   "es": "r.txt = 'Esto es lo que suele llevar <b>' + esc(CLI[id].nom) + '</b>, con la cantidad de siempre:<ul>'",
+   "pt": "r.txt = 'Isto é o que <b>' + esc(CLI[id].nom) + '</b> costuma levar, na quantidade de sempre:<ul>'",
+   "en": "r.txt = 'Here’s what <b>' + esc(CLI[id].nom) + '</b> usually buys, in the usual quantities:<ul>'"
+  },
+  {
+   "es": "'</ul>Total ' + pesos(tot) + ' sin IVA.'",
+   "pt": "'</ul>Total ' + pesos(tot) + ' sem IVA.'",
+   "en": "'</ul>Total ' + pesos(tot) + ' excl. VAT.'"
+  },
+  {
+   "es": "r.acc = {txt: 'Abrir el pedido de ' + CLI[id].nom + ' con estos ' + ks.length + ' productos para que lo revises con el cliente.'",
+   "pt": "r.acc = {txt: 'Abrir o pedido de ' + CLI[id].nom + ' com estes ' + ks.length + ' produtos para você revisar com o cliente.'",
+   "en": "r.acc = {txt: 'Open an order for ' + CLI[id].nom + ' with these ' + ks.length + ' products so you can review it with the customer.'"
+  },
+  {
+   "es": "return 'Listo: el pedido está abierto en «Revisá el pedido». Ajustá cantidades y mandalo.';",
+   "pt": "return 'Pronto: o pedido está aberto em “Revise o pedido”. Ajuste as quantidades e envie.';",
+   "en": "return 'Done: the order is open in “Review the order.” Adjust quantities and send it.';"
+  },
+  {
+   "es": "if (/(marc|pon|deja).*(hecha|visit)|visita hecha/.test(t)){",
+   "pt": "if (/(marc|marq|pon|deja|coloq|deix).*(hecha|visit|feita)|visita hecha|visita feita/.test(t)){",
+   "en": "if (/(marc|pon|deja).*(hecha|visit)|visita hecha|(mark|log|check off).*(done|visit)|visit done|visited/.test(t)){"
+  },
+  {
+   "es": "r.txt = '¿Qué visita marco? En tu ruta tenés: '",
+   "pt": "r.txt = 'Qual visita eu marco? Na sua rota você tem: '",
+   "en": "r.txt = 'Which visit should I mark? On your route you have: '"
+  },
+  {
+   "es": "r.txt = 'La visita a <b>' + esc(CLI[id].nom) + '</b> ya estaba marcada como hecha.';",
+   "pt": "r.txt = 'A visita a <b>' + esc(CLI[id].nom) + '</b> já estava marcada como feita.';",
+   "en": "r.txt = 'The visit to <b>' + esc(CLI[id].nom) + '</b> was already marked done.';"
+  },
+  {
+   "es": "r.txt = 'Te propongo marcar la visita a <b>' + esc(CLI[id].nom) + '</b> como hecha, a las ' + hora() + '.';",
+   "pt": "r.txt = 'Proponho marcar a visita a <b>' + esc(CLI[id].nom) + '</b> como feita, às ' + hora() + '.';",
+   "en": "r.txt = 'I can mark the visit to <b>' + esc(CLI[id].nom) + '</b> as done, at ' + hora() + '.';"
+  },
+  {
+   "es": "r.acc = {txt: 'Marcar hecha la visita a ' + CLI[id].nom + '.'",
+   "pt": "r.acc = {txt: 'Marcar como feita a visita a ' + CLI[id].nom + '.'",
+   "en": "r.acc = {txt: 'Mark the visit to ' + CLI[id].nom + ' as done.'"
+  },
+  {
+   "es": "return 'Hecho. ' + CLI[id].nom + ' quedó como visitada y Laura lo ve en el panel.';",
+   "pt": "return 'Feito. ' + CLI[id].nom + ' ficou como visitada e a Laura vê no painel.';",
+   "en": "return 'Done. ' + CLI[id].nom + ' is marked visited and Laura sees it in the dashboard.';"
+  },
+  {
+   "es": "if (/anot|nota/.test(t) && id){",
+   "pt": "if (/anot|nota/.test(t) && id){",
+   "en": "if (/anot|nota|note|jot|write down/.test(t) && id){"
+  },
+  {
+   "es": "r.txt = 'Decime qué anoto, así: «Anotá en ' + esc(CORTO[id] || CLI[id].nom) + ': pagan solo con transferencia».';",
+   "pt": "r.txt = 'Diga o que eu anoto, assim: “Anote em ' + esc(CORTO[id] || CLI[id].nom) + ': pagam só com transferência”.';",
+   "en": "r.txt = 'Tell me what to note, like this: “Note for ' + esc(CORTO[id] || CLI[id].nom) + ': they only pay by bank transfer.”';"
+  },
+  {
+   "es": "r.txt = 'Anoto en la ficha de <b>' + esc(CLI[id].nom) + '</b>: «' + esc(cuerpo) + '».';",
+   "pt": "r.txt = 'Vou anotar na ficha de <b>' + esc(CLI[id].nom) + '</b>: “' + esc(cuerpo) + '”.';",
+   "en": "r.txt = 'I’ll add this to <b>' + esc(CLI[id].nom) + '</b>’s profile: “' + esc(cuerpo) + '.”';"
+  },
+  {
+   "es": "r.acc = {txt: 'Guardar la nota en la ficha de ' + CLI[id].nom + '.'",
+   "pt": "r.acc = {txt: 'Salvar a nota na ficha de ' + CLI[id].nom + '.'",
+   "en": "r.acc = {txt: 'Save the note to ' + CLI[id].nom + '’s profile.'"
+  },
+  {
+   "es": "return 'Nota guardada. La ves en la ficha, en «Notas».';",
+   "pt": "return 'Nota salva. Você vê na ficha, em “Notas”.';",
+   "en": "return 'Note saved. You’ll find it in the profile, under “Notes.”';"
+  },
+  {
+   "es": "if (/ofre|vend(o|er)|sugeri|que le (llevo|dejo)/.test(t)){",
+   "pt": "if (/ofre|vend(o|er)|sugeri|que le (llevo|dejo)|ofere|suger|o que (levo|deixo)/.test(t)){",
+   "en": "if (/ofre|vend(o|er)|sugeri|que le (llevo|dejo)|offer|sell|suggest|pitch|what should i (bring|take)/.test(t)){"
+  },
+  {
+   "es": "'</b> no tiene oportunidades abiertas hoy. Lleva lo de siempre: '",
+   "pt": "'</b> não tem oportunidades abertas hoje. Leva o de sempre: '",
+   "en": "'</b> has no open opportunities today. They buy the usual: '"
+  },
+  {
+   "es": "'Ya ofreciste todo lo de tu ruta de hoy. Mirá el resto en Oportunidades.'",
+   "pt": "'Você já ofereceu tudo da sua rota de hoje. Veja o resto em Oportunidades.'",
+   "en": "'You’ve offered everything on today’s route. See the rest under Opportunities.'"
+  },
+  {
+   "es": "(id ? 'Para <b>' + esc(CLI[id].nom) + '</b>:' : 'En tu ruta de hoy, por plata en juego:')",
+   "pt": "(id ? 'Para <b>' + esc(CLI[id].nom) + '</b>:' : 'Na sua rota de hoje, por valor em jogo:')",
+   "en": "(id ? 'For <b>' + esc(CLI[id].nom) + '</b>:' : 'On today’s route, by money at stake:')"
+  },
+  {
+   "es": "(o.prods ? ' Llevá: ' + esc(o.prods.join(', ')) + '.' : '')",
+   "pt": "(o.prods ? ' Leve: ' + esc(o.prods.join(', ')) + '.' : '')",
+   "en": "(o.prods ? ' Bring: ' + esc(o.prods.join(', ')) + '.' : '')"
+  },
+  {
+   "es": "'¿Cómo vengo contra mi objetivo del mes?'",
+   "pt": "'Como estou em relação à meta do mês?'",
+   "en": "'How am I doing against my monthly target?'"
+  },
+  {
+   "es": "'¿Qué les ofrezco a mis clientes de hoy?'",
+   "pt": "'O que ofereço aos meus clientes de hoje?'",
+   "en": "'What should I offer my customers today?'"
+  },
+  {
+   "es": "'¿Qué clientes de mi cartera están en riesgo?'",
+   "pt": "'Quais clientes da minha carteira estão em risco?'",
+   "en": "'Which of my customers are at risk?'"
+  },
+  {
+   "es": "if (/objetivo|falta|comision|vengo|progreso|meta/.test(t)){",
+   "pt": "if (/objetivo|falta|comision|vengo|progreso|meta|comissao|como estou|progresso/.test(t)){",
+   "en": "if (/objetivo|falta|comision|vengo|progreso|meta|target|goal|commission|how am i doing|progress|quota/.test(t)){"
+  },
+  {
+   "es": "r.txt = 'Vas <b>' + pesos(v) + '</b> de ' + pesos(ob) + ' (<b>' + pct + ' %</b>). ' + (falta ? 'Te faltan ' + pesos(falta) + ' y quedan 2 días hábiles: unos <b>' + pesos(falta / 2) + ' por día</b>.' : 'Ya cumpliste el objetivo.') + ' Tu comisión va en ' + pesos(v * MARIA.com) + '.';",
+   "pt": "r.txt = 'Você está em <b>' + pesos(v) + '</b> de ' + pesos(ob) + ' (<b>' + pct + '%</b>). ' + (falta ? 'Faltam ' + pesos(falta) + ' e restam 2 dias úteis: uns <b>' + pesos(falta / 2) + ' por dia</b>.' : 'Você já bateu a meta.') + ' Sua comissão está em ' + pesos(v * MARIA.com) + '.';",
+   "en": "r.txt = 'You’re at <b>' + pesos(v) + '</b> of ' + pesos(ob) + ' (<b>' + pct + '%</b>). ' + (falta ? 'You need ' + pesos(falta) + ' more with 2 business days left: about <b>' + pesos(falta / 2) + ' a day</b>.' : 'You’ve hit your target.') + ' Your commission is at ' + pesos(v * MARIA.com) + '.';"
+  },
+  {
+   "es": "' Las oportunidades abiertas suman ≈ ' + pesos(abiertas) + ' por mes: empezá por la de Trattoria, que es la más grande.'",
+   "pt": "' As oportunidades abertas somam ≈ ' + pesos(abiertas) + ' por mês: comece pela da Trattoria, que é a maior.'",
+   "en": "' Open opportunities add up to ≈ ' + pesos(abiertas) + ' a month: start with Trattoria, the biggest one.'"
+  },
+  {
+   "es": "if (/riesgo|dej(o|aron) de comprar|perd|reactiv/.test(t)){",
+   "pt": "if (/riesgo|dej(o|aron) de comprar|perd|reactiv|risco|parou de comprar|pararam|reativ/.test(t)){",
+   "en": "if (/riesgo|dej(o|aron) de comprar|perd|reactiv|risk|stopped buying|lost|losing|win back|churn/.test(t)){"
+  },
+  {
+   "es": "r.txt = 'Tenés ' + rs.length + ' clientes que dejaron de comprar a su ritmo:<ul>'",
+   "pt": "r.txt = 'Você tem ' + rs.length + ' clientes que pararam de comprar no ritmo de sempre:<ul>'",
+   "en": "r.txt = 'You have ' + rs.length + ' customers who stopped buying at their usual pace:<ul>'"
+  },
+  {
+   "es": "'</b>: ' + x.dias + ' días sin comprar; antes ' + pesos(x.antes) + ' por mes.</li>'",
+   "pt": "'</b>: ' + x.dias + ' dias sem comprar; antes ' + pesos(x.antes) + ' por mês.</li>'",
+   "en": "'</b>: ' + x.dias + ' days without buying; used to buy ' + pesos(x.antes) + ' a month.</li>'"
+  },
+  {
+   "es": "'</ul>La Trattoria está en tu ruta de hoy: cambió de dueño, preguntá por Martín.'",
+   "pt": "'</ul>A Trattoria está na sua rota de hoje: mudou de dono, pergunte pelo Martín.'",
+   "en": "'</ul>La Trattoria is on today’s route: new owner, ask for Martín.'"
+  },
+  {
+   "es": "r.sug = ['¿Qué le ofrezco a La Trattoria?', '¿Quién me debe?'];",
+   "pt": "r.sug = ['O que ofereço à La Trattoria?', 'Quem me deve?'];",
+   "en": "r.sug = ['What should I offer La Trattoria?', 'Who owes me money?'];"
+  },
+  {
+   "es": "if (/debe|cobr|saldo|vencid|deuda/.test(t)){",
+   "pt": "if (/debe|cobr|saldo|vencid|deuda|deve|divida/.test(t)){",
+   "en": "if (/debe|cobr|saldo|vencid|deuda|owe|collect|balance|overdue|debt|unpaid/.test(t)){"
+  },
+  {
+   "es": "r.txt = ds.length ? 'Con saldo en tu cartera:<ul>'",
+   "pt": "r.txt = ds.length ? 'Com saldo na sua carteira:<ul>'",
+   "en": "r.txt = ds.length ? 'Customers with a balance:<ul>'"
+  },
+  {
+   "es": "(CLI[k].vencido ? ', <b>vencido</b>' : ', al día')",
+   "pt": "(CLI[k].vencido ? ', <b>vencido</b>' : ', em dia')",
+   "en": "(CLI[k].vencido ? ', <b>overdue</b>' : ', current')"
+  },
+  {
+   "es": "'</ul>Cafetería Buena Vista está en tu ruta: cobrale antes de tomarle el pedido.' : 'Nadie de tu cartera tiene saldo pendiente.'",
+   "pt": "'</ul>A Cafetería Buena Vista está na sua rota: cobre antes de tirar o pedido.' : 'Ninguém da sua carteira tem saldo pendente.'",
+   "en": "'</ul>Cafetería Buena Vista is on your route: collect before you take the order.' : 'No one in your accounts has an outstanding balance.'"
+  },
+  {
+   "es": "if (/visit|semana|a quien|ruta|proxim|hoy/.test(t)){",
+   "pt": "if (/visit|semana|a quien|ruta|proxim|hoy|rota|hoje|quem/.test(t)){",
+   "en": "if (/visit|semana|a quien|ruta|proxim|hoy|route|next|today|week|who do i|stop/.test(t)){"
+  },
+  {
+   "es": "r.txt = 'Tu ruta de hoy: '",
+   "pt": "r.txt = 'Sua rota de hoje: '",
+   "en": "r.txt = 'Today’s route: '"
+  },
+  {
+   "es": "' La próxima es <b>'",
+   "pt": "' A próxima é <b>'",
+   "en": "' Next up is <b>'"
+  },
+  {
+   "es": "(aseOps(RUTA[a].id)[0] ? ': ' + esc(aseOps(RUTA[a].id)[0].acc.toLowerCase()) + ' ella.' : '.')",
+   "pt": "(aseOps(RUTA[a].id)[0] ? ': ' + esc(aseOps(RUTA[a].id)[0].acc.toLowerCase() + ' ' + (CORTO[RUTA[a].id] || CLI[RUTA[a].id].nom)) + '.' : '.')",
+   "en": "(aseOps(RUTA[a].id)[0] ? ': ' + esc(aseOps(RUTA[a].id)[0].acc.toLowerCase() + ' ' + (CORTO[RUTA[a].id] || CLI[RUTA[a].id].nom)) + '.' : '.')"
+  },
+  {
+   "es": "' Fuera de ruta, conviene llamar a Rotisería La Esquina: lleva 34 días sin comprar.'",
+   "pt": "' Fora da rota, vale ligar para a Rotisería La Esquina: está há 34 dias sem comprar.'",
+   "en": "' Off route, it’s worth calling Rotisería La Esquina: 34 days without buying.'"
+  },
+  {
+   "es": "'Marcá hecha la visita a ' + (a >= 0 ? (CORTO[RUTA[a].id] || CLI[RUTA[a].id].nom) : 'Sarandí')]",
+   "pt": "'Marque como feita a visita a ' + (a >= 0 ? (CORTO[RUTA[a].id] || CLI[RUTA[a].id].nom) : 'Sarandí')]",
+   "en": "'Mark the visit to ' + (a >= 0 ? (CORTO[RUTA[a].id] || CLI[RUTA[a].id].nom) : 'Sarandí') + ' as done']"
+  },
+  {
+   "es": "r.txt = '<b>' + esc(c.nom) + '</b> (' + esc(c.zona) + '): compra ' + pesos(c.mes) + ' por mes, la última vez hace ' + c.ult + ' días, suele comprar los ' + c.dia.toLowerCase() + '. Saldo: ' + (c.saldo ? pesos(c.saldo) + (c.vencido ? ' vencido' : '') : 'al día') + '.' + (op ? ' Para ofrecer: ' + esc(op.acc.toLowerCase()) + ' ellos (≈ ' + pesos(op.val) + '/mes).' : '');",
+   "pt": "r.txt = '<b>' + esc(c.nom) + '</b> (' + esc(c.zona) + '): compra ' + pesos(c.mes) + ' por mês, a última vez há ' + c.ult + ' dias, dia de compra: ' + c.dia.toLowerCase() + '. Saldo: ' + (c.saldo ? pesos(c.saldo) + (c.vencido ? ' vencido' : '') : 'em dia') + '.' + (op ? ' Para oferecer: ' + esc(op.acc.toLowerCase() + ' ' + (CORTO[id] || c.nom)) + ' (≈ ' + pesos(op.val) + '/mês).' : '');",
+   "en": "r.txt = '<b>' + esc(c.nom) + '</b> (' + esc(c.zona) + '): buys ' + pesos(c.mes) + ' a month, last purchase ' + c.ult + ' days ago, usually orders on ' + c.dia + 's. Balance: ' + (c.saldo ? pesos(c.saldo) + (c.vencido ? ' overdue' : '') : 'current') + '.' + (op ? ' To offer: ' + esc(op.acc.toLowerCase() + ' ' + (CORTO[id] || c.nom)) + ' (≈ ' + pesos(op.val) + '/mo).' : '');"
+  },
+  {
+   "es": "'¿Qué le ofrezco a ' + (CORTO[id] || c.nom) + '?'",
+   "pt": "'O que ofereço a ' + (CORTO[id] || c.nom) + '?'",
+   "en": "'What should I offer ' + (CORTO[id] || c.nom) + '?'"
+  },
+  {
+   "es": "r.txt = 'No te entendí del todo. Puedo decirte qué ofrecerle a cada cliente, cómo venís con el objetivo, quién te debe y quién dejó de comprar, y puedo armar un pedido, marcar una visita o anotar algo en una ficha.';",
+   "pt": "r.txt = 'Não entendi muito bem. Posso dizer o que oferecer a cada cliente, como você está em relação à meta, quem está devendo e quem parou de comprar, e posso montar um pedido, marcar uma visita ou anotar algo em uma ficha.';",
+   "en": "r.txt = 'I didn’t quite get that. I can tell you what to offer each customer, how you’re tracking against target, who owes you and who stopped buying, and I can build an order, mark a visit or add a note to a profile.';"
+  },
+  {
+   "es": "box.innerHTML = '<small>Propuesta · ¿Confirmás?</small><p>' + esc(r.acc.txt) + '</p><div><button type=\"button\" class=\"p\" data-ase-conf=\"si\">Confirmar</button><button type=\"button\" data-ase-conf=\"no\">Cancelar</button></div>';",
+   "pt": "box.innerHTML = '<small>Proposta · Confirma?</small><p>' + esc(r.acc.txt) + '</p><div><button type=\"button\" class=\"p\" data-ase-conf=\"si\">Confirmar</button><button type=\"button\" data-ase-conf=\"no\">Cancelar</button></div>';",
+   "en": "box.innerHTML = '<small>Proposal · Confirm?</small><p>' + esc(r.acc.txt) + '</p><div><button type=\"button\" class=\"p\" data-ase-conf=\"si\">Confirm</button><button type=\"button\" data-ase-conf=\"no\">Cancel</button></div>';"
+  },
+  {
+   "es": "toast('En la app real dictás la pregunta y el asesor la transcribe.');",
+   "pt": "toast('No app real, você dita a pergunta e o assistente transcreve.');",
+   "en": "toast('In the real app, you dictate the question and the advisor transcribes it.');"
+  },
+  {
+   "es": "aseMsg('yo', 'Confirmar');",
+   "pt": "aseMsg('yo', 'Confirmar');",
+   "en": "aseMsg('yo', 'Confirm');"
+  },
+  {
+   "es": "aseMsg('yo', 'Cancelar'); aseMsg('ia', 'No hice nada. Si querés, lo armamos de otra forma.');",
+   "pt": "aseMsg('yo', 'Cancelar'); aseMsg('ia', 'Não fiz nada. Se quiser, montamos de outro jeito.');",
+   "en": "aseMsg('yo', 'Cancel'); aseMsg('ia', 'I didn’t do anything. If you want, we can do it another way.');"
+  },
+  {
+   "es": "'Arroz blanco tipo patna 1 kg'",
+   "pt": "'Arroz branco tipo patna 1 kg'",
+   "en": "'Long-grain white rice 1 kg'"
+  },
+  {
+   "es": "'Fideos secos tallarín 500 g'",
+   "pt": "'Macarrão talharim 500 g'",
+   "en": "'Tagliatelle pasta 500 g'"
+  },
+  {
+   "es": "'Aceite girasol 900 ml'",
+   "pt": "'Óleo de girassol 900 ml'",
+   "en": "'Sunflower oil 900 ml'"
+  },
+  {
+   "es": "'Aceite de oliva extra virgen 500 ml'",
+   "pt": "'Azeite de oliva extravirgem 500 ml'",
+   "en": "'Extra virgin olive oil 500 ml'"
+  },
+  {
+   "es": "'Yerba mate 1 kg'",
+   "pt": "'Erva-mate 1 kg'",
+   "en": "'Yerba mate 1 kg'"
+  },
+  {
+   "es": "'Azúcar blanca 1 kg'",
+   "pt": "'Açúcar refinado 1 kg'",
+   "en": "'White sugar 1 kg'"
+  },
+  {
+   "es": "'Harina de trigo 000 1 kg'",
+   "pt": "'Farinha de trigo 000 1 kg'",
+   "en": "'Wheat flour 000 1 kg'"
+  },
+  {
+   "es": "'Tomate triturado 1 L'",
+   "pt": "'Tomate triturado 1 L'",
+   "en": "'Crushed tomatoes 1 L'"
+  },
+  {
+   "es": "'Atún en aceite 170 g'",
+   "pt": "'Atum em óleo 170 g'",
+   "en": "'Tuna in oil 170 g'"
+  },
+  {
+   "es": "'Agua mineral sin gas 2 L pack x6'",
+   "pt": "'Água mineral sem gás 2 L pack c/6'",
+   "en": "'Still mineral water 2 L 6-pack'"
+  },
+  {
+   "es": "'Refresco cola 2,25 L pack x6'",
+   "pt": "'Refrigerante de cola 2,25 L pack c/6'",
+   "en": "'Cola soda 2.25 L 6-pack'"
+  },
+  {
+   "es": "'Refresco lima-limón 2,25 L pack x6'",
+   "pt": "'Refrigerante de limão 2,25 L pack c/6'",
+   "en": "'Lemon-lime soda 2.25 L 6-pack'"
+  },
+  {
+   "es": "'Cerveza rubia lata 473 ml pack x6'",
+   "pt": "'Cerveja pilsen lata 473 ml pack c/6'",
+   "en": "'Lager beer 473 ml can 6-pack'"
+  },
+  {
+   "es": "'Leche entera larga vida 1 L caja x12'",
+   "pt": "'Leite integral longa vida 1 L caixa c/12'",
+   "en": "'Whole UHT milk 1 L, case of 12'"
+  },
+  {
+   "es": "'Queso muzzarella barra x kg'",
+   "pt": "'Queijo muçarela em barra (kg)'",
+   "en": "'Mozzarella block, per kg'"
+  },
+  {
+   "es": "'Queso rallado 150 g'",
+   "pt": "'Queijo ralado 150 g'",
+   "en": "'Grated cheese 150 g'"
+  },
+  {
+   "es": "'Lavandina 1 L'",
+   "pt": "'Água sanitária 1 L'",
+   "en": "'Bleach 1 L'"
+  },
+  {
+   "es": "'Lavandina bidón 5 L'",
+   "pt": "'Água sanitária galão 5 L'",
+   "en": "'Bleach 5 L jug'"
+  },
+  {
+   "es": "'Detergente lavavajillas 750 ml'",
+   "pt": "'Detergente lava-louças 750 ml'",
+   "en": "'Dish soap 750 ml'"
+  },
+  {
+   "es": "'Detergente lavavajillas bidón 5 L'",
+   "pt": "'Detergente lava-louças galão 5 L'",
+   "en": "'Dish soap 5 L jug'"
+  },
+  {
+   "es": "'Jabón en polvo ropa 800 g'",
+   "pt": "'Sabão em pó 800 g'",
+   "en": "'Laundry powder 800 g'"
+  },
+  {
+   "es": "'Papel higiénico 30 m pack x4'",
+   "pt": "'Papel higiênico 30 m pack c/4'",
+   "en": "'Toilet paper 30 m 4-pack'"
+  },
+  {
+   "es": "'Pasta dental 90 g'",
+   "pt": "'Creme dental 90 g'",
+   "en": "'Toothpaste 90 g'"
+  },
+  {
+   "es": "'Alfajor de chocolate caja x12'",
+   "pt": "'Alfajor de chocolate caixa c/12'",
+   "en": "'Chocolate alfajores, box of 12'"
+  },
+  {
+   "es": "'Papas fritas 150 g'",
+   "pt": "'Batata frita 150 g'",
+   "en": "'Potato chips 150 g'"
+  },
+  {
+   "es": "'Café molido 250 g'",
+   "pt": "'Café moído 250 g'",
+   "en": "'Ground coffee 250 g'"
+  },
+  {
+   "es": "'Dulce de leche 1 kg'",
+   "pt": "'Doce de leite 1 kg'",
+   "en": "'Dulce de leche 1 kg'"
+  },
+  {
+   "es": "'Vaso polipapel café 240 ml x50'",
+   "pt": "'Copo de papel para café 240 ml c/50'",
+   "en": "'Paper coffee cups 240 ml, pack of 50'"
+  },
+  {
+   "es": "'Almacén'",
+   "pt": "'Mercearia'",
+   "en": "'Grocery'"
+  },
+  {
+   "es": "'Bebidas'",
+   "pt": "'Bebidas'",
+   "en": "'Beverages'"
+  },
+  {
+   "es": "'Lácteos'",
+   "pt": "'Laticínios'",
+   "en": "'Dairy'"
+  },
+  {
+   "es": "'Limpieza'",
+   "pt": "'Limpeza'",
+   "en": "'Cleaning'"
+  },
+  {
+   "es": "'Perfumería'",
+   "pt": "'Higiene pessoal'",
+   "en": "'Personal care'"
+  },
+  {
+   "es": "'Golosinas'",
+   "pt": "'Doces'",
+   "en": "'Candy & snacks'"
+  },
+  {
+   "es": "'Desayuno'",
+   "pt": "'Café da manhã'",
+   "en": "'Breakfast'"
+  },
+  {
+   "es": "'Descartables'",
+   "pt": "'Descartáveis'",
+   "en": "'Disposables'"
+  },
+  {
+   "es": "'Quesos'",
+   "pt": "'Queijos'",
+   "en": "'Cheese'"
+  },
+  {
+   "es": "'Tránsito cortado en Av. Italia. Pide pasar primero por Malvín y después por Buceo.'",
+   "pt": "'Trânsito interditado na Av. Italia. Pede para passar primeiro por Malvín e depois por Buceo.'",
+   "en": "'Av. Italia is closed to traffic. Asks to do Malvín first, then Buceo.'"
+  },
+  {
+   "es": "'Parador La Floresta la llamó para hacer un pedido. Queda a 2 km de su ruta de hoy.'",
+   "pt": "'O Parador La Floresta ligou para ela para fazer um pedido. Fica a 2 km da rota de hoje.'",
+   "en": "'Parador La Floresta called her to place an order. It’s 2 km off today’s route.'"
+  },
+  {
+   "es": "'Precio especial'",
+   "pt": "'Preço especial'",
+   "en": "'Special price'"
+  }
+ ],
+ "js_iguales": [
+  "use strict",
+  "NFD",
+  "Supermercado Los Robles",
+  "Pocitos",
+  "Av. Brasil 2890",
+  "Autoservicio La Familia",
+  "Centro",
+  "Av. 18 de Julio 1214",
+  "Almacén Sarandí",
+  "Ciudad Vieja",
+  "Sarandí 674",
+  "Cafetería Buena Vista",
+  "Punta Carretas",
+  "José Ellauri 596",
+  "Pizzería La Trattoria",
+  "Av. Luis A. de Herrera 1132",
+  "Almacén Don Pepe",
+  "Cordón",
+  "Tristán Narvaja 1577",
+  "Kiosco El Pasaje",
+  "San José 1145",
+  "Panadería La Estrella",
+  "José E. Rodó 1836",
+  "Sarandí",
+  "La Familia",
+  "Buena Vista",
+  "Los Robles",
+  "Trattoria",
+  "Don Pepe",
+  "El Pasaje",
+  "La Estrella",
+  "María Fernández",
+  "María",
+  "Montevideo",
+  "Carlos Rodríguez",
+  "Carlos",
+  "Lucía Méndez",
+  "Lucía",
+  "Costa de Oro",
+  "Parador La Floresta",
+  "La Floresta",
+  "Cafetería Aroma Bar",
+  "Malvín",
+  "Rotisería La Esquina",
+  "Bar El Refugio",
+  "Maldonado",
+  "Almacén La Esperanza",
+  "Punta Gorda",
+  "Minimercado Bolivia",
+  "Supermercado Arocena",
+  "Autoservicio Parque Rodó",
+  "Almacén Atlántida",
+  "Panadería French",
+  "Almacén Los Tilos",
+  "Gaboto 1520",
+  "Panadería San Cono",
+  "La Blanqueada",
+  "Av. 8 de Octubre 2785",
+  "Minimercado El Faro",
+  "Av. Italia 4410",
+  "Café Tribuna",
+  "Colonia 1290",
+  "Rotisería Doña Rosa",
+  "Parque Rodó",
+  "Br. España 2210",
+  "Laura",
+  "Doria",
+  "Distribuidora Central",
+  "Figtree,sans-serif",
+  "WhatsApp",
+  "Subtotal",
+  "IVA",
+  "Total",
+  ".barra-tab .t",
+  "(prefers-reduced-motion: reduce)",
+  "ArrowRight",
+  "ArrowLeft",
+  "ArrowDown",
+  "ArrowUp",
+  "Home",
+  "End",
+  "IntersectionObserver",
+  ".pasos-demo button",
+  "j-btn fin",
+  "op chica",
+  "· María",
+  "P-",
+  "PR-",
+  "#tipos button",
+  "#embudo i",
+  "#chat-sug button",
+  ".pnl-lado button",
+  "USD",
+  ".segmento button",
+  ".alternar button",
+  "POST",
+  "Content-Type",
+  "Accept",
+  "WhatsApp:",
+  ".lang-switch a, .lang-menu a",
+  "Escape",
+  "asv-m ia tipeando",
+  "AGENDA",
+  ".ase-acc button"
+ ],
+ "atributos": [
+  "data-vendedores"
+ ],
+ "fragmentos": {
+  "pt": [],
+  "en": []
+ }
+}
