@@ -457,12 +457,12 @@ input[type=range]{width:100%;accent-color:var(--vereda);height:24px}
 .f label .opc{font-weight:500;color:var(--tinta-3)}
 .tel-pais{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:8px}
 @media (max-width:420px){.tel-pais{grid-template-columns:minmax(0,1fr)}}
-.agenda{width:min(1040px,94vw);height:min(780px,92vh);max-width:none;max-height:none;padding:0;border:0;border-radius:18px;background:#fff;box-shadow:0 30px 80px -20px rgba(16,34,42,.55);overflow:hidden}
-.agenda::backdrop{background:rgba(16,34,42,.55)}
+dialog.agenda{width:min(1040px,94vw);height:min(780px,92vh);max-width:none;max-height:none;padding:0;border:0;border-radius:18px;background:#fff;box-shadow:0 30px 80px -20px rgba(16,34,42,.55);overflow:hidden}
+dialog.agenda::backdrop{background:rgba(16,34,42,.55)}
 .agenda-widget{width:100%;height:100%}
 .agenda-cerrar{position:absolute;top:10px;right:10px;z-index:2;width:38px;height:38px;border-radius:50%;border:1px solid var(--linea);background:#fff;color:var(--tinta);display:grid;place-items:center;cursor:pointer;box-shadow:var(--sombra-1)}
 .agenda-cerrar svg{width:18px;height:18px}
-@media (max-width:620px){.agenda{width:100vw;height:100dvh;max-height:100dvh;border-radius:0}}
+@media (max-width:620px){dialog.agenda{width:100vw;height:100dvh;max-height:100dvh;border-radius:0}}
 .gracias p{color:var(--tinta-2)}
 
 /* pie */
@@ -826,9 +826,9 @@ mark.of-tag{font-size:8.5px;font-weight:700;text-transform:uppercase;letter-spac
 .pros-cab{display:flex;justify-content:space-between;align-items:center;gap:8px}
 .pros-cab b{font-size:13px;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .pros-cab .chip{font-size:9px;text-transform:uppercase;letter-spacing:.03em;border-radius:5px;padding:2px 6px}
-.agenda{display:flex;justify-content:space-between;align-items:center;gap:8px;background:var(--aviso-50);border-radius:8px;padding:5px 8px;font-size:10.5px;color:var(--tinta)}
-.agenda button{border:0;background:none;padding:0;font:700 10.5px var(--f);color:var(--tinta-3);cursor:pointer;flex:none}
-.agenda button:hover{color:var(--rojo)}
+.pantalla .agenda{display:flex;justify-content:space-between;align-items:center;gap:8px;background:var(--aviso-50);border-radius:8px;padding:5px 8px;font-size:10.5px;color:var(--tinta)}
+.pantalla .agenda button{border:0;background:none;padding:0;font:700 10.5px var(--f);color:var(--tinta-3);cursor:pointer;flex:none}
+.pantalla .agenda button:hover{color:var(--rojo)}
 .agendar{align-self:flex-start;border:0;background:none;padding:0;font:700 10.5px var(--f);color:var(--vereda);cursor:pointer}
 .pros-btns{display:grid;grid-template-columns:1fr 1fr;gap:6px}
 .etapa-sel{flex:none;-webkit-appearance:none;appearance:none;border:0;border-radius:6px;height:22px;padding:0 20px 0 7px;font:700 9.5px var(--f);text-transform:uppercase;letter-spacing:.03em;cursor:pointer;background-repeat:no-repeat;background-position:right 6px center;background-size:8px 5px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 5'%3E%3Cpath d='M1 1l3 3 3-3' fill='none' stroke='%2344555C' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")}
@@ -2889,7 +2889,7 @@ mark.of-tag{font-size:8.5px;font-weight:700;text-transform:uppercase;letter-spac
   /* asistente */
   var chat = $('chat');
   function msg(cls, html){ var d = document.createElement('div'); d.className = 'msg ' + cls; d.innerHTML = html; chat.appendChild(d); return d; }
-  function responder(html, luego){
+  function responderComo(html, luego){
     var p = msg('ia', '…');
     setTimeout(function(){ p.innerHTML = html; if (luego) luego(p); }, reducido ? 0 : 650);
   }
@@ -2899,20 +2899,20 @@ mark.of-tag{font-size:8.5px;font-weight:700;text-transform:uppercase;letter-spac
     var q = +b.getAttribute('data-q'); b.disabled = true;
     msg('yo', esc(b.textContent));
     if (q === 0){
-      responder('María tiene 2 clientes que no compran hace más de 30 días:<ul><li><b>Pizzería La Trattoria</b>, 46 días. Antes compraba $U 18.400 por mes.</li><li><b>Rotisería La Esquina</b>, 34 días. Antes compraba $U 7.900 por mes.</li></ul>Entre los dos, $U 26.300 por mes. ¿Querés que le deje una tarea para visitarlos?');
+      responderComo('María tiene 2 clientes que no compran hace más de 30 días:<ul><li><b>Pizzería La Trattoria</b>, 46 días. Antes compraba $U 18.400 por mes.</li><li><b>Rotisería La Esquina</b>, 34 días. Antes compraba $U 7.900 por mes.</li></ul>Entre los dos, $U 26.300 por mes. ¿Querés que le deje una tarea para visitarlos?');
     } else if (q === 1){
       var t = totalesMes('set'), pct = Math.round(t.v / t.o * 100), ly = Math.round((t.v / t.l - 1) * 100);
       var det = VEND.map(function(x){ var v = x.venta.set + (x.id === 'mf' ? S.vendidoDemo : 0); return x.corto + ' en ' + Math.round(v / x.obj.set * 100) + ' %'; }).join(', ');
-      responder('Setiembre va en <b>' + pesos(t.v) + '</b>, el ' + pct + ' % del objetivo de ' + pesos(t.o) + ', y queda un día hábil. ' + det + '. Contra setiembre del año pasado, ' + (ly >= 0 ? ly + ' % más' : Math.abs(ly) + ' % menos') + '.');
+      responderComo('Setiembre va en <b>' + pesos(t.v) + '</b>, el ' + pct + ' % del objetivo de ' + pesos(t.o) + ', y queda un día hábil. ' + det + '. Contra setiembre del año pasado, ' + (ly >= 0 ? ly + ' % más' : Math.abs(ly) + ' % menos') + '.');
     } else {
-      responder('Voy a crear esta tarea:<ul><li><b>Para:</b> María Fernández</li><li><b>Qué:</b> pasar por Pizzería La Trattoria</li><li><b>Cuándo:</b> jueves 01/10</li><li><b>Nota:</b> no compra hace 46 días; antes compraba $U 18.400 por mes.</li></ul>¿La creo?<div class="conf"><button type="button" class="btn-mini p" data-conf="si">Sí, creala</button><button type="button" class="btn-mini" data-conf="no">No</button></div>', function(p){
+      responderComo('Voy a crear esta tarea:<ul><li><b>Para:</b> María Fernández</li><li><b>Qué:</b> pasar por Pizzería La Trattoria</li><li><b>Cuándo:</b> jueves 01/10</li><li><b>Nota:</b> no compra hace 46 días; antes compraba $U 18.400 por mes.</li></ul>¿La creo?<div class="conf"><button type="button" class="btn-mini p" data-conf="si">Sí, creala</button><button type="button" class="btn-mini" data-conf="no">No</button></div>', function(p){
         $$('[data-conf]', p).forEach(function(c){ c.addEventListener('click', function(){
           $$('[data-conf]', p).forEach(function(x){ x.disabled = true; });
           if (c.getAttribute('data-conf') === 'si'){
             msg('yo', 'Sí, creala');
             asignarTareaTrattoria();
-            responder('Listo. María la ve en «Hoy», en «Te dejó Laura». Mirá el celular de arriba.');
-          } else { msg('yo', 'No'); responder('No hice nada. Si querés, la armamos para otro día.'); }
+            responderComo('Listo. María la ve en «Hoy», en «Te dejó Laura». Mirá el celular de arriba.');
+          } else { msg('yo', 'No'); responderComo('No hice nada. Si querés, la armamos para otro día.'); }
           evento('asistente_confirmacion', {respuesta: c.getAttribute('data-conf')});
         }); });
       });
