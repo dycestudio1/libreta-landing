@@ -1,0 +1,5894 @@
+{
+ "textos": [
+  {
+   "es": "Libreta · Tablero del supervisor",
+   "pt": "Libreta · Painel do supervisor",
+   "en": "Libreta · Supervisor dashboard"
+  },
+  {
+   "es": "Tablero de Libreta para la supervisión de ventas: la calle de hoy, vendedores contra objetivo, lo que suma la app, clientes que dejaron de comprar y deuda, y la bandeja de pedidos.",
+   "pt": "Painel do Libreta para a supervisão de vendas: o dia na rua, vendedores contra a meta, o que o app soma, clientes que pararam de comprar e dívidas, e a caixa de pedidos.",
+   "en": "Libreta’s sales supervision dashboard: today in the field, reps vs. target, what the app adds, customers who stopped buying and overdue balances, and the order inbox."
+  },
+  {
+   "es": "Menú",
+   "pt": "Menu",
+   "en": "Menu"
+  },
+  {
+   "es": "Cerrar el menú",
+   "pt": "Fechar o menu",
+   "en": "Close menu"
+  },
+  {
+   "es": "Abrir el menú",
+   "pt": "Abrir o menu",
+   "en": "Open menu"
+  },
+  {
+   "es": "Secciones",
+   "pt": "Seções",
+   "en": "Sections"
+  },
+  {
+   "es": "Laura · Supervisora",
+   "pt": "Laura · Supervisora",
+   "en": "Laura · Supervisor"
+  },
+  {
+   "es": "Conectado a Doria · 10:20",
+   "pt": "Conectado ao Doria · 10:20",
+   "en": "Connected to Doria · 10:20"
+  },
+  {
+   "es": "Hoy",
+   "pt": "Hoje",
+   "en": "Today"
+  },
+  {
+   "es": "Abrir el asesor",
+   "pt": "Abrir o assistente",
+   "en": "Open the advisor"
+  },
+  {
+   "es": "Asesor comercial",
+   "pt": "Assistente comercial",
+   "en": "Sales advisor"
+  },
+  {
+   "es": "Conoce ventas, clientes, rutas y pedidos al día",
+   "pt": "Conhece vendas, clientes, rotas e pedidos em tempo real",
+   "en": "Knows your sales, customers, routes and orders, always up to date"
+  },
+  {
+   "es": "Cerrar el asesor",
+   "pt": "Fechar o assistente",
+   "en": "Close the advisor"
+  },
+  {
+   "es": "Pregunta para el asesor",
+   "pt": "Pergunta para o assistente",
+   "en": "Question for the advisor"
+  },
+  {
+   "es": "Preguntale algo a tu negocio…",
+   "pt": "Pergunte algo sobre o seu negócio…",
+   "en": "Ask your business anything…"
+  },
+  {
+   "es": "Enviar",
+   "pt": "Enviar",
+   "en": "Send"
+  }
+ ],
+ "iguales": [
+  "Libreta",
+  "DC",
+  "Distribuidora Central"
+ ],
+ "js": [
+  {
+   "es": "'martes 29 de setiembre'",
+   "pt": "'terça-feira, 29 de setembro'",
+   "en": "'Tuesday, September 29'"
+  },
+  {
+   "es": "var MESES = ['Oct', 'Nov', 'Dic', 'Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Set'];",
+   "pt": "var MESES = ['Out', 'Nov', 'Dez', 'Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set'];",
+   "en": "var MESES = ['Oct', 'Nov', 'Dec', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'];"
+  },
+  {
+   "es": "var MESES_L = ['octubre', 'noviembre', 'diciembre', 'enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'setiembre'];",
+   "pt": "var MESES_L = ['outubro', 'novembro', 'dezembro', 'janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro'];",
+   "en": "var MESES_L = ['October', 'November', 'December', 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September'];"
+  },
+  {
+   "es": "var MES_NOM = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'setiembre', 'octubre', 'noviembre', 'diciembre'];",
+   "pt": "var MES_NOM = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro'];",
+   "en": "var MES_NOM = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];"
+  },
+  {
+   "es": "m: ['Jun', 'Jul', 'Ago', 'Set']",
+   "pt": "m: ['Jun', 'Jul', 'Ago', 'Set']",
+   "en": "m: ['Jun', 'Jul', 'Aug', 'Sep']"
+  },
+  {
+   "es": "mesL = per === 'set' ? 'setiembre' : 'agosto'",
+   "pt": "mesL = per === 'set' ? 'setembro' : 'agosto'",
+   "en": "mesL = per === 'set' ? 'September' : 'August'"
+  },
+  {
+   "es": "'Lunes'",
+   "pt": "'Segunda'",
+   "en": "'Monday'"
+  },
+  {
+   "es": "'Martes'",
+   "pt": "'Terça'",
+   "en": "'Tuesday'"
+  },
+  {
+   "es": "'Miércoles'",
+   "pt": "'Quarta'",
+   "en": "'Wednesday'"
+  },
+  {
+   "es": "'Jueves'",
+   "pt": "'Quinta'",
+   "en": "'Thursday'"
+  },
+  {
+   "es": "'Viernes'",
+   "pt": "'Sexta'",
+   "en": "'Friday'"
+  },
+  {
+   "es": "'Sábado'",
+   "pt": "'Sábado'",
+   "en": "'Saturday'"
+  },
+  {
+   "es": "r.Martes.push",
+   "pt": "r[HOY_DIA].push",
+   "en": "r[HOY_DIA].push"
+  },
+  {
+   "es": "'Arroz blanco tipo patna 1 kg'",
+   "pt": "'Arroz branco tipo patna 1 kg'",
+   "en": "'Long-grain white rice 1 kg'"
+  },
+  {
+   "es": "'Fideos secos tallarín 500 g'",
+   "pt": "'Macarrão talharim 500 g'",
+   "en": "'Tagliatelle pasta 500 g'"
+  },
+  {
+   "es": "'Aceite girasol 900 ml'",
+   "pt": "'Óleo de girassol 900 ml'",
+   "en": "'Sunflower oil 900 ml'"
+  },
+  {
+   "es": "'Aceite de oliva extra virgen 500 ml'",
+   "pt": "'Azeite de oliva extravirgem 500 ml'",
+   "en": "'Extra virgin olive oil 500 ml'"
+  },
+  {
+   "es": "'Yerba mate 1 kg'",
+   "pt": "'Erva-mate 1 kg'",
+   "en": "'Yerba mate 1 kg'"
+  },
+  {
+   "es": "'Azúcar blanca 1 kg'",
+   "pt": "'Açúcar refinado 1 kg'",
+   "en": "'White sugar 1 kg'"
+  },
+  {
+   "es": "'Harina de trigo 000 1 kg'",
+   "pt": "'Farinha de trigo 000 1 kg'",
+   "en": "'Wheat flour 000 1 kg'"
+  },
+  {
+   "es": "'Tomate triturado 1 L'",
+   "pt": "'Tomate triturado 1 L'",
+   "en": "'Crushed tomatoes 1 L'"
+  },
+  {
+   "es": "'Atún en aceite 170 g'",
+   "pt": "'Atum em óleo 170 g'",
+   "en": "'Tuna in oil 170 g'"
+  },
+  {
+   "es": "'Agua mineral sin gas 2 L pack x6'",
+   "pt": "'Água mineral sem gás 2 L pack c/6'",
+   "en": "'Still mineral water 2 L 6-pack'"
+  },
+  {
+   "es": "'Refresco cola 2,25 L pack x6'",
+   "pt": "'Refrigerante de cola 2,25 L pack c/6'",
+   "en": "'Cola soda 2.25 L 6-pack'"
+  },
+  {
+   "es": "'Refresco lima-limón 2,25 L pack x6'",
+   "pt": "'Refrigerante de limão 2,25 L pack c/6'",
+   "en": "'Lemon-lime soda 2.25 L 6-pack'"
+  },
+  {
+   "es": "'Cerveza rubia lata 473 ml pack x6'",
+   "pt": "'Cerveja pilsen lata 473 ml pack c/6'",
+   "en": "'Lager beer 473 ml can 6-pack'"
+  },
+  {
+   "es": "'Leche entera larga vida 1 L caja x12'",
+   "pt": "'Leite integral longa vida 1 L caixa c/12'",
+   "en": "'Whole UHT milk 1 L, case of 12'"
+  },
+  {
+   "es": "'Queso muzzarella barra x kg'",
+   "pt": "'Queijo muçarela em barra (kg)'",
+   "en": "'Mozzarella block, per kg'"
+  },
+  {
+   "es": "'Queso rallado 150 g'",
+   "pt": "'Queijo ralado 150 g'",
+   "en": "'Grated cheese 150 g'"
+  },
+  {
+   "es": "'Lavandina 1 L'",
+   "pt": "'Água sanitária 1 L'",
+   "en": "'Bleach 1 L'"
+  },
+  {
+   "es": "'Lavandina bidón 5 L'",
+   "pt": "'Água sanitária galão 5 L'",
+   "en": "'Bleach 5 L jug'"
+  },
+  {
+   "es": "'Detergente lavavajillas 750 ml'",
+   "pt": "'Detergente lava-louças 750 ml'",
+   "en": "'Dish soap 750 ml'"
+  },
+  {
+   "es": "'Detergente lavavajillas bidón 5 L'",
+   "pt": "'Detergente lava-louças galão 5 L'",
+   "en": "'Dish soap 5 L jug'"
+  },
+  {
+   "es": "'Jabón en polvo ropa 800 g'",
+   "pt": "'Sabão em pó 800 g'",
+   "en": "'Laundry powder 800 g'"
+  },
+  {
+   "es": "'Papel higiénico 30 m pack x4'",
+   "pt": "'Papel higiênico 30 m pack c/4'",
+   "en": "'Toilet paper 30 m 4-pack'"
+  },
+  {
+   "es": "'Pasta dental 90 g'",
+   "pt": "'Creme dental 90 g'",
+   "en": "'Toothpaste 90 g'"
+  },
+  {
+   "es": "'Alfajor de chocolate caja x12'",
+   "pt": "'Alfajor de chocolate caixa c/12'",
+   "en": "'Chocolate alfajores, box of 12'"
+  },
+  {
+   "es": "'Papas fritas 150 g'",
+   "pt": "'Batata frita 150 g'",
+   "en": "'Potato chips 150 g'"
+  },
+  {
+   "es": "'Café molido 250 g'",
+   "pt": "'Café moído 250 g'",
+   "en": "'Ground coffee 250 g'"
+  },
+  {
+   "es": "'Dulce de leche 1 kg'",
+   "pt": "'Doce de leite 1 kg'",
+   "en": "'Dulce de leche 1 kg'"
+  },
+  {
+   "es": "'Vaso polipapel café 240 ml x50'",
+   "pt": "'Copo de papel para café 240 ml c/50'",
+   "en": "'Paper coffee cups 240 ml, pack of 50'"
+  },
+  {
+   "es": "'Almacén'",
+   "pt": "'Mercearia'",
+   "en": "'Grocery'"
+  },
+  {
+   "es": "'Bebidas'",
+   "pt": "'Bebidas'",
+   "en": "'Beverages'"
+  },
+  {
+   "es": "'Lácteos'",
+   "pt": "'Laticínios'",
+   "en": "'Dairy'"
+  },
+  {
+   "es": "'Limpieza'",
+   "pt": "'Limpeza'",
+   "en": "'Cleaning'"
+  },
+  {
+   "es": "'Perfumería'",
+   "pt": "'Higiene pessoal'",
+   "en": "'Personal care'"
+  },
+  {
+   "es": "'Golosinas'",
+   "pt": "'Doces'",
+   "en": "'Candy & snacks'"
+  },
+  {
+   "es": "'Desayuno'",
+   "pt": "'Café da manhã'",
+   "en": "'Breakfast'"
+  },
+  {
+   "es": "'Descartables'",
+   "pt": "'Descartáveis'",
+   "en": "'Disposables'"
+  },
+  {
+   "es": "'Quesos'",
+   "pt": "'Queijos'",
+   "en": "'Cheese'"
+  },
+  {
+   "es": "var CAT_PESO = {Bebidas: .29, 'Almacén': .27, Limpieza: .14, 'Lácteos': .11, Desayuno: .07, Golosinas: .05, 'Perfumería': .04, Descartables: .03};",
+   "pt": "var CAT_PESO = {'Bebidas': .29, 'Mercearia': .27, 'Limpeza': .14, 'Laticínios': .11, 'Café da manhã': .07, 'Doces': .05, 'Higiene pessoal': .04, 'Descartáveis': .03};",
+   "en": "var CAT_PESO = {'Beverages': .29, 'Grocery': .27, 'Cleaning': .14, 'Dairy': .11, 'Breakfast': .07, 'Candy & snacks': .05, 'Personal care': .04, 'Disposables': .03};"
+  },
+  {
+   "es": "var CAT_OBJ = {Bebidas: .285, 'Almacén': .25, Limpieza: .16, 'Lácteos': .12, Desayuno: .065, Golosinas: .045, 'Perfumería': .05, Descartables: .025};",
+   "pt": "var CAT_OBJ = {'Bebidas': .285, 'Mercearia': .25, 'Limpeza': .16, 'Laticínios': .12, 'Café da manhã': .065, 'Doces': .045, 'Higiene pessoal': .05, 'Descartáveis': .025};",
+   "en": "var CAT_OBJ = {'Beverages': .285, 'Grocery': .25, 'Cleaning': .16, 'Dairy': .12, 'Breakfast': .065, 'Candy & snacks': .045, 'Personal care': .05, 'Disposables': .025};"
+  },
+  {
+   "es": "'Supermercado'",
+   "pt": "'Supermercado'",
+   "en": "'Supermarket'"
+  },
+  {
+   "es": "'Autoservicio'",
+   "pt": "'Autosserviço'",
+   "en": "'Self-service market'"
+  },
+  {
+   "es": "'Minimercado'",
+   "pt": "'Minimercado'",
+   "en": "'Minimarket'"
+  },
+  {
+   "es": "'Kiosco'",
+   "pt": "'Quiosque'",
+   "en": "'Kiosk'"
+  },
+  {
+   "es": "'Panadería'",
+   "pt": "'Padaria'",
+   "en": "'Bakery'"
+  },
+  {
+   "es": "'Cafetería'",
+   "pt": "'Cafeteria'",
+   "en": "'Café'"
+  },
+  {
+   "es": "'Pizzería'",
+   "pt": "'Pizzaria'",
+   "en": "'Pizzeria'"
+  },
+  {
+   "es": "'Rotisería'",
+   "pt": "'Rotisseria'",
+   "en": "'Deli'"
+  },
+  {
+   "es": "'Despensa'",
+   "pt": "'Empório'",
+   "en": "'Corner store'"
+  },
+  {
+   "es": "'Parador'",
+   "pt": "'Bar de praia'",
+   "en": "'Beach bar'"
+  },
+  {
+   "es": "'Restaurante'",
+   "pt": "'Restaurante'",
+   "en": "'Restaurant'"
+  },
+  {
+   "es": "'Hotelería'",
+   "pt": "'Hotelaria'",
+   "en": "'Hospitality'"
+  },
+  {
+   "es": "var RUBROS = [['Almacén', 5], ['Autoservicio', 3], ['Minimercado', 3], ['Kiosco', 3], ['Panadería', 2], ['Cafetería', 2], ['Bar', 1], ['Rotisería', 1], ['Despensa', 1]];",
+   "pt": "var RUBROS = [['Mercearia', 5], ['Autosserviço', 3], ['Minimercado', 3], ['Quiosque', 3], ['Padaria', 2], ['Cafeteria', 2], ['Bar', 1], ['Rotisseria', 1], ['Empório', 1]];\nvar RUB_ES = {'Mercearia': 'Almacén', 'Autosserviço': 'Autoservicio', 'Minimercado': 'Minimercado', 'Quiosque': 'Kiosco', 'Padaria': 'Panadería', 'Cafeteria': 'Cafetería', 'Bar': 'Bar', 'Rotisseria': 'Rotisería', 'Empório': 'Despensa'};   // los nombres de los comercios quedan en español",
+   "en": "var RUBROS = [['Grocery', 5], ['Self-service market', 3], ['Minimarket', 3], ['Kiosk', 3], ['Bakery', 2], ['Café', 2], ['Bar', 1], ['Deli', 1], ['Corner store', 1]];\nvar RUB_ES = {'Grocery': 'Almacén', 'Self-service market': 'Autoservicio', 'Minimarket': 'Minimercado', 'Kiosk': 'Kiosco', 'Bakery': 'Panadería', 'Café': 'Cafetería', 'Bar': 'Bar', 'Deli': 'Rotisería', 'Corner store': 'Despensa'};   // los nombres de los comercios quedan en español"
+  },
+  {
+   "es": "nombre = r + ' ' + (azar()",
+   "pt": "nombre = RUB_ES[r] + ' ' + (azar()",
+   "en": "nombre = RUB_ES[r] + ' ' + (azar()"
+  },
+  {
+   "es": "nombre = r + ' ' + lugar + ' ' + (i + 2)",
+   "pt": "nombre = RUB_ES[r] + ' ' + lugar + ' ' + (i + 2)",
+   "en": "nombre = RUB_ES[r] + ' ' + lugar + ' ' + (i + 2)"
+  },
+  {
+   "es": "nombre.replace(r + ' ', '')",
+   "pt": "nombre.replace(RUB_ES[r] + ' ', '')",
+   "en": "nombre.replace(RUB_ES[r] + ' ', '')"
+  },
+  {
+   "es": "'Este y Maldonado'",
+   "pt": "'Leste e Maldonado'",
+   "en": "'East & Maldonado'"
+  },
+  {
+   "es": "'Cobrada'",
+   "pt": "'Paga'",
+   "en": "'Paid'"
+  },
+  {
+   "es": "'Pendiente'",
+   "pt": "'Pendente'",
+   "en": "'Pending'"
+  },
+  {
+   "es": "'Vencida'",
+   "pt": "'Vencida'",
+   "en": "'Overdue'"
+  },
+  {
+   "es": "'Compra Ramón, el encargado. Mejor antes de las 11.'",
+   "pt": "'Quem compra é o Ramón, o encarregado. Melhor antes das 11h.'",
+   "en": "'Ramón, the manager, does the buying. Best before 11 a.m.'"
+  },
+  {
+   "es": "'Cierra de 13 a 16.'",
+   "pt": "'Fecha das 13h às 16h.'",
+   "en": "'Closed from 1 to 4 p.m.'"
+  },
+  {
+   "es": "'Cambió de dueño en julio. Preguntar por Martín.'",
+   "pt": "'Mudou de dono em julho. Perguntar pelo Martín.'",
+   "en": "'Changed owners in July. Ask for Martín.'"
+  },
+  {
+   "es": "'Cliente nuevo desde julio.'",
+   "pt": "'Cliente novo desde julho.'",
+   "en": "'New customer since July.'"
+  },
+  {
+   "es": "'Hace el pedido por WhatsApp los martes a primera hora.'",
+   "pt": "'Faz o pedido pelo WhatsApp às terças, logo cedo.'",
+   "en": "'Orders on WhatsApp on Tuesdays, first thing in the morning.'"
+  },
+  {
+   "es": "'Vino por la visita de prospección de agosto.'",
+   "pt": "'Veio pela visita de prospecção de agosto.'",
+   "en": "'Came in through the August prospecting visit.'"
+  },
+  {
+   "es": "'Paga a 30 días. Pedir siempre por Andrea, de compras.'",
+   "pt": "'Paga em 30 dias. Falar sempre com a Andrea, de compras.'",
+   "en": "'Pays on 30-day terms. Always ask for Andrea in purchasing.'"
+  },
+  {
+   "es": "'Dice que otro mayorista le da el refresco cola $U 30 menos el pack.'",
+   "pt": "'Diz que outro atacadista faz o pack de refrigerante de cola por $U 30 a menos.'",
+   "en": "'Says another wholesaler sells the cola 6-pack for $U 30 less.'"
+  },
+  {
+   "es": "'No atiende el teléfono desde agosto.'",
+   "pt": "'Não atende o telefone desde agosto.'",
+   "en": "'Hasn’t answered the phone since August.'"
+  },
+  {
+   "es": "'Llamó hoy para hacer un pedido.'",
+   "pt": "'Ligou hoje para fazer um pedido.'",
+   "en": "'Called today to place an order.'"
+  },
+  {
+   "es": "'Abrió un supermercado de cadena a dos cuadras.'",
+   "pt": "'Abriu um supermercado de rede a duas quadras.'",
+   "en": "'A chain supermarket opened two blocks away.'"
+  },
+  {
+   "es": "'Convertido desde prospecto: visita en frío de agosto.'",
+   "pt": "'Convertido de prospect: visita a frio de agosto.'",
+   "en": "'Converted from a prospect: cold visit in August.'"
+  },
+  {
+   "es": "'Revisar precio: el cliente pidió la harina al precio de la semana pasada.'",
+   "pt": "'Revisar preço: o cliente pediu a farinha pelo preço da semana passada.'",
+   "en": "'Check the price: the customer asked for the flour at last week’s price.'"
+  },
+  {
+   "es": "'Lo pidió por WhatsApp; María lo cargó desde la app.'",
+   "pt": "'Pediu pelo WhatsApp; a María lançou pelo app.'",
+   "en": "'Ordered on WhatsApp; María entered it from the app.'"
+  },
+  {
+   "es": "'Entregar por la puerta de carga, antes de las 14.'",
+   "pt": "'Entregar pela porta de carga, antes das 14h.'",
+   "en": "'Deliver through the loading door, before 2 p.m.'"
+  },
+  {
+   "es": "'Entró después del cierre del depósito.'",
+   "pt": "'Entrou depois do fechamento do depósito.'",
+   "en": "'Came in after the warehouse cutoff.'"
+  },
+  {
+   "es": "'Con problema: precio'",
+   "pt": "'Com problema: preço'",
+   "en": "'Issue: price'"
+  },
+  {
+   "es": "'Visita hecha · pide el jueves'",
+   "pt": "'Visita feita · pede na quinta'",
+   "en": "'Visit done · orders Thursday'"
+  },
+  {
+   "es": "'Lo mandó dos veces: quedó el '",
+   "pt": "'Enviou duas vezes: ficou o '",
+   "en": "'Sent twice: kept '"
+  },
+  {
+   "es": "'Venta cruzada'",
+   "pt": "'Venda cruzada'",
+   "en": "'Cross-sell'"
+  },
+  {
+   "es": "'Recompra'",
+   "pt": "'Recompra'",
+   "en": "'Reorder'"
+  },
+  {
+   "es": "'Reactivar'",
+   "pt": "'Reativar'",
+   "en": "'Win back'"
+  },
+  {
+   "es": "'Cobrar'",
+   "pt": "'Cobrar'",
+   "en": "'Collect'"
+  },
+  {
+   "es": "'Prospecto'",
+   "pt": "'Prospect'",
+   "en": "'Prospect'"
+  },
+  {
+   "es": "'Ofrecele lavandina a'",
+   "pt": "'Ofereça água sanitária a'",
+   "en": "'Offer bleach to'"
+  },
+  {
+   "es": "'Reponele refrescos a'",
+   "pt": "'Reponha refrigerantes para'",
+   "en": "'Restock sodas for'"
+  },
+  {
+   "es": "'Reponele yerba a'",
+   "pt": "'Reponha erva-mate para'",
+   "en": "'Restock yerba mate for'"
+  },
+  {
+   "es": "'Pasá por'",
+   "pt": "'Passe em'",
+   "en": "'Stop by'"
+  },
+  {
+   "es": "'Cobrale a'",
+   "pt": "'Cobre'",
+   "en": "'Collect from'"
+  },
+  {
+   "es": "'Ofrecele dulce de leche a'",
+   "pt": "'Ofereça doce de leite a'",
+   "en": "'Offer dulce de leche to'"
+  },
+  {
+   "es": "'Llamá a'",
+   "pt": "'Ligue para'",
+   "en": "'Call'"
+  },
+  {
+   "es": "'Seguí el presupuesto de'",
+   "pt": "'Acompanhe o orçamento de'",
+   "en": "'Follow up on the quote for'"
+  },
+  {
+   "es": "'Ofrecele café molido a'",
+   "pt": "'Ofereça café moído a'",
+   "en": "'Offer ground coffee to'"
+  },
+  {
+   "es": "'Visitá a'",
+   "pt": "'Visite'",
+   "en": "'Visit'"
+  },
+  {
+   "es": "'Ofrecele detergente a'",
+   "pt": "'Ofereça detergente a'",
+   "en": "'Offer dish soap to'"
+  },
+  {
+   "es": "'Reponele alfajores a'",
+   "pt": "'Reponha alfajores para'",
+   "en": "'Restock alfajores for'"
+  },
+  {
+   "es": "'Lleva detergente todas las semanas y nunca llevó lavandina.'",
+   "pt": "'Compra detergente toda semana e nunca levou água sanitária.'",
+   "en": "'Buys dish soap every week and has never bought bleach.'"
+  },
+  {
+   "es": "'8 de cada 10 clientes que llevan detergente también llevan lavandina.'",
+   "pt": "'8 em cada 10 clientes que levam detergente também levam água sanitária.'",
+   "en": "'8 out of 10 customers who buy dish soap also buy bleach.'"
+  },
+  {
+   "es": "'Lleva refresco cola cada 7 días y van 9 sin comprar.'",
+   "pt": "'Compra refrigerante de cola a cada 7 dias e já são 9 sem comprar.'",
+   "en": "'Buys cola every 7 days and it’s been 9 days.'"
+  },
+  {
+   "es": "'Compra yerba cada 14 días y van 17 sin comprar.'",
+   "pt": "'Compra erva-mate a cada 14 dias e já são 17 sem comprar.'",
+   "en": "'Buys yerba mate every 14 days and it’s been 17 days.'"
+  },
+  {
+   "es": "'No compra hace 46 días. Antes compraba $U 18.400 por mes, sobre todo quesos.'",
+   "pt": "'Não compra há 46 dias. Antes comprava $U 18.400 por mês, principalmente queijos.'",
+   "en": "'Hasn’t bought in 46 days. Used to buy $U 18,400 a month, mostly cheese.'"
+  },
+  {
+   "es": "'Cambió de dueño en julio: preguntar por Martín.'",
+   "pt": "'Mudou de dono em julho: perguntar pelo Martín.'",
+   "en": "'Changed owners in July: ask for Martín.'"
+  },
+  {
+   "es": "'Tiene $U 12.840 vencidos hace 12 días (factura A 0081245).'",
+   "pt": "'Tem $U 12.840 vencidos há 12 dias (fatura A 0081245).'",
+   "en": "'Has $U 12,840 overdue for 12 days (invoice A 0081245).'"
+  },
+  {
+   "es": "'Lleva harina cada 3 días y nunca llevó dulce de leche.'",
+   "pt": "'Compra farinha a cada 3 dias e nunca levou doce de leite.'",
+   "en": "'Buys flour every 3 days and has never bought dulce de leche.'"
+  },
+  {
+   "es": "'7 de cada 10 panaderías que llevan harina también llevan dulce de leche.'",
+   "pt": "'7 em cada 10 padarias que levam farinha também levam doce de leite.'",
+   "en": "'7 out of 10 bakeries that buy flour also buy dulce de leche.'"
+  },
+  {
+   "es": "'Compraba cada 7 días y hace 29 que no compra.'",
+   "pt": "'Comprava a cada 7 dias e está há 29 sem comprar.'",
+   "en": "'Used to buy every 7 days and hasn’t bought in 29.'"
+  },
+  {
+   "es": "'Presupuesto #1182 de desayunos enviado el 21/09. Vence en 2 días.'",
+   "pt": "'Orçamento nº 1182 de café da manhã enviado em 21/09. Vence em 2 dias.'",
+   "en": "'Breakfast quote #1182 sent 9/21. Expires in 2 days.'"
+  },
+  {
+   "es": "'Hace 27 días que no compra (compraba cada 7). Hoy reclamó por el precio del refresco.'",
+   "pt": "'Está há 27 dias sem comprar (comprava a cada 7). Hoje reclamou do preço do refrigerante.'",
+   "en": "'Hasn’t bought in 27 days (used to every 7). Complained today about the soda price.'"
+  },
+  {
+   "es": "'Con la lista mayorista el pack queda en $U 518: $U 27 menos.'",
+   "pt": "'Com a tabela de atacado o pack sai por $U 518: $U 27 a menos.'",
+   "en": "'On the wholesale list the 6-pack comes to $U 518: $U 27 less.'"
+  },
+  {
+   "es": "'$U 19.600 vencidos hace 64 días. Tiene los pedidos bloqueados.'",
+   "pt": "'$U 19.600 vencidos há 64 dias. Está com os pedidos bloqueados.'",
+   "en": "'$U 19,600 overdue for 64 days. Orders are on hold.'"
+  },
+  {
+   "es": "'No compra hace 35 días. En noviembre arranca la temporada en Punta del Este.'",
+   "pt": "'Não compra há 35 dias. Em novembro começa a temporada em Punta del Este.'",
+   "en": "'Hasn’t bought in 35 days. The Punta del Este season starts in November.'"
+  },
+  {
+   "es": "'$U 10.800 vencidos hace 8 días. Hoy hizo un pedido de $U 42.100.'",
+   "pt": "'$U 10.800 vencidos há 8 dias. Hoje fez um pedido de $U 42.100.'",
+   "en": "'$U 10,800 overdue for 8 days. Placed a $U 42,100 order today.'"
+  },
+  {
+   "es": "'Lleva yerba todas las semanas y nunca llevó café.'",
+   "pt": "'Compra erva-mate toda semana e nunca levou café.'",
+   "en": "'Buys yerba mate every week and has never bought coffee.'"
+  },
+  {
+   "es": "'6 de cada 10 minimercados que llevan yerba también llevan café.'",
+   "pt": "'6 em cada 10 minimercados que levam erva-mate também levam café.'",
+   "en": "'6 out of 10 minimarkets that buy yerba mate also buy coffee.'"
+  },
+  {
+   "es": "'Prospecto en Carrasco. Abre una segunda sucursal en noviembre.'",
+   "pt": "'Prospect em Carrasco. Abre uma segunda filial em novembro.'",
+   "en": "'Prospect in Carrasco. Opening a second location in November.'"
+  },
+  {
+   "es": "'Hace 26 días que no compra (compraba cada 7). Abrió un supermercado de cadena cerca.'",
+   "pt": "'Está há 26 dias sem comprar (comprava a cada 7). Abriu um supermercado de rede perto.'",
+   "en": "'Hasn’t bought in 26 days (used to every 7). A chain supermarket opened nearby.'"
+  },
+  {
+   "es": "'No compra hace 41 días. Hoy llamó para hacer un pedido.'",
+   "pt": "'Não compra há 41 dias. Hoje ligou para fazer um pedido.'",
+   "en": "'Hasn’t bought in 41 days. Called today to place an order.'"
+  },
+  {
+   "es": "'$U 9.700 vencidos hace 45 días. Cobrá antes de tomar el pedido nuevo.'",
+   "pt": "'$U 9.700 vencidos há 45 dias. Cobre antes de tirar o pedido novo.'",
+   "en": "'$U 9,700 overdue for 45 days. Collect before taking the new order.'"
+  },
+  {
+   "es": "'Lleva lavandina todas las semanas y nunca llevó detergente.'",
+   "pt": "'Compra água sanitária toda semana e nunca levou detergente.'",
+   "en": "'Buys bleach every week and has never bought dish soap.'"
+  },
+  {
+   "es": "'8 de cada 10 almacenes que llevan lavandina también llevan detergente.'",
+   "pt": "'8 em cada 10 mercearias que levam água sanitária também levam detergente.'",
+   "en": "'8 out of 10 grocery stores that buy bleach also buy dish soap.'"
+  },
+  {
+   "es": "'Lleva alfajores cada 14 días y van 18 sin comprar.'",
+   "pt": "'Compra alfajores a cada 14 dias e já são 18 sem comprar.'",
+   "en": "'Buys alfajores every 14 days and it’s been 18 days.'"
+  },
+  {
+   "es": "'Presupuesto #1184 enviado el 24/09, sin respuesta.'",
+   "pt": "'Orçamento nº 1184 enviado em 24/09, sem resposta.'",
+   "en": "'Quote #1184 sent 9/24, no reply yet.'"
+  },
+  {
+   "es": "'Desvío de ruta'",
+   "pt": "'Desvio de rota'",
+   "en": "'Route detour'"
+  },
+  {
+   "es": "'Visita fuera de ruta'",
+   "pt": "'Visita fora da rota'",
+   "en": "'Off-route visit'"
+  },
+  {
+   "es": "'Problema en una visita'",
+   "pt": "'Problema em uma visita'",
+   "en": "'Issue at a visit'"
+  },
+  {
+   "es": "'Reprogramar visitas'",
+   "pt": "'Reagendar visitas'",
+   "en": "'Reschedule visits'"
+  },
+  {
+   "es": "'Tránsito cortado en Av. Italia. Pide pasar primero por Malvín y después por Buceo.'",
+   "pt": "'Trânsito interditado na Av. Italia. Pede para passar primeiro por Malvín e depois por Buceo.'",
+   "en": "'Av. Italia is closed to traffic. Asks to do Malvín first, then Buceo.'"
+  },
+  {
+   "es": "'Parador La Floresta la llamó para hacer un pedido. Queda a 2 km de su ruta de hoy.'",
+   "pt": "'O Parador La Floresta ligou para ela para fazer um pedido. Fica a 2 km da rota de hoje.'",
+   "en": "'Parador La Floresta called her to place an order. It’s 2 km off today’s route.'"
+  },
+  {
+   "es": "'Autoservicio Malvín Norte: dice que otro mayorista le da el refresco cola $U 30 menos el pack.'",
+   "pt": "'Autoservicio Malvín Norte: diz que outro atacadista faz o pack de refrigerante de cola por $U 30 a menos.'",
+   "en": "'Autoservicio Malvín Norte: says another wholesaler sells the cola 6-pack for $U 30 less.'"
+  },
+  {
+   "es": "'No llega a Salinas y Parque del Plata: pide pasarlas a mañana.'",
+   "pt": "'Não vai conseguir ir a Salinas e Parque del Plata: pede para passar para amanhã.'",
+   "en": "'Won’t make it to Salinas and Parque del Plata: asks to move them to tomorrow.'"
+  },
+  {
+   "es": "'Almacén Don Pepe: estaba cerrado.'",
+   "pt": "'Almacén Don Pepe: estava fechado.'",
+   "en": "'Almacén Don Pepe: was closed.'"
+  },
+  {
+   "es": "'María pasó por Kiosco Plaza Cagancha, que no estaba en su ruta.'",
+   "pt": "'A María passou no Kiosco Plaza Cagancha, que não estava na rota dela.'",
+   "en": "'María stopped by Kiosco Plaza Cagancha, which wasn’t on her route.'"
+  },
+  {
+   "es": "'$U 219 llevando 10 o más'",
+   "pt": "'$U 219 levando 10 ou mais'",
+   "en": "'$U 219 when buying 10 or more'"
+  },
+  {
+   "es": "'Llevando X unidades'",
+   "pt": "'Levando X unidades'",
+   "en": "'Buy X units'"
+  },
+  {
+   "es": "'Almacenes y autoservicios'",
+   "pt": "'Mercearias e autosserviços'",
+   "en": "'Grocery and self-service stores'"
+  },
+  {
+   "es": "'Vigente'",
+   "pt": "'Vigente'",
+   "en": "'Active'"
+  },
+  {
+   "es": "'Combo con lavandina bidón 5 L a $U 440'",
+   "pt": "'Combo com água sanitária galão 5 L por $U 440'",
+   "en": "'Combo with a 5 L bleach jug for $U 440'"
+  },
+  {
+   "es": "'Todos los clientes'",
+   "pt": "'Todos os clientes'",
+   "en": "'All customers'"
+  },
+  {
+   "es": "'8 % de descuento'",
+   "pt": "'8% de desconto'",
+   "en": "'8% off'"
+  },
+  {
+   "es": "'% de descuento'",
+   "pt": "'% de desconto'",
+   "en": "'% off'"
+  },
+  {
+   "es": "'Zona Este y Maldonado'",
+   "pt": "'Região Leste e Maldonado'",
+   "en": "'Customers in East & Maldonado'"
+  },
+  {
+   "es": "'Programada'",
+   "pt": "'Programada'",
+   "en": "'Scheduled'"
+  },
+  {
+   "es": "'$U 339 la caja'",
+   "pt": "'$U 339 a caixa'",
+   "en": "'$U 339 per box'"
+  },
+  {
+   "es": "'Precio especial'",
+   "pt": "'Preço especial'",
+   "en": "'Special price'"
+  },
+  {
+   "es": "'Kioscos'",
+   "pt": "'Quiosques'",
+   "en": "'Kiosks'"
+  },
+  {
+   "es": "'Terminada'",
+   "pt": "'Encerrada'",
+   "en": "'Ended'"
+  },
+  {
+   "es": "'Supermercados'",
+   "pt": "'Supermercados'",
+   "en": "'Supermarkets'"
+  },
+  {
+   "es": "'Cafeterías y panaderías'",
+   "pt": "'Cafeterias e padarias'",
+   "en": "'Cafés and bakeries'"
+  },
+  {
+   "es": "'Zona Montevideo'",
+   "pt": "'Região de Montevideo'",
+   "en": "'Customers in Montevideo'"
+  },
+  {
+   "es": "'Zona Costa de Oro'",
+   "pt": "'Região Costa de Oro'",
+   "en": "'Customers in Costa de Oro'"
+  },
+  {
+   "es": "var OF_EST = {Vigente: 'ver', Programada: 'arena', Terminada: 'gris'};",
+   "pt": "var OF_EST = {'Vigente': 'ver', 'Programada': 'arena', 'Encerrada': 'gris'};",
+   "en": "var OF_EST = {'Active': 'ver', 'Scheduled': 'arena', 'Ended': 'gris'};"
+  },
+  {
+   "es": "'Hoy 09:40'",
+   "pt": "'Hoje 09:40'",
+   "en": "'Today 09:40'"
+  },
+  {
+   "es": "'Enviado'",
+   "pt": "'Enviado'",
+   "en": "'Sent'"
+  },
+  {
+   "es": "'Sin respuesta'",
+   "pt": "'Sem resposta'",
+   "en": "'No reply'"
+  },
+  {
+   "es": "'Aceptado'",
+   "pt": "'Aceito'",
+   "en": "'Accepted'"
+  },
+  {
+   "es": "'Vence en 2 días'",
+   "pt": "'Vence em 2 dias'",
+   "en": "'Expires in 2 days'"
+  },
+  {
+   "es": "'Rechazado'",
+   "pt": "'Recusado'",
+   "en": "'Declined'"
+  },
+  {
+   "es": "'Le dan mejor precio en la cadena.'",
+   "pt": "'A rede oferece um preço melhor.'",
+   "en": "'The chain gives them a better price.'"
+  },
+  {
+   "es": "'Pedido'",
+   "pt": "'Pedido'",
+   "en": "'Order'"
+  },
+  {
+   "es": "'Contactado'",
+   "pt": "'Contatado'",
+   "en": "'Contacted'"
+  },
+  {
+   "es": "'Propuesta'",
+   "pt": "'Proposta'",
+   "en": "'Proposal'"
+  },
+  {
+   "es": "'Negociación'",
+   "pt": "'Negociação'",
+   "en": "'Negotiation'"
+  },
+  {
+   "es": "'Ganado'",
+   "pt": "'Ganho'",
+   "en": "'Won'"
+  },
+  {
+   "es": "'Cuenta nueva · segunda sucursal'",
+   "pt": "'Conta nova · segunda filial'",
+   "en": "'New account · second location'"
+  },
+  {
+   "es": "'Desayunos del hostel'",
+   "pt": "'Café da manhã do hostel'",
+   "en": "'Hostel breakfasts'"
+  },
+  {
+   "es": "'Cuenta nueva'",
+   "pt": "'Conta nova'",
+   "en": "'New account'"
+  },
+  {
+   "es": "'Góndola de limpieza'",
+   "pt": "'Gôndola de limpeza'",
+   "en": "'Cleaning aisle'"
+  },
+  {
+   "es": "'Sumar golosinas'",
+   "pt": "'Incluir doces'",
+   "en": "'Add candy'"
+  },
+  {
+   "es": "'Cuenta nueva · presupuesto #1184'",
+   "pt": "'Conta nova · orçamento nº 1184'",
+   "en": "'New account · quote #1184'"
+  },
+  {
+   "es": "'Línea de perfumería'",
+   "pt": "'Linha de higiene pessoal'",
+   "en": "'Personal care line'"
+  },
+  {
+   "es": "'Precio por volumen para que vuelva'",
+   "pt": "'Preço por volume para ele voltar'",
+   "en": "'Volume pricing to win them back'"
+  },
+  {
+   "es": "'Bebidas para la temporada'",
+   "pt": "'Bebidas para a temporada'",
+   "en": "'Beverages for the season'"
+  },
+  {
+   "es": "'Referido por Supermercado Arocena'",
+   "pt": "'Indicado pelo Supermercado Arocena'",
+   "en": "'Referred by Supermercado Arocena'"
+  },
+  {
+   "es": "'Visitado'",
+   "pt": "'Visitado'",
+   "en": "'Visited'"
+  },
+  {
+   "es": "'Presupuesto #1185 enviado hoy'",
+   "pt": "'Orçamento nº 1185 enviado hoje'",
+   "en": "'Quote #1185 sent today'"
+  },
+  {
+   "es": "'Visita en frío'",
+   "pt": "'Visita a frio'",
+   "en": "'Cold visit'"
+  },
+  {
+   "es": "'Presupuestado'",
+   "pt": "'Orçado'",
+   "en": "'Quoted'"
+  },
+  {
+   "es": "'Seguir el presupuesto #1182 · jueves'",
+   "pt": "'Acompanhar o orçamento nº 1182 · quinta'",
+   "en": "'Follow up on quote #1182 · Thursday'"
+  },
+  {
+   "es": "'Llamar por el presupuesto #1184'",
+   "pt": "'Ligar sobre o orçamento nº 1184'",
+   "en": "'Call about quote #1184'"
+  },
+  {
+   "es": "'Escribió por WhatsApp'",
+   "pt": "'Escreveu pelo WhatsApp'",
+   "en": "'Reached out on WhatsApp'"
+  },
+  {
+   "es": "'Visitar el jueves'",
+   "pt": "'Visitar na quinta'",
+   "en": "'Visit Thursday'"
+  },
+  {
+   "es": "'Nuevo'",
+   "pt": "'Novo'",
+   "en": "'New'"
+  },
+  {
+   "es": "'Primera visita esta semana'",
+   "pt": "'Primeira visita nesta semana'",
+   "en": "'First visit this week'"
+  },
+  {
+   "es": "'Primera visita el viernes'",
+   "pt": "'Primeira visita na sexta'",
+   "en": "'First visit Friday'"
+  },
+  {
+   "es": "'Convertido'",
+   "pt": "'Convertido'",
+   "en": "'Converted'"
+  },
+  {
+   "es": "'Primera compra el 09/09'",
+   "pt": "'Primeira compra em 09/09'",
+   "en": "'First purchase 9/9'"
+  },
+  {
+   "es": "'Primera compra el 07/09'",
+   "pt": "'Primeira compra em 07/09'",
+   "en": "'First purchase 9/7'"
+  },
+  {
+   "es": "'Descartado'",
+   "pt": "'Descartado'",
+   "en": "'Dropped'"
+  },
+  {
+   "es": "'Compra directo a la cervecería'",
+   "pt": "'Compra direto da cervejaria'",
+   "en": "'Buys direct from the brewery'"
+  },
+  {
+   "es": "'Resumen del mes para la dirección'",
+   "pt": "'Resumo do mês para a diretoria'",
+   "en": "'Monthly summary for management'"
+  },
+  {
+   "es": "'Venta contra objetivo y año pasado, vendedores, clientes que crecen y caen, cobranzas.'",
+   "pt": "'Vendas contra a meta e o ano passado, vendedores, clientes que crescem e caem, cobranças.'",
+   "en": "'Sales vs. target and last year, reps, growing and declining customers, collections.'"
+  },
+  {
+   "es": "'Día 1 de cada mes'",
+   "pt": "'Dia 1 de cada mês'",
+   "en": "'The 1st of every month'"
+  },
+  {
+   "es": "'Laura, Dirección'",
+   "pt": "'Laura, Diretoria'",
+   "en": "'Laura, Management'"
+  },
+  {
+   "es": "'Ventas por vendedor'",
+   "pt": "'Vendas por vendedor'",
+   "en": "'Sales by rep'"
+  },
+  {
+   "es": "'Venta, objetivo, visitas, pedidos, ticket y comisión de cada vendedor.'",
+   "pt": "'Vendas, meta, visitas, pedidos, tíquete médio e comissão de cada vendedor.'",
+   "en": "'Sales, target, visits, orders, average order and commission for each rep.'"
+  },
+  {
+   "es": "'Lunes 8:00'",
+   "pt": "'Segunda 8:00'",
+   "en": "'Monday 8:00'"
+  },
+  {
+   "es": "'Pedidos del día'",
+   "pt": "'Pedidos do dia'",
+   "en": "'Daily orders'"
+  },
+  {
+   "es": "'Planilla con los pedidos pendientes, con códigos de cliente y producto, para cargar en Doria.'",
+   "pt": "'Planilha com os pedidos pendentes, com códigos de cliente e produto, para lançar no Doria.'",
+   "en": "'Spreadsheet of pending orders, with customer and product codes, to load into Doria.'"
+  },
+  {
+   "es": "'Todos los días 17:30'",
+   "pt": "'Todos os dias 17:30'",
+   "en": "'Every day 17:30'"
+  },
+  {
+   "es": "'Administración'",
+   "pt": "'Administração'",
+   "en": "'Admin office'"
+  },
+  {
+   "es": "'Clientes que dejaron de comprar'",
+   "pt": "'Clientes que pararam de comprar'",
+   "en": "'Customers who stopped buying'"
+  },
+  {
+   "es": "'Clientes que pasaron su frecuencia habitual, por vendedor.'",
+   "pt": "'Clientes que passaram da frequência habitual, por vendedor.'",
+   "en": "'Customers past their usual buying frequency, by rep.'"
+  },
+  {
+   "es": "'Cada vendedor'",
+   "pt": "'Cada vendedor'",
+   "en": "'Each rep'"
+  },
+  {
+   "es": "'Ruta y visitas de la semana'",
+   "pt": "'Rota e visitas da semana'",
+   "en": "'Weekly route and visits'"
+  },
+  {
+   "es": "'Visitas planificadas contra hechas, desvíos y visitas fuera de ruta.'",
+   "pt": "'Visitas planejadas contra feitas, desvios e visitas fora da rota.'",
+   "en": "'Planned vs. completed visits, detours and off-route visits.'"
+  },
+  {
+   "es": "'Sábado 12:00'",
+   "pt": "'Sábado 12:00'",
+   "en": "'Saturday 12:00'"
+  },
+  {
+   "es": "'Cobranzas por vendedor'",
+   "pt": "'Cobranças por vendedor'",
+   "en": "'Collections by rep'"
+  },
+  {
+   "es": "'Deuda vencida de la cartera de cada vendedor, con días de atraso.'",
+   "pt": "'Dívida vencida da carteira de cada vendedor, com dias de atraso.'",
+   "en": "'Overdue balances in each rep’s accounts, with days past due.'"
+  },
+  {
+   "es": "'Miércoles 8:00'",
+   "pt": "'Quarta 8:00'",
+   "en": "'Wednesday 8:00'"
+  },
+  {
+   "es": "'Oportunidades del mes'",
+   "pt": "'Oportunidades do mês'",
+   "en": "'Opportunities this month'"
+  },
+  {
+   "es": "'Ofrecidas, vendidas y venta que sumaron, por tipo y por vendedor.'",
+   "pt": "'Oferecidas, vendidas e vendas que somaram, por tipo e por vendedor.'",
+   "en": "'Offered, sold and the sales they added, by type and by rep.'"
+  },
+  {
+   "es": "'Viernes 18:00'",
+   "pt": "'Sexta 18:00'",
+   "en": "'Friday 18:00'"
+  },
+  {
+   "es": "Intl.NumberFormat('es-UY'",
+   "pt": "Intl.NumberFormat('pt-BR'",
+   "en": "Intl.NumberFormat('en-US'"
+  },
+  {
+   "es": "localeCompare(y, 'es')",
+   "pt": "localeCompare(y, 'pt')",
+   "en": "localeCompare(y, 'en')"
+  },
+  {
+   "es": "'$U ' + (n / 1e6).toFixed(2).replace('.', ',') + ' M'",
+   "pt": "'$U ' + (n / 1e6).toFixed(2).replace('.', ',') + ' mi'",
+   "en": "'$U ' + (n / 1e6).toFixed(2) + 'M'"
+  },
+  {
+   "es": "'$U ' + fmt.format(Math.round(n / 1000)) + ' mil'",
+   "pt": "'$U ' + fmt.format(Math.round(n / 1000)) + ' mil'",
+   "en": "'$U ' + fmt.format(Math.round(n / 1000)) + 'k'"
+  },
+  {
+   "es": "d === 0 ? 'Hoy' : d === 1 ? 'Ayer' : 'Hace ' + d + ' días'",
+   "pt": "d === 0 ? 'Hoje' : d === 1 ? 'Ontem' : 'Há ' + d + ' dias'",
+   "en": "d === 0 ? 'Today' : d === 1 ? 'Yesterday' : d + ' days ago'"
+  },
+  {
+   "es": "' de '",
+   "pt": "' de '",
+   "en": "' of '"
+  },
+  {
+   "es": "' %'",
+   "pt": "'%'",
+   "en": "'%'"
+  },
+  {
+   "es": "' %.'",
+   "pt": "'%.'",
+   "en": "'%.'"
+  },
+  {
+   "es": "' días'",
+   "pt": "' dias'",
+   "en": "' days'"
+  },
+  {
+   "es": "'Hoy'",
+   "pt": "'Hoje'",
+   "en": "'Today'"
+  },
+  {
+   "es": "'Pedidos'",
+   "pt": "'Pedidos'",
+   "en": "'Orders'"
+  },
+  {
+   "es": "'Vendedores'",
+   "pt": "'Vendedores'",
+   "en": "'Sales reps'"
+  },
+  {
+   "es": "'Oportunidades'",
+   "pt": "'Oportunidades'",
+   "en": "'Opportunities'"
+  },
+  {
+   "es": "'Clientes'",
+   "pt": "'Clientes'",
+   "en": "'Customers'"
+  },
+  {
+   "es": "'Lo que suma Libreta'",
+   "pt": "'O que o Libreta soma'",
+   "en": "'What Libreta adds'"
+  },
+  {
+   "es": "'Ofertas'",
+   "pt": "'Ofertas'",
+   "en": "'Promotions'"
+  },
+  {
+   "es": "'Rutas fijas'",
+   "pt": "'Rotas fixas'",
+   "en": "'Fixed routes'"
+  },
+  {
+   "es": "'Configuración'",
+   "pt": "'Configurações'",
+   "en": "'Settings'"
+  },
+  {
+   "es": "'Ventas'",
+   "pt": "'Vendas'",
+   "en": "'Sales'"
+  },
+  {
+   "es": "'Gestión'",
+   "pt": "'Gestão'",
+   "en": "'Management'"
+  },
+  {
+   "es": "'Quién está en la calle, cómo van las rutas, qué pedidos entraron y qué espera tu respuesta.'",
+   "pt": "'Quem está na rua, como vão as rotas, quais pedidos entraram e o que espera sua resposta.'",
+   "en": "'Who’s out in the field, how routes are going, which orders came in and what needs your answer.'"
+  },
+  {
+   "es": "'Lo que cargan los vendedores en el comercio. Pasalo a Doria y marcalo como cargado.'",
+   "pt": "'O que os vendedores lançam na loja. Passe para o Doria e marque como lançado.'",
+   "en": "'What reps enter at the store. Key it into Doria and mark it as entered.'"
+  },
+  {
+   "es": "'Venta contra objetivo, ruta, pedidos, oportunidades y comisión de cada vendedor.'",
+   "pt": "'Vendas contra a meta, rota, pedidos, oportunidades e comissão de cada vendedor.'",
+   "en": "'Sales vs. target, route, orders, opportunities and commission for each rep.'"
+  },
+  {
+   "es": "'Qué tiene para ofrecer cada vendedor, cliente por cliente, y qué pasó con lo que ofreció.'",
+   "pt": "'O que cada vendedor tem para oferecer, cliente por cliente, e o que aconteceu com o que ofereceu.'",
+   "en": "'What each rep has to offer, customer by customer, and what happened with what they offered.'"
+  },
+  {
+   "es": "'Quién dejó de comprar a su ritmo y quién debe. Tocá un cliente para ver su ficha.'",
+   "pt": "'Quem parou de comprar no ritmo de sempre e quem está devendo. Toque em um cliente para ver a ficha.'",
+   "en": "'Who stopped buying at their usual pace and who owes money. Tap a customer to see their profile.'"
+  },
+  {
+   "es": "'Lo que se vendió de más porque la app le dijo al vendedor a quién ofrecerle qué.'",
+   "pt": "'O que se vendeu a mais porque o app disse ao vendedor o que oferecer a quem.'",
+   "en": "'The extra sales that came from the app telling reps what to offer to whom.'"
+  },
+  {
+   "es": "'Cargá una oferta y le llega a la app de cada vendedor. Seguí quién la vio y cuánto se vende.'",
+   "pt": "'Cadastre uma oferta e ela chega ao app de cada vendedor. Acompanhe quem viu e quanto vende.'",
+   "en": "'Create a promotion and it reaches each rep’s app. Track who saw it and how much it sells.'"
+  },
+  {
+   "es": "'Qué clientes visita cada vendedor cada día de la semana. La ruta del día se arma sola con esto.'",
+   "pt": "'Quais clientes cada vendedor visita em cada dia da semana. A rota do dia se monta sozinha com isso.'",
+   "en": "'Which customers each rep visits on each weekday. The daily route builds itself from this.'"
+  },
+  {
+   "es": "'Usuarios y permisos, uso de la app de cada uno, criterios, objetivos y avisos.'",
+   "pt": "'Usuários e permissões, uso do app de cada um, critérios, metas e avisos.'",
+   "en": "'Users and permissions, each person’s app usage, rules, targets and notifications.'"
+  },
+  {
+   "es": "'No hay nada para mostrar con estos filtros.'",
+   "pt": "'Não há nada para mostrar com esses filtros.'",
+   "en": "'Nothing to show with these filters.'"
+  },
+  {
+   "es": "'<div class=\"pag\"><span>Mostrando ' + vis.length + ' de ' + total + '</span>'",
+   "pt": "'<div class=\"pag\"><span>Mostrando ' + vis.length + ' de ' + total + '</span>'",
+   "en": "'<div class=\"pag\"><span>Showing ' + vis.length + ' of ' + total + '</span>'"
+  },
+  {
+   "es": "'\">Mostrar ' + Math.min(opt.pag, total - lim) + ' más</button>'",
+   "pt": "'\">Mostrar mais ' + Math.min(opt.pag, total - lim) + '</button>'",
+   "en": "'\">Show ' + Math.min(opt.pag, total - lim) + ' more</button>'"
+  },
+  {
+   "es": "Mostrar menos</button>",
+   "pt": "Mostrar menos</button>",
+   "en": "Show less</button>"
+  },
+  {
+   "es": "'Todos'",
+   "pt": "'Todos'",
+   "en": "'All'"
+  },
+  {
+   "es": "'Gráfico de barras'",
+   "pt": "'Gráfico de barras'",
+   "en": "'Bar chart'"
+  },
+  {
+   "es": "<small>Vendido hoy</small>",
+   "pt": "<small>Vendido hoje</small>",
+   "en": "<small>Sold today</small>"
+  },
+  {
+   "es": "' pedidos · ticket '",
+   "pt": "' pedidos · média '",
+   "en": "' orders · avg. '"
+  },
+  {
+   "es": "' visitas hechas a las '",
+   "pt": "' visitas feitas até as '",
+   "en": "' visits done as of '"
+  },
+  {
+   "es": "'Visitas de hoy'",
+   "pt": "'Visitas de hoje'",
+   "en": "'Today’s visits'"
+  },
+  {
+   "es": "' % de la ruta del día'",
+   "pt": "'% da rota do dia'",
+   "en": "'% of today’s route'"
+  },
+  {
+   "es": "'Para ofrecer en la ruta'",
+   "pt": "'Para oferecer na rota'",
+   "en": "'To offer on the route'"
+  },
+  {
+   "es": "' por mes · ' + vendHoy + ' vendida' + (vendHoy === 1 ? '' : 's') + ' hoy' : vendHoy + ' vendidas hoy'",
+   "pt": "' por mês · ' + vendHoy + ' vendida' + (vendHoy === 1 ? '' : 's') + ' hoje' : vendHoy + ' vendidas hoje'",
+   "en": "' a month · ' + vendHoy + ' sold today' : vendHoy + ' sold today'"
+  },
+  {
+   "es": "'Por cargar en Doria'",
+   "pt": "'A lançar no Doria'",
+   "en": "'To enter in Doria'"
+  },
+  {
+   "es": "' en pedidos'",
+   "pt": "' em pedidos'",
+   "en": "' in orders'"
+  },
+  {
+   "es": "'Todo al día'",
+   "pt": "'Tudo em dia'",
+   "en": "'All caught up'"
+  },
+  {
+   "es": "'Objetivo de setiembre'",
+   "pt": "'Meta de setembro'",
+   "en": "'September target'"
+  },
+  {
+   "es": "'hoy deberías ir por '",
+   "pt": "'hoje deveria estar em '",
+   "en": "'should be at '"
+  },
+  {
+   "es": "'En visita en <b>'",
+   "pt": "'Em visita em <b>'",
+   "en": "'Visiting <b>'"
+  },
+  {
+   "es": "'</b> desde las '",
+   "pt": "'</b> desde as '",
+   "en": "'</b> since '"
+  },
+  {
+   "es": "'Próxima: <b>'",
+   "pt": "'Próxima: <b>'",
+   "en": "'Next: <b>'"
+  },
+  {
+   "es": "'</b> a las '",
+   "pt": "'</b> às '",
+   "en": "'</b> at '"
+  },
+  {
+   "es": "<b>Terminó la ruta</b>",
+   "pt": "<b>Terminou a rota</b>",
+   "en": "<b>Route finished</b>"
+  },
+  {
+   "es": "<span class=\"ap\"></span>Salió ",
+   "pt": "<span class=\"ap\"></span>Saiu às ",
+   "en": "<span class=\"ap\"></span>Out since "
+  },
+  {
+   "es": "(ps.length === 1 ? ' pedido' : ' pedidos')",
+   "pt": "(ps.length === 1 ? ' pedido' : ' pedidos')",
+   "en": "(ps.length === 1 ? ' order' : ' orders')"
+  },
+  {
+   "es": "'</b> visitas'",
+   "pt": "'</b> visitas'",
+   "en": "'</b> visits'"
+  },
+  {
+   "es": " con problema</span>",
+   "pt": " com problema</span>",
+   "en": " with issues</span>"
+  },
+  {
+   "es": "Nada espera tu respuesta. Los desvíos y problemas que avisen los vendedores aparecen acá.",
+   "pt": "Nada espera sua resposta. Os desvios e problemas que os vendedores avisarem aparecem aqui.",
+   "en": "Nothing needs your answer. Detours and issues reported by reps show up here."
+  },
+  {
+   "es": "(x.lin.length === 1 ? ' producto' : ' productos')",
+   "pt": "(x.lin.length === 1 ? ' produto' : ' produtos')",
+   "en": "(x.lin.length === 1 ? ' product' : ' products')"
+  },
+  {
+   "es": "'En la calle'",
+   "pt": "'Na rua'",
+   "en": "'In the field'"
+  },
+  {
+   "es": " con la jornada iniciada · tocá uno para ver su ruta",
+   "pt": " com a jornada iniciada · toque em um para ver a rota",
+   "en": " have started their day · tap one to see their route"
+  },
+  {
+   "es": "'Pedidos de hoy'",
+   "pt": "'Pedidos de hoje'",
+   "en": "'Today’s orders'"
+  },
+  {
+   "es": "Todavía no entraron pedidos hoy.",
+   "pt": "Ainda não entraram pedidos hoje.",
+   "en": "No orders yet today."
+  },
+  {
+   "es": "<span>Los ",
+   "pt": "<span>Os ",
+   "en": "<span>The "
+  },
+  {
+   "es": " más recientes</span>",
+   "pt": " mais recentes</span>",
+   "en": " most recent</span>"
+  },
+  {
+   "es": "data-v=\"ped\">Ver los ",
+   "pt": "data-v=\"ped\">Ver os ",
+   "en": "data-v=\"ped\">See all "
+  },
+  {
+   "es": "'Para decidir'",
+   "pt": "'Para decidir'",
+   "en": "'Needs a decision'"
+  },
+  {
+   "es": "(sp.length === 1 ? ' pendiente' : ' pendientes') : resp ? resp + ' respondidas hoy' : 'al día'",
+   "pt": "(sp.length === 1 ? ' pendente' : ' pendentes') : resp ? resp + ' respondidas hoje' : 'em dia'",
+   "en": "(sp.length === 1 ? ' pending' : ' pending') : resp ? resp + ' answered today' : 'all caught up'"
+  },
+  {
+   "es": "'Alertas'",
+   "pt": "'Alertas'",
+   "en": "'Alerts'"
+  },
+  {
+   "es": "Sin alertas: todo dentro de lo normal.",
+   "pt": "Sem alertas: tudo dentro do normal.",
+   "en": "No alerts: everything looks normal."
+  },
+  {
+   "es": "Aprobar</button>",
+   "pt": "Aprovar</button>",
+   "en": "Approve</button>"
+  },
+  {
+   "es": "Rechazar</button>",
+   "pt": "Recusar</button>",
+   "en": "Decline</button>"
+  },
+  {
+   "es": "Marcar revisado</button>",
+   "pt": "Marcar como revisado</button>",
+   "en": "Mark reviewed</button>"
+  },
+  {
+   "es": "Ver cliente</button>",
+   "pt": "Ver cliente</button>",
+   "en": "View customer</button>"
+  },
+  {
+   "es": "'Para revisar'",
+   "pt": "'Para revisar'",
+   "en": "'To review'"
+  },
+  {
+   "es": "(s.f === 'ayer' ? 'ayer ' : '')",
+   "pt": "(s.f === 'ayer' ? 'ontem ' : '')",
+   "en": "(s.f === 'ayer' ? 'yesterday ' : '')"
+  },
+  {
+   "es": "' va al '",
+   "pt": "' está em '",
+   "en": "' is at '"
+  },
+  {
+   "es": "' % del objetivo'",
+   "pt": "'% da meta'",
+   "en": "'% of target'"
+  },
+  {
+   "es": "'Le faltan '",
+   "pt": "'Faltam '",
+   "en": "'Still '"
+  },
+  {
+   "es": "' y el mes cierra mañana. Debería ir por '",
+   "pt": "' e o mês fecha amanhã. Deveria estar em '",
+   "en": "' to go and the month closes tomorrow. Should be at '"
+  },
+  {
+   "es": "' dejó de comprar'",
+   "pt": "' parou de comprar'",
+   "en": "' stopped buying'"
+  },
+  {
+   "es": "'Compraba '",
+   "pt": "'Comprava '",
+   "en": "'Used to buy '"
+  },
+  {
+   "es": "' por mes, cada '",
+   "pt": "' por mês, a cada '",
+   "en": "' a month, every '"
+  },
+  {
+   "es": "' días; van '",
+   "pt": "' dias; já são '",
+   "en": "' days; now '"
+  },
+  {
+   "es": "' sin comprar. Cartera de ' + corV(r.v) + '.'",
+   "pt": "' sem comprar. Carteira de ' + corV(r.v) + '.'",
+   "en": "' days without buying. ' + corV(r.v) + '’s account.'"
+  },
+  {
+   "es": "' vencidos en la ruta de hoy'",
+   "pt": "' vencidos na rota de hoje'",
+   "en": "' overdue on today’s route'"
+  },
+  {
+   "es": "' días)'",
+   "pt": "' dias)'",
+   "en": "' days)'"
+  },
+  {
+   "es": "'. A cobrar en la visita.'",
+   "pt": "'. Para cobrar na visita.'",
+   "en": "'. Collect during the visit.'"
+  },
+  {
+   "es": "'Un pedido de ayer sigue sin cargar'",
+   "pt": "'Um pedido de ontem ainda não foi lançado'",
+   "en": "'One order from yesterday still isn’t entered'"
+  },
+  {
+   "es": "' pedidos de ayer siguen sin cargar'",
+   "pt": "' pedidos de ontem ainda não foram lançados'",
+   "en": "' orders from yesterday still aren’t entered'"
+  },
+  {
+   "es": "'Venta del equipo · '",
+   "pt": "'Vendas da equipe · '",
+   "en": "'Team sales · '"
+  },
+  {
+   "es": "p + ' % del objetivo de ' + $m(M.obj)",
+   "pt": "p + '% da meta de ' + $m(M.obj)",
+   "en": "p + '% of the ' + $m(M.obj) + ' target'"
+  },
+  {
+   "es": "'Ruta cumplida'",
+   "pt": "'Rota cumprida'",
+   "en": "'Route completion'"
+  },
+  {
+   "es": "' paradas'",
+   "pt": "' paradas'",
+   "en": "' stops'"
+  },
+  {
+   "es": "'ticket promedio '",
+   "pt": "'tíquete médio '",
+   "en": "'avg. order '"
+  },
+  {
+   "es": "'Oportunidades vendidas'",
+   "pt": "'Oportunidades vendidas'",
+   "en": "'Opportunities sold'"
+  },
+  {
+   "es": "' % de las ofrecidas'",
+   "pt": "'% das oferecidas'",
+   "en": "'% of those offered'"
+  },
+  {
+   "es": "'Comisiones'",
+   "pt": "'Comissões'",
+   "en": "'Commissions'"
+  },
+  {
+   "es": "'estimadas sobre la venta del mes'",
+   "pt": "'estimadas sobre as vendas do mês'",
+   "en": "'estimated on this month’s sales'"
+  },
+  {
+   "es": "<span>Vendedor</span><span>Venta contra objetivo</span><span>Ruta cumplida</span><span>Pedidos</span><span>Oportunidades</span><span>Comisión</span>",
+   "pt": "<span>Vendedor</span><span>Vendas contra a meta</span><span>Rota cumprida</span><span>Pedidos</span><span>Oportunidades</span><span>Comissão</span>",
+   "en": "<span>Sales rep</span><span>Sales vs. target</span><span>Route completion</span><span>Orders</span><span>Opportunities</span><span>Commission</span>"
+  },
+  {
+   "es": "</b><span>de ",
+   "pt": "</b><span>de ",
+   "en": "</b><span>of "
+  },
+  {
+   "es": "<span class=\"lbl-m\">Ruta cumplida</span>",
+   "pt": "<span class=\"lbl-m\">Rota cumprida</span>",
+   "en": "<span class=\"lbl-m\">Route completion</span>"
+  },
+  {
+   "es": " paradas</small></span>",
+   "pt": " paradas</small></span>",
+   "en": " stops</small></span>"
+  },
+  {
+   "es": "lbl-m\">Pedidos</span>",
+   "pt": "lbl-m\">Pedidos</span>",
+   "en": "lbl-m\">Orders</span>"
+  },
+  {
+   "es": "</b><small>ticket ",
+   "pt": "</b><small>tíquete ",
+   "en": "</b><small>avg. "
+  },
+  {
+   "es": "lbl-m\">Oportunidades</span>",
+   "pt": "lbl-m\">Oportunidades</span>",
+   "en": "lbl-m\">Opportunities</span>"
+  },
+  {
+   "es": " % vendidas</small></span>",
+   "pt": "% vendidas</small></span>",
+   "en": "% sold</small></span>"
+  },
+  {
+   "es": "lbl-m\">Comisión</span>",
+   "pt": "lbl-m\">Comissão</span>",
+   "en": "lbl-m\">Commission</span>"
+  },
+  {
+   "es": " % de la venta</small>",
+   "pt": "% das vendas</small>",
+   "en": "% of sales</small>"
+  },
+  {
+   "es": "La raya negra marca dónde deberían estar ",
+   "pt": "A linha preta marca onde deveriam estar ",
+   "en": "The black line marks where they should be "
+  },
+  {
+   "es": "'hoy: el '",
+   "pt": "'hoje: '",
+   "en": "'today: '"
+  },
+  {
+   "es": "' % del objetivo, con el mes casi terminado'",
+   "pt": "'% da meta, com o mês quase no fim'",
+   "en": "'% of target, with the month nearly over'"
+  },
+  {
+   "es": "'al cierre del mes'",
+   "pt": "'no fechamento do mês'",
+   "en": "'at month end'"
+  },
+  {
+   "es": ". La comisión es la venta del mes por el porcentaje de cada vendedor.",
+   "pt": ". A comissão é a venda do mês vezes o percentual de cada vendedor.",
+   "en": ". Commission is the month’s sales times each rep’s rate."
+  },
+  {
+   "es": "'Venta de los últimos seis meses'",
+   "pt": "'Vendas dos últimos seis meses'",
+   "en": "'Sales, last six months'"
+  },
+  {
+   "es": "'Venta por mes de cada vendedor'",
+   "pt": "'Vendas por mês de cada vendedor'",
+   "en": "'Monthly sales by rep'"
+  },
+  {
+   "es": "Pasá el mouse por una barra para ver el monto",
+   "pt": "Passe o mouse sobre uma barra para ver o valor",
+   "en": "Hover over a bar to see the amount"
+  },
+  {
+   "es": "'Contra ' + mesL + ' de 2025'",
+   "pt": "'Contra ' + mesL + ' de 2025'",
+   "en": "'vs. ' + mesL + ' 2025'"
+  },
+  {
+   "es": "<th>Vendedor</th><th class=\"r\">2026</th><th class=\"r\">2025</th><th class=\"r\">Variación</th>",
+   "pt": "<th>Vendedor</th><th class=\"r\">2026</th><th class=\"r\">2025</th><th class=\"r\">Variação</th>",
+   "en": "<th>Sales rep</th><th class=\"r\">2026</th><th class=\"r\">2025</th><th class=\"r\">Change</th>"
+  },
+  {
+   "es": " %</b></td></tr>",
+   "pt": "%</b></td></tr>",
+   "en": "%</b></td></tr>"
+  },
+  {
+   "es": "<td>Equipo</td>",
+   "pt": "<td>Equipe</td>",
+   "en": "<td>Team</td>"
+  },
+  {
+   "es": " %</td></tr></tbody>",
+   "pt": "%</td></tr></tbody>",
+   "en": "%</td></tr></tbody>"
+  },
+  {
+   "es": "'Setiembre 2026 va al día 29; el del año pasado es el mes completo.'",
+   "pt": "'Setembro de 2026 vai até o dia 29; o do ano passado é o mês completo.'",
+   "en": "'September 2026 runs through the 29th; last year’s is the full month.'"
+  },
+  {
+   "es": "'Meses completos.'",
+   "pt": "'Meses completos.'",
+   "en": "'Full months.'"
+  },
+  {
+   "es": "<small>Venta extra estimada</small>",
+   "pt": "<small>Venda extra estimada</small>",
+   "en": "<small>Estimated extra sales</small>"
+  },
+  {
+   "es": "<em>por oportunidades · ",
+   "pt": "<em>por oportunidades · ",
+   "en": "<em>from opportunities · "
+  },
+  {
+   "es": "(extra / ventaMesT * 100).toFixed(1).replace('.', ',') + ' % de la venta de ' + mesL",
+   "pt": "(extra / ventaMesT * 100).toFixed(1).replace('.', ',') + '% das vendas de ' + mesL",
+   "en": "(extra / ventaMesT * 100).toFixed(1) + '% of ' + mesL + ' sales'"
+  },
+  {
+   "es": "'vendidas de las ofrecidas · '",
+   "pt": "'vendidas das oferecidas · '",
+   "en": "'sold of those offered · '"
+  },
+  {
+   "es": "'Clientes recuperados'",
+   "pt": "'Clientes recuperados'",
+   "en": "'Customers won back'"
+  },
+  {
+   "es": "'volvieron a comprar después de la visita'",
+   "pt": "'voltaram a comprar depois da visita'",
+   "en": "'bought again after the visit'"
+  },
+  {
+   "es": "'Vendido por sugerencias'",
+   "pt": "'Vendido por sugestões'",
+   "en": "'Sold from suggestions'"
+  },
+  {
+   "es": "'renglones «sugerido» en los pedidos'",
+   "pt": "'linhas «sugerido» nos pedidos'",
+   "en": "'“suggested” lines in orders'"
+  },
+  {
+   "es": "'Cobrado en la visita'",
+   "pt": "'Cobrado na visita'",
+   "en": "'Collected at the visit'"
+  },
+  {
+   "es": "' deudas vencidas · no es venta'",
+   "pt": "' dívidas vencidas · não é venda'",
+   "en": "' overdue balances · not sales'"
+  },
+  {
+   "es": "<th>Tipo</th><th class=\"r\">Ofrecidas</th><th class=\"r\">Vendidas</th><th style=\"min-width:150px\">De cada 100</th><th class=\"r\">Suma</th>",
+   "pt": "<th>Tipo</th><th class=\"r\">Oferecidas</th><th class=\"r\">Vendidas</th><th style=\"min-width:150px\">De cada 100</th><th class=\"r\">Soma</th>",
+   "en": "<th>Type</th><th class=\"r\">Offered</th><th class=\"r\">Sold</th><th style=\"min-width:150px\">Out of 100</th><th class=\"r\">Adds</th>"
+  },
+  {
+   "es": "<small>cobrado</small>",
+   "pt": "<small>cobrado</small>",
+   "en": "<small>collected</small>"
+  },
+  {
+   "es": "<small>en venta</small>",
+   "pt": "<small>em vendas</small>",
+   "en": "<small>in sales</small>"
+  },
+  {
+   "es": "'Por tipo de oportunidad'",
+   "pt": "'Por tipo de oportunidade'",
+   "en": "'By opportunity type'"
+  },
+  {
+   "es": "margin-top:10px\">Incluye ",
+   "pt": "margin-top:10px\">Inclui ",
+   "en": "margin-top:10px\">Includes "
+  },
+  {
+   "es": "' oportunidad vendida'",
+   "pt": "' oportunidade vendida'",
+   "en": "' opportunity sold'"
+  },
+  {
+   "es": "' oportunidades vendidas'",
+   "pt": "' oportunidades vendidas'",
+   "en": "' opportunities sold'"
+  },
+  {
+   "es": " hoy desde el celular.</p>",
+   "pt": " hoje pelo celular.</p>",
+   "en": " today from the phone.</p>"
+  },
+  {
+   "es": "'Mes a mes'",
+   "pt": "'Mês a mês'",
+   "en": "'Month by month'"
+  },
+  {
+   "es": "'Venta extra estimada por oportunidades'",
+   "pt": "'Venda extra estimada por oportunidades'",
+   "en": "'Estimated extra sales from opportunities'"
+  },
+  {
+   "es": "Junio fue el primer mes con Libreta (desde el 9). Setiembre, al día 29.",
+   "pt": "Junho foi o primeiro mês com o Libreta (desde o dia 9). Setembro, até o dia 29.",
+   "en": "June was the first month with Libreta (from the 9th). September, through the 29th."
+  },
+  {
+   "es": "desde que se usa Libreta",
+   "pt": "desde que o Libreta é usado",
+   "en": "since Libreta went live"
+  },
+  {
+   "es": "'Por vendedor'",
+   "pt": "'Por vendedor'",
+   "en": "'By rep'"
+  },
+  {
+   "es": "<th>Vendedor</th><th style=\"min-width:130px\">Vendidas de las ofrecidas</th><th class=\"r\">Venta extra</th><th class=\"r\">Recuperados</th>",
+   "pt": "<th>Vendedor</th><th style=\"min-width:130px\">Vendidas das oferecidas</th><th class=\"r\">Venda extra</th><th class=\"r\">Recuperados</th>",
+   "en": "<th>Sales rep</th><th style=\"min-width:130px\">Sold of those offered</th><th class=\"r\">Extra sales</th><th class=\"r\">Won back</th>"
+  },
+  {
+   "es": "Recuperados: clientes con visita pedida que volvieron a comprar en el mes.",
+   "pt": "Recuperados: clientes com visita pedida que voltaram a comprar no mês.",
+   "en": "Won back: customers with a requested visit who bought again this month."
+  },
+  {
+   "es": "'Cómo se calcula'",
+   "pt": "'Como se calcula'",
+   "en": "'How it’s calculated'"
+  },
+  {
+   "es": "<b>Venta extra (estimada):</b> lo que el cliente compró de los productos de la oportunidad en la visita en que se la ofrecieron, o lo que compró en el mes en que volvió. Parte quizás se hubiera vendido igual.",
+   "pt": "<b>Venda extra (estimada):</b> o que o cliente comprou dos produtos da oportunidade na visita em que ela foi oferecida, ou o que comprou no mês em que voltou. Parte talvez tivesse sido vendida de qualquer forma.",
+   "en": "<b>Extra sales (estimated):</b> what the customer bought of the opportunity’s products on the visit where it was offered, or what they bought in the month they came back. Some of it might have sold anyway."
+  },
+  {
+   "es": "<b>Vendido por sugerencias:</b> la suma exacta de los renglones que el vendedor cargó desde «Sugeridos» en la app. No se suma a la venta extra: muchas veces es el mismo producto.",
+   "pt": "<b>Vendido por sugestões:</b> a soma exata das linhas que o vendedor lançou a partir de «Sugeridos» no app. Não entra na venda extra: muitas vezes é o mesmo produto.",
+   "en": "<b>Sold from suggestions:</b> the exact total of the lines the rep entered from “Suggested” in the app. It isn’t added to extra sales: it’s often the same product."
+  },
+  {
+   "es": "<b>Cobrado en la visita:</b> deuda vencida que se cobró cuando la app lo marcó. Es plata que entra, no venta, y va aparte.",
+   "pt": "<b>Cobrado na visita:</b> dívida vencida cobrada quando o app indicou. É dinheiro que entra, não venda, e fica à parte.",
+   "en": "<b>Collected at the visit:</b> overdue balances collected when the app flagged them. It’s cash coming in, not sales, so it’s counted separately."
+  },
+  {
+   "es": "<b>Ofrecida:</b> el vendedor la marcó como ofrecida en la app o cargó un pedido en ese cliente ese día.",
+   "pt": "<b>Oferecida:</b> o vendedor marcou como oferecida no app ou lançou um pedido desse cliente naquele dia.",
+   "en": "<b>Offered:</b> the rep marked it as offered in the app or entered an order for that customer that day."
+  },
+  {
+   "es": "aria-label=\"Venta extra y vendido por sugerencias por mes\"",
+   "pt": "aria-label=\"Venda extra e vendido por sugestões por mês\"",
+   "en": "aria-label=\"Extra sales and sales from suggestions by month\""
+  },
+  {
+   "es": "title=\"Venta extra · ",
+   "pt": "title=\"Venda extra · ",
+   "en": "title=\"Extra sales · "
+  },
+  {
+   "es": "title=\"Sugerencias · ",
+   "pt": "title=\"Sugestões · ",
+   "en": "title=\"Suggestions · "
+  },
+  {
+   "es": "'Lo que llevan los parecidos y este no'",
+   "pt": "'O que os parecidos levam e este não'",
+   "en": "'What similar customers buy and this one doesn’t'"
+  },
+  {
+   "es": "'Lo que compra seguido y ya se pasó'",
+   "pt": "'O que compra sempre e já passou do prazo'",
+   "en": "'What they buy regularly and are overdue for'"
+  },
+  {
+   "es": "'Deuda vencida, en la visita'",
+   "pt": "'Dívida vencida, na visita'",
+   "en": "'Overdue balance, at the visit'"
+  },
+  {
+   "es": "«Pedir visita» y «Pedir cobro» le dejan la tarea al vendedor en la app.",
+   "pt": "«Pedir visita» e «Pedir cobrança» deixam a tarefa para o vendedor no app.",
+   "en": "“Request visit” and “Request collection” leave the task in the rep’s app."
+  },
+  {
+   "es": "'Dejaron de comprar'",
+   "pt": "'Pararam de comprar'",
+   "en": "'Stopped buying'"
+  },
+  {
+   "es": "' por mes en juego'",
+   "pt": "' por mês em jogo'",
+   "en": "' a month at stake'"
+  },
+  {
+   "es": "'Deuda vencida'",
+   "pt": "'Dívida vencida'",
+   "en": "'Overdue balance'"
+  },
+  {
+   "es": "' clientes'",
+   "pt": "' clientes'",
+   "en": "' customers'"
+  },
+  {
+   "es": "' cliente'",
+   "pt": "' cliente'",
+   "en": "' customer'"
+  },
+  {
+   "es": "'Más de 30 días'",
+   "pt": "'Mais de 30 dias'",
+   "en": "'Over 30 days'"
+  },
+  {
+   "es": "' clientes · pedidos bloqueados'",
+   "pt": "' clientes · pedidos bloqueados'",
+   "en": "' customers · orders on hold'"
+  },
+  {
+   "es": "'Recuperados en setiembre'",
+   "pt": "'Recuperados em setembro'",
+   "en": "'Won back in September'"
+  },
+  {
+   "es": "'volvieron después de una visita pedida'",
+   "pt": "'voltaram depois de uma visita pedida'",
+   "en": "'came back after a requested visit'"
+  },
+  {
+   "es": "<th style=\"min-width:170px\">Cliente</th><th class=\"r\">Sin comprar</th><th class=\"r\">Compraba</th>",
+   "pt": "<th style=\"min-width:170px\">Cliente</th><th class=\"r\">Sem comprar</th><th class=\"r\">Comprava</th>",
+   "en": "<th style=\"min-width:170px\">Customer</th><th class=\"r\">Days idle</th><th class=\"r\">Used to buy</th>"
+  },
+  {
+   "es": " días</b><small>compra cada ",
+   "pt": " dias</b><small>compra a cada ",
+   "en": " days</b><small>buys every "
+  },
+  {
+   "es": "<small>por mes</small>",
+   "pt": "<small>por mês</small>",
+   "en": "<small>a month</small>"
+  },
+  {
+   "es": "'Visita pedida'",
+   "pt": "'Visita pedida'",
+   "en": "'Visit requested'"
+  },
+  {
+   "es": "Pedir visita</button>",
+   "pt": "Pedir visita</button>",
+   "en": "Request visit</button>"
+  },
+  {
+   "es": "Nadie dejó de comprar a su ritmo.",
+   "pt": "Ninguém parou de comprar no ritmo de sempre.",
+   "en": "Nobody has stopped buying at their usual pace."
+  },
+  {
+   "es": "<th style=\"min-width:170px\">Cliente</th><th class=\"r\">Vencido</th><th>Atraso</th>",
+   "pt": "<th style=\"min-width:170px\">Cliente</th><th class=\"r\">Vencido</th><th>Atraso</th>",
+   "en": "<th style=\"min-width:170px\">Customer</th><th class=\"r\">Overdue</th><th>Days late</th>"
+  },
+  {
+   "es": "'Cobro pedido'",
+   "pt": "'Cobrança pedida'",
+   "en": "'Collection requested'"
+  },
+  {
+   "es": "Pedir cobro</button>",
+   "pt": "Pedir cobrança</button>",
+   "en": "Request collection</button>"
+  },
+  {
+   "es": "No hay deuda vencida.",
+   "pt": "Não há dívida vencida.",
+   "en": "No overdue balances."
+  },
+  {
+   "es": "'Dejaron de comprar a su ritmo'",
+   "pt": "'Pararam de comprar no ritmo de sempre'",
+   "en": "'Stopped buying at their usual pace'"
+  },
+  {
+   "es": "ordenados por plata en juego",
+   "pt": "ordenados pelo valor em jogo",
+   "en": "sorted by money at stake"
+  },
+  {
+   "es": "en rojo, más de 30 días: no pueden pedir",
+   "pt": "em vermelho, mais de 30 dias: não podem pedir",
+   "en": "in red, over 30 days: can’t order"
+  },
+  {
+   "es": "var PED_EST = {pend: ['arena', 'Pendiente'], cargado: ['ver', 'En el sistema'], anulado: ['gris', 'Anulado']};",
+   "pt": "var PED_EST = {pend: ['arena', 'Pendente'], cargado: ['ver', 'No sistema'], anulado: ['gris', 'Cancelado']};",
+   "en": "var PED_EST = {pend: ['arena', 'Pending'], cargado: ['ver', 'In the system'], anulado: ['gris', 'Canceled']};"
+  },
+  {
+   "es": "'En el sistema'",
+   "pt": "'No sistema'",
+   "en": "'In the system'"
+  },
+  {
+   "es": "'Pendientes'",
+   "pt": "'Pendentes'",
+   "en": "'Pending'"
+  },
+  {
+   "es": "'Anulados'",
+   "pt": "'Cancelados'",
+   "en": "'Canceled'"
+  },
+  {
+   "es": "'Pendientes de cargar'",
+   "pt": "'Pendentes de lançamento'",
+   "en": "'Waiting to be entered'"
+  },
+  {
+   "es": "'Pedidos de las últimas 24 h'",
+   "pt": "'Pedidos das últimas 24 h'",
+   "en": "'Orders in the last 24 h'"
+  },
+  {
+   "es": "'Vendido por sugerencias (24 h)'",
+   "pt": "'Vendido por sugestões (24 h)'",
+   "en": "'Sold from suggestions (24 h)'"
+  },
+  {
+   "es": "(sug.length === 1 ? ' renglón' : ' renglones') + ' que propuso la app'",
+   "pt": "(sug.length === 1 ? ' linha sugerida' : ' linhas sugeridas') + ' pelo app'",
+   "en": "(sug.length === 1 ? ' line' : ' lines') + ' suggested by the app'"
+  },
+  {
+   "es": "'Todos los vendedores'",
+   "pt": "'Todos os vendedores'",
+   "en": "'All reps'"
+  },
+  {
+   "es": "No hay pedidos pendientes: todo lo que cargaron los vendedores ya está en el sistema.",
+   "pt": "Não há pedidos pendentes: tudo o que os vendedores lançaram já está no sistema.",
+   "en": "No pending orders: everything the reps entered is already in the system."
+  },
+  {
+   "es": "'No hay pedidos en esta vista.'",
+   "pt": "'Não há pedidos nesta visão.'",
+   "en": "'No orders in this view.'"
+  },
+  {
+   "es": "La planilla trae los códigos de cliente y de producto para importarla en Doria. Los renglones marcados <span class=\"sug\" style=\"margin:0\">sugerido</span> los propuso la app.",
+   "pt": "A planilha traz os códigos de cliente e de produto para importar no Doria. As linhas marcadas como <span class=\"sug\" style=\"margin:0\">sugerido</span> foram propostas pelo app.",
+   "en": "The spreadsheet includes customer and product codes for importing into Doria. Lines tagged <span class=\"sug\" style=\"margin:0\">suggested</span> were proposed by the app."
+  },
+  {
+   "es": "'Recién llegado'",
+   "pt": "'Recém-chegado'",
+   "en": "'Just in'"
+  },
+  {
+   "es": "(p.f === '29/09' ? 'hoy' : p.f === '28/09' ? 'ayer' : p.f)",
+   "pt": "(p.f === '29/09' ? 'hoje' : p.f === '28/09' ? 'ontem' : p.f)",
+   "en": "(p.f === '9/29' ? 'today' : p.f === '9/28' ? 'yesterday' : p.f)"
+  },
+  {
+   "es": "(p.lin.length === 1 ? ' producto' : ' productos')",
+   "pt": "(p.lin.length === 1 ? ' produto' : ' produtos')",
+   "en": "(p.lin.length === 1 ? ' product' : ' products')"
+  },
+  {
+   "es": "'Código'",
+   "pt": "'Código'",
+   "en": "'Code'"
+  },
+  {
+   "es": "'Producto'",
+   "pt": "'Produto'",
+   "en": "'Product'"
+  },
+  {
+   "es": "'Cant.'",
+   "pt": "'Qtd.'",
+   "en": "'Qty'"
+  },
+  {
+   "es": "'Precio'",
+   "pt": "'Preço'",
+   "en": "'Price'"
+  },
+  {
+   "es": "'Importe'",
+   "pt": "'Valor'",
+   "en": "'Amount'"
+  },
+  {
+   "es": "<span class=\"sug\">sugerido</span>",
+   "pt": "<span class=\"sug\">sugerido</span>",
+   "en": "<span class=\"sug\">suggested</span>"
+  },
+  {
+   "es": "<span class=\"sug of\">oferta</span>",
+   "pt": "<span class=\"sug of\">oferta</span>",
+   "en": "<span class=\"sug of\">promo</span>"
+  },
+  {
+   "es": "<p class=\"ped-nota\">Nota: ",
+   "pt": "<p class=\"ped-nota\">Nota: ",
+   "en": "<p class=\"ped-nota\">Note: "
+  },
+  {
+   "es": "<p class=\"nota\">Cargado por ",
+   "pt": "<p class=\"nota\">Lançado por ",
+   "en": "<p class=\"nota\">Entered by "
+  },
+  {
+   "es": "(p.at ? ' el ' + esc(p.at) : '')",
+   "pt": "(p.at ? ' em ' + esc(p.at) : '')",
+   "en": "(p.at ? ' on ' + esc(p.at) : '')"
+  },
+  {
+   "es": "' · comprobante '",
+   "pt": "' · comprovante '",
+   "en": "' · document '"
+  },
+  {
+   "es": "<p class=\"nota\">Anulado: ",
+   "pt": "<p class=\"nota\">Cancelado: ",
+   "en": "<p class=\"nota\">Canceled: "
+  },
+  {
+   "es": "Ya lo cargué en el sistema</button>",
+   "pt": "Já lancei no sistema</button>",
+   "en": "I entered it in the system</button>"
+  },
+  {
+   "es": "data-m=\"anular\">Anular</button>",
+   "pt": "data-m=\"anular\">Cancelar</button>",
+   "en": "data-m=\"anular\">Cancel order</button>"
+  },
+  {
+   "es": "Volver a pendiente</button>",
+   "pt": "Voltar para pendente</button>",
+   "en": "Move back to pending</button>"
+  },
+  {
+   "es": "(modo === 'cargar' ? 'N.º de comprobante en el sistema (opcional)' : 'Por qué se anula')",
+   "pt": "(modo === 'cargar' ? 'Nº do comprovante no sistema (opcional)' : 'Por que está sendo cancelado')",
+   "en": "(modo === 'cargar' ? 'Document number in the system (optional)' : 'Why it’s being canceled')"
+  },
+  {
+   "es": "(modo === 'cargar' ? 'Número de comprobante' : 'Motivo de la anulación')",
+   "pt": "(modo === 'cargar' ? 'Número do comprovante' : 'Motivo do cancelamento')",
+   "en": "(modo === 'cargar' ? 'Document number' : 'Cancellation reason')"
+  },
+  {
+   "es": "Marcar cargado</button>",
+   "pt": "Marcar como lançado</button>",
+   "en": "Mark as entered</button>"
+  },
+  {
+   "es": "Anular pedido</button>",
+   "pt": "Cancelar pedido</button>",
+   "en": "Cancel order</button>"
+  },
+  {
+   "es": "data-m=\"\">Cancelar</button></div>",
+   "pt": "data-m=\"\">Voltar</button></div>",
+   "en": "data-m=\"\">Back</button></div>"
+  },
+  {
+   "es": "'2' + (c.id.length % 3 + 1) + '/09'",
+   "pt": "'2' + (c.id.length % 3 + 1) + '/09'",
+   "en": "'9/2' + (c.id.length % 3 + 1)"
+  },
+  {
+   "es": "'1' + (c.id.length % 6 + 2) + '/09'",
+   "pt": "'1' + (c.id.length % 6 + 2) + '/09'",
+   "en": "'9/1' + (c.id.length % 6 + 2)"
+  },
+  {
+   "es": "'2' + (c.id.length % 7 + 1) + '/08'",
+   "pt": "'2' + (c.id.length % 7 + 1) + '/08'",
+   "en": "'8/2' + (c.id.length % 7 + 1)"
+  },
+  {
+   "es": "'Lista 3 · Mayorista'",
+   "pt": "'Tabela 3 · Atacado'",
+   "en": "'List 3 · Wholesale'"
+  },
+  {
+   "es": "function dm(d){ return String(d.getDate()).padStart(2, '0') + '/' + String(d.getMonth() + 1).padStart(2, '0'); }",
+   "pt": "function dm(d){ return String(d.getDate()).padStart(2, '0') + '/' + String(d.getMonth() + 1).padStart(2, '0'); }",
+   "en": "function dm(d){ return (d.getMonth() + 1) + '/' + d.getDate(); }"
+  },
+  {
+   "es": "function aFecha(t){ var p = String(t).split('/'); return new Date(2026, +p[1] - 1, +p[0]); }",
+   "pt": "function aFecha(t){ var p = String(t).split('/'); return new Date(2026, +p[1] - 1, +p[0]); }",
+   "en": "function aFecha(t){ var p = String(t).split('/'); return new Date(2026, +p[0] - 1, +p[1]); }"
+  },
+  {
+   "es": "a.slice(0, -1).join(', ') + ' y ' + a[a.length - 1]",
+   "pt": "a.slice(0, -1).join(', ') + ' e ' + a[a.length - 1]",
+   "en": "a.slice(0, -1).join(', ') + ' and ' + a[a.length - 1]"
+  },
+  {
+   "es": "'Dice que otro mayorista le da mejor precio.'",
+   "pt": "'Diz que outro atacadista dá preço melhor.'",
+   "en": "'Says another wholesaler gives a better price.'"
+  },
+  {
+   "es": "'Pidió que vuelva el jueves.'",
+   "pt": "'Pediu para voltar na quinta.'",
+   "en": "'Asked to come back Thursday.'"
+  },
+  {
+   "es": "'Vuelve a comprar en noviembre, con la temporada.'",
+   "pt": "'Volta a comprar em novembro, com a temporada.'",
+   "en": "'Will buy again in November, when the season starts.'"
+  },
+  {
+   "es": "'Pagó una factura; queda una vencida.'",
+   "pt": "'Pagou uma fatura; ainda tem uma vencida.'",
+   "en": "'Paid one invoice; one is still overdue.'"
+  },
+  {
+   "es": "'Cerró por reformas hasta fin de mes.'",
+   "pt": "'Fechou para reforma até o fim do mês.'",
+   "en": "'Closed for renovations until the end of the month.'"
+  },
+  {
+   "es": "var RES_OP = {vendida: ['ver', 'Vendida'], ofrecida: ['arena', 'Ofrecida'], no: ['gris', 'No le interesó'], ruta: ['borde', 'En la ruta de hoy'], abierta: ['gris', 'Abierta'], cobrada: ['ver', 'Cobrada']};",
+   "pt": "var RES_OP = {vendida: ['ver', 'Vendida'], ofrecida: ['arena', 'Oferecida'], no: ['gris', 'Sem interesse'], ruta: ['borde', 'Na rota de hoje'], abierta: ['gris', 'Aberta'], cobrada: ['ver', 'Cobrada']};",
+   "en": "var RES_OP = {vendida: ['ver', 'Sold'], ofrecida: ['arena', 'Offered'], no: ['gris', 'Not interested'], ruta: ['borde', 'On today’s route'], abierta: ['gris', 'Open'], cobrada: ['ver', 'Collected']};"
+  },
+  {
+   "es": "'No le interesó'",
+   "pt": "'Sem interesse'",
+   "en": "'Not interested'"
+  },
+  {
+   "es": "'Ofrecidas'",
+   "pt": "'Oferecidas'",
+   "en": "'Offered'"
+  },
+  {
+   "es": "'Vendidas'",
+   "pt": "'Vendidas'",
+   "en": "'Sold'"
+  },
+  {
+   "es": "'Abiertas'",
+   "pt": "'Abertas'",
+   "en": "'Open'"
+  },
+  {
+   "es": "'Todas'",
+   "pt": "'Todas'",
+   "en": "'All'"
+  },
+  {
+   "es": "'En la ruta de hoy'",
+   "pt": "'Na rota de hoje'",
+   "en": "'On today’s route'"
+  },
+  {
+   "es": "<span>En la ruta de hoy</span>",
+   "pt": "<span>Na rota de hoje</span>",
+   "en": "<span>On today’s route</span>"
+  },
+  {
+   "es": "'En juego'",
+   "pt": "'Em jogo'",
+   "en": "'At stake'"
+  },
+  {
+   "es": "' /mes'",
+   "pt": "' /mês'",
+   "en": "' /mo'"
+  },
+  {
+   "es": "(ab.length === 1 ? ' oportunidad abierta' : ' oportunidades abiertas')",
+   "pt": "(ab.length === 1 ? ' oportunidade aberta' : ' oportunidades abertas')",
+   "en": "(ab.length === 1 ? ' open opportunity' : ' open opportunities')"
+  },
+  {
+   "es": "' por mes para ofrecer hoy'",
+   "pt": "' por mês para oferecer hoje'",
+   "en": "' a month to offer today'"
+  },
+  {
+   "es": "'Nada pendiente en la ruta'",
+   "pt": "'Nada pendente na rota'",
+   "en": "'Nothing pending on the route'"
+  },
+  {
+   "es": "'Ofrecidas en setiembre'",
+   "pt": "'Oferecidas em setembro'",
+   "en": "'Offered in September'"
+  },
+  {
+   "es": "' vendidas · '",
+   "pt": "' vendidas · '",
+   "en": "' sold · '"
+  },
+  {
+   "es": "'en setiembre · se esconden '",
+   "pt": "'em setembro · ficam ocultas por '",
+   "en": "'in September · hidden for '"
+  },
+  {
+   "es": "<span>Abiertas</span>",
+   "pt": "<span>Abertas</span>",
+   "en": "<span>Open</span>"
+  },
+  {
+   "es": "/mes</b></span>",
+   "pt": "/mês</b></span>",
+   "en": "/mo</b></span>"
+  },
+  {
+   "es": "<span>Vendidas en setiembre</span>",
+   "pt": "<span>Vendidas em setembro</span>",
+   "en": "<span>Sold in September</span>"
+  },
+  {
+   "es": " %</b></span>",
+   "pt": "%</b></span>",
+   "en": "%</b></span>"
+  },
+  {
+   "es": "<span>La más grande: <b",
+   "pt": "<span>A maior: <b",
+   "en": "<span>Biggest: <b"
+  },
+  {
+   "es": "'Todos los tipos'",
+   "pt": "'Todos os tipos'",
+   "en": "'All types'"
+  },
+  {
+   "es": "'Prospectos'",
+   "pt": "'Prospects'",
+   "en": "'Prospects'"
+  },
+  {
+   "es": "chip('ver', 'Pedida a ' + corV(o.w))",
+   "pt": "chip('ver', 'Pedida a ' + corV(o.w))",
+   "en": "chip('ver', 'Requested from ' + corV(o.w))"
+  },
+  {
+   "es": "\">Pedírsela a ",
+   "pt": "\">Pedir a ",
+   "en": "\">Ask "
+  },
+  {
+   "es": "'\">Ver '",
+   "pt": "'\">Ver '",
+   "en": "'\">View '"
+  },
+  {
+   "es": "'Ver'",
+   "pt": "'Ver'",
+   "en": "'View'"
+  },
+  {
+   "es": "card('Oportunidades' + (vs !== 'todos' ? ' de ' + corV(vs) : ' del equipo')",
+   "pt": "card('Oportunidades' + (vs !== 'todos' ? ' de ' + corV(vs) : ' da equipe')",
+   "en": "card((vs !== 'todos' ? corV(vs) + '’s opportunities' : 'Team opportunities')"
+  },
+  {
+   "es": "'Cliente'",
+   "pt": "'Cliente'",
+   "en": "'Customer'"
+  },
+  {
+   "es": "'Vendedor'",
+   "pt": "'Vendedor'",
+   "en": "'Sales rep'"
+  },
+  {
+   "es": "'Tipo'",
+   "pt": "'Tipo'",
+   "en": "'Type'"
+  },
+  {
+   "es": "'Qué hacer y por qué'",
+   "pt": "'O que fazer e por quê'",
+   "en": "'What to do and why'"
+  },
+  {
+   "es": "'Vale'",
+   "pt": "'Vale'",
+   "en": "'Worth'"
+  },
+  {
+   "es": "'Estado'",
+   "pt": "'Status'",
+   "en": "'Status'"
+  },
+  {
+   "es": "'No hay oportunidades con estos filtros.'",
+   "pt": "'Não há oportunidades com esses filtros.'",
+   "en": "'No opportunities match these filters.'"
+  },
+  {
+   "es": " · tocá un cliente para ver su ficha",
+   "pt": " · toque em um cliente para ver a ficha",
+   "en": " · tap a customer to see their profile"
+  },
+  {
+   "es": "'Hoy '",
+   "pt": "'Hoje '",
+   "en": "'Today '"
+  },
+  {
+   "es": "'Qué pasó con lo que se ofreció'",
+   "pt": "'O que aconteceu com o que foi oferecido'",
+   "en": "'What happened with what was offered'"
+  },
+  {
+   "es": "'Cuándo'",
+   "pt": "'Quando'",
+   "en": "'When'"
+  },
+  {
+   "es": "'Quién'",
+   "pt": "'Quem'",
+   "en": "'Who'"
+  },
+  {
+   "es": "'Qué'",
+   "pt": "'O quê'",
+   "en": "'What'"
+  },
+  {
+   "es": "'Resultado'",
+   "pt": "'Resultado'",
+   "en": "'Result'"
+  },
+  {
+   "es": "x.res === 'vendida' ? (x.ped ? 'Vendida · ' + x.ped : 'Compró el ' + x.fc) : r[1]",
+   "pt": "x.res === 'vendida' ? (x.ped ? 'Vendida · ' + x.ped : 'Comprou em ' + x.fc) : r[1]",
+   "en": "x.res === 'vendida' ? (x.ped ? 'Sold · ' + x.ped : 'Bought ' + x.fc) : r[1]"
+  },
+  {
+   "es": "'Todavía no hay seguimiento.'",
+   "pt": "'Ainda não há acompanhamento.'",
+   "en": "'No follow-up yet.'"
+  },
+  {
+   "es": "hoy y los últimos 30 días",
+   "pt": "hoje e os últimos 30 dias",
+   "en": "today and the last 30 days"
+  },
+  {
+   "es": "<p class=\"nota\">Ofrecida: el vendedor la marcó en la app o cargó un pedido en ese cliente ese día. Vendida: el cliente compró esos productos en la visita o en los 60 días siguientes. Lo que no le interesó se le esconde al vendedor ",
+   "pt": "<p class=\"nota\">Oferecida: o vendedor marcou no app ou lançou um pedido desse cliente naquele dia. Vendida: o cliente comprou esses produtos na visita ou nos 60 dias seguintes. O que não interessou fica oculto para o vendedor por ",
+   "en": "<p class=\"nota\">Offered: the rep marked it in the app or entered an order for that customer that day. Sold: the customer bought those products at the visit or within the next 60 days. Anything they weren’t interested in is hidden from the rep for "
+  },
+  {
+   "es": "' días.</p>'",
+   "pt": "' dias.</p>'",
+   "en": "' days.</p>'"
+  },
+  {
+   "es": "'Ofertas vigentes'",
+   "pt": "'Ofertas vigentes'",
+   "en": "'Active promotions'"
+  },
+  {
+   "es": "(prog.length === 1 ? ' programada' : ' programadas')",
+   "pt": "(prog.length === 1 ? ' programada' : ' programadas')",
+   "en": "(prog.length === 1 ? ' scheduled' : ' scheduled')"
+  },
+  {
+   "es": "'Vendido con ofertas'",
+   "pt": "'Vendido com ofertas'",
+   "en": "'Sold with promotions'"
+  },
+  {
+   "es": "' pedidos · '",
+   "pt": "' pedidos · '",
+   "en": "' orders · '"
+  },
+  {
+   "es": "' unidades'",
+   "pt": "' unidades'",
+   "en": "' units'"
+  },
+  {
+   "es": "'La vieron en la app'",
+   "pt": "'Viram no app'",
+   "en": "'Seen in the app'"
+  },
+  {
+   "es": "'de los vendedores avisados'",
+   "pt": "'dos vendedores avisados'",
+   "en": "'of the reps notified'"
+  },
+  {
+   "es": "'La que mejor va'",
+   "pt": "'A que vai melhor'",
+   "en": "'Top performer'"
+  },
+  {
+   "es": "'Sin meta'",
+   "pt": "'Sem meta'",
+   "en": "'No goal'"
+  },
+  {
+   "es": "'de la meta · '",
+   "pt": "'da meta · '",
+   "en": "'of goal · '"
+  },
+  {
+   "es": "'Ninguna vigente tiene meta'",
+   "pt": "'Nenhuma vigente tem meta'",
+   "en": "'No active promotion has a goal'"
+  },
+  {
+   "es": "' al '",
+   "pt": "' a '",
+   "en": "' to '"
+  },
+  {
+   "es": "(o.st === 'Programada' ? 'Le llega el ' + o.d1 : 'La vieron ' + ofeVistas(o) + ' de ' + o.sel.length)",
+   "pt": "(o.st === 'Programada' ? 'Chega em ' + o.d1 : 'Viram ' + ofeVistas(o) + ' de ' + o.sel.length)",
+   "en": "(o.st === 'Scheduled' ? 'Goes out ' + o.d1 : 'Seen by ' + ofeVistas(o) + ' of ' + o.sel.length)"
+  },
+  {
+   "es": "(t.ped === 1 ? ' pedido · ' : ' pedidos · ') + fmt.format(t.uni) + ' u.</small>'",
+   "pt": "(t.ped === 1 ? ' pedido · ' : ' pedidos · ') + fmt.format(t.uni) + ' un.</small>'",
+   "en": "(t.ped === 1 ? ' order · ' : ' orders · ') + fmt.format(t.uni) + ' units</small>'"
+  },
+  {
+   "es": "<span class=\"muted\">Sin meta</span>",
+   "pt": "<span class=\"muted\">Sem meta</span>",
+   "en": "<span class=\"muted\">No goal</span>"
+  },
+  {
+   "es": "o.st === 'Terminada' && pm >= 100 ? 'Terminada · cumplió' : o.st",
+   "pt": "o.st === 'Encerrada' && pm >= 100 ? 'Encerrada · cumpriu' : o.st",
+   "en": "o.st === 'Ended' && pm >= 100 ? 'Ended · goal met' : o.st"
+  },
+  {
+   "es": "<label>Producto<select",
+   "pt": "<label>Produto<select",
+   "en": "<label>Product<select"
+  },
+  {
+   "es": "<label>Tipo<select",
+   "pt": "<label>Tipo<select",
+   "en": "<label>Type<select"
+  },
+  {
+   "es": "<label>Condición<input class=\"campo\" id=\"ofC\" maxlength=\"60\" autocomplete=\"off\" placeholder=\"Ej.: 10 % menos llevando 6\">",
+   "pt": "<label>Condição<input class=\"campo\" id=\"ofC\" maxlength=\"60\" autocomplete=\"off\" placeholder=\"Ex.: 10% a menos levando 6\">",
+   "en": "<label>Terms<input class=\"campo\" id=\"ofC\" maxlength=\"60\" autocomplete=\"off\" placeholder=\"E.g., 10% off when buying 6\">"
+  },
+  {
+   "es": "<label>Desde<input",
+   "pt": "<label>De<input",
+   "en": "<label>From<input"
+  },
+  {
+   "es": "<label>Hasta<input",
+   "pt": "<label>Até<input",
+   "en": "<label>Until<input"
+  },
+  {
+   "es": "<label>Para qué clientes<select",
+   "pt": "<label>Para quais clientes<select",
+   "en": "<label>For which customers<select"
+  },
+  {
+   "es": "<label>Meta de unidades <span class=\"ayuda\">opcional</span><input class=\"campo\" id=\"ofM\" type=\"number\" min=\"1\" step=\"1\" inputmode=\"numeric\" placeholder=\"Ej.: 100\">",
+   "pt": "<label>Meta de unidades <span class=\"ayuda\">opcional</span><input class=\"campo\" id=\"ofM\" type=\"number\" min=\"1\" step=\"1\" inputmode=\"numeric\" placeholder=\"Ex.: 100\">",
+   "en": "<label>Unit goal <span class=\"ayuda\">optional</span><input class=\"campo\" id=\"ofM\" type=\"number\" min=\"1\" step=\"1\" inputmode=\"numeric\" placeholder=\"E.g., 100\">"
+  },
+  {
+   "es": "<legend>Le llega a la app de</legend>",
+   "pt": "<legend>Chega ao app de</legend>",
+   "en": "<legend>Goes to the app of</legend>"
+  },
+  {
+   "es": ">Marcarla en la lista de precios de la app</label>",
+   "pt": ">Marcar na tabela de preços do app</label>",
+   "en": ">Flag it in the app’s price list</label>"
+  },
+  {
+   "es": "<span class=\"lbl\">Así le llega al vendedor</span>",
+   "pt": "<span class=\"lbl\">Assim chega ao vendedor</span>",
+   "en": "<span class=\"lbl\">What the rep sees</span>"
+  },
+  {
+   "es": "<b id=\"ofPrevT\">Nueva oferta</b><small id=\"ofPrevD\">Escribí la condición</small></div><small class=\"muted\">ahora</small>",
+   "pt": "<b id=\"ofPrevT\">Nova oferta</b><small id=\"ofPrevD\">Escreva a condição</small></div><small class=\"muted\">agora</small>",
+   "en": "<b id=\"ofPrevT\">New promotion</b><small id=\"ofPrevD\">Enter the terms</small></div><small class=\"muted\">now</small>"
+  },
+  {
+   "es": "Cargar y mandar a la app</button>",
+   "pt": "Cadastrar e enviar ao app</button>",
+   "en": "Create and send to the app</button>"
+  },
+  {
+   "es": "'Oferta'",
+   "pt": "'Oferta'",
+   "en": "'Promotion'"
+  },
+  {
+   "es": "'Avisada a'",
+   "pt": "'Avisada a'",
+   "en": "'Sent to'"
+  },
+  {
+   "es": "'Vendido'",
+   "pt": "'Vendido'",
+   "en": "'Sold'"
+  },
+  {
+   "es": "'Meta'",
+   "pt": "'Meta'",
+   "en": "'Goal'"
+  },
+  {
+   "es": "tocá una para ver quién la vio y cuánto vendió",
+   "pt": "toque em uma para ver quem viu e quanto vendeu",
+   "en": "tap one to see who saw it and how much it sold"
+  },
+  {
+   "es": "'Nueva oferta'",
+   "pt": "'Nova oferta'",
+   "en": "'New promotion'"
+  },
+  {
+   "es": "le llega a la app al instante",
+   "pt": "chega ao app na hora",
+   "en": "reaches the app instantly"
+  },
+  {
+   "es": "<p class=\"nota\">El seguimiento suma cada pedido de la app que lleva el producto de la oferta, de un vendedor avisado y dentro de las fechas. En el pedido, el renglón queda marcado <span class=\"sug of\" style=\"margin:0\">oferta</span>.</p>",
+   "pt": "<p class=\"nota\">O acompanhamento soma cada pedido do app que leva o produto da oferta, de um vendedor avisado e dentro das datas. No pedido, a linha fica marcada como <span class=\"sug of\" style=\"margin:0\">oferta</span>.</p>",
+   "en": "<p class=\"nota\">Tracking adds up every app order that includes the promoted product, from a notified rep and within the dates. In the order, the line is tagged <span class=\"sug of\" style=\"margin:0\">promo</span>.</p>"
+  },
+  {
+   "es": "'Nueva oferta · '",
+   "pt": "'Nova oferta · '",
+   "en": "'New promotion · '"
+  },
+  {
+   "es": "(c || 'Escribí la condición') + ' · para ' + $('ofTo').value.toLowerCase() + (d2.length === 3 ? ' · hasta el ' + d2[2] + '/' + d2[1] : '')",
+   "pt": "(c || 'Escreva a condição') + ' · para ' + $('ofTo').value.charAt(0).toLowerCase() + $('ofTo').value.slice(1) + (d2.length === 3 ? ' · até ' + d2[2] + '/' + d2[1] : '')",
+   "en": "(c || 'Enter the terms') + ' · for ' + $('ofTo').value.charAt(0).toLowerCase() + $('ofTo').value.slice(1) + (d2.length === 3 ? ' · until ' + (+d2[1]) + '/' + (+d2[2]) : '')"
+  },
+  {
+   "es": "'Escribí la condición de la oferta, por ejemplo «10 % menos llevando 6».'",
+   "pt": "'Escreva a condição da oferta, por exemplo «10% a menos levando 6».'",
+   "en": "'Enter the promotion terms, for example “10% off when buying 6”.'"
+  },
+  {
+   "es": "'Elegí al menos un vendedor.'",
+   "pt": "'Escolha pelo menos um vendedor.'",
+   "en": "'Pick at least one rep.'"
+  },
+  {
+   "es": "'Revisá las fechas: «Hasta» tiene que ser igual o después de «Desde».'",
+   "pt": "'Confira as datas: «Até» tem que ser igual ou depois de «De».'",
+   "en": "'Check the dates: “Until” must be on or after “From”.'"
+  },
+  {
+   "es": "d1: a[2] + '/' + a[1], d2: b[2] + '/' + b[1]",
+   "pt": "d1: a[2] + '/' + a[1], d2: b[2] + '/' + b[1]",
+   "en": "d1: (+a[1]) + '/' + (+a[2]), d2: (+b[1]) + '/' + (+b[2])"
+  },
+  {
+   "es": "'Oferta cargada. Le llegó a la app de '",
+   "pt": "'Oferta cadastrada. Chegou ao app de '",
+   "en": "'Promotion created. It reached the app of '"
+  },
+  {
+   "es": "toast('Oferta programada. Le llega a ' + quienes + ' el ' + o.d1 + '.')",
+   "pt": "toast('Oferta programada. Chega para ' + quienes + ' em ' + o.d1 + '.')",
+   "en": "toast('Promotion scheduled. It goes out to ' + quienes + ' on ' + o.d1 + '.')"
+  },
+  {
+   "es": "'Unidades'",
+   "pt": "'Unidades'",
+   "en": "'Units'"
+  },
+  {
+   "es": "o.meta ? pm + ' % de la meta de ' + fmt.format(o.meta) : 'sin meta'",
+   "pt": "o.meta ? pm + '% da meta de ' + fmt.format(o.meta) : 'sem meta'",
+   "en": "o.meta ? pm + '% of the ' + fmt.format(o.meta) + ' goal' : 'no goal'"
+  },
+  {
+   "es": "(t.ped === 1 ? ' pedido' : ' pedidos')",
+   "pt": "(t.ped === 1 ? ' pedido' : ' pedidos')",
+   "en": "(t.ped === 1 ? ' order' : ' orders')"
+  },
+  {
+   "es": "'La vieron'",
+   "pt": "'Viram'",
+   "en": "'Seen by'"
+  },
+  {
+   "es": "o.st === 'Programada' ? 'le llega el ' + o.d1 : 'vendedores avisados'",
+   "pt": "o.st === 'Programada' ? 'chega em ' + o.d1 : 'vendedores avisados'",
+   "en": "o.st === 'Scheduled' ? 'goes out ' + o.d1 : 'reps notified'"
+  },
+  {
+   "es": "'Condición'",
+   "pt": "'Condição'",
+   "en": "'Terms'"
+  },
+  {
+   "es": "margin-top:6px\">Para ' + esc(o.to.toLowerCase())",
+   "pt": "margin-top:6px\">Para ' + esc(o.to.charAt(0).toLowerCase() + o.to.slice(1))",
+   "en": "margin-top:6px\">For ' + esc(o.to.charAt(0).toLowerCase() + o.to.slice(1))"
+  },
+  {
+   "es": "(o.lista ? 'Marcada en la lista de precios de la app.' : 'No se marca en la lista de precios.')",
+   "pt": "(o.lista ? 'Marcada na tabela de preços do app.' : 'Não aparece marcada na tabela de preços.')",
+   "en": "(o.lista ? 'Flagged in the app’s price list.' : 'Not flagged in the price list.')"
+  },
+  {
+   "es": "' Precio de lista: '",
+   "pt": "' Preço de tabela: '",
+   "en": "' List price: '"
+  },
+  {
+   "es": "<th>Vendedor</th><th>La vio</th><th class=\"r\">Pedidos</th><th class=\"r\">Unidades</th><th class=\"r\">Importe</th>",
+   "pt": "<th>Vendedor</th><th>Viu</th><th class=\"r\">Pedidos</th><th class=\"r\">Unidades</th><th class=\"r\">Valor</th>",
+   "en": "<th>Sales rep</th><th>Seen</th><th class=\"r\">Orders</th><th class=\"r\">Units</th><th class=\"r\">Amount</th>"
+  },
+  {
+   "es": "(o.st === 'Programada' ? 'Le llega el ' + o.d1 : 'Todavía no la abrió')",
+   "pt": "(o.st === 'Programada' ? 'Chega em ' + o.d1 : 'Ainda não abriu')",
+   "en": "(o.st === 'Scheduled' ? 'Goes out ' + o.d1 : 'Not opened yet')"
+  },
+  {
+   "es": "'Pedidos de hoy y ayer con la oferta'",
+   "pt": "'Pedidos de hoje e ontem com a oferta'",
+   "en": "'Today’s and yesterday’s orders with the promotion'"
+  },
+  {
+   "es": "(pd.f === '29/09' ? 'hoy' : 'ayer')",
+   "pt": "(pd.f === '29/09' ? 'hoje' : 'ontem')",
+   "en": "(pd.f === '9/29' ? 'today' : 'yesterday')"
+  },
+  {
+   "es": " u.</span><b>",
+   "pt": " un.</span><b>",
+   "en": " units</span><b>"
+  },
+  {
+   "es": "Suma cada pedido de la app que lleva el producto, de un vendedor avisado y dentro de las fechas. Los totales del período cierran con las facturas de ",
+   "pt": "Soma cada pedido do app que leva o produto, de um vendedor avisado e dentro das datas. Os totais do período batem com as faturas do ",
+   "en": "Adds up every app order that includes the product, from a notified rep and within the dates. Period totals match the invoices in "
+  },
+  {
+   "es": "Reenviar a la app</button>",
+   "pt": "Reenviar ao app</button>",
+   "en": "Resend to the app</button>"
+  },
+  {
+   "es": "Terminar la oferta</button>",
+   "pt": "Encerrar a oferta</button>",
+   "en": "End the promotion</button>"
+  },
+  {
+   "es": "Cancelar la oferta</button>",
+   "pt": "Cancelar a oferta</button>",
+   "en": "Cancel the promotion</button>"
+  },
+  {
+   "es": "var FREC = {1: 'Todas las semanas', 2: 'Cada 15 días', 3: 'Cada 3 semanas', 4: '1 vez al mes'};",
+   "pt": "var FREC = {1: 'Toda semana', 2: 'A cada 15 dias', 3: 'A cada 3 semanas', 4: '1 vez por mês'};",
+   "en": "var FREC = {1: 'Every week', 2: 'Every 2 weeks', 3: 'Every 3 weeks', 4: 'Once a month'};"
+  },
+  {
+   "es": "var FREC_C = {2: 'cada 15 días', 3: 'cada 3 semanas', 4: '1 vez al mes'};",
+   "pt": "var FREC_C = {2: 'a cada 15 dias', 3: 'a cada 3 semanas', 4: '1 vez por mês'};",
+   "en": "var FREC_C = {2: 'every 2 weeks', 3: 'every 3 weeks', 4: 'once a month'};"
+  },
+  {
+   "es": "La ruta del día se arma sola cada mañana con esto. Tocá + para sumar clientes a un día.",
+   "pt": "A rota do dia se monta sozinha toda manhã com isso. Toque em + para incluir clientes em um dia.",
+   "en": "The daily route builds itself from this every morning. Tap + to add customers to a day."
+  },
+  {
+   "es": "'Clientes con ruta fija'",
+   "pt": "'Clientes com rota fixa'",
+   "en": "'Customers on a fixed route'"
+  },
+  {
+   "es": "'de ' + activos.length + ' activos de ' + v.corto",
+   "pt": "'de ' + activos.length + ' ativos de ' + v.corto",
+   "en": "'of ' + v.corto + '’s ' + activos.length + ' active'"
+  },
+  {
+   "es": "'Visitas por semana'",
+   "pt": "'Visitas por semana'",
+   "en": "'Visits per week'"
+  },
+  {
+   "es": "'promedio, con las frecuencias'",
+   "pt": "'média, considerando as frequências'",
+   "en": "'average, factoring in frequencies'"
+  },
+  {
+   "es": "'El día más cargado'",
+   "pt": "'O dia mais cheio'",
+   "en": "'Busiest day'"
+  },
+  {
+   "es": "'Activos sin ruta fija'",
+   "pt": "'Ativos sem rota fixa'",
+   "en": "'Active, no fixed route'"
+  },
+  {
+   "es": "'los visita cuando hace falta'",
+   "pt": "'visita quando precisa'",
+   "en": "'visited as needed'"
+  },
+  {
+   "es": "(d === HOY_DIA ? 'hoy · ' : '')",
+   "pt": "(d === HOY_DIA ? 'hoje · ' : '')",
+   "en": "(d === HOY_DIA ? 'today · ' : '')"
+  },
+  {
+   "es": "'sin fijos'",
+   "pt": "'sem fixos'",
+   "en": "'none fixed'"
+  },
+  {
+   "es": "aria-label=\"Subir a ",
+   "pt": "aria-label=\"Subir ",
+   "en": "aria-label=\"Move up "
+  },
+  {
+   "es": "title=\"Subir\">",
+   "pt": "title=\"Subir\">",
+   "en": "title=\"Move up\">"
+  },
+  {
+   "es": "aria-label=\"Bajar a ",
+   "pt": "aria-label=\"Descer ",
+   "en": "aria-label=\"Move down "
+  },
+  {
+   "es": "title=\"Bajar\">",
+   "pt": "title=\"Descer\">",
+   "en": "title=\"Move down\">"
+  },
+  {
+   "es": "aria-label=\"Quitar a ",
+   "pt": "aria-label=\"Tirar ",
+   "en": "aria-label=\"Remove "
+  },
+  {
+   "es": " de la ruta fija\" title=\"Quitar de la ruta fija\">",
+   "pt": " da rota fixa\" title=\"Tirar da rota fixa\">",
+   "en": " from the fixed route\" title=\"Remove from the fixed route\">"
+  },
+  {
+   "es": "Nadie fijo este día.",
+   "pt": "Ninguém fixo neste dia.",
+   "en": "Nobody fixed on this day."
+  },
+  {
+   "es": "+ Agregar clientes</button>",
+   "pt": "+ Adicionar clientes</button>",
+   "en": "+ Add customers</button>"
+  },
+  {
+   "es": "'Compra cada'",
+   "pt": "'Compra a cada'",
+   "en": "'Buys every'"
+  },
+  {
+   "es": "'Compra por mes'",
+   "pt": "'Compra por mês'",
+   "en": "'Monthly purchases'"
+  },
+  {
+   "es": "'Suele comprar'",
+   "pt": "'Costuma comprar'",
+   "en": "'Usual day'"
+  },
+  {
+   "es": "'\">Fijar el ' + d.toLowerCase() + '</button>'",
+   "pt": "'\">Fixar na ' + d.toLowerCase() + '</button>'",
+   "en": "'\">Fix on ' + d + '</button>'"
+  },
+  {
+   "es": "'Todos los activos tienen ruta fija.'",
+   "pt": "'Todos os ativos têm rota fixa.'",
+   "en": "'All active customers have a fixed route.'"
+  },
+  {
+   "es": "ordenados por lo que compran",
+   "pt": "ordenados pelo que compram",
+   "en": "sorted by what they buy"
+  },
+  {
+   "es": "Quitar un cliente de la ruta fija no borra las visitas que ya estaban agendadas. Los que se visitan cada 15 días o una vez al mes aparecen en la ruta solo las semanas que les toca.",
+   "pt": "Tirar um cliente da rota fixa não apaga as visitas que já estavam agendadas. Quem é visitado a cada 15 dias ou uma vez por mês aparece na rota só nas semanas em que é a vez dele.",
+   "en": "Removing a customer from the fixed route doesn’t delete visits already scheduled. Customers visited every 2 weeks or once a month only show up on the route in their weeks."
+  },
+  {
+   "es": "(c.dia === a.d ? ' · suele comprar los ' + c.dia.toLowerCase() : '')",
+   "pt": "(c.dia === a.d ? ' · costuma comprar às ' + c.dia.toLowerCase() + 's' : '')",
+   "en": "(c.dia === a.d ? ' · usually buys on ' + c.dia + 's' : '')"
+  },
+  {
+   "es": "/mes</small></label>",
+   "pt": "/mês</small></label>",
+   "en": "/mo</small></label>"
+  },
+  {
+   "es": "No hay clientes con esa búsqueda.",
+   "pt": "Nenhum cliente encontrado com essa busca.",
+   "en": "No customers match that search."
+  },
+  {
+   "es": "'Fijar'",
+   "pt": "'Fixar'",
+   "en": "'Fix'"
+  },
+  {
+   "es": "cabFicha(avt(a.ven), 'Ruta fija de ' + esc(v.nom), 'Agregar clientes al ' + a.d.toLowerCase())",
+   "pt": "cabFicha(avt(a.ven), 'Rota fixa de ' + esc(v.nom), 'Adicionar clientes na ' + a.d.toLowerCase())",
+   "en": "cabFicha(avt(a.ven), esc(v.nom) + '’s fixed route', 'Add customers on ' + a.d)"
+  },
+  {
+   "es": "<label>Buscar cliente<input",
+   "pt": "<label>Buscar cliente<input",
+   "en": "<label>Find a customer<input"
+  },
+  {
+   "es": "placeholder=\"Nombre o barrio\"",
+   "pt": "placeholder=\"Nome ou bairro\"",
+   "en": "placeholder=\"Name or neighborhood\""
+  },
+  {
+   "es": "<label>Cada cuánto visitarlos<select",
+   "pt": "<label>Com que frequência visitar<select",
+   "en": "<label>How often to visit<select"
+  },
+  {
+   "es": "id=\"rfProx\">Próximas visitas: ",
+   "pt": "id=\"rfProx\">Próximas visitas: ",
+   "en": "id=\"rfProx\">Next visits: "
+  },
+  {
+   "es": "'Próximas visitas: '",
+   "pt": "'Próximas visitas: '",
+   "en": "'Next visits: '"
+  },
+  {
+   "es": "'. Si lo fijás hoy, se suma también a la ruta de hoy.'",
+   "pt": "'. Se fixar hoje, entra também na rota de hoje.'",
+   "en": "'. If you fix it today, it’s added to today’s route too.'"
+  },
+  {
+   "es": "data-a=\"fichaCerrar\">Cancelar</button>",
+   "pt": "data-a=\"fichaCerrar\">Cancelar</button>",
+   "en": "data-a=\"fichaCerrar\">Cancel</button>"
+  },
+  {
+   "es": "txt: 'Visitar ' + nombreCli(id) + ' (ruta fija)'",
+   "pt": "txt: 'Visitar ' + nombreCli(id) + ' (rota fixa)'",
+   "en": "txt: 'Visit ' + nombreCli(id) + ' (fixed route)'"
+  },
+  {
+   "es": "toast(yLista(nuevos) + (nuevos.length === 1 ? ' quedó' : ' quedaron') + ' en la ruta fija del ' + d.toLowerCase() + ' de ' + corV(ven) + (hoy ? '. Se suma a la ruta de hoy y le aparece en la app.' : '. Le aparece en la app ese día.'));",
+   "pt": "toast(yLista(nuevos) + (nuevos.length === 1 ? ' ficou' : ' ficaram') + ' na rota fixa de ' + d.toLowerCase() + ' de ' + corV(ven) + (hoy ? '. Entra na rota de hoje e aparece no app.' : '. Aparece no app nesse dia.'));",
+   "en": "toast(yLista(nuevos) + (nuevos.length === 1 ? ' is' : ' are') + ' now on ' + corV(ven) + '’s ' + d + ' fixed route' + (hoy ? '. Added to today’s route and shows up in the app.' : '. Shows up in the app that day.'));"
+  },
+  {
+   "es": "var ROLES = {ADMIN: ['Administrador', 'Todo el tablero, incluida la configuración'], OPERADOR: ['Operador', 'Pedidos, ofertas y rutas fijas, sin configuración'], LECTURA: ['Solo lectura', 'Ve el tablero y no cambia nada'], VENDEDOR: ['Vendedor', 'La app del celular, con su cartera']};",
+   "pt": "var ROLES = {ADMIN: ['Administrador', 'Todo o painel, incluindo as configurações'], OPERADOR: ['Operador', 'Pedidos, ofertas e rotas fixas, sem configurações'], LECTURA: ['Somente leitura', 'Vê o painel e não altera nada'], VENDEDOR: ['Vendedor', 'O app do celular, com a carteira dele']};",
+   "en": "var ROLES = {ADMIN: ['Administrator', 'The whole dashboard, including settings'], OPERADOR: ['Operator', 'Orders, promotions and fixed routes, no settings'], LECTURA: ['Read-only', 'Sees the dashboard and can’t change anything'], VENDEDOR: ['Sales rep', 'The phone app, with their accounts']};"
+  },
+  {
+   "es": "'Hoy 10:18'",
+   "pt": "'Hoje 10:18'",
+   "en": "'Today 10:18'"
+  },
+  {
+   "es": "'Ayer 19:42'",
+   "pt": "'Ontem 19:42'",
+   "en": "'Yesterday 19:42'"
+  },
+  {
+   "es": "'Hoy 09:58'",
+   "pt": "'Hoje 09:58'",
+   "en": "'Today 09:58'"
+  },
+  {
+   "es": "'Hoy 10:12'",
+   "pt": "'Hoje 10:12'",
+   "en": "'Today 10:12'"
+  },
+  {
+   "es": "'Hoy 10:05'",
+   "pt": "'Hoje 10:05'",
+   "en": "'Today 10:05'"
+  },
+  {
+   "es": "'hoy 10:18'",
+   "pt": "'hoje 10:18'",
+   "en": "'today 10:18'"
+  },
+  {
+   "es": "'ayer 19:42'",
+   "pt": "'ontem 19:42'",
+   "en": "'yesterday 19:42'"
+  },
+  {
+   "es": "'hoy 09:58'",
+   "pt": "'hoje 09:58'",
+   "en": "'today 09:58'"
+  },
+  {
+   "es": "'hoy 10:12'",
+   "pt": "'hoje 10:12'",
+   "en": "'today 10:12'"
+  },
+  {
+   "es": "'hoy 10:05'",
+   "pt": "'hoje 10:05'",
+   "en": "'today 10:05'"
+  },
+  {
+   "es": "/^hoy/.test(D[u.id].ult)",
+   "pt": "/^hoje/.test(D[u.id].ult)",
+   "en": "/^today/.test(D[u.id].ult)"
+  },
+  {
+   "es": "'Dejó la empresa en agosto'",
+   "pt": "'Saiu da empresa em agosto'",
+   "en": "'Left the company in August'"
+  },
+  {
+   "es": "'Mostrador'",
+   "pt": "'Balcão'",
+   "en": "'Counter'"
+  },
+  {
+   "es": "'Ventas en el local'",
+   "pt": "'Vendas na loja'",
+   "en": "'In-store sales'"
+  },
+  {
+   "es": "'Ruta'",
+   "pt": "'Rota'",
+   "en": "'Route'"
+  },
+  {
+   "es": "'Cargar pedido'",
+   "pt": "'Lançar pedido'",
+   "en": "'New order'"
+  },
+  {
+   "es": "'Cartera'",
+   "pt": "'Carteira'",
+   "en": "'Accounts'"
+  },
+  {
+   "es": "'Lista de precios'",
+   "pt": "'Tabela de preços'",
+   "en": "'Price list'"
+  },
+  {
+   "es": "'Presupuesto'",
+   "pt": "'Orçamento'",
+   "en": "'Quote'"
+  },
+  {
+   "es": "'días'",
+   "pt": "'dias'",
+   "en": "'days'"
+  },
+  {
+   "es": "'Sin actividad'",
+   "pt": "'Sem atividade'",
+   "en": "'No activity'"
+  },
+  {
+   "es": "'Días sin comprar, para cualquier cliente'",
+   "pt": "'Dias sem comprar, para qualquer cliente'",
+   "en": "'Days without buying, for any customer'"
+  },
+  {
+   "es": "'Caída de volumen'",
+   "pt": "'Queda de volume'",
+   "en": "'Volume drop'"
+  },
+  {
+   "es": "'Cuánto bajó lo que compró en los últimos 60 días contra los 60 anteriores'",
+   "pt": "'Quanto caiu o que comprou nos últimos 60 dias contra os 60 anteriores'",
+   "en": "'How much purchases dropped in the last 60 days vs. the previous 60'"
+  },
+  {
+   "es": "'Cliente grande sin actividad'",
+   "pt": "'Cliente grande sem atividade'",
+   "en": "'Large customer, no activity'"
+  },
+  {
+   "es": "'Días sin comprar, para los 20 que más compran'",
+   "pt": "'Dias sem comprar, para os 20 que mais compram'",
+   "en": "'Days without buying, for the top 20 buyers'"
+  },
+  {
+   "es": "'Nuevo sin recompra'",
+   "pt": "'Novo sem recompra'",
+   "en": "'New, no repeat purchase'"
+  },
+  {
+   "es": "'Días desde la primera compra sin una segunda'",
+   "pt": "'Dias desde a primeira compra sem uma segunda'",
+   "en": "'Days since the first purchase without a second one'"
+  },
+  {
+   "es": "'Oportunidades nuevas'",
+   "pt": "'Novas oportunidades'",
+   "en": "'New opportunities'"
+  },
+  {
+   "es": "'cada mañana a las 07:30'",
+   "pt": "'toda manhã às 07:30'",
+   "en": "'every morning at 07:30'"
+  },
+  {
+   "es": "'Ofertas nuevas'",
+   "pt": "'Novas ofertas'",
+   "en": "'New promotions'"
+  },
+  {
+   "es": "'al momento de cargarlas'",
+   "pt": "'assim que forem cadastradas'",
+   "en": "'as soon as they’re created'"
+  },
+  {
+   "es": "'Tareas y respuestas de Laura'",
+   "pt": "'Tarefas e respostas da Laura'",
+   "en": "'Tasks and replies from Laura'"
+  },
+  {
+   "es": "'al momento'",
+   "pt": "'na hora'",
+   "en": "'instantly'"
+  },
+  {
+   "es": "'Recordatorio de iniciar la jornada'",
+   "pt": "'Lembrete para iniciar a jornada'",
+   "en": "'Reminder to start the workday'"
+  },
+  {
+   "es": "'a las 08:30, si no la inició'",
+   "pt": "'às 08:30, se não tiver iniciado'",
+   "en": "'at 08:30, if not started yet'"
+  },
+  {
+   "es": "'Usuarios y permisos'",
+   "pt": "'Usuários e permissões'",
+   "en": "'Users and permissions'"
+  },
+  {
+   "es": "'Uso de la app'",
+   "pt": "'Uso do app'",
+   "en": "'App usage'"
+  },
+  {
+   "es": "'Criterios y objetivos'",
+   "pt": "'Critérios e metas'",
+   "en": "'Rules and targets'"
+  },
+  {
+   "es": "'Avisos y empresa'",
+   "pt": "'Avisos e empresa'",
+   "en": "'Notifications and company'"
+  },
+  {
+   "es": "<span>Contraseña temporal de <b>",
+   "pt": "<span>Senha temporária de <b>",
+   "en": "<span>Temporary password for <b>"
+  },
+  {
+   "es": "</code>. Pasásela ahora: no se vuelve a mostrar y la cambia en su primer ingreso.</span>",
+   "pt": "</code>. Passe agora: ela não aparece de novo e é trocada no primeiro acesso.</span>",
+   "en": "</code>. Share it now: it won’t be shown again and must be changed at first login.</span>"
+  },
+  {
+   "es": "data-a=\"claveOk\">Listo, la pasé</button>",
+   "pt": "data-a=\"claveOk\">Pronto, já passei</button>",
+   "en": "data-a=\"claveOk\">Done, I shared it</button>"
+  },
+  {
+   "es": "font-weight:500\">(vos)</span>",
+   "pt": "font-weight:500\">(você)</span>",
+   "en": "font-weight:500\">(you)</span>"
+  },
+  {
+   "es": "aria-label=\"Rol de ",
+   "pt": "aria-label=\"Perfil de ",
+   "en": "aria-label=\"Role for "
+  },
+  {
+   "es": " disabled title=\"No podés cambiar tu propio rol\"",
+   "pt": " disabled title=\"Você não pode mudar o seu próprio perfil\"",
+   "en": " disabled title=\"You can’t change your own role\""
+  },
+  {
+   "es": "(vinc ? 'Es ' + esc(vinc.nom) + ' (' + vinc.cod + ') en ' + SIS : 'Sin vendedor asignado')",
+   "pt": "(vinc ? 'É ' + esc(vinc.nom) + ' (' + vinc.cod + ') no ' + SIS : 'Sem vendedor atribuído')",
+   "en": "(vinc ? esc(vinc.nom) + ' (' + vinc.cod + ') in ' + SIS : 'No rep assigned')"
+  },
+  {
+   "es": "'Activo'",
+   "pt": "'Ativo'",
+   "en": "'Active'"
+  },
+  {
+   "es": "'Inactivo'",
+   "pt": "'Inativo'",
+   "en": "'Inactive'"
+  },
+  {
+   "es": ">Nueva contraseña</button>",
+   "pt": ">Nova senha</button>",
+   "en": ">New password</button>"
+  },
+  {
+   "es": "<label>Nombre<input",
+   "pt": "<label>Nome<input",
+   "en": "<label>Name<input"
+  },
+  {
+   "es": "<label>Mail<input",
+   "pt": "<label>E-mail<input",
+   "en": "<label>Email<input"
+  },
+  {
+   "es": "placeholder=\"nombre@",
+   "pt": "placeholder=\"nome@",
+   "en": "placeholder=\"name@"
+  },
+  {
+   "es": "<label>Rol<select",
+   "pt": "<label>Perfil<select",
+   "en": "<label>Role<select"
+  },
+  {
+   "es": "<label id=\"uVenL\">¿Qué vendedor es en ",
+   "pt": "<label id=\"uVenL\">Qual vendedor é no ",
+   "en": "<label id=\"uVenL\">Which rep is this in "
+  },
+  {
+   "es": ">Todos los vendedores ya tienen usuario</option>",
+   "pt": ">Todos os vendedores já têm usuário</option>",
+   "en": ">Every rep already has a user</option>"
+  },
+  {
+   "es": "La contraseña se genera sola y se muestra una vez. La persona la cambia en su primer ingreso.",
+   "pt": "A senha é gerada automaticamente e aparece uma vez. A pessoa troca no primeiro acesso.",
+   "en": "The password is generated automatically and shown once. The person changes it at first login."
+  },
+  {
+   "es": "Crear usuario</button>",
+   "pt": "Criar usuário</button>",
+   "en": "Create user</button>"
+  },
+  {
+   "es": "'Usuarios'",
+   "pt": "'Usuários'",
+   "en": "'Users'"
+  },
+  {
+   "es": "'Usuario'",
+   "pt": "'Usuário'",
+   "en": "'User'"
+  },
+  {
+   "es": "'Rol'",
+   "pt": "'Perfil'",
+   "en": "'Role'"
+  },
+  {
+   "es": "'Último ingreso'",
+   "pt": "'Último acesso'",
+   "en": "'Last login'"
+  },
+  {
+   "es": "' activos</span>'",
+   "pt": "' ativos</span>'",
+   "en": "' active</span>'"
+  },
+  {
+   "es": "'Agregar usuario'",
+   "pt": "'Adicionar usuário'",
+   "en": "'Add user'"
+  },
+  {
+   "es": "card('Vendedores en ' + SIS",
+   "pt": "card('Vendedores no ' + SIS",
+   "en": "card('Reps in ' + SIS"
+  },
+  {
+   "es": "<th>Vendedor</th><th>Tipo</th><th>Cuenta en los números</th><th>Usuario de la app</th>",
+   "pt": "<th>Vendedor</th><th>Tipo</th><th>Entra nos números</th><th>Usuário do app</th>",
+   "en": "<th>Sales rep</th><th>Type</th><th>Counts in the numbers</th><th>App user</th>"
+  },
+  {
+   "es": "(x.calle ? 'Vendedor de calle' : 'Mostrador')",
+   "pt": "(x.calle ? 'Vendedor externo' : 'Balcão')",
+   "en": "(x.calle ? 'Field rep' : 'Counter')"
+  },
+  {
+   "es": "(x.cuenta ? 'Sí' : 'No')",
+   "pt": "(x.cuenta ? 'Sim' : 'Não')",
+   "en": "(x.cuenta ? 'Yes' : 'No')"
+  },
+  {
+   "es": "'Con usuario'",
+   "pt": "'Com usuário'",
+   "en": "'Has a user'"
+  },
+  {
+   "es": "'Sin usuario'",
+   "pt": "'Sem usuário'",
+   "en": "'No user'"
+  },
+  {
+   "es": "<span class=\"muted\">No usa la app</span>",
+   "pt": "<span class=\"muted\">Não usa o app</span>",
+   "en": "<span class=\"muted\">Doesn’t use the app</span>"
+  },
+  {
+   "es": "margin-top:10px\">Vienen de ",
+   "pt": "margin-top:10px\">Vêm do ",
+   "en": "margin-top:10px\">Pulled from "
+  },
+  {
+   "es": ". Los de calle usan la app; los que no cuentan en los números no aparecen en el tablero.",
+   "pt": ". Os externos usam o app; os que não entram nos números não aparecem no painel.",
+   "en": ". Field reps use the app; those who don’t count in the numbers don’t appear on the dashboard."
+  },
+  {
+   "es": "Solo un administrador ve esta sección. No podés desactivarte ni cambiarte el rol, y siempre queda al menos un administrador activo.",
+   "pt": "Só um administrador vê esta seção. Você não pode se desativar nem mudar o seu perfil, e sempre fica pelo menos um administrador ativo.",
+   "en": "Only administrators see this section. You can’t deactivate yourself or change your own role, and there’s always at least one active administrator."
+  },
+  {
+   "es": "'Setiembre 2026'",
+   "pt": "'Setembro de 2026'",
+   "en": "'September 2026'"
+  },
+  {
+   "es": "'Agosto 2026'",
+   "pt": "'Agosto de 2026'",
+   "en": "'August 2026'"
+  },
+  {
+   "es": ">Setiembre 2026</option>",
+   "pt": ">Setembro de 2026</option>",
+   "en": ">September 2026</option>"
+  },
+  {
+   "es": ">Agosto 2026</option>",
+   "pt": ">Agosto de 2026</option>",
+   "en": ">August 2026</option>"
+  },
+  {
+   "es": "' días hábiles'",
+   "pt": "' dias úteis'",
+   "en": "' business days'"
+  },
+  {
+   "es": "' hasta hoy'",
+   "pt": "' até hoje'",
+   "en": "' so far'"
+  },
+  {
+   "es": ". El uso se guarda 180 días.</p>",
+   "pt": ". O uso fica guardado por 180 dias.</p>",
+   "en": ". Usage is kept for 180 days.</p>"
+  },
+  {
+   "es": "kpi(per === 'set' ? 'Usaron la app hoy' : 'Vendedores que la usaron'",
+   "pt": "kpi(per === 'set' ? 'Usaram o app hoje' : 'Vendedores que usaram'",
+   "en": "kpi(per === 'set' ? 'Used the app today' : 'Reps who used it'"
+  },
+  {
+   "es": "'vendedores de calle'",
+   "pt": "'vendedores externos'",
+   "en": "'field reps'"
+  },
+  {
+   "es": "'Días con uso'",
+   "pt": "'Dias com uso'",
+   "en": "'Days with use'"
+  },
+  {
+   "es": "'de los días hábiles, promedio'",
+   "pt": "'dos dias úteis, em média'",
+   "en": "'of business days, on average'"
+  },
+  {
+   "es": "'Pedidos cargados en la app'",
+   "pt": "'Pedidos lançados no app'",
+   "en": "'Orders entered in the app'"
+  },
+  {
+   "es": "' pedidos del mes'",
+   "pt": "' pedidos do mês'",
+   "en": "' orders this month'"
+  },
+  {
+   "es": "'Jornadas iniciadas'",
+   "pt": "'Jornadas iniciadas'",
+   "en": "'Workdays started'"
+  },
+  {
+   "es": "'«Iniciar» y «Terminar» en la app'",
+   "pt": "'«Iniciar» e «Encerrar» no app'",
+   "en": "'“Start” and “End” in the app'"
+  },
+  {
+   "es": "' no inició la jornada '",
+   "pt": "' não iniciou a jornada em '",
+   "en": "' didn’t start the workday on '"
+  },
+  {
+   "es": "' días hábiles de '",
+   "pt": "' dias úteis de '",
+   "en": "' business days in '"
+  },
+  {
+   "es": "<small>Esos días no hay llegadas a las visitas ni oportunidades marcadas. Usó la app ",
+   "pt": "<small>Nesses dias não há chegadas às visitas nem oportunidades marcadas. Usou o app ",
+   "en": "<small>On those days there are no visit check-ins or marked opportunities. Used the app "
+  },
+  {
+   "es": "' días y cargó '",
+   "pt": "' dias e lançou '",
+   "en": "' days and entered '"
+  },
+  {
+   "es": " pedidos desde el celular.</small>",
+   "pt": " pedidos pelo celular.</small>",
+   "en": " orders from the phone.</small>"
+  },
+  {
+   "es": " pedidos desde el celular.</li>",
+   "pt": " pedidos pelo celular.</li>",
+   "en": " orders from the phone.</li>"
+  },
+  {
+   "es": "' · inactivo'",
+   "pt": "' · inativo'",
+   "en": "' · inactive'"
+  },
+  {
+   "es": "No abrió la app en ",
+   "pt": "Não abriu o app em ",
+   "en": "Didn’t open the app in "
+  },
+  {
+   "es": "</b><span>entradas</span></span><p>La usó ",
+   "pt": "</b><span>acessos</span></span><p>Usou ",
+   "en": "</b><span>screen views</span></span><p>Used it "
+  },
+  {
+   "es": "' días hábiles · última vez '",
+   "pt": "' dias úteis · última vez '",
+   "en": "' business days · last seen '"
+  },
+  {
+   "es": "[x.acc.hechas + ' visitas', x.acc.ped + ' pedidos', x.acc.ofr + ' oportunidades', x.acc.notas + ' notas']",
+   "pt": "[x.acc.hechas + ' visitas', x.acc.ped + ' pedidos', x.acc.ofr + ' oportunidades', x.acc.notas + ' notas']",
+   "en": "[x.acc.hechas + ' visits', x.acc.ped + ' orders', x.acc.ofr + ' opportunities', x.acc.notas + ' notes']"
+  },
+  {
+   "es": "Una entrada es cada vez que alguien abre una pantalla. Lo que registra el vendedor (visitas, notas, oportunidades y pedidos) sale de la app; la ubicación solo se toma al llegar y salir de cada visita, durante la jornada.",
+   "pt": "Um acesso é cada vez que alguém abre uma tela. O que o vendedor registra (visitas, notas, oportunidades e pedidos) vem do app; a localização só é registrada ao chegar e sair de cada visita, durante a jornada.",
+   "en": "A screen view is each time someone opens a screen. What the rep logs (visits, notes, opportunities and orders) comes from the app; location is only recorded when arriving at and leaving each visit, during the workday."
+  },
+  {
+   "es": "(u.rol === 'VENDEDOR' ? 'Vendedor' : ROLES[u.rol][0]) + ' · uso de la app en ' + mesL",
+   "pt": "(u.rol === 'VENDEDOR' ? 'Vendedor' : ROLES[u.rol][0]) + ' · uso do app em ' + mesL",
+   "en": "(u.rol === 'VENDEDOR' ? 'Sales rep' : ROLES[u.rol][0]) + ' · app usage in ' + mesL"
+  },
+  {
+   "es": "(u.act ? '' : ' El usuario está inactivo; el último ingreso fue el ' + esc(u.ult) + '.')",
+   "pt": "(u.act ? '' : ' O usuário está inativo; o último acesso foi em ' + esc(u.ult) + '.')",
+   "en": "(u.act ? '' : ' The user is inactive; last login was ' + esc(u.ult) + '.')"
+  },
+  {
+   "es": "'Entradas'",
+   "pt": "'Acessos'",
+   "en": "'Screen views'"
+  },
+  {
+   "es": "'pantallas abiertas'",
+   "pt": "'telas abertas'",
+   "en": "'screens opened'"
+  },
+  {
+   "es": "' % de los hábiles'",
+   "pt": "'% dos dias úteis'",
+   "en": "'% of business days'"
+  },
+  {
+   "es": "'Última vez'",
+   "pt": "'Última vez'",
+   "en": "'Last seen'"
+  },
+  {
+   "es": "'Secciones más usadas'",
+   "pt": "'Seções mais usadas'",
+   "en": "'Most-used sections'"
+  },
+  {
+   "es": "var L = [['Visitas marcadas hechas', a.hechas, plan ? 'de ' + plan + ' planificadas' : ''], ['Con «Llegué» registrado', a.llegue, 'llegada a la visita'], ['Visitas con problema', a.prob, ''], ['Visitas fuera de ruta', a.fuera, ''], ['Pedidos cargados', a.ped, v ? 'de ' + v.ped[per] + ' del mes' : ''], ['Oportunidades ofrecidas', a.ofr, ''], ['«No le interesa»', a.noint, ''], ['Notas en fichas', a.notas, ''], ['Prospectos en su cartera', a.pros, ''], ['Jornadas iniciadas', a.jorn, 'de ' + hab + ' días hábiles'], ['Pedidos a Laura', a.desv, 'desvíos y reprogramaciones'], ['Tareas resueltas', a.tareas, '']];",
+   "pt": "var L = [['Visitas marcadas como feitas', a.hechas, plan ? 'de ' + plan + ' planejadas' : ''], ['Com «Cheguei» registrado', a.llegue, 'chegada à visita'], ['Visitas com problema', a.prob, ''], ['Visitas fora da rota', a.fuera, ''], ['Pedidos lançados', a.ped, v ? 'de ' + v.ped[per] + ' do mês' : ''], ['Oportunidades oferecidas', a.ofr, ''], ['«Sem interesse»', a.noint, ''], ['Notas em fichas', a.notas, ''], ['Prospects na carteira', a.pros, ''], ['Jornadas iniciadas', a.jorn, 'de ' + hab + ' dias úteis'], ['Pedidos à Laura', a.desv, 'desvios e reagendamentos'], ['Tarefas resolvidas', a.tareas, '']];",
+   "en": "var L = [['Visits marked done', a.hechas, plan ? 'of ' + plan + ' planned' : ''], ['With “I’m here” logged', a.llegue, 'visit check-in'], ['Visits with issues', a.prob, ''], ['Off-route visits', a.fuera, ''], ['Orders entered', a.ped, v ? 'of ' + v.ped[per] + ' this month' : ''], ['Opportunities offered', a.ofr, ''], ['“Not interested”', a.noint, ''], ['Notes on profiles', a.notas, ''], ['Prospects in their accounts', a.pros, ''], ['Workdays started', a.jorn, 'of ' + hab + ' business days'], ['Requests to Laura', a.desv, 'detours and reschedules'], ['Tasks completed', a.tareas, '']];"
+  },
+  {
+   "es": "'Qué registró desde la app'",
+   "pt": "'O que registrou pelo app'",
+   "en": "'What they logged in the app'"
+  },
+  {
+   "es": "' acciones</span>'",
+   "pt": "' ações</span>'",
+   "en": "' actions</span>'"
+  },
+  {
+   "es": "'Entradas por día'",
+   "pt": "'Acessos por dia'",
+   "en": "'Screen views per day'"
+  },
+  {
+   "es": "'Entradas por día hábil'",
+   "pt": "'Acessos por dia útil'",
+   "en": "'Screen views per business day'"
+  },
+  {
+   "es": "<span class=\"s\">días hábiles de ",
+   "pt": "<span class=\"s\">dias úteis de ",
+   "en": "<span class=\"s\">business days in "
+  },
+  {
+   "es": "'A qué hora la usa'",
+   "pt": "'Em que horário usa'",
+   "en": "'When they use it'"
+  },
+  {
+   "es": "'Entradas por hora del día'",
+   "pt": "'Acessos por hora do dia'",
+   "en": "'Screen views by hour of day'"
+  },
+  {
+   "es": "hora de Uruguay",
+   "pt": "horário do Uruguai",
+   "en": "Uruguay time"
+  },
+  {
+   "es": "<span class=\"muted\">sin objetivo</span>",
+   "pt": "<span class=\"muted\">sem meta</span>",
+   "en": "<span class=\"muted\">no target</span>"
+  },
+  {
+   "es": "' <small class=\"muted\">falta' + (faltan > 1 ? 'n ' + faltan : ' 1') + '</small>'",
+   "pt": "' <small class=\"muted\">falta' + (faltan > 1 ? 'm ' + faltan : ' 1') + '</small>'",
+   "en": "' <small class=\"muted\">' + faltan + ' missing</small>'"
+  },
+  {
+   "es": "<span class=\"muted\">sin cargar</span>",
+   "pt": "<span class=\"muted\">não cadastradas</span>",
+   "en": "<span class=\"muted\">not set</span>"
+  },
+  {
+   "es": "toast(!o ? v.corto + ' queda sin objetivo para ' + m + '.' : est === 'cerrado' ? 'Objetivo de ' + m + ' corregido: cambia el cumplimiento, no la comisión.' : est === 'curso' ? 'Listo. ' + v.corto + ' ya ve su objetivo nuevo en la app.' : 'Objetivo de ' + m + ' cargado. ' + v.corto + ' lo ve en la app desde el 1.º de ' + m + '.');",
+   "pt": "toast(!o ? v.corto + ' fica sem meta para ' + m + '.' : est === 'cerrado' ? 'Meta de ' + m + ' corrigida: muda o cumprimento, não a comissão.' : est === 'curso' ? 'Pronto. ' + v.corto + ' já vê a nova meta no app.' : 'Meta de ' + m + ' cadastrada. ' + v.corto + ' vê no app a partir de 1º de ' + m + '.');",
+   "en": "toast(!o ? v.corto + ' has no target for ' + m + '.' : est === 'cerrado' ? m + ' target corrected: it changes attainment, not commission.' : est === 'curso' ? 'Done. ' + v.corto + ' already sees the new target in the app.' : m + ' target set. ' + v.corto + ' sees it in the app starting ' + m + ' 1.');"
+  },
+  {
+   "es": "(x === YM_HOY ? ' · en curso' : sin ? ' · sin cargar' : '')",
+   "pt": "(x === YM_HOY ? ' · em andamento' : sin ? ' · não cadastrada' : '')",
+   "en": "(x === YM_HOY ? ' · current' : sin ? ' · not set' : '')"
+  },
+  {
+   "es": "aria-label=\"Mes anterior\"",
+   "pt": "aria-label=\"Mês anterior\"",
+   "en": "aria-label=\"Previous month\""
+  },
+  {
+   "es": "aria-label=\"Mes del objetivo\"",
+   "pt": "aria-label=\"Mês da meta\"",
+   "en": "aria-label=\"Target month\""
+  },
+  {
+   "es": "aria-label=\"Mes siguiente\"",
+   "pt": "aria-label=\"Próximo mês\"",
+   "en": "aria-label=\"Next month\""
+  },
+  {
+   "es": "var c2 = est === 'cerrado' ? ['Vendido', 'Cumplimiento'] : est === 'curso' ? ['Vendido al 29/09', 'Va en'] : [capM(mes) + ' ' + (anio - 1), 'Sugerido (+' + PARAM.crec + ' %)'];",
+   "pt": "var c2 = est === 'cerrado' ? ['Vendido', 'Cumprimento'] : est === 'curso' ? ['Vendido até 29/09', 'Está em'] : [capM(mes) + ' ' + (anio - 1), 'Sugerida (+' + PARAM.crec + '%)'];",
+   "en": "var c2 = est === 'cerrado' ? ['Sold', 'Attainment'] : est === 'curso' ? ['Sold through 9/29', 'At'] : [capM(mes) + ' ' + (anio - 1), 'Suggested (+' + PARAM.crec + '%)'];"
+  },
+  {
+   "es": "<th>Vendedor</th><th class=\"r\">Objetivo de ' + mes + ' ' + anio + '</th>",
+   "pt": "<th>Vendedor</th><th class=\"r\">Meta de ' + mes + ' de ' + anio + '</th>",
+   "en": "<th>Sales rep</th><th class=\"r\">' + capM(mes) + ' ' + anio + ' target</th>"
+  },
+  {
+   "es": "<th class=\"r\">Comisión</th>",
+   "pt": "<th class=\"r\">Comissão</th>",
+   "en": "<th class=\"r\">Commission</th>"
+  },
+  {
+   "es": "<span class=\"muted\">sin datos</span>",
+   "pt": "<span class=\"muted\">sem dados</span>",
+   "en": "<span class=\"muted\">no data</span>"
+  },
+  {
+   "es": "title=\"Usar este objetivo\"",
+   "pt": "title=\"Usar esta meta\"",
+   "en": "title=\"Use this target\""
+  },
+  {
+   "es": "placeholder=\"sin cargar\"",
+   "pt": "placeholder=\"não cadastrada\"",
+   "en": "placeholder=\"not set\""
+  },
+  {
+   "es": "aria-label=\"Objetivo de ' + mes + ' de ' + v.corto + '\"",
+   "pt": "aria-label=\"Meta de ' + mes + ' de ' + v.corto + '\"",
+   "en": "aria-label=\"' + v.corto + '’s ' + mes + ' target\""
+  },
+  {
+   "es": "aria-label=\"Comisión de ",
+   "pt": "aria-label=\"Comissão de ",
+   "en": "aria-label=\"Commission for "
+  },
+  {
+   "es": "\"> %</span></td></tr>",
+   "pt": "\">%</span></td></tr>",
+   "en": "\">%</span></td></tr>"
+  },
+  {
+   "es": "'>Copiar los de '",
+   "pt": "'>Copiar as de '",
+   "en": "'>Copy from '"
+  },
+  {
+   "es": "Usar los sugeridos</button>",
+   "pt": "Usar as sugeridas</button>",
+   "en": "Use suggested</button>"
+  },
+  {
+   "es": "<label>Crecimiento sugerido <input",
+   "pt": "<label>Crescimento sugerido <input",
+   "en": "<label>Suggested growth <input"
+  },
+  {
+   "es": "aria-label=\"Crecimiento sugerido\"> %</label>",
+   "pt": "aria-label=\"Crescimento sugerido\">%</label>",
+   "en": "aria-label=\"Suggested growth\">%</label>"
+  },
+  {
+   "es": "' ya cerró: corregir el objetivo cambia el cumplimiento del mes, no la comisión, que sale de la venta.'",
+   "pt": "' já fechou: corrigir a meta muda o cumprimento do mês, não a comissão, que sai da venda.'",
+   "en": "' has closed: correcting the target changes the month’s attainment, not commission, which comes from sales.'"
+  },
+  {
+   "es": "'Es el mes en curso: cada vendedor ve el cambio al momento en la app, en Hoy y en «Progreso».'",
+   "pt": "'É o mês em andamento: cada vendedor vê a mudança na hora no app, em Hoje e em «Progresso».'",
+   "en": "'It’s the current month: each rep sees the change instantly in the app, under Today and “Progress”.'"
+  },
+  {
+   "es": "'Los vendedores lo ven en la app desde el 1.º de ' + mes + '. El sugerido parte de ' + mes + ' de ' + (anio - 1) + ' y le suma el crecimiento que elijas.'",
+   "pt": "'Os vendedores veem no app a partir de 1º de ' + mes + '. A sugerida parte de ' + mes + ' de ' + (anio - 1) + ' e soma o crescimento que você escolher.'",
+   "en": "'Reps see it in the app starting ' + capM(mes) + ' 1. The suggestion starts from ' + capM(mes) + ' ' + (anio - 1) + ' and adds the growth you choose.'"
+  },
+  {
+   "es": " La comisión es la misma todos los meses y se calcula sobre la venta sin IVA.",
+   "pt": " A comissão é a mesma todos os meses e é calculada sobre a venda sem IVA.",
+   "en": " Commission is the same every month and is calculated on sales excl. VAT."
+  },
+  {
+   "es": "'Objetivos y comisiones'",
+   "pt": "'Metas e comissões'",
+   "en": "'Targets and commissions'"
+  },
+  {
+   "es": "'Cliente en riesgo'",
+   "pt": "'Cliente em risco'",
+   "en": "'At-risk customer'"
+  },
+  {
+   "es": "<th>Regla</th><th>Qué mide</th><th class=\"r\">Umbral</th>",
+   "pt": "<th>Regra</th><th>O que mede</th><th class=\"r\">Limite</th>",
+   "en": "<th>Rule</th><th>What it measures</th><th class=\"r\">Threshold</th>"
+  },
+  {
+   "es": "Con estas reglas sale la lista «Dejaron de comprar a su ritmo» y la oportunidad «Reactivar» de la app.",
+   "pt": "Com estas regras sai a lista «Pararam de comprar no ritmo de sempre» e a oportunidade «Reativar» do app.",
+   "en": "These rules drive the “Stopped buying at their usual pace” list and the app’s “Win back” opportunity."
+  },
+  {
+   "es": "<span>Se esconde después de ofrecida<small>para no repetirla en cada visita</small></span>",
+   "pt": "<span>Fica oculta depois de oferecida<small>para não repetir em cada visita</small></span>",
+   "en": "<span>Hidden after being offered<small>so it isn’t repeated every visit</small></span>"
+  },
+  {
+   "es": "aria-label=\"Días que se esconde después de ofrecida\"> días</span>",
+   "pt": "aria-label=\"Dias oculta depois de oferecida\"> dias</span>",
+   "en": "aria-label=\"Days hidden after being offered\"> days</span>"
+  },
+  {
+   "es": "<span>Se esconde si no le interesó<small>después vuelve a aparecer</small></span>",
+   "pt": "<span>Fica oculta se não houve interesse<small>depois volta a aparecer</small></span>",
+   "en": "<span>Hidden if not interested<small>then it shows up again</small></span>"
+  },
+  {
+   "es": "aria-label=\"Días que se esconde si no le interesó\"> días</span>",
+   "pt": "aria-label=\"Dias oculta se não houve interesse\"> dias</span>",
+   "en": "aria-label=\"Days hidden if not interested\"> days</span>"
+  },
+  {
+   "es": "<span>Venta cruzada desde<small>de cada 100 clientes parecidos que llevan los dos productos</small></span>",
+   "pt": "<span>Venda cruzada a partir de<small>de cada 100 clientes parecidos que levam os dois produtos</small></span>",
+   "en": "<span>Cross-sell from<small>out of every 100 similar customers who buy both products</small></span>"
+  },
+  {
+   "es": "aria-label=\"Venta cruzada desde\"> de 100</span>",
+   "pt": "aria-label=\"Venda cruzada a partir de\"> de 100</span>",
+   "en": "aria-label=\"Cross-sell from\"> out of 100</span>"
+  },
+  {
+   "es": "Familias que no generan oportunidades</p>",
+   "pt": "Famílias que não geram oportunidades</p>",
+   "en": "Product families that don’t generate opportunities</p>"
+  },
+  {
+   "es": "Guardar criterios</button>",
+   "pt": "Salvar critérios</button>",
+   "en": "Save rules</button>"
+  },
+  {
+   "es": "'Cierre del día'",
+   "pt": "'Fechamento do dia'",
+   "en": "'End-of-day summary'"
+  },
+  {
+   "es": "<label>A qué hora llega el mail<select",
+   "pt": "<label>Que horas chega o e-mail<select",
+   "en": "<label>When the email arrives<select"
+  },
+  {
+   "es": "<p class=\"nota\">Con la venta del día, las visitas, los pedidos que faltan pasar a ",
+   "pt": "<p class=\"nota\">Com a venda do dia, as visitas, os pedidos que faltam passar para o ",
+   "en": "<p class=\"nota\">With the day’s sales, visits, orders still to be entered in "
+  },
+  {
+   "es": " y lo que quedó por decidir.</p>",
+   "pt": " e o que ficou para decidir.</p>",
+   "en": " and anything awaiting a decision.</p>"
+  },
+  {
+   "es": "<legend>Le llega a</legend>",
+   "pt": "<legend>Chega para</legend>",
+   "en": "<legend>Sent to</legend>"
+  },
+  {
+   "es": "aria-label=\"Quitar ",
+   "pt": "aria-label=\"Tirar ",
+   "en": "aria-label=\"Remove "
+  },
+  {
+   "es": "placeholder=\"otro@",
+   "pt": "placeholder=\"outro@",
+   "en": "placeholder=\"another@"
+  },
+  {
+   "es": "aria-label=\"Agregar un mail\">",
+   "pt": "aria-label=\"Adicionar um e-mail\">",
+   "en": "aria-label=\"Add an email\">"
+  },
+  {
+   "es": "type=\"submit\">Agregar</button>",
+   "pt": "type=\"submit\">Adicionar</button>",
+   "en": "type=\"submit\">Add</button>"
+  },
+  {
+   "es": "'Avisos en la app del vendedor'",
+   "pt": "'Avisos no app do vendedor'",
+   "en": "'Notifications in the rep’s app'"
+  },
+  {
+   "es": "(a[2] ? 'Sí' : 'No')",
+   "pt": "(a[2] ? 'Sim' : 'Não')",
+   "en": "(a[2] ? 'Yes' : 'No')"
+  },
+  {
+   "es": "'Empresa y sistema'",
+   "pt": "'Empresa e sistema'",
+   "en": "'Company and system'"
+  },
+  {
+   "es": "<div><span>Empresa</span>",
+   "pt": "<div><span>Empresa</span>",
+   "en": "<div><span>Company</span>"
+  },
+  {
+   "es": "<span>Sistema de gestión<small>clientes, facturas, saldos, listas de precios y stock</small></span>",
+   "pt": "<span>Sistema de gestão<small>clientes, faturas, saldos, tabelas de preços e estoque</small></span>",
+   "en": "<span>ERP<small>customers, invoices, balances, price lists and stock</small></span>"
+  },
+  {
+   "es": "'Conectado'",
+   "pt": "'Conectado'",
+   "en": "'Connected'"
+  },
+  {
+   "es": "<span>Última sincronización<small>cada 5 minutos</small></span>",
+   "pt": "<span>Última sincronização<small>a cada 5 minutos</small></span>",
+   "en": "<span>Last sync<small>every 5 minutes</small></span>"
+  },
+  {
+   "es": "<span>Lista de precios de la app</span>",
+   "pt": "<span>Tabela de preços do app</span>",
+   "en": "<span>App price list</span>"
+  },
+  {
+   "es": "Los datos se tratan según la Ley 18.331. La app solo registra la ubicación al llegar y salir de cada visita, durante la jornada.",
+   "pt": "Os dados são tratados conforme a Lei 18.331 do Uruguai. O app só registra a localização ao chegar e sair de cada visita, durante a jornada.",
+   "en": "Data is handled under Uruguay’s Law 18.331. The app only records location when arriving at and leaving each visit, during the workday."
+  },
+  {
+   "es": "aria-label=\"Cerrar\">",
+   "pt": "aria-label=\"Fechar\">",
+   "en": "aria-label=\"Close\">"
+  },
+  {
+   "es": "'cada ' + c.f + ' días'",
+   "pt": "'a cada ' + c.f + ' dias'",
+   "en": "'every ' + c.f + ' days'"
+  },
+  {
+   "es": "'Última compra'",
+   "pt": "'Última compra'",
+   "en": "'Last purchase'"
+  },
+  {
+   "es": "c.est === 'riesgo' ? 'pasó su frecuencia' : 'a su ritmo'",
+   "pt": "c.est === 'riesgo' ? 'passou da frequência' : 'no ritmo de sempre'",
+   "en": "c.est === 'riesgo' ? 'past their usual frequency' : 'at their usual pace'"
+  },
+  {
+   "es": "'Saldo'",
+   "pt": "'Saldo'",
+   "en": "'Balance'"
+  },
+  {
+   "es": "'Al día'",
+   "pt": "'Em dia'",
+   "en": "'Current'"
+  },
+  {
+   "es": "' vencido · '",
+   "pt": "' vencido · '",
+   "en": "' overdue · '"
+  },
+  {
+   "es": "'sin vencidos'",
+   "pt": "'sem vencidos'",
+   "en": "'nothing overdue'"
+  },
+  {
+   "es": "'Últimos 12 meses'",
+   "pt": "'Últimos 12 meses'",
+   "en": "'Last 12 months'"
+  },
+  {
+   "es": "'Compras por mes'",
+   "pt": "'Compras por mês'",
+   "en": "'Purchases by month'"
+  },
+  {
+   "es": "' en el año</span>'",
+   "pt": "' no ano</span>'",
+   "en": "' this year</span>'"
+  },
+  {
+   "es": "'Qué compra'",
+   "pt": "'O que compra'",
+   "en": "'What they buy'"
+  },
+  {
+   "es": "margin-top:6px\">Dejó de llevar <b>",
+   "pt": "margin-top:6px\">Deixou de levar <b>",
+   "en": "margin-top:6px\">Stopped buying <b>"
+  },
+  {
+   "es": "'<span class=\"s\">compra los ' + esc(c.dia.toLowerCase()) + '</span>'",
+   "pt": "'<span class=\"s\">dia de compra: ' + esc(c.dia.toLowerCase()) + '</span>'",
+   "en": "'<span class=\"s\">buys on ' + esc(c.dia) + 's</span>'"
+  },
+  {
+   "es": "<span class=\"punto\"></span>Para ofrecerle",
+   "pt": "<span class=\"punto\"></span>Para oferecer",
+   "en": "<span class=\"punto\"></span>To offer"
+  },
+  {
+   "es": "'Cuenta'",
+   "pt": "'Conta'",
+   "en": "'Account'"
+  },
+  {
+   "es": "Sin facturas en los últimos 60 días.",
+   "pt": "Sem faturas nos últimos 60 dias.",
+   "en": "No invoices in the last 60 days."
+  },
+  {
+   "es": "'<span class=\"s\">Saldo ' + (c.sal ? $u(c.sal) : 'al día')",
+   "pt": "'<span class=\"s\">Saldo ' + (c.sal ? $u(c.sal) : 'em dia')",
+   "en": "'<span class=\"s\">Balance ' + (c.sal ? $u(c.sal) : 'current')"
+  },
+  {
+   "es": "'Notas del vendedor'",
+   "pt": "'Notas do vendedor'",
+   "en": "'Rep notes'"
+  },
+  {
+   "es": "chip('ver', 'Visita pedida a ' + corV(c.v))",
+   "pt": "chip('ver', 'Visita pedida a ' + corV(c.v))",
+   "en": "chip('ver', 'Visit requested from ' + corV(c.v))"
+  },
+  {
+   "es": "'Pedir visita a ' + corV(c.v) + '</button>'",
+   "pt": "'Pedir visita a ' + corV(c.v) + '</button>'",
+   "en": "'Ask ' + corV(c.v) + ' to visit</button>'"
+  },
+  {
+   "es": "'\">Ver pedido '",
+   "pt": "'\">Ver pedido '",
+   "en": "'\">View order '"
+  },
+  {
+   "es": "' · RUT '",
+   "pt": "' · RUT '",
+   "en": "' · Tax ID '"
+  },
+  {
+   "es": "chip('ver', 'Pedido ' + esc(s.ped)",
+   "pt": "chip('ver', 'Pedido ' + esc(s.ped)",
+   "en": "chip('ver', 'Order ' + esc(s.ped)"
+  },
+  {
+   "es": "'Visita hecha'",
+   "pt": "'Visita feita'",
+   "en": "'Visit done'"
+  },
+  {
+   "es": "chip('borde', 'En visita desde ' + esc(s.lle), true)",
+   "pt": "chip('borde', 'Em visita desde ' + esc(s.lle), true)",
+   "en": "chip('borde', 'Visiting since ' + esc(s.lle), true)"
+  },
+  {
+   "es": "'Con problema'",
+   "pt": "'Com problema'",
+   "en": "'Issue'"
+  },
+  {
+   "es": "'Fuera de ruta'",
+   "pt": "'Fora da rota'",
+   "en": "'Off route'"
+  },
+  {
+   "es": "' · llegó '",
+   "pt": "' · chegou '",
+   "en": "' · arrived '"
+  },
+  {
+   "es": "', se fue '",
+   "pt": "', saiu '",
+   "en": "', left '"
+  },
+  {
+   "es": "<span class=\"baja\">debe ",
+   "pt": "<span class=\"baja\">deve ",
+   "en": "<span class=\"baja\">owes "
+  },
+  {
+   "es": "' · salió a las '",
+   "pt": "' · saiu às '",
+   "en": "' · out since '"
+  },
+  {
+   "es": "'en visita ahora'",
+   "pt": "'em visita agora'",
+   "en": "'visiting now'"
+  },
+  {
+   "es": "e.prox ? 'próxima ' + e.prox.h : 'ruta terminada'",
+   "pt": "e.prox ? 'próxima às ' + e.prox.h : 'rota terminada'",
+   "en": "e.prox ? 'next at ' + e.prox.h : 'route finished'"
+  },
+  {
+   "es": "'Ruta de hoy'",
+   "pt": "'Rota de hoje'",
+   "en": "'Today’s route'"
+  },
+  {
+   "es": "con oportunidad</span>",
+   "pt": "com oportunidade</span>",
+   "en": "with opportunity</span>"
+  },
+  {
+   "es": "'Clientes en riesgo'",
+   "pt": "'Clientes em risco'",
+   "en": "'At-risk customers'"
+  },
+  {
+   "es": "' días sin comprar (compraba cada '",
+   "pt": "' dias sem comprar (comprava a cada '",
+   "en": "' days without buying (used to every '"
+  },
+  {
+   "es": " por mes</p>",
+   "pt": " por mês</p>",
+   "en": " a month</p>"
+  },
+  {
+   "es": "'Pedida'",
+   "pt": "'Pedida'",
+   "en": "'Requested'"
+  },
+  {
+   "es": "Ningún cliente pasó su frecuencia de compra.",
+   "pt": "Nenhum cliente passou da frequência de compra.",
+   "en": "No customer is past their buying frequency."
+  },
+  {
+   "es": " por mes</span>",
+   "pt": " por mês</span>",
+   "en": " a month</span>"
+  },
+  {
+   "es": "'Deuda vencida de su cartera'",
+   "pt": "'Dívida vencida da carteira'",
+   "en": "'Overdue balances in their accounts'"
+  },
+  {
+   "es": "Ver sus pedidos</button>",
+   "pt": "Ver os pedidos</button>",
+   "en": "See their orders</button>"
+  },
+  {
+   "es": "'Llamar a '",
+   "pt": "'Ligar para '",
+   "en": "'Call '"
+  },
+  {
+   "es": "'<span class=\"reloj\"><i></i>mar 29/09 · <span id=\"reloj-h\">'",
+   "pt": "'<span class=\"reloj\"><i></i>ter 29/09 · <span id=\"reloj-h\">'",
+   "en": "'<span class=\"reloj\"><i></i>Tue 9/29 · <span id=\"reloj-h\">'"
+  },
+  {
+   "es": "'<span class=\"reloj\"><i></i>mar 29/09 · '",
+   "pt": "'<span class=\"reloj\"><i></i>ter 29/09 · '",
+   "en": "'<span class=\"reloj\"><i></i>Tue 9/29 · '"
+  },
+  {
+   "es": "<span class=\"sr\">Período</span>",
+   "pt": "<span class=\"sr\">Período</span>",
+   "en": "<span class=\"sr\">Period</span>"
+  },
+  {
+   "es": "'target') + 'Objetivos de ' + MESES_L[IX[S.per]]",
+   "pt": "'target') + 'Metas de ' + MESES_L[IX[S.per]]",
+   "en": "'target') + MESES_L[IX[S.per]] + ' targets'"
+  },
+  {
+   "es": "Bajar planilla</button>",
+   "pt": "Baixar planilha</button>",
+   "en": "Download spreadsheet</button>"
+  },
+  {
+   "es": "'<span class=\"reloj\"><i></i>saldos de Doria · 29/09</span>'",
+   "pt": "'<span class=\"reloj\"><i></i>saldos do Doria · 29/09</span>'",
+   "en": "'<span class=\"reloj\"><i></i>Doria balances · 9/29</span>'"
+  },
+  {
+   "es": "Nueva oferta</button>",
+   "pt": "Nova oferta</button>",
+   "en": "New promotion</button>"
+  },
+  {
+   "es": "String(Math.round(v * 100) / 100).replace('.', ',')",
+   "pt": "String(Math.round(v * 100) / 100).replace('.', ',')",
+   "en": "String(Math.round(v * 100) / 100)"
+  },
+  {
+   "es": "return /[;\"\\n]/.test(s)",
+   "pt": "return /[;\"\\n]/.test(s)",
+   "en": "return /[,\"\\n]/.test(s)"
+  },
+  {
+   "es": "f.map(celda).join(';')",
+   "pt": "f.map(celda).join(';')",
+   "en": "f.map(celda).join(',')"
+  },
+  {
+   "es": "'Planilla lista: '",
+   "pt": "'Planilha pronta: '",
+   "en": "'Spreadsheet ready: '"
+  },
+  {
+   "es": "var E = {pend: 'PENDIENTE', cargado: 'CARGADO', anulado: 'ANULADO'};",
+   "pt": "var E = {pend: 'PENDENTE', cargado: 'LANÇADO', anulado: 'CANCELADO'};",
+   "en": "var E = {pend: 'PENDING', cargado: 'ENTERED', anulado: 'CANCELED'};"
+  },
+  {
+   "es": "bajarCsv('distribuidora-central-pedidos-' + ({pend: 'pendientes', cargado: 'cargados', anulado: 'anulados'}[est] || 'todos') + '-2026-09-29.csv',",
+   "pt": "bajarCsv('distribuidora-central-pedidos-' + ({pend: 'pendentes', cargado: 'lancados', anulado: 'cancelados'}[est] || 'todos') + '-2026-09-29.csv',",
+   "en": "bajarCsv('distribuidora-central-orders-' + ({pend: 'pending', cargado: 'entered', anulado: 'canceled'}[est] || 'all') + '-2026-09-29.csv',"
+  },
+  {
+   "es": "['Pedido', 'Fecha', 'Estado', 'Código cliente', 'RUT', 'Cliente', 'Vendedor', 'Código producto', 'Producto', 'Cantidad', 'Precio', 'Importe', 'Moneda', 'Sugerido', 'Nota']",
+   "pt": "['Pedido', 'Data', 'Status', 'Código do cliente', 'RUT', 'Cliente', 'Vendedor', 'Código do produto', 'Produto', 'Quantidade', 'Preço', 'Valor', 'Moeda', 'Sugerido', 'Nota']",
+   "en": "['Order', 'Date', 'Status', 'Customer code', 'RUT', 'Customer', 'Sales rep', 'Product code', 'Product', 'Quantity', 'Price', 'Amount', 'Currency', 'Suggested', 'Note']"
+  },
+  {
+   "es": "l.sug ? 'Sí' : ''",
+   "pt": "l.sug ? 'Sim' : ''",
+   "en": "l.sug ? 'Yes' : ''"
+  },
+  {
+   "es": "bajarCsv('ventas-por-vendedor-' + MESES_L[i] + '-2026.csv', ['Vendedor', 'Zona', 'Venta', 'Objetivo', '% objetivo', 'Año anterior', 'Pedidos', 'Ticket', 'Visitas hechas', 'Visitas planificadas', 'Oportunidades ofrecidas', 'Oportunidades vendidas', 'Comisión'],",
+   "pt": "bajarCsv('vendas-por-vendedor-' + MESES_L[i] + '-2026.csv', ['Vendedor', 'Zona', 'Vendas', 'Meta', '% da meta', 'Ano anterior', 'Pedidos', 'Tíquete médio', 'Visitas feitas', 'Visitas planejadas', 'Oportunidades oferecidas', 'Oportunidades vendidas', 'Comissão'],",
+   "en": "bajarCsv('sales-by-rep-' + MESES_L[i] + '-2026.csv', ['Sales rep', 'Area', 'Sales', 'Target', '% of target', 'Prior year', 'Orders', 'Average order', 'Visits done', 'Visits planned', 'Opportunities offered', 'Opportunities sold', 'Commission'],"
+  },
+  {
+   "es": "bajarCsv('clientes-2026-09-29.csv', ['Código', 'Cliente', 'RUT', 'Rubro', 'Zona', 'Dirección', 'Vendedor', 'Compras 12 meses', 'Setiembre', 'Saldo', 'Vencido', 'Días de la última compra', 'Estado']",
+   "pt": "bajarCsv('clientes-2026-09-29.csv', ['Código', 'Cliente', 'RUT', 'Ramo', 'Zona', 'Endereço', 'Vendedor', 'Compras 12 meses', 'Setembro', 'Saldo', 'Vencido', 'Dias desde a última compra', 'Status']",
+   "en": "bajarCsv('customers-2026-09-29.csv', ['Code', 'Customer', 'RUT', 'Business type', 'Area', 'Address', 'Sales rep', '12-month purchases', 'September', 'Balance', 'Overdue', 'Days since last purchase', 'Status']"
+  },
+  {
+   "es": "{nuevo: 'Nuevo', riesgo: 'En riesgo', activo: 'Activo'}[c.est]",
+   "pt": "{nuevo: 'Novo', riesgo: 'Em risco', activo: 'Ativo'}[c.est]",
+   "en": "{nuevo: 'New', riesgo: 'At risk', activo: 'Active'}[c.est]"
+  },
+  {
+   "es": "bajarCsv('clientes-que-dejaron-de-comprar.csv', ['Cliente', 'Zona', 'Vendedor', 'Compra cada (días)', 'Días sin comprar', 'Compraba por mes']",
+   "pt": "bajarCsv('clientes-que-pararam-de-comprar.csv', ['Cliente', 'Zona', 'Vendedor', 'Compra a cada (dias)', 'Dias sem comprar', 'Comprava por mês']",
+   "en": "bajarCsv('customers-who-stopped-buying.csv', ['Customer', 'Area', 'Sales rep', 'Buys every (days)', 'Days without buying', 'Used to buy per month']"
+  },
+  {
+   "es": "bajarCsv('cobranzas-deuda-vencida.csv', ['Cliente', 'RUT', 'Vendedor', 'Saldo', 'Vencido', 'Días vencido']",
+   "pt": "bajarCsv('cobrancas-divida-vencida.csv', ['Cliente', 'RUT', 'Vendedor', 'Saldo', 'Vencido', 'Dias vencido']",
+   "en": "bajarCsv('collections-overdue.csv', ['Customer', 'RUT', 'Sales rep', 'Balance', 'Overdue', 'Days overdue']"
+  },
+  {
+   "es": "{hecha: 'Hecha', visita: 'En visita', prob: 'Con problema', pend: 'Pendiente'}[s.est] || s.est, s.lle || '', s.sal || '', s.ped || '', s.fuera ? 'Sí' : ''",
+   "pt": "{hecha: 'Feita', visita: 'Em visita', prob: 'Com problema', pend: 'Pendente'}[s.est] || s.est, s.lle || '', s.sal || '', s.ped || '', s.fuera ? 'Sim' : ''",
+   "en": "{hecha: 'Done', visita: 'Visiting', prob: 'Issue', pend: 'Pending'}[s.est] || s.est, s.lle || '', s.sal || '', s.ped || '', s.fuera ? 'Yes' : ''"
+  },
+  {
+   "es": "bajarCsv('rutas-de-hoy-2026-09-29.csv', ['Vendedor', 'Hora', 'Cliente', 'Zona', 'Estado', 'Llegó', 'Se fue', 'Pedido', 'Fuera de ruta']",
+   "pt": "bajarCsv('rotas-de-hoje-2026-09-29.csv', ['Vendedor', 'Hora', 'Cliente', 'Zona', 'Status', 'Chegou', 'Saiu', 'Pedido', 'Fora da rota']",
+   "en": "bajarCsv('todays-routes-2026-09-29.csv', ['Sales rep', 'Time', 'Customer', 'Area', 'Status', 'Arrived', 'Left', 'Order', 'Off route']"
+  },
+  {
+   "es": "bajarCsv('oportunidades-de-hoy.csv', ['Tipo', 'Cliente', 'Vendedor', 'Qué hacer', 'Motivo', 'Valor por mes', 'Estado']",
+   "pt": "bajarCsv('oportunidades-de-hoje.csv', ['Tipo', 'Cliente', 'Vendedor', 'O que fazer', 'Motivo', 'Valor por mês', 'Status']",
+   "en": "bajarCsv('todays-opportunities.csv', ['Type', 'Customer', 'Sales rep', 'What to do', 'Reason', 'Value per month', 'Status']"
+  },
+  {
+   "es": "o.est || 'Abierta'",
+   "pt": "({vendida: 'Vendida', ofrecida: 'Oferecida', no: 'Sem interesse', ruta: 'Na rota', wa: 'Enviada'}[o.est] || o.est || 'Aberta')",
+   "en": "({vendida: 'Sold', ofrecida: 'Offered', no: 'Not interested', ruta: 'On route', wa: 'Sent'}[o.est] || o.est || 'Open')"
+  },
+  {
+   "es": "bajarCsv('lista-de-precios-distribuidora-central.csv', ['Código', 'Producto', 'Familia', 'Costo', 'Lista general', 'Mayorista', 'Margen %']",
+   "pt": "bajarCsv('tabela-de-precos-distribuidora-central.csv', ['Código', 'Produto', 'Família', 'Custo', 'Tabela geral', 'Atacado', 'Margem %']",
+   "en": "bajarCsv('price-list-distribuidora-central.csv', ['Code', 'Product', 'Family', 'Cost', 'General list', 'Wholesale', 'Margin %']"
+  },
+  {
+   "es": "bajarCsv('ventas-por-mes-12-meses.csv', ['Mes', 'María', 'Carlos', 'Lucía', 'Equipo', 'Año anterior']",
+   "pt": "bajarCsv('vendas-por-mes-12-meses.csv', ['Mês', 'María', 'Carlos', 'Lucía', 'Equipe', 'Ano anterior']",
+   "en": "bajarCsv('sales-by-month-12-months.csv', ['Month', 'María', 'Carlos', 'Lucía', 'Team', 'Prior year']"
+  },
+  {
+   "es": "'Llamando a '",
+   "pt": "'Ligando para '",
+   "en": "'Calling '"
+  },
+  {
+   "es": "toast(est === 'revisada' ? 'Marcado como revisado.' : 'Solicitud ' + est + '. A ' + corV(s.ven) + ' le llega el aviso en la app.');",
+   "pt": "toast(est === 'revisada' ? 'Marcado como revisado.' : 'Solicitação ' + (est === 'aprobada' ? 'aprovada' : 'recusada') + '. ' + corV(s.ven) + ' recebe o aviso no app.');",
+   "en": "toast(est === 'revisada' ? 'Marked as reviewed.' : 'Request ' + (est === 'aprobada' ? 'approved' : 'declined') + '. ' + corV(s.ven) + ' gets notified in the app.');"
+  },
+  {
+   "es": "toast('Tarea para ' + corV(c.v) + ': visitar ' + c.n + ' mañana. Le aparece en la app.');",
+   "pt": "toast('Tarefa para ' + corV(c.v) + ': visitar ' + c.n + ' amanhã. Aparece no app.');",
+   "en": "toast('Task for ' + corV(c.v) + ': visit ' + c.n + ' tomorrow. It shows up in the app.');"
+  },
+  {
+   "es": "txt: 'Visitar ' + c.n}",
+   "pt": "txt: 'Visitar ' + c.n}",
+   "en": "txt: 'Visit ' + c.n}"
+  },
+  {
+   "es": "toast('Tarea para ' + corV(c.v) + ': cobrar ' + $u(c.ven) + ' a ' + c.n + '. Le aparece en la app.');",
+   "pt": "toast('Tarefa para ' + corV(c.v) + ': cobrar ' + $u(c.ven) + ' de ' + c.n + '. Aparece no app.');",
+   "en": "toast('Task for ' + corV(c.v) + ': collect ' + $u(c.ven) + ' from ' + c.n + '. It shows up in the app.');"
+  },
+  {
+   "es": "txt: 'Cobrar ' + $u(c.ven) + ' a ' + c.n}",
+   "pt": "txt: 'Cobrar ' + $u(c.ven) + ' de ' + c.n}",
+   "en": "txt: 'Collect ' + $u(c.ven) + ' from ' + c.n}"
+  },
+  {
+   "es": "toast('Pedido ' + n + ' marcado como cargado' + (t ? ' · comprobante ' + t : ''), 'Deshacer'",
+   "pt": "toast('Pedido ' + n + ' marcado como lançado' + (t ? ' · comprovante ' + t : ''), 'Desfazer'",
+   "en": "toast('Order ' + n + ' marked as entered' + (t ? ' · document ' + t : ''), 'Undo'"
+  },
+  {
+   "es": "'Deshacer'",
+   "pt": "'Desfazer'",
+   "en": "'Undo'"
+  },
+  {
+   "es": "toast('Pedido ' + n + ' anulado.'",
+   "pt": "toast('Pedido ' + n + ' cancelado.'",
+   "en": "toast('Order ' + n + ' canceled.'"
+  },
+  {
+   "es": "toast('Pedido ' + n + ' de vuelta en pendientes.')",
+   "pt": "toast('Pedido ' + n + ' de volta aos pendentes.')",
+   "en": "toast('Order ' + n + ' moved back to pending.')"
+  },
+  {
+   "es": "toast('Tarea para ' + corV(o.w) + ': ' + o.a.charAt(0).toLowerCase() + o.a.slice(1) + ' ' + nomOp(o) + '. Le aparece en la app.');",
+   "pt": "toast('Tarefa para ' + corV(o.w) + ': ' + o.a.charAt(0).toLowerCase() + o.a.slice(1) + ' ' + nomOp(o) + '. Aparece no app.');",
+   "en": "toast('Task for ' + corV(o.w) + ': ' + o.a.charAt(0).toLowerCase() + o.a.slice(1) + ' ' + nomOp(o) + '. It shows up in the app.');"
+  },
+  {
+   "es": "toast('Listo: ' + ymNom(ym) + ' quedó con los objetivos de ' + ymNom(ant) + '.'",
+   "pt": "toast('Pronto: ' + ymNom(ym) + ' ficou com as metas de ' + ymNom(ant) + '.'",
+   "en": "toast('Done: ' + ymNom(ym) + ' now has ' + ymNom(ant) + '’s targets.'"
+  },
+  {
+   "es": "toast('Listo: ' + ymNom(ym) + ' quedó con los sugeridos (+' + PARAM.crec + ' %).'",
+   "pt": "toast('Pronto: ' + ymNom(ym) + ' ficou com as sugeridas (+' + PARAM.crec + '%).'",
+   "en": "toast('Done: ' + ymNom(ym) + ' now uses the suggested targets (+' + PARAM.crec + '%).'"
+  },
+  {
+   "es": "'Oferta reenviada a la app de '",
+   "pt": "'Oferta reenviada ao app de '",
+   "en": "'Promotion resent to the app of '"
+  },
+  {
+   "es": "toast(antes === 'Programada' ? 'Oferta cancelada: no le va a llegar a los vendedores.' : 'Oferta terminada: se saca de la app y de la lista de precios.'",
+   "pt": "toast(antes === 'Programada' ? 'Oferta cancelada: não vai chegar aos vendedores.' : 'Oferta encerrada: sai do app e da tabela de preços.'",
+   "en": "toast(antes === 'Scheduled' ? 'Promotion canceled: it won’t reach the reps.' : 'Promotion ended: removed from the app and the price list.'"
+  },
+  {
+   "es": "'Elegí al menos un cliente.'",
+   "pt": "'Escolha pelo menos um cliente.'",
+   "en": "'Pick at least one customer.'"
+  },
+  {
+   "es": "toast(nombreCli(x.c) + ' salió de la ruta fija del ' + d.toLowerCase() + '. Las visitas ya agendadas siguen.'",
+   "pt": "toast(nombreCli(x.c) + ' saiu da rota fixa de ' + d.toLowerCase() + '. As visitas já agendadas continuam.'",
+   "en": "toast(nombreCli(x.c) + ' was removed from the ' + d + ' fixed route. Visits already scheduled stay.'"
+  },
+  {
+   "es": "'No podés desactivar tu propio usuario.'",
+   "pt": "'Você não pode desativar o seu próprio usuário.'",
+   "en": "'You can’t deactivate your own user.'"
+  },
+  {
+   "es": "'Tiene que quedar al menos un administrador activo.'",
+   "pt": "'Tem que ficar pelo menos um administrador ativo.'",
+   "en": "'There must be at least one active administrator.'"
+  },
+  {
+   "es": "(u.act ? ' vuelve a tener acceso.' : ' ya no puede entrar. Sus datos y su historia quedan.')",
+   "pt": "(u.act ? ' voltou a ter acesso.' : ' não pode mais entrar. Os dados e o histórico ficam guardados.')",
+   "en": "(u.act ? ' has access again.' : ' can no longer sign in. Their data and history are kept.')"
+  },
+  {
+   "es": "(x.calle ? ' es vendedor de calle: usa la app.' : ' queda como mostrador: no usa la app.')",
+   "pt": "(x.calle ? ' é vendedor externo: usa o app.' : ' fica como balcão: não usa o app.')",
+   "en": "(x.calle ? ' is a field rep: uses the app.' : ' is set as counter sales: doesn’t use the app.')"
+  },
+  {
+   "es": "(x.cuenta ? ' cuenta en los números del tablero.' : ' sale de los números del tablero.')",
+   "pt": "(x.cuenta ? ' entra nos números do painel.' : ' sai dos números do painel.')",
+   "en": "(x.cuenta ? ' counts in the dashboard numbers.' : ' no longer counts in the dashboard numbers.')"
+  },
+  {
+   "es": "(a[2] ? ': le llega a la app.' : ': no le llega más.')",
+   "pt": "(a[2] ? ': aviso ativado no app.' : ': aviso desativado.')",
+   "en": "(a[2] ? ': notification on.' : ': notification off.')"
+  },
+  {
+   "es": "'Tiene que quedar al menos un mail.'",
+   "pt": "'Tem que ficar pelo menos um e-mail.'",
+   "en": "'There must be at least one email.'"
+  },
+  {
+   "es": "' ya no recibe el cierre del día.'",
+   "pt": "' não recebe mais o fechamento do dia.'",
+   "en": "' no longer gets the end-of-day summary.'"
+  },
+  {
+   "es": "'Guardado. El tablero y la app usan los criterios nuevos desde ahora.'",
+   "pt": "'Salvo. O painel e o app usam os novos critérios a partir de agora.'",
+   "en": "'Saved. The dashboard and the app use the new rules from now on.'"
+  },
+  {
+   "es": "'Escribí el nombre.'",
+   "pt": "'Escreva o nome.'",
+   "en": "'Enter the name.'"
+  },
+  {
+   "es": "'Revisá el mail.'",
+   "pt": "'Confira o e-mail.'",
+   "en": "'Check the email.'"
+  },
+  {
+   "es": "'Ya hay un usuario con ese mail.'",
+   "pt": "'Já existe um usuário com esse e-mail.'",
+   "en": "'There’s already a user with that email.'"
+  },
+  {
+   "es": "'Elegí qué vendedor es.'",
+   "pt": "'Escolha qual vendedor é.'",
+   "en": "'Pick which rep this is.'"
+  },
+  {
+   "es": "'Nunca'",
+   "pt": "'Nunca'",
+   "en": "'Never'"
+  },
+  {
+   "es": "'Usuario creado. Pasale la contraseña temporal.'",
+   "pt": "'Usuário criado. Passe a senha temporária.'",
+   "en": "'User created. Share the temporary password.'"
+  },
+  {
+   "es": "'Período: '",
+   "pt": "'Período: '",
+   "en": "'Period: '"
+  },
+  {
+   "es": "toast(u.nom + ' ahora es ' + ROLES[u.rol][0].toLowerCase() + '.')",
+   "pt": "toast(u.nom + ' agora tem o perfil ' + ROLES[u.rol][0] + '.')",
+   "en": "toast(u.nom + '’s role is now ' + ROLES[u.rol][0] + '.')"
+  },
+  {
+   "es": "'El cierre del día llega a las '",
+   "pt": "'O fechamento do dia chega às '",
+   "en": "'The end-of-day summary arrives at '"
+  },
+  {
+   "es": "toast('Listo. ' + vc.corto + ' ve su comisión nueva en la app.')",
+   "pt": "toast('Pronto. ' + vc.corto + ' vê a nova comissão no app.')",
+   "en": "toast('Done. ' + vc.corto + ' sees the new commission in the app.')"
+  },
+  {
+   "es": "' recibe el cierre del día.'",
+   "pt": "' recebe o fechamento do dia.'",
+   "en": "' gets the end-of-day summary.'"
+  },
+  {
+   "es": "'¿Cómo venimos contra el objetivo?'",
+   "pt": "'Como estamos em relação à meta?'",
+   "en": "'How are we tracking against target?'"
+  },
+  {
+   "es": "'¿Cómo vienen las ofertas?'",
+   "pt": "'Como estão as ofertas?'",
+   "en": "'How are the promotions doing?'"
+  },
+  {
+   "es": "'¿Quién usa menos la app?'",
+   "pt": "'Quem usa menos o app?'",
+   "en": "'Who uses the app the least?'"
+  },
+  {
+   "es": "'¿Qué clientes de María no compran hace más de 30 días?'",
+   "pt": "'Quais clientes da María não compram há mais de 30 dias?'",
+   "en": "'Which of María’s customers haven’t bought in over 30 days?'"
+  },
+  {
+   "es": "'Dame un brief de Carlos'",
+   "pt": "'Me dá um resumo de Carlos'",
+   "en": "'Give me a brief on Carlos'"
+  },
+  {
+   "es": "'¿Qué pedidos faltan cargar?'",
+   "pt": "'Quais pedidos faltam lançar?'",
+   "en": "'Which orders still need to be entered?'"
+  },
+  {
+   "es": "'Pedile a María que pase por La Trattoria el jueves'",
+   "pt": "'Peça para a María passar na La Trattoria na quinta'",
+   "en": "'Ask María to stop by La Trattoria on Thursday'"
+  },
+  {
+   "es": "var GEN_RUBRO = /^(almacen|supermercado|autoservicio|cafeteria|pizzeria|panaderia|kiosco|minimercado|bar|rotiseria|parador|parrillada|despensa|restaurante) /;",
+   "pt": "var GEN_RUBRO = /^(almacen|supermercado|autoservicio|cafeteria|pizzeria|panaderia|kiosco|minimercado|bar|rotiseria|parador|parrillada|despensa|restaurante) /;\nvar CUANDO = {lunes: 'na segunda', martes: 'na terça', miercoles: 'na quarta', jueves: 'na quinta', viernes: 'na sexta', sabado: 'no sábado', manana: 'amanhã', segunda: 'na segunda', terca: 'na terça', quarta: 'na quarta', quinta: 'na quinta', sexta: 'na sexta', amanha: 'amanhã', monday: 'na segunda', tuesday: 'na terça', wednesday: 'na quarta', thursday: 'na quinta', friday: 'na sexta', saturday: 'no sábado', tomorrow: 'amanhã'};",
+   "en": "var GEN_RUBRO = /^(almacen|supermercado|autoservicio|cafeteria|pizzeria|panaderia|kiosco|minimercado|bar|rotiseria|parador|parrillada|despensa|restaurante) /;\nvar CUANDO = {lunes: 'on Monday', martes: 'on Tuesday', miercoles: 'on Wednesday', jueves: 'on Thursday', viernes: 'on Friday', sabado: 'on Saturday', manana: 'tomorrow', segunda: 'on Monday', terca: 'on Tuesday', quarta: 'on Wednesday', quinta: 'on Thursday', sexta: 'on Friday', amanha: 'tomorrow', monday: 'on Monday', tuesday: 'on Tuesday', wednesday: 'on Wednesday', thursday: 'on Thursday', friday: 'on Friday', saturday: 'on Saturday', tomorrow: 'tomorrow'};"
+  },
+  {
+   "es": "' el ' + cuando[0].replace('miercoles', 'miércoles').replace('sabado', 'sábado').replace('manana', 'mañana')",
+   "pt": "' ' + CUANDO[cuando[0]]",
+   "en": "' ' + CUANDO[cuando[0]]"
+  },
+  {
+   "es": "/(pedi|deja|manda).*(pase|visit)|pasar por|pedir visita/",
+   "pt": "/(pedi|deja|manda|peca|pede|ask|tell|have).*(pase|visit|passar|stop by|drop by|go by)|pasar por|pedir visita|passar (no|na|em|pel)|request a visit/",
+   "en": "/(pedi|deja|manda|peca|pede|ask|tell|have).*(pase|visit|passar|stop by|drop by|go by)|pasar por|pedir visita|passar (no|na|em|pel)|request a visit/"
+  },
+  {
+   "es": "/lunes|martes|miercoles|jueves|viernes|sabado|manana/",
+   "pt": "/lunes|martes|miercoles|jueves|viernes|sabado|manana|segunda|terca|quarta|quinta|sexta|amanha|monday|tuesday|wednesday|thursday|friday|saturday|tomorrow/",
+   "en": "/lunes|martes|miercoles|jueves|viernes|sabado|manana|segunda|terca|quarta|quinta|sexta|amanha|monday|tuesday|wednesday|thursday|friday|saturday|tomorrow/"
+  },
+  {
+   "es": "/uso de la app|usa(n)? (la app|menos|mas)|entradas|jornada/",
+   "pt": "/uso de la app|usa(n)? (la app|menos|mas)|entradas|jornada|uso do app|usa(m)? (o app|menos|mais)|acessos|app usage|uses? the app|screen views|workday/",
+   "en": "/uso de la app|usa(n)? (la app|menos|mas)|entradas|jornada|uso do app|usa(m)? (o app|menos|mais)|acessos|app usage|uses? the app|screen views|workday/"
+  },
+  {
+   "es": "/ruta(s)? fija/",
+   "pt": "/ruta(s)? fija|rota(s)? fixa|fixed route/",
+   "en": "/ruta(s)? fija|rota(s)? fixa|fixed route/"
+  },
+  {
+   "es": "/(carg|pas).*(pedido|sistema)|pedidos? (pendiente|falta)|falta(n)? cargar/",
+   "pt": "/(carg|pas).*(pedido|sistema)|pedidos? (pendiente|falta)|falta(n)? cargar|(lanc|passar).*(pedido|sistema)|pedidos? (pendente|falta)|faltam lancar|(enter|load).*(order|system)|pending orders?|orders? (pending|to enter|left)|need to be entered/",
+   "en": "/(carg|pas).*(pedido|sistema)|pedidos? (pendiente|falta)|falta(n)? cargar|(lanc|passar).*(pedido|sistema)|pedidos? (pendente|falta)|faltam lancar|(enter|load).*(order|system)|pending orders?|orders? (pending|to enter|left)|need to be entered/"
+  },
+  {
+   "es": "/planilla|excel|csv|bajame/",
+   "pt": "/planilla|excel|csv|bajame|planilha|baixe|spreadsheet|download/",
+   "en": "/planilla|excel|csv|bajame|planilha|baixe|spreadsheet|download/"
+  },
+  {
+   "es": "/desvio|solicitud|bandeja|aprob/",
+   "pt": "/desvio|solicitud|bandeja|aprob|solicitac|aprov|detour|request|inbox|approv/",
+   "en": "/desvio|solicitud|bandeja|aprob|solicitac|aprov|detour|request|inbox|approv/"
+  },
+  {
+   "es": "/lo que suma|venta extra|sugerencia|recuperad|oportunidades vendidas/",
+   "pt": "/lo que suma|venta extra|sugerencia|recuperad|oportunidades vendidas|o que o libreta soma|venda extra|sugest|what libreta adds|extra sales|suggestion|won back|opportunities sold/",
+   "en": "/lo que suma|venta extra|sugerencia|recuperad|oportunidades vendidas|o que o libreta soma|venda extra|sugest|what libreta adds|extra sales|suggestion|won back|opportunities sold/"
+  },
+  {
+   "es": "/familia|categoria|producto/.test(t) && !/margen|precio/",
+   "pt": "/familia|categoria|producto|produto|family|families|categor|product/.test(t) && !/margen|precio|margem|preco|margin|price/",
+   "en": "/familia|categoria|producto|produto|family|families|categor|product/.test(t) && !/margen|precio|margem|preco|margin|price/"
+  },
+  {
+   "es": "/oferta|promo/",
+   "pt": "/oferta|promo|deal/",
+   "en": "/oferta|promo|deal/"
+  },
+  {
+   "es": "/presupuesto/",
+   "pt": "/presupuesto|orcamento|quote/",
+   "en": "/presupuesto|orcamento|quote/"
+  },
+  {
+   "es": "/prospect|cliente(s)? nuevo|nuevos clientes/",
+   "pt": "/prospect|cliente(s)? nuevo|nuevos clientes|clientes? novos?|novos clientes|new customers?/",
+   "en": "/prospect|cliente(s)? nuevo|nuevos clientes|clientes? novos?|novos clientes|new customers?/"
+  },
+  {
+   "es": "/margen|precio/.test(t)){",
+   "pt": "/margen|precio|margem|preco|margin|price/.test(t)){",
+   "en": "/margen|precio|margem|preco|margin|price/.test(t)){"
+  },
+  {
+   "es": "/comision/",
+   "pt": "/comision|comiss|commission/",
+   "en": "/comision|comiss|commission/"
+  },
+  {
+   "es": "/ruta|en la calle|visitas de hoy|como van hoy/",
+   "pt": "/ruta|en la calle|visitas de hoy|como van hoy|rota|rua|hoje|visitas de hoje|route|field|today.s visits|visits today|doing today/",
+   "en": "/ruta|en la calle|visitas de hoy|como van hoy|rota|rua|hoje|visitas de hoje|route|field|today.s visits|visits today|doing today/"
+  },
+  {
+   "es": "/brief|como viene|resumen de|contame de/",
+   "pt": "/brief|como viene|resumen de|contame de|resumo d|como esta|me fala d|summary|how is|tell me about/",
+   "en": "/brief|como viene|resumen de|contame de|resumo d|como esta|me fala d|summary|how is|tell me about/"
+  },
+  {
+   "es": "/objetivo|vamos|venimos|falta|meta|cierra/",
+   "pt": "/objetivo|vamos|venimos|falta|meta|cierra|estamos|target|tracking|goal|on track|closing/",
+   "en": "/objetivo|vamos|venimos|falta|meta|cierra|estamos|target|tracking|goal|on track|closing/"
+  },
+  {
+   "es": "/vendio mas|ranking|mejor vendedor|quien vend/",
+   "pt": "/vendio mas|ranking|mejor vendedor|quien vend|vendeu mais|melhor vendedor|quem vend|sold the most|top rep|best rep|who sold/",
+   "en": "/vendio mas|ranking|mejor vendedor|quien vend|vendeu mais|melhor vendedor|quem vend|sold the most|top rep|best rep|who sold/"
+  },
+  {
+   "es": "/riesgo|no compra|dejaron de comprar|dejo de comprar|30 dias/.test(t) && !/debe|vencid/",
+   "pt": "/riesgo|no compra|dejaron de comprar|dejo de comprar|30 dias|risco|nao compra|pararam de comprar|parou de comprar|risk|haven.t bought|hasn.t bought|stopped buying|30 days/.test(t) && !/debe|vencid|deve|owe|overdue/",
+   "en": "/riesgo|no compra|dejaron de comprar|dejo de comprar|30 dias|risco|nao compra|pararam de comprar|parou de comprar|risk|haven.t bought|hasn.t bought|stopped buying|30 days/.test(t) && !/debe|vencid|deve|owe|overdue/"
+  },
+  {
+   "es": "/debe|vencid|cobr|deuda/",
+   "pt": "/debe|vencid|cobr|deuda|deve|divida|owe|overdue|collect|debt/",
+   "en": "/debe|vencid|cobr|deuda|deve|divida|owe|overdue|collect|debt/"
+  },
+  {
+   "es": "/oportunidad|ofrecer|semana/",
+   "pt": "/oportunidad|ofrecer|semana|oportunidade|oferecer|opportunit|offer|week/",
+   "en": "/oportunidad|ofrecer|semana|oportunidade|oferecer|opportunit|offer|week/"
+  },
+  {
+   "es": "'¿Qué cliente tiene que visitar? Decime el nombre, por ejemplo «Pedile a María que pase por La Trattoria».'",
+   "pt": "'Qual cliente tem que visitar? Me diga o nome, por exemplo «Peça para a María passar na La Trattoria».'",
+   "en": "'Which customer should they visit? Tell me the name, for example “Ask María to stop by La Trattoria”.'"
+  },
+  {
+   "es": "'</b> es de la cartera de ' + esc(corV(c.v)) + ': ' + (c.u ? 'no compra hace ' + c.u + ' días' : 'compró hoy') + (c.m ? ' y compraba ' + $u(c.m) + ' por mes' : '')",
+   "pt": "'</b> é da carteira de ' + esc(corV(c.v)) + ': ' + (c.u ? 'não compra há ' + c.u + ' dias' : 'comprou hoje') + (c.m ? ' e comprava ' + $u(c.m) + ' por mês' : '')",
+   "en": "'</b> is one of ' + esc(corV(c.v)) + '’s accounts: ' + (c.u ? 'hasn’t bought in ' + c.u + ' days' : 'bought today') + (c.m ? ' and used to buy ' + $u(c.m) + ' a month' : '')"
+  },
+  {
+   "es": "txt: 'Dejarle a ' + nomV(w) + ' la tarea de visitar ' + c.n + (cuando ?",
+   "pt": "txt: 'Deixar para ' + nomV(w) + ' a tarefa de visitar ' + c.n + (cuando ?",
+   "en": "txt: 'Leave ' + nomV(w) + ' a task to visit ' + c.n + (cuando ?"
+  },
+  {
+   "es": "'. Le aparece en la app.'",
+   "pt": "'. Aparece no app.'",
+   "en": "'. It shows up in the app.'"
+  },
+  {
+   "es": "txt: 'Pasá por ' + c.n + (cuando ?",
+   "pt": "txt: 'Passe em ' + c.n + (cuando ?",
+   "en": "txt: 'Stop by ' + c.n + (cuando ?"
+  },
+  {
+   "es": "return 'Listo. ' + corV(w) + ' tiene la tarea en «Hoy» de su app.';",
+   "pt": "return 'Pronto. ' + corV(w) + ' tem a tarefa em «Hoje» no app.';",
+   "en": "return 'Done. ' + corV(w) + ' has the task under “Today” in their app.';"
+  },
+  {
+   "es": "r.ir = ['Ver la ficha de ' + c.n, 'ficha', c.id];",
+   "pt": "r.ir = ['Ver a ficha de ' + c.n, 'ficha', c.id];",
+   "en": "r.ir = ['See ' + c.n + '’s profile', 'ficha', c.id];"
+  },
+  {
+   "es": "'Uso de la app en setiembre, '",
+   "pt": "'Uso do app em setembro, '",
+   "en": "'App usage in September, '"
+  },
+  {
+   "es": "' días hábiles:<ul>'",
+   "pt": "' dias úteis:<ul>'",
+   "en": "' business days:<ul>'"
+  },
+  {
+   "es": "'</b>: la usó '",
+   "pt": "'</b>: usou '",
+   "en": "'</b>: used it '"
+  },
+  {
+   "es": "' días, '",
+   "pt": "' dias, '",
+   "en": "' days, '"
+  },
+  {
+   "es": "' entradas, inició '",
+   "pt": "' acessos, iniciou '",
+   "en": "' screen views, started '"
+  },
+  {
+   "es": "' jornadas y cargó '",
+   "pt": "' jornadas e lançou '",
+   "en": "' workdays and entered '"
+  },
+  {
+   "es": "<span class=\"et\">Diagnóstico</span>",
+   "pt": "<span class=\"et\">Diagnóstico</span>",
+   "en": "<span class=\"et\">Diagnosis</span>"
+  },
+  {
+   "es": "<span class=\"et\">Comparación</span>",
+   "pt": "<span class=\"et\">Comparação</span>",
+   "en": "<span class=\"et\">Comparison</span>"
+  },
+  {
+   "es": "<span class=\"et\">Recomendación</span>",
+   "pt": "<span class=\"et\">Recomendação</span>",
+   "en": "<span class=\"et\">Recommendation</span>"
+  },
+  {
+   "es": "La que menos la usa es <b>",
+   "pt": "Quem menos usa é a <b>",
+   "en": "The one who uses it least is <b>"
+  },
+  {
+   "es": "'</b>: los días que no inicia la jornada no hay llegadas a las visitas ni oportunidades marcadas. Conviene hablarlo con ella.'",
+   "pt": "'</b>: nos dias em que não inicia a jornada não há chegadas às visitas nem oportunidades marcadas. Vale conversar com ela.'",
+   "en": "'</b>: on days she doesn’t start her workday there are no visit check-ins or marked opportunities. Worth talking it over with her.'"
+  },
+  {
+   "es": "'Ver el uso de la app'",
+   "pt": "'Ver o uso do app'",
+   "en": "'See app usage'"
+  },
+  {
+   "es": "'Ruta fija de <b>' + VX[vr].corto + '</b>:<ul>'",
+   "pt": "'Rota fixa de <b>' + VX[vr].corto + '</b>:<ul>'",
+   "en": "'<b>' + VX[vr].corto + '</b>’s fixed route:<ul>'"
+  },
+  {
+   "es": "'nadie fijo'",
+   "pt": "'ninguém fixo'",
+   "en": "'nobody fixed'"
+  },
+  {
+   "es": "'Abrir Rutas fijas'",
+   "pt": "'Abrir Rotas fixas'",
+   "en": "'Open Fixed routes'"
+  },
+  {
+   "es": "' pedidos</b> esperan que los pases al sistema, por '",
+   "pt": "' pedidos</b> esperam que você passe para o sistema, somando '",
+   "en": "' orders</b> are waiting for you to enter them in the system, totaling '"
+  },
+  {
+   "es": "txt: 'Marcar el ' + pr.n + ' (' + (CX[pr.cli] ? CX[pr.cli].n : pr.cli) + ') como cargado en el sistema.'",
+   "pt": "txt: 'Marcar o ' + pr.n + ' (' + (CX[pr.cli] ? CX[pr.cli].n : pr.cli) + ') como lançado no sistema.'",
+   "en": "txt: 'Mark ' + pr.n + ' (' + (CX[pr.cli] ? CX[pr.cli].n : pr.cli) + ') as entered in the system.'"
+  },
+  {
+   "es": "return 'Hecho: ' + pr.n + ' quedó «En el sistema» y a ' + corV(pr.ven) + ' le llega el aviso.';",
+   "pt": "return 'Feito: ' + pr.n + ' ficou «No sistema» e ' + corV(pr.ven) + ' recebe o aviso.';",
+   "en": "return 'Done: ' + pr.n + ' is now “In the system” and ' + corV(pr.ven) + ' gets notified.';"
+  },
+  {
+   "es": "'Bajame la planilla de pedidos pendientes'",
+   "pt": "'Baixe a planilha de pedidos pendentes'",
+   "en": "'Download the pending orders spreadsheet'"
+  },
+  {
+   "es": "'Abrir Pedidos'",
+   "pt": "'Abrir Pedidos'",
+   "en": "'Open Orders'"
+  },
+  {
+   "es": "'Te armo la planilla de pedidos pendientes, con los códigos de cliente y producto para importar en Doria.'",
+   "pt": "'Monto a planilha de pedidos pendentes, com os códigos de cliente e produto para importar no Doria.'",
+   "en": "'I’ll put together the pending orders spreadsheet, with customer and product codes for importing into Doria.'"
+  },
+  {
+   "es": "'Bajar la planilla de pedidos pendientes (CSV).'",
+   "pt": "'Baixar a planilha de pedidos pendentes (CSV).'",
+   "en": "'Download the pending orders spreadsheet (CSV).'"
+  },
+  {
+   "es": "'Planilla descargada.'",
+   "pt": "'Planilha baixada.'",
+   "en": "'Spreadsheet downloaded.'"
+  },
+  {
+   "es": "r.ir = ['Ver «Para decidir» en Hoy', 'hoy'];",
+   "pt": "r.ir = ['Ver «Para decidir» em Hoje', 'hoy'];",
+   "en": "r.ir = ['See “Needs a decision” in Today', 'hoy'];"
+  },
+  {
+   "es": "'No hay desvíos ni problemas sin revisar: «Para decidir» está al día.'",
+   "pt": "'Não há desvios nem problemas sem revisar: «Para decidir» está em dia.'",
+   "en": "'No unreviewed detours or issues: “Needs a decision” is all caught up.'"
+  },
+  {
+   "es": "'</b> esperan tu respuesta:<ul>'",
+   "pt": "'</b> esperam sua resposta:<ul>'",
+   "en": "'</b> waiting for your answer:<ul>'"
+  },
+  {
+   "es": "' problemas reportados para revisar.'",
+   "pt": "' problemas reportados para revisar.'",
+   "en": "' reported issues to review.'"
+  },
+  {
+   "es": "txt: 'Aprobar: ' + s0.tipo + ' de ' + corV(s0.ven) + '.'",
+   "pt": "txt: 'Aprovar: ' + s0.tipo + ' de ' + corV(s0.ven) + '.'",
+   "en": "txt: 'Approve: ' + s0.tipo + ' from ' + corV(s0.ven) + '.'"
+  },
+  {
+   "es": "return 'Aprobado. A ' + corV(s0.ven) + ' le llega el aviso en la app.';",
+   "pt": "return 'Aprovado. ' + corV(s0.ven) + ' recebe o aviso no app.';",
+   "en": "return 'Approved. ' + corV(s0.ven) + ' gets notified in the app.';"
+  },
+  {
+   "es": "En setiembre los vendedores ofrecieron <b>",
+   "pt": "Em setembro os vendedores ofereceram <b>",
+   "en": "In September reps offered <b>"
+  },
+  {
+   "es": "'</b> oportunidades y vendieron <b>'",
+   "pt": "'</b> oportunidades e venderam <b>'",
+   "en": "'</b> opportunities and sold <b>'"
+  },
+  {
+   "es": "' %). La venta extra estimada es <b>'",
+   "pt": "'%). A venda extra estimada é de <b>'",
+   "en": "'%). Estimated extra sales are <b>'"
+  },
+  {
+   "es": "'</b>, y lo vendido por sugerencias suma '",
+   "pt": "'</b>, e o vendido por sugestões soma '",
+   "en": "'</b>, and sales from suggestions total '"
+  },
+  {
+   "es": "En agosto fueron ",
+   "pt": "Em agosto foram ",
+   "en": "In August, "
+  },
+  {
+   "es": "' vendidas y '",
+   "pt": "' vendidas e '",
+   "en": "' sold and '"
+  },
+  {
+   "es": "' de venta extra. Se recuperaron '",
+   "pt": "' de venda extra. Foram recuperados '",
+   "en": "' in extra sales. '"
+  },
+  {
+   "es": "' clientes de '",
+   "pt": "' clientes de '",
+   "en": "' of '"
+  },
+  {
+   "es": "' con visita pedida.'",
+   "pt": "' com visita pedida.'",
+   "en": "' customers with a requested visit were won back.'"
+  },
+  {
+   "es": "Reactivar es lo que más suma por oportunidad: que cada vendedor tenga al menos dos clientes en riesgo en la ruta de la semana.",
+   "pt": "Reativar é o que mais soma por oportunidade: que cada vendedor tenha pelo menos dois clientes em risco na rota da semana.",
+   "en": "Win-backs add the most per opportunity: make sure each rep has at least two at-risk customers on this week’s route."
+  },
+  {
+   "es": "'Ver lo que suma Libreta'",
+   "pt": "'Ver o que o Libreta soma'",
+   "en": "'See what Libreta adds'"
+  },
+  {
+   "es": "'¿Qué clientes están más en riesgo?'",
+   "pt": "'Quais clientes estão mais em risco?'",
+   "en": "'Which customers are most at risk?'"
+  },
+  {
+   "es": "'¿Qué oportunidades hay para ofrecer?'",
+   "pt": "'Que oportunidades há para oferecer?'",
+   "en": "'What opportunities are there to offer?'"
+  },
+  {
+   "es": "'Setiembre por familia:<ul>'",
+   "pt": "'Setembro por família:<ul>'",
+   "en": "'September by product family:<ul>'"
+  },
+  {
+   "es": "'</ul>Los productos que más venden:<ul>'",
+   "pt": "'</ul>Os produtos que mais vendem:<ul>'",
+   "en": "'</ul>Best-selling products:<ul>'"
+  },
+  {
+   "es": "' unidades, '",
+   "pt": "' unidades, '",
+   "en": "' units, '"
+  },
+  {
+   "es": "', margen '",
+   "pt": "', margem '",
+   "en": "', margin '"
+  },
+  {
+   "es": " %</li>",
+   "pt": "%</li>",
+   "en": "%</li>"
+  },
+  {
+   "es": " %)</li>",
+   "pt": "%)</li>",
+   "en": "%)</li>"
+  },
+  {
+   "es": "'¿Qué productos tienen margen bajo?'",
+   "pt": "'Quais produtos têm margem baixa?'",
+   "en": "'Which products have low margins?'"
+  },
+  {
+   "es": "'Hay <b>' + vg.length + ' ofertas vigentes</b>:<ul>'",
+   "pt": "'Há <b>' + vg.length + ' ofertas vigentes</b>:<ul>'",
+   "en": "'There are <b>' + vg.length + ' active promotions</b>:<ul>'"
+  },
+  {
+   "es": "' (hasta el '",
+   "pt": "' (até '",
+   "en": "' (until '"
+  },
+  {
+   "es": "$u(x.imp) + ' en ' + x.ped + ' pedidos' + (o.meta ? ', el ' + pc(x.uni, o.meta) + ' % de la meta' : '') + '; la vieron '",
+   "pt": "$u(x.imp) + ' em ' + x.ped + ' pedidos' + (o.meta ? ', ' + pc(x.uni, o.meta) + '% da meta' : '') + '; viram '",
+   "en": "$u(x.imp) + ' in ' + x.ped + ' orders' + (o.meta ? ', ' + pc(x.uni, o.meta) + '% of goal' : '') + '; seen by '"
+  },
+  {
+   "es": "(pg.length ? 'Programada: ' + pg.map(function(o){ return esc(PROD[o.p].d) + ', ' + esc(o.c) + ', desde el ' + o.d1; })",
+   "pt": "(pg.length ? 'Programada: ' + pg.map(function(o){ return esc(PROD[o.p].d) + ', ' + esc(o.c) + ', a partir de ' + o.d1; })",
+   "en": "(pg.length ? 'Scheduled: ' + pg.map(function(o){ return esc(PROD[o.p].d) + ', ' + esc(o.c) + ', starting ' + o.d1; })"
+  },
+  {
+   "es": "'Abrir Ofertas'",
+   "pt": "'Abrir Ofertas'",
+   "en": "'Open Promotions'"
+  },
+  {
+   "es": "'Presupuestos abiertos: <b>'",
+   "pt": "'Orçamentos abertos: <b>'",
+   "en": "'Open quotes: <b>'"
+  },
+  {
+   "es": "'</b> por '",
+   "pt": "'</b> somando '",
+   "en": "'</b> totaling '"
+  },
+  {
+   "es": "'</ul>En setiembre se enviaron 23 y se aceptaron 9 (39 %).'",
+   "pt": "'</ul>Em setembro foram enviados 23 e aceitos 9 (39%).'",
+   "en": "'</ul>In September 23 were sent and 9 accepted (39%).'"
+  },
+  {
+   "es": "'Clientes nuevos en setiembre: <b>'",
+   "pt": "'Clientes novos em setembro: <b>'",
+   "en": "'New customers in September: <b>'"
+  },
+  {
+   "es": "'</b> de ' + suma(VEND, function(v){ return v.nuevosMeta; }) + ' de meta. Prospectos activos: <b>'",
+   "pt": "'</b> de ' + suma(VEND, function(v){ return v.nuevosMeta; }) + ' da meta. Prospects ativos: <b>'",
+   "en": "'</b> (goal: ' + suma(VEND, function(v){ return v.nuevosMeta; }) + '). Active prospects: <b>'"
+  },
+  {
+   "es": "' por mes de venta potencial:<ul>'",
+   "pt": "' por mês de venda potencial:<ul>'",
+   "en": "' a month in potential sales:<ul>'"
+  },
+  {
+   "es": "'El margen promedio de la lista es '",
+   "pt": "'A margem média da tabela é de '",
+   "en": "'The average list margin is '"
+  },
+  {
+   "es": "' %. '",
+   "pt": "'%. '",
+   "en": "'%. '"
+  },
+  {
+   "es": "'Con menos de 16 %:<ul>'",
+   "pt": "'Com menos de 16%:<ul>'",
+   "en": "'Under 16%:<ul>'"
+  },
+  {
+   "es": "': lista '",
+   "pt": "': tabela '",
+   "en": "': list '"
+  },
+  {
+   "es": "', costo '",
+   "pt": "', custo '",
+   "en": "', cost '"
+  },
+  {
+   "es": "' %). Para volver a 20 %: '",
+   "pt": "'%). Para voltar a 20%: '",
+   "en": "'%). To get back to 20%: '"
+  },
+  {
+   "es": "'Ningún producto está por debajo de 16 %.'",
+   "pt": "'Nenhum produto está abaixo de 16%.'",
+   "en": "'No product is below 16%.'"
+  },
+  {
+   "es": "'Comisiones estimadas de setiembre:<ul>'",
+   "pt": "'Comissões estimadas de setembro:<ul>'",
+   "en": "'Estimated September commissions:<ul>'"
+  },
+  {
+   "es": "' % de '",
+   "pt": "'% de '",
+   "en": "'% of '"
+  },
+  {
+   "es": "'Abrir Vendedores'",
+   "pt": "'Abrir Vendedores'",
+   "en": "'Open Sales reps'"
+  },
+  {
+   "es": "'Hoy, a las '",
+   "pt": "'Hoje, às '",
+   "en": "'Today, as of '"
+  },
+  {
+   "es": "' visitas'",
+   "pt": "' visitas'",
+   "en": "' visits'"
+  },
+  {
+   "es": "', en visita en '",
+   "pt": "', em visita em '",
+   "en": "', visiting '"
+  },
+  {
+   "es": "', próxima '",
+   "pt": "', próxima: '",
+   "en": "', next: '"
+  },
+  {
+   "es": "' a las '",
+   "pt": "' às '",
+   "en": "' at '"
+  },
+  {
+   "es": "' pedidos.</li>'",
+   "pt": "' pedidos.</li>'",
+   "en": "' orders.</li>'"
+  },
+  {
+   "es": "'Abrir Hoy'",
+   "pt": "'Abrir Hoje'",
+   "en": "'Open Today'"
+  },
+  {
+   "es": "'</b> va '",
+   "pt": "'</b> está em '",
+   "en": "'</b> is at '"
+  },
+  {
+   "es": "', el <b>' + p + ' %</b> de su objetivo de ' + $u(v.obj.set)",
+   "pt": "', <b>' + p + '%</b> da meta de ' + $u(v.obj.set)",
+   "en": "', <b>' + p + '%</b> of the ' + $u(v.obj.set) + ' target'"
+  },
+  {
+   "es": "'. Hoy hizo '",
+   "pt": "'. Hoje fez '",
+   "en": "'. Today: '"
+  },
+  {
+   "es": "' visitas y cargó '",
+   "pt": "' visitas e lançou '",
+   "en": "' visits and '"
+  },
+  {
+   "es": "' pedidos por '",
+   "pt": "' pedidos, somando '",
+   "en": "' orders totaling '"
+  },
+  {
+   "es": "Contra setiembre 2025: ",
+   "pt": "Contra setembro de 2025: ",
+   "en": "Vs. September 2025: "
+  },
+  {
+   "es": "' %. Ruta del mes cumplida en '",
+   "pt": "'%. Rota do mês cumprida em '",
+   "en": "'%. Monthly route completion: '"
+  },
+  {
+   "es": "' %. Tiene '",
+   "pt": "'%. Tem '",
+   "en": "'%. Has '"
+  },
+  {
+   "es": "' clientes en riesgo y '",
+   "pt": "' clientes em risco e '",
+   "en": "' at-risk customers and '"
+  },
+  {
+   "es": "' vencidos.'",
+   "pt": "' vencidos.'",
+   "en": "' overdue.'"
+  },
+  {
+   "es": "'Que priorice a <b>'",
+   "pt": "'Que priorize <b>'",
+   "en": "'Have them prioritize <b>'"
+  },
+  {
+   "es": "'</b>, el cliente en riesgo que más pesa'",
+   "pt": "'</b>, o cliente em risco que mais pesa'",
+   "en": "'</b>, the biggest at-risk customer'"
+  },
+  {
+   "es": "'Que sume visitas de prospección'",
+   "pt": "'Que inclua visitas de prospecção'",
+   "en": "'Have them add prospecting visits'"
+  },
+  {
+   "es": "', y revisá con '",
+   "pt": "', e revise com '",
+   "en": "', and go over '"
+  },
+  {
+   "es": "' la ruta del jueves: viene '",
+   "pt": "' a rota de quinta: está '",
+   "en": "'’s Thursday route: they’re '"
+  },
+  {
+   "es": "' puntos abajo del ritmo.'",
+   "pt": "' pontos abaixo do ritmo.'",
+   "en": "' points behind pace.'"
+  },
+  {
+   "es": "r.sug = ['¿Qué clientes de ' + v.corto + ' no compran hace más de 30 días?', 'Pedile a ' + v.corto + ' que pase por ' + (rs[0] ? rs[0].n : 'su cliente más grande')];",
+   "pt": "r.sug = ['Quais clientes de ' + v.corto + ' não compram há mais de 30 dias?', 'Peça para ' + v.corto + ' passar em ' + (rs[0] ? rs[0].n : 'seu maior cliente')];",
+   "en": "r.sug = ['Which of ' + v.corto + '’s customers haven’t bought in over 30 days?', 'Ask ' + v.corto + ' to stop by ' + (rs[0] ? rs[0].n : 'their biggest customer')];"
+  },
+  {
+   "es": "r.ir = ['Ver la ruta de hoy de ' + v.corto, 'vendedor', v.id];",
+   "pt": "r.ir = ['Ver a rota de hoje de ' + v.corto, 'vendedor', v.id];",
+   "en": "r.ir = ['See ' + v.corto + '’s route today', 'vendedor', v.id];"
+  },
+  {
+   "es": "Setiembre va en <b>",
+   "pt": "Setembro está em <b>",
+   "en": "September is at <b>"
+  },
+  {
+   "es": "'</b>, el <b>' + p2 + ' %</b> del objetivo de ' + $u(M.obj)",
+   "pt": "'</b>, <b>' + p2 + '%</b> da meta de ' + $u(M.obj)",
+   "en": "'</b>, <b>' + p2 + '%</b> of the ' + $u(M.obj) + ' target'"
+  },
+  {
+   "es": "'. Faltan '",
+   "pt": "'. Faltam '",
+   "en": "'. '"
+  },
+  {
+   "es": "' y al ritmo de hoy el mes cierra en '",
+   "pt": "' e no ritmo de hoje o mês fecha em '",
+   "en": "' to go, and at today’s pace the month closes at '"
+  },
+  {
+   "es": "Contra setiembre 2025, ",
+   "pt": "Contra setembro de 2025, ",
+   "en": "Vs. September 2025, "
+  },
+  {
+   "es": "' % arriba. Por vendedor: '",
+   "pt": "'% acima. Por vendedor: '",
+   "en": "'% up. By rep: '"
+  },
+  {
+   "es": "Lo que más mueve la aguja es <b>",
+   "pt": "O que mais move o ponteiro é <b>",
+   "en": "The one who’ll move the needle most is <b>"
+  },
+  {
+   "es": "' %): tiene '",
+   "pt": "'%): tem '",
+   "en": "'%): has '"
+  },
+  {
+   "es": "' clientes en riesgo para reactivar esta semana.'",
+   "pt": "' clientes em risco para reativar nesta semana.'",
+   "en": "' at-risk customers to win back this week.'"
+  },
+  {
+   "es": "r.sug = ['Dame un brief de ' + orden[0].corto",
+   "pt": "r.sug = ['Me dá um resumo de ' + orden[0].corto",
+   "en": "r.sug = ['Give me a brief on ' + orden[0].corto"
+  },
+  {
+   "es": "'En setiembre:<ul>'",
+   "pt": "'Em setembro:<ul>'",
+   "en": "'In September:<ul>'"
+  },
+  {
+   "es": "' % de su objetivo)</li>'",
+   "pt": "'% da meta)</li>'",
+   "en": "'% of target)</li>'"
+  },
+  {
+   "es": "'</ul>Contra el objetivo, el que mejor viene es '",
+   "pt": "'</ul>Contra a meta, quem está melhor é '",
+   "en": "'</ul>Against target, the best performer is '"
+  },
+  {
+   "es": "(ven ? VX[ven].corto + ' tiene' : 'Hay') + ' <b>' + L.length + ' clientes</b> que dejaron de comprar a su ritmo, '",
+   "pt": "(ven ? VX[ven].corto + ' tem' : 'Há') + ' <b>' + L.length + ' clientes</b> que pararam de comprar no ritmo de sempre, '",
+   "en": "(ven ? VX[ven].corto + ' has' : 'There are') + ' <b>' + L.length + ' customers</b> who stopped buying at their usual pace, '"
+  },
+  {
+   "es": "' por mes en juego. Los que más pesan:<ul>'",
+   "pt": "' por mês em jogo. Os que mais pesam:<ul>'",
+   "en": "' a month at stake. The biggest ones:<ul>'"
+  },
+  {
+   "es": "' días sin comprar; antes '",
+   "pt": "' dias sem comprar; antes '",
+   "en": "' days without buying; used to buy '"
+  },
+  {
+   "es": "/mes.</li>",
+   "pt": "/mês.</li>",
+   "en": "/mo.</li>"
+  },
+  {
+   "es": "'</ul>Recomendación: pedí visita para los dos primeros esta semana.'",
+   "pt": "'</ul>Recomendação: peça visita para os dois primeiros nesta semana.'",
+   "en": "'</ul>Recommendation: request a visit for the top two this week.'"
+  },
+  {
+   "es": "r.sug = ['Pedile a ' + corV(L[0].v) + ' que pase por ' + L[0].n, '¿Quién debe más de 30 días?'];",
+   "pt": "r.sug = ['Peça para ' + corV(L[0].v) + ' passar em ' + L[0].n, 'Quem deve há mais de 30 dias?'];",
+   "en": "r.sug = ['Ask ' + corV(L[0].v) + ' to stop by ' + L[0].n, 'Who owes for over 30 days?'];"
+  },
+  {
+   "es": "'Abrir Clientes'",
+   "pt": "'Abrir Clientes'",
+   "en": "'Open Customers'"
+  },
+  {
+   "es": "'</b> vencidos en '",
+   "pt": "'</b> vencidos em '",
+   "en": "'</b> overdue across '"
+  },
+  {
+   "es": "' clientes:<ul>'",
+   "pt": "' clientes:<ul>'",
+   "en": "' customers:<ul>'"
+  },
+  {
+   "es": "' días.</li>'",
+   "pt": "' dias.</li>'",
+   "en": "' days.</li>'"
+  },
+  {
+   "es": "'</ul>Los de más de 30 días tienen los pedidos bloqueados hasta pagar.'",
+   "pt": "'</ul>Os com mais de 30 dias ficam com os pedidos bloqueados até pagar.'",
+   "en": "'</ul>Those over 30 days have orders on hold until they pay.'"
+  },
+  {
+   "es": "'No hay deuda vencida con ese filtro.'",
+   "pt": "'Não há dívida vencida com esse filtro.'",
+   "en": "'No overdue balances with that filter.'"
+  },
+  {
+   "es": "'Las que más plata mueven:<ul>'",
+   "pt": "'As que mais movem dinheiro:<ul>'",
+   "en": "'The ones with the most money at stake:<ul>'"
+  },
+  {
+   "es": "/mes): ",
+   "pt": "/mês): ",
+   "en": "/mo): "
+  },
+  {
+   "es": "'Abrir Oportunidades'",
+   "pt": "'Abrir Oportunidades'",
+   "en": "'Open Opportunities'"
+  },
+  {
+   "es": "', cartera de ' + esc(corV(c.v)) + '): compra '",
+   "pt": "', carteira de ' + esc(corV(c.v)) + '): compra '",
+   "en": "', ' + esc(corV(c.v)) + '’s account): buys '"
+  },
+  {
+   "es": "' días; la última fue '",
+   "pt": "' dias; a última foi '",
+   "en": "' days; last purchase '"
+  },
+  {
+   "es": "'. Saldo ' + (c.sal ? $u(c.sal) + (c.ven ? ', ' + $u(c.ven) + ' vencido' : '') : 'al día')",
+   "pt": "'. Saldo ' + (c.sal ? $u(c.sal) + (c.ven ? ', ' + $u(c.ven) + ' vencido' : '') : 'em dia')",
+   "en": "'. Balance ' + (c.sal ? $u(c.sal) + (c.ven ? ', ' + $u(c.ven) + ' overdue' : '') : 'current')"
+  },
+  {
+   "es": "' Está en riesgo.'",
+   "pt": "' Está em risco.'",
+   "en": "' At risk.'"
+  },
+  {
+   "es": "r.sug = ['Pedile a ' + corV(c.v) + ' que pase por ' + c.n];",
+   "pt": "r.sug = ['Peça para ' + corV(c.v) + ' passar em ' + c.n];",
+   "en": "r.sug = ['Ask ' + corV(c.v) + ' to stop by ' + c.n];"
+  },
+  {
+   "es": "'Ver la ficha'",
+   "pt": "'Ver a ficha'",
+   "en": "'See profile'"
+  },
+  {
+   "es": "'Puedo contarte cómo vienen las ventas y cada vendedor, quién dejó de comprar, quién debe, qué pedidos faltan cargar y cuánto suma Libreta. También te respondo por familias, productos, ofertas, presupuestos, prospectos, márgenes y comisiones. Y puedo pedir una visita, marcar un pedido como cargado, aprobar un desvío o bajarte una planilla, siempre con tu confirmación.'",
+   "pt": "'Posso contar como vão as vendas e cada vendedor, quem parou de comprar, quem está devendo, quais pedidos faltam lançar e quanto o Libreta soma. Também respondo sobre famílias, produtos, ofertas, orçamentos, prospects, margens e comissões. E posso pedir uma visita, marcar um pedido como lançado, aprovar um desvio ou baixar uma planilha, sempre com a sua confirmação.'",
+   "en": "'I can tell you how sales and each rep are doing, who stopped buying, who owes money, which orders still need to be entered and how much Libreta adds. I can also answer questions about product families, products, promotions, quotes, prospects, margins and commissions. And I can request a visit, mark an order as entered, approve a detour or download a spreadsheet, always with your confirmation.'"
+  },
+  {
+   "es": "Hola, Laura. ",
+   "pt": "Olá, Laura. ",
+   "en": "Hi, Laura. "
+  },
+  {
+   "es": "' % del objetivo), hay <b>'",
+   "pt": "'% da meta), há <b>'",
+   "en": "'% of target), there are <b>'"
+  },
+  {
+   "es": "' pedidos</b> por cargar y <b>'",
+   "pt": "' pedidos</b> para lançar e <b>'",
+   "en": "' orders</b> to enter and <b>'"
+  },
+  {
+   "es": "' desvíos</b> esperando tu respuesta. Preguntame lo que necesites o pedime una acción: la propongo y la hago cuando confirmes.'",
+   "pt": "' desvios</b> esperando sua resposta. Pergunte o que precisar ou peça uma ação: eu proponho e faço quando você confirmar.'",
+   "en": "' detours</b> waiting for your answer. Ask me anything or ask for an action: I’ll propose it and do it once you confirm.'"
+  },
+  {
+   "es": "<small>Propuesta · ¿Confirmás?</small>",
+   "pt": "<small>Proposta · Confirma?</small>",
+   "en": "<small>Proposal · Confirm?</small>"
+  },
+  {
+   "es": "data-ase-conf=\"si\">Confirmar</button>",
+   "pt": "data-ase-conf=\"si\">Confirmar</button>",
+   "en": "data-ase-conf=\"si\">Confirm</button>"
+  },
+  {
+   "es": "data-ase-conf=\"no\">Cancelar</button>",
+   "pt": "data-ase-conf=\"no\">Cancelar</button>",
+   "en": "data-ase-conf=\"no\">Cancel</button>"
+  },
+  {
+   "es": "aseMsg('yo', 'Confirmar')",
+   "pt": "aseMsg('yo', 'Confirmar')",
+   "en": "aseMsg('yo', 'Confirm')"
+  },
+  {
+   "es": "aseMsg('yo', 'Cancelar')",
+   "pt": "aseMsg('yo', 'Cancelar')",
+   "en": "aseMsg('yo', 'Cancel')"
+  },
+  {
+   "es": "'No hice nada. La acción quedó sin hacer.'",
+   "pt": "'Não fiz nada. A ação não foi feita.'",
+   "en": "'I didn’t do anything. The action wasn’t carried out.'"
+  },
+  {
+   "es": "toast('Pedido nuevo de ' + corV(ven) + ': '",
+   "pt": "toast('Pedido novo de ' + corV(ven) + ': '",
+   "en": "toast('New order from ' + corV(ven) + ': '"
+  },
+  {
+   "es": "' · lleva la oferta de '",
+   "pt": "' · leva a oferta de '",
+   "en": "' · includes the promotion on '"
+  },
+  {
+   "es": "'Solicitud'",
+   "pt": "'Solicitação'",
+   "en": "'Request'"
+  },
+  {
+   "es": "toast(s.tipo + ' de ' + corV(s.ven) + (s.est === 'pend' ? ': espera tu respuesta.' : ': para revisar.')",
+   "pt": "toast(s.tipo + ' de ' + corV(s.ven) + (s.est === 'pend' ? ': espera sua resposta.' : ': para revisar.')",
+   "en": "toast(s.tipo + ' from ' + corV(s.ven) + (s.est === 'pend' ? ': waiting for your answer.' : ': to review.')"
+  },
+  {
+   "es": "'Conectado a Doria · '",
+   "pt": "'Conectado ao Doria · '",
+   "en": "'Connected to Doria · '"
+  },
+  {
+   "es": " %</em></span>",
+   "pt": "%</em></span>",
+   "en": "%</em></span>"
+  },
+  {
+   "es": " %</b><small>",
+   "pt": "%</b><small>",
+   "en": "%</b><small>"
+  },
+  {
+   "es": "' %</b>'",
+   "pt": "'%</b>'",
+   "en": "'%</b>'"
+  },
+  {
+   "es": "01/09",
+   "pt": "01/09",
+   "en": "9/1"
+  },
+  {
+   "es": "01/10",
+   "pt": "01/10",
+   "en": "10/1"
+  },
+  {
+   "es": "02/06",
+   "pt": "02/06",
+   "en": "6/2"
+  },
+  {
+   "es": "03/07",
+   "pt": "03/07",
+   "en": "7/3"
+  },
+  {
+   "es": "03/09",
+   "pt": "03/09",
+   "en": "9/3"
+  },
+  {
+   "es": "04/10",
+   "pt": "04/10",
+   "en": "10/4"
+  },
+  {
+   "es": "05/05",
+   "pt": "05/05",
+   "en": "5/5"
+  },
+  {
+   "es": "07/09",
+   "pt": "07/09",
+   "en": "9/7"
+  },
+  {
+   "es": "08/09",
+   "pt": "08/09",
+   "en": "9/8"
+  },
+  {
+   "es": "09/09",
+   "pt": "09/09",
+   "en": "9/9"
+  },
+  {
+   "es": "10/09",
+   "pt": "10/09",
+   "en": "9/10"
+  },
+  {
+   "es": "10/10",
+   "pt": "10/10",
+   "en": "10/10"
+  },
+  {
+   "es": "11/09",
+   "pt": "11/09",
+   "en": "9/11"
+  },
+  {
+   "es": "12/08",
+   "pt": "12/08",
+   "en": "8/12"
+  },
+  {
+   "es": "12/09",
+   "pt": "12/09",
+   "en": "9/12"
+  },
+  {
+   "es": "14/08",
+   "pt": "14/08",
+   "en": "8/14"
+  },
+  {
+   "es": "14/09",
+   "pt": "14/09",
+   "en": "9/14"
+  },
+  {
+   "es": "15/07",
+   "pt": "15/07",
+   "en": "7/15"
+  },
+  {
+   "es": "15/08",
+   "pt": "15/08",
+   "en": "8/15"
+  },
+  {
+   "es": "15/09",
+   "pt": "15/09",
+   "en": "9/15"
+  },
+  {
+   "es": "15/10",
+   "pt": "15/10",
+   "en": "10/15"
+  },
+  {
+   "es": "16/09",
+   "pt": "16/09",
+   "en": "9/16"
+  },
+  {
+   "es": "17/09",
+   "pt": "17/09",
+   "en": "9/17"
+  },
+  {
+   "es": "18/09",
+   "pt": "18/09",
+   "en": "9/18"
+  },
+  {
+   "es": "19/08",
+   "pt": "19/08",
+   "en": "8/19"
+  },
+  {
+   "es": "20/08",
+   "pt": "20/08",
+   "en": "8/20"
+  },
+  {
+   "es": "20/09",
+   "pt": "20/09",
+   "en": "9/20"
+  },
+  {
+   "es": "21/08",
+   "pt": "21/08",
+   "en": "8/21"
+  },
+  {
+   "es": "21/09",
+   "pt": "21/09",
+   "en": "9/21"
+  },
+  {
+   "es": "22/08",
+   "pt": "22/08",
+   "en": "8/22"
+  },
+  {
+   "es": "22/09",
+   "pt": "22/09",
+   "en": "9/22"
+  },
+  {
+   "es": "23/09",
+   "pt": "23/09",
+   "en": "9/23"
+  },
+  {
+   "es": "24/09",
+   "pt": "24/09",
+   "en": "9/24"
+  },
+  {
+   "es": "25/09",
+   "pt": "25/09",
+   "en": "9/25"
+  },
+  {
+   "es": "26/07",
+   "pt": "26/07",
+   "en": "7/26"
+  },
+  {
+   "es": "26/09",
+   "pt": "26/09",
+   "en": "9/26"
+  },
+  {
+   "es": "27/08",
+   "pt": "27/08",
+   "en": "8/27"
+  },
+  {
+   "es": "28/09",
+   "pt": "28/09",
+   "en": "9/28"
+  },
+  {
+   "es": "29/09",
+   "pt": "29/09",
+   "en": "9/29"
+  },
+  {
+   "es": "30/09",
+   "pt": "30/09",
+   "en": "9/30"
+  },
+  {
+   "es": "31/08",
+   "pt": "31/08",
+   "en": "8/31"
+  }
+ ],
+ "js_iguales": [
+  "#ase-msgs .ase-acc button",
+  "8 de Octubre",
+  "A",
+  "ADMIN",
+  "Aguada",
+  "Almacén Atlántida",
+  "Almacén Buceo",
+  "Almacén Don Pepe",
+  "Almacén Doña Rosa",
+  "Almacén El Pinar",
+  "Almacén La Esperanza",
+  "Almacén Salinas",
+  "Almacén Sarandí",
+  "Ana Rodríguez",
+  "Atlántida",
+  "Autoservicio La Familia",
+  "Autoservicio Maldonado Centro",
+  "Autoservicio Malvín Norte",
+  "Autoservicio Parque Rodó",
+  "Autoservicio Pinamar",
+  "Autoservicio San Carlos",
+  "Autoservicio Shangrilá",
+  "Av. 18 de Julio 1214",
+  "Av. Arocena",
+  "Av. Arocena 1580",
+  "Av. Bolivia 2210",
+  "Av. Brasil",
+  "Av. Brasil 2890",
+  "Av. Camino Carrasco 3880",
+  "Av. Central",
+  "Av. Central 180, Parque del Plata",
+  "Av. Ciudad de Montevideo 312",
+  "Av. Giannattasio km",
+  "Av. Giannattasio km 18,2",
+  "Av. Giannattasio km 21,5",
+  "Av. Giannattasio km 23",
+  "Av. Gorlero",
+  "Av. Italia",
+  "Av. Italia 5890",
+  "Av. Italia 6020",
+  "Av. Legrand 4310",
+  "Av. Luis A. de Herrera 1132",
+  "Av. Pérez Butler 1450",
+  "Av. Rivera",
+  "Av. Rivera 3620",
+  "Av. Roosevelt",
+  "Bar",
+  "Bar El Refugio",
+  "Bar Los Amigos",
+  "Bar Náutico",
+  "Barrio Sur",
+  "Bartolomé Mitre 1390",
+  "Buceo",
+  "Bvar. Artigas 1680",
+  "Bvar. España",
+  "C-",
+  "Cafetería Aroma Bar",
+  "Cafetería Barrio Sur",
+  "Cafetería Buena Vista",
+  "Cafetería Rambla Sur",
+  "Café del Puerto",
+  "Calle",
+  "Calle 11 y Rambla, Atlántida",
+  "Calle 9 y Av. Central",
+  "Calle Ramírez 22, Salinas",
+  "Canelones",
+  "Carlos",
+  "Carlos Gardel 1120",
+  "Carlos Rodríguez",
+  "Carrasco",
+  "Centro",
+  "Ciudad Vieja",
+  "Coimbra 5790",
+  "Colonia",
+  "Colonia 1822",
+  "Combo",
+  "Comercio",
+  "Constituyente",
+  "Cordón",
+  "Costa de Oro",
+  "Diego Silva",
+  "Don Carlos",
+  "Don Julio",
+  "Don Luis",
+  "Don Mario",
+  "Don Pedro",
+  "Don Ramón",
+  "Don Tito",
+  "Doria",
+  "Doña Marta",
+  "Durazno",
+  "Durazno 1655",
+  "El Bosque",
+  "El Buen Trato",
+  "El Ceibo",
+  "El Cruce",
+  "El Galpón",
+  "El Hornero",
+  "El Mirador",
+  "El Molino",
+  "El Palmar",
+  "El Paraíso",
+  "El Pinar",
+  "El Pino",
+  "El Progreso",
+  "El Rincón",
+  "El Sol",
+  "El Surtido",
+  "El Trébol",
+  "El Vecino",
+  "Ellauri",
+  "Enter",
+  "Escape",
+  "Florida",
+  "Florida 780, Maldonado",
+  "Gaboto",
+  "Gonzalo Ramírez 1540",
+  "Hostel Ciudad Vieja",
+  "José E. Rodó 1836",
+  "José Ellauri 596",
+  "Kiosco Atlántida Centro",
+  "Kiosco El Pasaje",
+  "Kiosco Las Toscas",
+  "Kiosco Marindia",
+  "Kiosco Plaza Cagancha",
+  "LECTURA",
+  "La Amistad",
+  "La Aurora",
+  "La Blanqueada",
+  "La Colonial",
+  "La Cumbre",
+  "La Delicia",
+  "La Económica",
+  "La Estación",
+  "La Floresta",
+  "La Guardia",
+  "La Loma",
+  "La Nueva",
+  "La Paz",
+  "La Perla",
+  "La Placita",
+  "La Pradera",
+  "La Ribera",
+  "La Rueda",
+  "Lagomar",
+  "Las Acacias",
+  "Las Flores",
+  "Las Palmas",
+  "Las Toscas",
+  "Laura",
+  "Laura Gómez",
+  "Lead",
+  "Los Hermanos",
+  "Los Olivos",
+  "Los Pinos",
+  "Los Robles II",
+  "Los Tilos",
+  "Los Álamos",
+  "Lucía",
+  "Lucía Méndez",
+  "Magallanes 1402",
+  "Maldonado",
+  "Malvín",
+  "Marindia",
+  "Martín Pérez",
+  "María",
+  "María Fernández",
+  "Mercedes",
+  "Mi Barrio",
+  "Minas 1510",
+  "Minimercado Bolivia",
+  "Minimercado Cordón",
+  "Minimercado Palermo",
+  "Minimercado Parque del Plata",
+  "Minimercado Tres Cruces",
+  "Montevideo",
+  "NFD",
+  "Neptunia",
+  "Nuevo Siglo",
+  "OPERADOR",
+  "Oriental",
+  "Orinoco",
+  "P-",
+  "Palermo",
+  "Panadería El Trigal",
+  "Panadería French",
+  "Panadería La Estrella",
+  "Parador La Floresta",
+  "Parque Rodó",
+  "Parque del Plata",
+  "Parrillada El Faro",
+  "Paysandú",
+  "Piedras 236",
+  "Pinamar",
+  "Piriápolis",
+  "Pizzería La Trattoria",
+  "Pocitos",
+  "Punta Carretas",
+  "Punta Gorda",
+  "Punta del Este",
+  "RUT",
+  "Rambla",
+  "Rambla Artigas y 12, Punta del Este",
+  "Rambla Mahatma Gandhi 410",
+  "Rambla y Calle 30, La Floresta",
+  "Rincón",
+  "Rondeau 1602",
+  "Rotisería La Esquina",
+  "Rotisería Maldonado Nuevo",
+  "Rotisería Neptunia",
+  "Ruta Interbalnearia km",
+  "Ruta Interbalnearia km 34",
+  "Ruta Interbalnearia km 44",
+  "SELECT",
+  "Salinas",
+  "San Carlos",
+  "San Cono",
+  "San Jorge",
+  "San José 1145",
+  "San Pedro",
+  "Santa Clara",
+  "Santa Rita",
+  "Sarandí",
+  "Sarandí 674",
+  "Sarandí 845, Maldonado",
+  "Shangrilá",
+  "Solymar",
+  "Soriano",
+  "Supermercado Arocena",
+  "Supermercado Lagomar",
+  "Supermercado Las Delicias",
+  "Supermercado Los Robles",
+  "Supermercado Punta Gorda",
+  "Supermercado Rambla",
+  "Supermercado Solymar",
+  "Total",
+  "Total:",
+  "Treinta y Tres 612, San Carlos",
+  "Tres Cruces",
+  "Tres Hermanos",
+  "Tristán Narvaja 1577",
+  "UYU",
+  "Unión",
+  "VENDEDOR",
+  "Villa Rosa",
+  "use strict",
+  "· Libreta"
+ ],
+ "fragmentos": {
+  "pt": [],
+  "en": []
+ }
+}
