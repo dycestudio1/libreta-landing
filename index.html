@@ -7,6 +7,10 @@
 <meta name="description" content="Libreta es la app de los vendedores de calle de distribuidoras, mayoristas y fábricas: ruta del día, qué ofrecerle a cada cliente, pedidos que entran solos a tu sistema y un panel para el supervisor.">
 <meta name="theme-color" content="#FFFFFF">
 <link rel="canonical" href="https://www.libreta.dev/">
+<link rel="alternate" hreflang="es" href="https://www.libreta.dev/">
+<link rel="alternate" hreflang="pt-BR" href="https://www.libreta.dev/pt">
+<link rel="alternate" hreflang="en" href="https://www.libreta.dev/en">
+<link rel="alternate" hreflang="x-default" href="https://www.libreta.dev/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Libreta">
 <meta property="og:locale" content="es_UY">
@@ -478,6 +482,34 @@ input[type=range]{width:100%;accent-color:var(--vereda);height:24px}
 .pie-legal a:hover{color:var(--tinta)}
 .privacidad p{margin-top:8px;font-size:13px;color:var(--tinta-3);max-width:48rem}
 .pie-baja a{color:var(--tinta-2)}
+
+/* selector de idioma, con banderas: Uruguay (español), Brasil (portugués) y Estados Unidos (inglés) */
+.flag{position:relative;flex:none;display:inline-block;width:20px;height:14px;border-radius:3px;overflow:hidden}
+.flag svg{display:block;width:100%;height:100%}
+.flag::after{content:"";position:absolute;inset:0;border-radius:inherit;box-shadow:inset 0 0 0 1px rgba(16,34,42,.14)}
+.lang-pick{position:relative;flex:none}
+.lang-btn{display:inline-flex;align-items:center;gap:7px;height:38px;padding:0 9px 0 11px;border:1px solid var(--linea);border-radius:10px;background:#fff;box-shadow:var(--sombra-1);font:600 14px/1 var(--f);letter-spacing:.02em;color:var(--tinta);cursor:pointer;transition:border-color .15s}
+.lang-btn:hover,.lang-pick.abierto .lang-btn{border-color:#C6CED6}
+.lang-chev{width:14px;height:14px;color:var(--tinta-3);transition:transform .2s ease}
+.lang-pick.abierto .lang-chev{transform:rotate(180deg)}
+.lang-menu{position:absolute;top:calc(100% + 8px);right:0;z-index:5;min-width:184px;padding:6px;background:#fff;border:1px solid var(--linea);border-radius:12px;box-shadow:0 1px 2px rgba(16,34,42,.06),0 22px 44px -20px rgba(16,34,42,.38);animation:baja .16s ease-out}
+.lang-menu a{display:flex;align-items:center;gap:11px;padding:10px 12px;border-radius:8px;color:var(--tinta);text-decoration:none;font-size:15px;font-weight:600;line-height:1.2}
+.lang-menu a:hover{background:var(--papel)}
+.lang-menu a[aria-current]{color:var(--vereda);background:var(--vereda-50)}
+.lang-menu a[aria-current]::after{content:"";margin-left:auto;width:7px;height:7px;border-radius:50%;background:var(--aviso)}
+@media (max-width:760px){.nav-der .lang-pick{display:none}}
+.lang-switch{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.lang-switch a{display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 13px;border:1px solid var(--linea);border-radius:10px;background:#fff;color:var(--tinta-2);text-decoration:none;font-size:14.5px;font-weight:600;letter-spacing:.02em;transition:border-color .15s,color .15s}
+.lang-switch a:hover{border-color:#C6CED6;color:var(--tinta)}
+.lang-switch a[aria-current]{border-color:var(--vereda-100);background:var(--vereda-50);color:var(--vereda)}
+.menu-movil .lang-switch{padding:0 clamp(16px,3.3vw,64px) 18px}
+.menu-movil .lang-switch a{flex:1;justify-content:center}
+.pie .lang-switch{gap:4px}
+.pie .lang-switch a{height:30px;padding:0 9px;gap:7px;border-color:transparent;background:none;font-size:13px;color:var(--tinta-3)}
+.pie .lang-switch a:hover{color:var(--tinta)}
+.pie .lang-switch a[aria-current]{border-color:var(--linea);background:var(--papel);color:var(--tinta)}
+.pie .lang-switch .flag{width:18px;height:12px;border-radius:2px}
+@media (prefers-reduced-motion:reduce){.lang-menu{animation:none}.lang-chev{transition:none}}
 
 .fijo-movil{position:fixed;left:0;right:0;bottom:0;z-index:50;padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));background:rgba(255,255,255,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-top:1px solid var(--linea);transform:translateY(110%);transition:transform .25s ease;display:none}
 .fijo-movil.vis{transform:none}
@@ -1003,6 +1035,7 @@ mark.of-tag{font-size:8.5px;font-weight:700;text-transform:uppercase;letter-spac
 </head>
 
 <body>
+<svg class="sr-only" aria-hidden="true" focusable="false"><defs><symbol id="f-uy" viewBox="0 0 30 20"><rect width="30" height="20" fill="#fff"/><rect y="2.22" width="30" height="2.22" fill="#0038A8"/><rect y="6.67" width="30" height="2.22" fill="#0038A8"/><rect y="11.11" width="30" height="2.22" fill="#0038A8"/><rect y="15.56" width="30" height="2.22" fill="#0038A8"/><rect width="11.11" height="11.11" fill="#fff"/><polygon points="5.56,1.46 6.05,3.05 7.12,1.77 6.97,3.44 8.45,2.66 7.68,4.14 9.34,3.99 8.06,5.06 9.66,5.56 8.06,6.05 9.34,7.12 7.68,6.97 8.45,8.45 6.97,7.68 7.12,9.34 6.05,8.06 5.56,9.66 5.06,8.06 3.99,9.34 4.14,7.68 2.66,8.45 3.44,6.97 1.77,7.12 3.05,6.05 1.46,5.56 3.05,5.06 1.77,3.99 3.44,4.14 2.66,2.66 4.14,3.44 3.99,1.77 5.06,3.05" fill="#FCD116"/><circle cx="5.56" cy="5.56" r="2.3" fill="#FCD116" stroke="#C9A100" stroke-width=".35"/></symbol><symbol id="f-br" viewBox="0 0 30 20"><rect width="30" height="20" fill="#009C3B"/><polygon points="2.2,10 15,1.8 27.8,10 15,18.2" fill="#FFDF00"/><circle cx="15" cy="10" r="4.9" fill="#002776"/><path d="M10.3 9.2Q15 7.6 19.85 11.1" fill="none" stroke="#fff" stroke-width=".75"/></symbol><symbol id="f-us" viewBox="0 0 30 20"><rect width="30" height="20" fill="#fff"/><rect y="0" width="30" height="1.54" fill="#B22234"/><rect y="3.08" width="30" height="1.54" fill="#B22234"/><rect y="6.15" width="30" height="1.54" fill="#B22234"/><rect y="9.23" width="30" height="1.54" fill="#B22234"/><rect y="12.31" width="30" height="1.54" fill="#B22234"/><rect y="15.38" width="30" height="1.54" fill="#B22234"/><rect y="18.46" width="30" height="1.54" fill="#B22234"/><rect width="12" height="10.77" fill="#3C3B6E"/><circle cx="1.5" cy="1.35" r=".5" fill="#fff"/><circle cx="3.75" cy="1.35" r=".5" fill="#fff"/><circle cx="6" cy="1.35" r=".5" fill="#fff"/><circle cx="8.25" cy="1.35" r=".5" fill="#fff"/><circle cx="10.5" cy="1.35" r=".5" fill="#fff"/><circle cx="1.5" cy="4.05" r=".5" fill="#fff"/><circle cx="3.75" cy="4.05" r=".5" fill="#fff"/><circle cx="6" cy="4.05" r=".5" fill="#fff"/><circle cx="8.25" cy="4.05" r=".5" fill="#fff"/><circle cx="10.5" cy="4.05" r=".5" fill="#fff"/><circle cx="1.5" cy="6.75" r=".5" fill="#fff"/><circle cx="3.75" cy="6.75" r=".5" fill="#fff"/><circle cx="6" cy="6.75" r=".5" fill="#fff"/><circle cx="8.25" cy="6.75" r=".5" fill="#fff"/><circle cx="10.5" cy="6.75" r=".5" fill="#fff"/><circle cx="1.5" cy="9.45" r=".5" fill="#fff"/><circle cx="3.75" cy="9.45" r=".5" fill="#fff"/><circle cx="6" cy="9.45" r=".5" fill="#fff"/><circle cx="8.25" cy="9.45" r=".5" fill="#fff"/><circle cx="10.5" cy="9.45" r=".5" fill="#fff"/></symbol></defs></svg>
 <header class="nav" id="nav">
   <div class="wrap nav-in">
     <a href="#top" class="marca" aria-label="Libreta, ir al inicio"><svg viewBox="0 6 398 100" role="img" aria-label="Libreta"><g fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M40 44V100M68 14V100M68 72A28 28 0 1 0 124 72A28 28 0 1 0 68 72M150 100V44M150 72A28 28 0 0 1 178 44M202 72H258A28 28 0 1 0 252.7 88.5M290 31.2V83A17 17 0 0 0 307 100M278 44H305M386 72A28 28 0 1 0 330 72A28 28 0 1 0 386 72M386 44V100" stroke="#10222A" stroke-width="11"/><path d="M12 14V100" stroke="#0B6E7C" stroke-width="11"/></g><circle cx="40" cy="22" r="9" fill="#FF6A3D"/></svg></a>
@@ -1014,6 +1047,7 @@ mark.of-tag{font-size:8.5px;font-weight:700;text-transform:uppercase;letter-spac
         <a href="#precios">Precios</a>
         <a href="#preguntas">Preguntas</a>
       </nav>
+      <div class="lang-pick" data-lang-pick role="navigation" aria-label="Idioma"><button type="button" class="lang-btn" aria-expanded="false" aria-controls="lang-menu" aria-label="Idioma: Español"><span class="flag" aria-hidden="true"><svg viewBox="0 0 30 20"><use href="#f-uy"/></svg></span><span class="lang-code">ES</span><svg class="lang-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button><div class="lang-menu" id="lang-menu" hidden><a href="/" hreflang="es" lang="es" aria-current="page"><span class="flag" aria-hidden="true"><svg viewBox="0 0 30 20"><use href="#f-uy"/></svg></span><span>Español</span></a><a href="/pt" hreflang="pt-BR" lang="pt-BR"><span class="flag" aria-hidden="true"><svg viewBox="0 0 30 20"><use href="#f-br"/></svg></span><span>Português</span></a><a href="/en" hreflang="en" lang="en"><span class="flag" aria-hidden="true"><svg viewBox="0 0 30 20"><use href="#f-us"/></svg></span><span>English</span></a></div></div>
       <div class="nav-acc">
         <a class="btn btn-p btn-chico" href="#contacto" data-evento="cta_barra">Pedir una demo</a>
         <a class="btn btn-s btn-chico" href="https://app.libreta.dev/login" data-evento="login_barra">Login</a>
@@ -1033,6 +1067,7 @@ mark.of-tag{font-size:8.5px;font-weight:700;text-transform:uppercase;letter-spac
       <a class="btn btn-p" href="#contacto" data-evento="cta_menu">Pedir una demo</a>
       <a class="btn btn-s" href="https://app.libreta.dev/login" data-evento="login_menu">Login</a>
     </div>
+    <div class="lang-switch" role="navigation" aria-label="Idioma"><a href="/" hreflang="es" lang="es" aria-current="page" title="Español" aria-label="Español"><span class="flag" aria-hidden="true"><svg viewBox="0 0 30 20"><use href="#f-uy"/></svg></span><span>ES</span></a><a href="/pt" hreflang="pt-BR" lang="pt-BR" title="Português" aria-label="Português"><span class="flag" aria-hidden="true"><svg viewBox="0 0 30 20"><use href="#f-br"/></svg></span><span>PT</span></a><a href="/en" hreflang="en" lang="en" title="English" aria-label="English"><span class="flag" aria-hidden="true"><svg viewBox="0 0 30 20"><use href="#f-us"/></svg></span><span>EN</span></a></div>
   </div>
 </header>
 <div class="menu-velo" id="menu-velo" hidden></div>
@@ -1539,6 +1574,7 @@ mark.of-tag{font-size:8.5px;font-weight:700;text-transform:uppercase;letter-spac
         <summary>Privacidad y datos</summary>
         <p>Dearmas &amp; Costantini es responsable de los datos que dejás en el formulario. Los usamos solo para contactarte sobre Libreta; no los vendemos ni los compartimos con terceros. Para agendar la reunión usamos Calendly. Podés pedir acceso, rectificación o eliminación de tus datos respondiendo el mail de confirmación de la reunión, según la Ley 18.331 de protección de datos personales. La política de la app está en <a href="/privacidad">Privacidad</a>. Doria, Zureo, Odoo, SAP Business One, Memory, GNS y WhatsApp son marcas de sus respectivos dueños.</p>
       </details>
+      <div class="lang-switch" role="navigation" aria-label="Idioma"><a href="/" hreflang="es" lang="es" aria-current="page" title="Español" aria-label="Español"><span class="flag" aria-hidden="true"><svg viewBox="0 0 30 20"><use href="#f-uy"/></svg></span><span>ES</span></a><a href="/pt" hreflang="pt-BR" lang="pt-BR" title="Português" aria-label="Português"><span class="flag" aria-hidden="true"><svg viewBox="0 0 30 20"><use href="#f-br"/></svg></span><span>PT</span></a><a href="/en" hreflang="en" lang="en" title="English" aria-label="English"><span class="flag" aria-hidden="true"><svg viewBox="0 0 30 20"><use href="#f-us"/></svg></span><span>EN</span></a></div>
       <nav class="pie-legal" aria-label="Privacidad y ayuda"><a href="/privacidad">Privacidad</a><a href="/soporte">Ayuda</a><a href="/eliminar-cuenta">Baja de la cuenta</a></nav>
       <span>Montevideo, Uruguay</span>
     </div>
@@ -1570,6 +1606,8 @@ mark.of-tag{font-size:8.5px;font-weight:700;text-transform:uppercase;letter-spac
   'use strict';
 
   var $ = function(id){ return document.getElementById(id); };
+  // La landing también está en portugués (/pt) y en inglés (/en): las genera i18n/armar.py desde este archivo.
+  var IDIOMA = (document.documentElement.lang || 'es').slice(0, 2);
   var $$ = function(sel, ctx){ return Array.prototype.slice.call((ctx || document).querySelectorAll(sel)); };
   var fmt = new Intl.NumberFormat('es-UY', {maximumFractionDigits: 0});
   var fmt1 = new Intl.NumberFormat('es-UY', {minimumFractionDigits: 1, maximumFractionDigits: 1});
@@ -3098,6 +3136,23 @@ mark.of-tag{font-size:8.5px;font-weight:700;text-transform:uppercase;letter-spac
     $('invita-x').addEventListener('click', function(e){ e.stopPropagation(); invita.classList.add('cerrada'); evento('invita_cerrar'); });
   }
 
+  /* ================= Idioma ================= */
+  // El botón del encabezado despliega español, portugués e inglés; en el menú del celular y en el pie
+  // están las tres banderas a la vista. Al cambiar de idioma, la página abre en la sección que se miraba.
+  $$('.lang-switch a, .lang-menu a').forEach(function(a){ a.addEventListener('click', function(){
+    var vista = $$('main > section[id]').filter(function(sec){ return sec.getBoundingClientRect().top <= window.innerHeight * .4; }).pop();
+    var base = a.getAttribute('href').split('#')[0];
+    a.setAttribute('href', vista && vista.id !== 'top' ? base + '#' + vista.id : base);
+  }); });
+  $$('[data-lang-pick]').forEach(function(pick){
+    var btn = pick.querySelector('.lang-btn'), menu = pick.querySelector('.lang-menu');
+    function abrir(si){ menu.hidden = !si; btn.setAttribute('aria-expanded', si ? 'true' : 'false'); pick.classList.toggle('abierto', si); }
+    btn.addEventListener('click', function(){ abrir(menu.hidden); });
+    document.addEventListener('click', function(e){ if (!pick.contains(e.target)) abrir(false); });
+    pick.addEventListener('keydown', function(e){ if (e.key === 'Escape' && !menu.hidden){ abrir(false); btn.focus(); } });
+    pick.addEventListener('focusout', function(e){ if (e.relatedTarget && !pick.contains(e.relatedTarget)) abrir(false); });
+  });
+
   /* ================= Menú hamburguesa (pantallas chicas) ================= */
   var hamb = $('nav-hamb'), menuM = $('menu-movil'), menuVelo = $('menu-velo');
   function menuMovil(abrir){
@@ -3120,6 +3175,7 @@ mark.of-tag{font-size:8.5px;font-weight:700;text-transform:uppercase;letter-spac
   var asv = $('asv'), asvPanel = $('asv-panel'), asvMsgs = $('asv-msgs'), asvTxt = $('asv-txt'), asvBienv = $('asv-bienv');
   var ASV_SUG = ['¿Cuánto sale para mi equipo?', '¿Funciona con mi sistema?', '¿Cómo sabe qué ofrecerle a cada cliente?', 'Quiero agendar una demo'];
   var ASV_HOLA = 'Hola, soy el asistente de Libreta. Preguntame lo que quieras: cómo funciona, si anda con tu sistema o cuánto sale para tu equipo.';
+  var CLAVE_CHAT = 'libreta-chat' + (IDIOMA === 'es' ? '' : '-' + IDIOMA);   // la conversación de cada idioma por separado
   function guardar(k, v){ try { sessionStorage.setItem(k, v); } catch (x) {} }
   function leer(k){ try { return sessionStorage.getItem(k); } catch (x) { return null; } }
   function sinMarcas(t){ return String(t).replace(/\[\[(AGENDA|PROBAR)\]\]/g, '').replace(/\[\[[A-Z]*\]?$/, '').replace(/[—–]/g, ',').trim(); }
@@ -3144,7 +3200,7 @@ mark.of-tag{font-size:8.5px;font-weight:700;text-transform:uppercase;letter-spac
     if (ult && ult.role === 'assistant') botones(marcaDe(ult.content));
     sugerencias(ASV.hist.length ? [] : ASV_SUG);
   }
-  try { var h0 = JSON.parse(leer('libreta-chat') || '[]'); if (Array.isArray(h0)) ASV.hist = h0.filter(function(m){ return m && (m.role === 'user' || m.role === 'assistant') && typeof m.content === 'string'; }).slice(-20); } catch (x) {}
+  try { var h0 = JSON.parse(leer(CLAVE_CHAT) || '[]'); if (Array.isArray(h0)) ASV.hist = h0.filter(function(m){ return m && (m.role === 'user' || m.role === 'assistant') && typeof m.content === 'string'; }).slice(-20); } catch (x) {}
   function cerrarBienv(guardarla){ asvBienv.hidden = true; if (guardarla) guardar('libreta-chat-bienvenida', '1'); }
   function saludar(){
     // El saludo también llega con «escribiendo», como si lo tipeara una persona.
@@ -3195,7 +3251,7 @@ mark.of-tag{font-size:8.5px;font-weight:700;text-transform:uppercase;letter-spac
   function obtener(texto){
     if (!CONFIG.chat || !window.fetch || !window.TextDecoder || location.protocol === 'file:') return Promise.resolve(respuestaLocal(texto));
     var acum = '', ctrl = window.AbortController ? new AbortController() : null, reloj = setTimeout(function(){ if (ctrl) ctrl.abort(); }, 45000);
-    return fetch(CONFIG.chat, {method: 'POST', headers: {'Content-Type': 'application/json'}, credentials: 'omit', signal: ctrl ? ctrl.signal : undefined, body: JSON.stringify({messages: ASV.hist})})
+    return fetch(CONFIG.chat, {method: 'POST', headers: {'Content-Type': 'application/json'}, credentials: 'omit', signal: ctrl ? ctrl.signal : undefined, body: JSON.stringify(IDIOMA === 'es' ? {messages: ASV.hist} : {messages: ASV.hist, idioma: IDIOMA})})
       .then(function(res){
         if (!res.ok || !res.body) throw new Error('chat ' + res.status);
         var lector = res.body.getReader(), dec = new TextDecoder();
@@ -3208,7 +3264,7 @@ mark.of-tag{font-size:8.5px;font-weight:700;text-transform:uppercase;letter-spac
   function responder(txt){
     burbuja('ia', sinMarcas(txt));
     ASV.hist.push({role: 'assistant', content: txt.slice(0, 2000)}); ASV.hist = ASV.hist.slice(-20);
-    guardar('libreta-chat', JSON.stringify(ASV.hist));
+    guardar(CLAVE_CHAT, JSON.stringify(ASV.hist));
     botones(marcaDe(txt));
   }
   function preguntar(texto){
