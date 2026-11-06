@@ -1,0 +1,9 @@
+{
+  "name": "libreta-landing",
+  "private": true,
+  "type": "module",
+  "description": "Landing de Libreta (estática) con el chat de ventas en api/chat.js",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.131.0"
+  }
+}
