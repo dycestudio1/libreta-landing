@@ -3063,8 +3063,8 @@ mark.of-tag{font-size:8.5px;font-weight:700;text-transform:uppercase;letter-spac
   var CONFIG = {
     calendly: 'https://calendly.com/dearmascostantini/30min',   // directo al calendario de la reunión de 30 minutos
     formEndpoint: '',    // opcional: URL de Formspree o Basin para guardar cada pedido de demo
-    leads: 'https://sistemadearmascostantini.com/api/leads/from-landing',   // cada pedido de demo queda como lead en el Sistema D&C
-    chat: 'https://sistemadearmascostantini.com/api/chat/libreta'           // asistente de ventas (Claude), el mismo sistema que el chat de dearmascostantini.com
+    leads: '',   // antes, el Sistema D&C (ya no está): las demos que se agendan en Calendly entran solas al Hub de D&C
+    chat: location.protocol.indexOf('http') === 0 ? '/api/chat' : ''   // el chat lo atiende la propia web (api/chat.js)
   };
   function enviarLead(d){
     if (!CONFIG.leads || !window.fetch) return;
