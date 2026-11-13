@@ -3556,9 +3556,9 @@
    "en": "return x.corto + ' at ' + Math.round(v / x.obj.set * 100) + '%'; }).join(', ');"
   },
   {
-   "es": "responder('Setiembre va en <b>' + pesos(t.v) + '</b>, el ' + pct + ' % del objetivo de ' + pesos(t.o) + ', y queda un día hábil. ' + det + '. Contra setiembre del año pasado, ' + (ly >= 0 ? ly + ' % más' : Math.abs(ly) + ' % menos') + '.');",
-   "pt": "responder('Setembro está em <b>' + pesos(t.v) + '</b>, ' + pct + '% da meta de ' + pesos(t.o) + ', e falta um dia útil. ' + det + '. Contra setembro do ano passado, ' + (ly >= 0 ? ly + '% a mais' : Math.abs(ly) + '% a menos') + '.');",
-   "en": "responder('September is at <b>' + pesos(t.v) + '</b>, ' + pct + '% of the ' + pesos(t.o) + ' target, with one business day left. ' + det + '. Versus last September, ' + (ly >= 0 ? ly + '% higher' : Math.abs(ly) + '% lower') + '.');"
+   "es": "responderComo('Setiembre va en <b>' + pesos(t.v) + '</b>, el ' + pct + ' % del objetivo de ' + pesos(t.o) + ', y queda un día hábil. ' + det + '. Contra setiembre del año pasado, ' + (ly >= 0 ? ly + ' % más' : Math.abs(ly) + ' % menos') + '.');",
+   "pt": "responderComo('Setembro está em <b>' + pesos(t.v) + '</b>, ' + pct + '% da meta de ' + pesos(t.o) + ', e falta um dia útil. ' + det + '. Contra setembro do ano passado, ' + (ly >= 0 ? ly + '% a mais' : Math.abs(ly) + '% a menos') + '.');",
+   "en": "responderComo('September is at <b>' + pesos(t.v) + '</b>, ' + pct + '% of the ' + pesos(t.o) + ' target, with one business day left. ' + det + '. Versus last September, ' + (ly >= 0 ? ly + '% higher' : Math.abs(ly) + '% lower') + '.');"
   },
   {
    "es": "'Voy a crear esta tarea:<ul><li><b>Para:</b> María Fernández</li><li><b>Qué:</b> pasar por Pizzería La Trattoria</li><li><b>Cuándo:</b> jueves 01/10</li><li><b>Nota:</b> no compra hace 46 días; antes compraba $U 18.400 por mes.</li></ul>¿La creo?<div class=\"conf\"><button type=\"button\" class=\"btn-mini p\" data-conf=\"si\">Sí, creala</button><button type=\"button\" class=\"btn-mini\" data-conf=\"no\">No</button></div>'",
@@ -3571,14 +3571,14 @@
    "en": "msg('yo', 'Yes, create it');"
   },
   {
-   "es": "responder('Listo. María la ve en «Hoy», en «Te dejó Laura». Mirá el celular de arriba.');",
-   "pt": "responder('Pronto. A María vê em “Hoje”, em “A Laura deixou”. Olhe o celular acima.');",
-   "en": "responder('Done. María sees it under “Today,” in “From Laura.” Check the phone above.');"
+   "es": "responderComo('Listo. María la ve en «Hoy», en «Te dejó Laura». Mirá el celular de arriba.');",
+   "pt": "responderComo('Pronto. A María vê em “Hoje”, em “A Laura deixou”. Olhe o celular acima.');",
+   "en": "responderComo('Done. María sees it under “Today,” in “From Laura.” Check the phone above.');"
   },
   {
-   "es": "msg('yo', 'No'); responder('No hice nada. Si querés, la armamos para otro día.');",
-   "pt": "msg('yo', 'Não'); responder('Não fiz nada. Se quiser, montamos para outro dia.');",
-   "en": "msg('yo', 'No'); responder('I didn’t do anything. If you want, we can set it up for another day.');"
+   "es": "msg('yo', 'No'); responderComo('No hice nada. Si querés, la armamos para otro día.');",
+   "pt": "msg('yo', 'Não'); responderComo('Não fiz nada. Se quiser, montamos para outro dia.');",
+   "en": "msg('yo', 'No'); responderComo('I didn’t do anything. If you want, we can set it up for another day.');"
   },
   {
    "es": "TAREAS.unshift({t: 'Pasá por Pizzería La Trattoria el jueves', s: 'No compra hace 46 días', ok: false});",
